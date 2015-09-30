@@ -42,7 +42,7 @@ Unzip the file to any directory, execute the command,
 `./triplea_unix.sh`
 
 ### Mac OS X
-Mac users running OS X already have Java installed, (10.4 users may need to upgrade your Java version to 1.5 
+Mac users running OS X already have Java installed, (10.4 users may need to upgrade your Java version to 1.5
 
 http://www.apple.com/support/downloads/java2se50release3.html
 

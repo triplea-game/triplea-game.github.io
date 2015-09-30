@@ -2,8 +2,8 @@
 title: TripleA&colon; The World's Foremost Open Source Grand Strategy Game
 email: your-email@domain.com
 description: TripleA is a free online turn based strategy game and board game engine, similar to such board games as Axis &amp; Allies or Risk. TripleA comes with multiple games and over 100 more games can be downloaded from the user community. Supports single player vs AI, hot-seat, Play by Email and Forum, and a hosted Online lobby for live play online.
-baseurl: "/triplea-game.github.io/" # the subpath of your site, e.g. /blog/
-url: "http://triplea-game.github.io" # the base hostname & protocol for your site
+baseurl: "triplea-game.github.io" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

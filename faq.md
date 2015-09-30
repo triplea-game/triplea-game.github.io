@@ -51,7 +51,7 @@ A. The TripleA War Club
 
 > Q. How do I move units, and use TripleA to play?
 
-Choose the game you want to play, then click "Start Local Game" to begin a game on your machine. 
+Choose the game you want to play, then click "Start Local Game" to begin a game on your machine.
 After the game has started, click on the "Help" menu option near the top of the screen. From there, click "Game Notes" to see specific notes about the map you are currently playing, or click "Movement Help" to see general notes about how to move units and use Triplea.
 
 ## User Interface help notes:
