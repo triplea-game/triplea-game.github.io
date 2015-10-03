@@ -92,16 +92,15 @@ a:hover {
       margin: 50px 0 50px 0;
       padding: 0 10px 0 10px;
     }
+    &.dl {
+      float: right;
+    }
     > a {
       color: $text-color;
       &:hover {
         color: $brand-color;
         text-decoration: none;
       }
-    }
-  }
-    &.dl {
-      float: right;
     }
     &.dl a {
       padding-top: 1.0rem;
@@ -112,6 +111,7 @@ a:hover {
         color: $background-color;
       }
     }
+  }
   }
 }
 
@@ -175,6 +175,26 @@ a:hover {
   border-radius: 3px;
   padding: 10px;
   margin: 5px;
+}
+
+/**
+ * Community Page
+ */
+
+#community-col-wrapper, #community-dev-col-wrapper {
+ width: 50%;
+ float: left;
+}
+
+#community_col, #community-dev_col {
+ width: 45%;
+ float: left;
+ padding: 10px;
+ margin: 5px;
+}
+
+#dev-community-intro {
+    clear: both;
 }
 
 /**
