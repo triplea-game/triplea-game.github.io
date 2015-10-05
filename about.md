@@ -4,9 +4,11 @@ permalink: /about/
 title: About
 ---
 
-TripleA is a networked open source strategy gaming engine. It allows people to implement and play various strategy board games (such as a well known popular war game based on World War II ®). The TripleA engine has full networking support for online play, support for sounds, XML support for game files, and has its own imaging subsystem that allows for customized user editable maps to be used. TripleA is versatile, scalable and robust.
+TripleA is a networked open source strategy gaming engine that allows for customized user editable maps and rules. Typically game rules are based upon Axis and Allies rules.
 
-TripleA is released under the GNU Public License (GPL).
+
+TripleA is released under the GNU Public License (GPL). This license means the work is completely non-commercial, and is not allowed for use as part of other commercial projects.
+
 
 - Top -
 
