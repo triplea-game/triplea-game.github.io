@@ -54,6 +54,10 @@ A. The TripleA War Club
 Choose the game you want to play, then click "Start Local Game" to begin a game on your machine.
 After the game has started, click on the "Help" menu option near the top of the screen. From there, click "Game Notes" to see specific notes about the map you are currently playing, or click "Movement Help" to see general notes about how to move units and use Triplea.
 
+> Q. Can I change game settings after starting a game?
+
+Yes, save the game, load it again and change the setting before starting.
+
 ## User Interface help notes:
 
 ### Selecting Units
