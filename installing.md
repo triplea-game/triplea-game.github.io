@@ -4,11 +4,8 @@ title: Installing
 permalink: /installing/
 ---
 
-## Download
-TripleA can be downloaded [here](https://sourceforge.net/projects/triplea/files/).
-
 ### Windows
-If you are not sure if you have java 6.0 installed, and you don't know how to install java, download the latest release that comes bundled with java. The file is named,
+If you are not sure if you have java installed, and you don't know how to install java, download the latest release that comes bundled with java. The file is named,
 
 `triplea_x_x_x_windows_installer_with_java.exe`
 
@@ -25,13 +22,7 @@ You can install and download java from here,
 http://java.com/en/download/windows_automatic.jsp
 
 ### Linux
-You must first install java 6.0 (also known as 1.6) on your machine, you can download it from here,
-
-http://java.com/en/download/windows_automatic.jsp
-
-To test if you have java installed, run this command from the command line,
-
-`java -version`
+You must first install java 8 or later. To test if you have java installed, run this command from the command line: `java -version`
 
 Download the file
 
@@ -41,12 +32,12 @@ Unzip the file to any directory, execute the command,
 
 `./triplea_unix.sh`
 
+
 ### Mac OS X
-Mac users running OS X already have Java installed, (10.4 users may need to upgrade your Java version to 1.5
 
-http://www.apple.com/support/downloads/java2se50release3.html
-
-TripleA does not run on Mac OS 9.
+It costs $100 per year for a Mac developer license that allows you to skip these steps, so please blame Apple for having to do this:
+1.  Apple menu > System Preferences<85> > Security & Privacy > General tab under the header "Allow applications downloaded from:"
+2. Change "Allow Applications Downloaded From:" to "Anywhere"
 
 Download the latest mac version of TripleA, which will be called,
 
