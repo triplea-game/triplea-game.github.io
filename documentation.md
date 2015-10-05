@@ -17,8 +17,6 @@ permalink: /docs/
 
 ## How To:
 
-* [Download Maps](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4074312.html)
-* [Host A Game](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4085700.html)
-* [Use the Source Code](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4928858.html)
+* [Set up port forwarding to host lobby games](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4085700.html)
 
 [Feature of a couple of the non standard variants in TripleA]({{ "maps" | prepend: site.baseurl }})
