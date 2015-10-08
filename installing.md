@@ -35,12 +35,17 @@ Unzip the file to any directory, execute the command,
 
 ### Mac OS X
 
-It costs $100 per year for a Mac developer license that allows you to skip these steps, so please blame Apple for having to do this:
-1.  Apple menu > System Preferences<85> > Security & Privacy > General tab under the header "Allow applications downloaded from:"
-2. Change "Allow Applications Downloaded From:" to "Anywhere"
-
 Download the latest mac version of TripleA, which will be called,
 
 `triplea_x_x_x_mac.dmg`
 
 Double click on the dmg file, and drag TripleA.app to your applications folder. Double click on TripleA.app to run.
+
+If you get a "TripleA is damaged and cannot be opened" waning, follow these steps
+
+1. Apple menu > System Preferences > Security & Privacy > General tab under the header "Allow applications downloaded from:"
+2. Change "Allow Applications Downloaded From:" to "Anywhere"
+
+Your setting will reset to "Mac App Store and identified developers" to secure your computer from malware in 30 days, so you must repeat this each time you update TripleA.
+<br><br>
+<a href="https://github.com/triplea-game/triplea/releases/latest" class="button">View Download Options</a>

@@ -123,9 +123,10 @@ a:hover {
   text-align: center;
   h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     display: inline-block;
-    font-family: $secondary-font-family
+    font-family: $secondary-font-family;
+    line-height: 1.2;
   }
   img {
     display: block;

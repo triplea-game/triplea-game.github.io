@@ -9,9 +9,6 @@ TripleA is a networked open source strategy gaming engine that allows for custom
 
 TripleA is released under the GNU Public License (GPL). This license means the work is completely non-commercial, and is not allowed for use as part of other commercial projects.
 
-
-- Top -
-
 ## About TripleA
 
 TripleA was started in Oct 2001 by an unemployed Sean Bridges who was looking for a way to build up his resume after the end of the tech bubble. Unfortunately Sean was too successful, and soon after the 0.1 release (which he managed to demo in a job interview) he secured gainful employment.
