@@ -1,6 +1,6 @@
 # [TripleA Website](http://triplea-game.github.io/)
 
-This repo hosts the website for TripleA, an open-source grand-strategy board game engine. You can find the live site [here](http://williamdekryger.github.io/triplea-game.github.io/). If you're a web developer of designer looking to contribute, read on.
+This repo hosts the website for TripleA, an open-source grand-strategy board game engine. You can find the live site [here](http://triplea-game.github.io/). If you're a web developer of designer looking to contribute, read on.
 
 ## Getting Started
 The TripleA site runs on [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/). Pages are written in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
@@ -38,6 +38,7 @@ Then go into root of the folder and run `jekyll serve`:
 This will get a local version of the blog running on your machine, accessible on `localhost:4000, or whatever the terminal tells you`
 
 **3. Read up on the documentation.** To really understand how to develop the site there are a few things you're going to need to read up on to make meaningful changes:
- - [Jekyll](http://jekyllrb.com/docs/home/) The static site generator used for the site
- - [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/) How the site is hosted
- - [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) The templating language used with Jekyll by Shopify
+
+- [Jekyll](http://jekyllrb.com/docs/home/) The static site generator used for the site
+- [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/) How the site is hosted
+- [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) The templating language used with Jekyll by Shopify
