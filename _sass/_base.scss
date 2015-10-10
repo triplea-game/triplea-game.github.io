@@ -75,7 +75,8 @@ a:hover {
       margin: 40px 20px 40px 0;
       font-size: 30px;
       a {
-        color: $text-color;
+        color: lighten($text-color, 10%);
+        font-weight: bold;
       }
       a:hover {
         text-decoration: none;
@@ -96,7 +97,8 @@ a:hover {
       float: right;
     }
     > a {
-      color: $text-color;
+      color: lighten($text-color, 10%);
+      font-weight: bold;
       &:hover {
         color: $brand-color;
         text-decoration: none;
@@ -106,6 +108,7 @@ a:hover {
       padding-top: 1.0rem;
       padding-bottom: 1.0625rem;
       margin: 30px 0 30px 0;
+      font-weight: normal;
       color: $background-color;
       :hover {
         color: $background-color;
@@ -127,6 +130,7 @@ a:hover {
     display: inline-block;
     font-family: $secondary-font-family;
     line-height: 1.2;
+    color: lighten($text-color, 10%);
   }
   img {
     display: block;
