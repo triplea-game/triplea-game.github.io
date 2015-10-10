@@ -208,8 +208,13 @@ a:hover {
   width: 80%;
   padding: 20px 10% 15px 10%;
   background: url('../images/footer_bg.png') repeat-x;
+  color: $secondary-text-color;
   a {
+    text-decoration: underline;
     color: #fff;
+  }
+  a:hover {
+    color: $brand-color;
   }
   #footer_col {
     float: left;
@@ -225,5 +230,6 @@ a:hover {
     text-align: center;
     font-family: $secondary-font-family;
     clear: both;
+    font-weight: bold;
   }
 }
