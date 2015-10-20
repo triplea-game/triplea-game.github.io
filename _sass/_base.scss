@@ -237,3 +237,69 @@ a:hover {
     font-weight: bold;
   }
 }
+
+/**
+ * Overriding the nav bar when used with a mobile device
+ */
+ 
+@media only screen and (max-width: 600px) {
+
+.site-nav {
+  > ul {
+    padding-left: 1.7855em;
+    list-style-type: none;
+    font-family: $secondary-font-family;
+  > li {
+    margin: 0px 0px 0px -10px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+    > h1 {
+      margin: 40px 20px 40px 0;
+      font-size: 30px;
+      a {
+        color: lighten($text-color, 10%);
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #b8242b;
+      }
+    }
+    > img {
+      display: block;
+      height: 100px;
+      width: 100px;
+      margin: 0 7px 0 0;
+    }
+    &.menu-items {
+      margin: 0px 0 0px -15px;
+      padding: 20px 10px 20px 0px;
+    }
+    &.dl {
+	margin: 0px 0px 0px -18px;
+      float: left;
+    }
+    > a {
+      color: lighten($text-color, 10%);
+      font-weight: bold;
+      &:hover {
+        color: $brand-color;
+        text-decoration: none;
+      }
+    }
+    &.dl a {
+      padding-top: 1.0rem;
+      padding-bottom: 1.0625rem;
+      margin: 30px 0 30px 0;
+      font-weight: normal;
+      color: $background-color;
+      :hover {
+        color: $background-color;
+      }
+    }
+  }
+  }
+}
+ 
+}
