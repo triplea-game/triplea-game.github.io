@@ -27,6 +27,11 @@ If you are interested in making changes to the design, functionality, or structu
 
 `gem install jekyll`
 
+You will also need a javascript engine if you don't have one already. Come back to this step if you run into trouble later. NodeJS (https://nodejs.org/en/) is an example of a javascript engine, install with:
+`sudo apt-get install nodejs`
+`sudo yum install nodejs`
+Windows: https://nodejs.org/dist/v4.2.1/win-x64/
+
 **2. Run a local version of the blog.** Using Git, clone the latest version of this repository to your local machine using the following command:
 
 `git clone https://github.com/triplea-game/triplea-game.github.io.git`
