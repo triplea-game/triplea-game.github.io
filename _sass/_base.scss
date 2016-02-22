@@ -192,7 +192,7 @@ a:hover {
 }
 
 #community_col, #community-dev_col {
- width: 45%;
+ width: 30%;
  float: left;
  padding: 10px;
  margin: 5px;
@@ -241,7 +241,7 @@ a:hover {
 /**
  * Overriding the nav bar when used with a mobile device
  */
- 
+
 @media only screen and (max-width: 600px) {
 
 .site-nav {
@@ -301,5 +301,5 @@ a:hover {
   }
   }
 }
- 
+
 }
