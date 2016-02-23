@@ -183,6 +183,25 @@ a:hover {
 }
 
 /**
+ * Maps Page
+ */
+
+#maps-col-wrapper {
+  width: 50%;
+  float: left;
+}
+
+#maps_col {
+  width: 30%;
+  float: left;
+  background-color: $grey-color-light;
+  border: 1px solid $grey-color;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+}
+
+/**
  * Community Page
  */
 
