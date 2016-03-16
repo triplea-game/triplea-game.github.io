@@ -263,7 +263,7 @@ a:hover {
 }
 
 /**
- * Overriding the nav bar when used with a mobile device
+ * Overriding the nav bar and footer when used with a mobile device
  */
 
 @media only screen and (max-width: 600px) {
@@ -326,4 +326,43 @@ a:hover {
   }
 }
 
+#contribute-col-wrapper {
+  width: 100%;
+  float: none;
+}
+
+#contribute_col {
+  width: 90%;
+  float: none;
+}
+
+#community-col-wrapper, #community-dev-col-wrapper {
+ width: 100%;
+ float: none;
+}
+
+#community_col, #community-dev_col {
+ width: 90%;
+ float: none;
+ padding: 10px;
+ margin: 5px;
+}
+
+#dev-community-intro {
+    clear: none;
+}
+
+#colophon {
+  float: none;
+  clear: none;
+  #footer_col {
+    float: none;
+    width: 100%;
+    text-align: center;
+    h3 {
+      margin-bottom: 0.5em;
+      font-size: 1.5em;
+    }
+  }
+}
 }
