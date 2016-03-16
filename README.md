@@ -42,3 +42,12 @@ This will get a local version of the blog running on your machine, accessible on
 - [Jekyll](http://jekyllrb.com/docs/home/) The static site generator used for the site
 - [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/) How the site is hosted
 - [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) The templating language used with Jekyll by Shopify
+
+## Points of Maintenance
+
+Though the site has been designed to allow as few points of maintenance as possible, here are areas that must be updated.
+
+### Every Time TripleA is Updated
+
+* The version number and links round line 11 of `_config.yml` need to be updated with information about the new release. A pull request can be made, and merged as soon as the new version is live.
+* (Deprecated) Update `news.md` with a link and a changelog.
