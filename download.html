@@ -1,0 +1,56 @@
+---
+layout: page
+title: Download
+permalink: /download/
+---
+
+<p class="dl-intro">Please select your operating system below. The link will open, and after the download has begun, installation instrutions will be diplayed below. We hope that you enjoy TripleA!</p>
+
+<a href="{{ site.windows-link }}" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
+  <img src="../images/operating-systems/windows100.png" />
+  <p>Download TripleA {{ site.triplea-version }} for Windows</p>
+</a>
+<a href="{{ site.mac-link }}" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
+  <img src="../images/operating-systems/mac100.png" />
+  <p>Download TripleA {{ site.triplea-version }} for Mac</p>
+</a>
+<a href="{{ site.linux-link }}" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
+  <img src="../images/operating-systems/linux100.png" />
+  <p>Download TripleA {{ site.triplea-version }} for Linux</p>
+</a>
+
+<p class="dl-install4j-credit">Installer powered by <a href="http://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" /></a></p>
+
+<p class="dl-direct-link">Having trouble with the installation link? Get a direct link <a href="https://github.com/triplea-game/triplea/releases/tag/{{ site.triplea-version }}">here</a>.</p>
+
+<div id="windows-install" class="installation-instructions">
+  <h2>Windows Installation</h2>
+  <p>You may need to <a href="http://java.com/en/download/">download</a> and install Java, if you do not already have it.</p>
+  <p> (The latest version is {{ site.triplea-version }}.).</code>.</p>
+  <p>Run the installer, and you can now run TripleA from the start menu.</p>
+  <p>If you already have Java 6.0 installed, then you can download the file called <code>triplea_{{ site.triplea-version }}_windows_installer.exe</code></p>
+  <p>Run the installer, and you will be able to launch TripleA from your start menu.</p>
+  <p><a href="#" onclick="hideShowInstallationText(document.getElementById('windows-install'))">(Hide)</a></p>
+</div>
+
+<div id="mac-install" class="installation-instructions">
+  <h2>Mac OS X Installation</h2>
+  <p>Download the latest mac version of TripleA, which will be called <code>triplea_{{ site.triplea-version }}_mac.dmg</code>.</p>
+  <p>Double click on the DMG file, and drag TripleA.app to your applications folder. Double click on TripleA.app to run. If you do not have Java already installed, Mac OS X will promt you to download it.</p>
+
+  <p>If you get a "TripleA is damaged and cannot be opened" waning, follow these steps:</p>
+  <p>Apple menu > System Preferences > Security & Privacy > General tab under the header "Allow applications downloaded from:"</p>
+  <p>Change "Allow Applications Downloaded From:" to "Anywhere"</p>
+
+  <p>Your setting will reset to "Mac App Store and identified developers" to secure your computer from malware in 30 days, so you must repeat this each time you update TripleA.
+  <p><a href="#" onclick="hideShowInstallationText(document.getElementById('mac-install'))">(Hide)</a></p>
+</div>
+
+<div id="linux-install" class="installation-instructions">
+  <h2>Linux Installation</h2>
+  <p>You must first install Java 8 or later. To test if you have Java installed, run this command from the command line: <code>java -version</code>.</p>
+  <p>You can install and download Java from <a href="http://java.com/en/download/">here</a>.</p>
+  <p>Download the file <code>triplea_{{ site.triplea-version }}_all_platforms.zip</code>.</p>
+  <p>Unzip it to any directory and execute the command <code>./triplea_unix.sh</code>.</p>
+  <p><a href="#" onclick="hideShowInstallationText(document.getElementById('linux-install'))">(Hide)</a></p>
+</div>

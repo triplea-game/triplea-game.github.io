@@ -164,7 +164,31 @@ a:hover {
 }
 
 /**
- * Contribute Page
+ * Download Page
+ */
+
+.dl-intro {
+  margin: 0 5% 2% 5%;
+}
+
+.dl-links {
+  width: 27.514%;
+}
+
+.dl-links p {
+  margin-top: 10px;
+}
+
+.dl-install4j-credit, .dl-direct-link {
+  text-align: center;
+}
+
+.installation-instructions {
+  display: none;
+}
+
+/**
+ * Contibute Page
  */
 
 #contribute-col-wrapper {
