@@ -7,3 +7,9 @@ url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+# TripleA version information. Update each time a new version is released.
+triplea-version: 1.8.0.9
+windows-link: https://github.com/triplea-game/triplea/releases/download/1.8.0.9/triplea_1_8_0_9_windows_installer.exe
+mac-link: https://github.com/triplea-game/triplea/releases/download/1.8.0.9/triplea_1_8_0_9_mac.dmg
+linux-link: https://github.com/triplea-game/triplea/releases/download/1.8.0.9/triplea_1_8_0_9_all_platforms.zip
