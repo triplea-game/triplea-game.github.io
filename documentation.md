@@ -4,7 +4,10 @@ title: Documentation
 permalink: /docs/
 ---
 
-## FAQs:
+* [Release Notes]({{ "/release_notes" | prepend: site.baseurl }})
+* [Bug Report]({{ "/bug_report" | prepend: site.baseurl }})
+
+## FAQ:
 
 * [Frequently Asked Questions]({{ "/faq" | prepend: site.baseurl }})
 * [Game Options](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4425827.html)
