@@ -13,25 +13,25 @@ permalink: /release_notes/
 
 <h3>Game UI</h3>
 <ul>
-<li> Map Download Window has been updated to show installed and out of date maps in tabs. Can now remove installed maps from the download window. Maps are now hosted on Github and the download speed is faster, download progress bars have been added</li> 
-<li> A new settings window is availabe in the game menu, some settings options have been moved there, and some new ones made available.</li>
-<li> Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.</li>
-<li> New option to draw nation mini-flags next to, or underneath units</li<>
+<li>- Map Download Window has been updated to show installed and out of date maps in tabs. Can now remove installed maps from the download window. Maps are now hosted on Github and the download speed is faster, download progress bars have been added</li> 
+<li>- A new settings window is availabe in the game menu, some settings options have been moved there, and some new ones made available.</li>
+<li>- Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.</li>
+<li>- New option to draw nation mini-flags next to, or underneath units</li<>
 </ul>
 
 <h3>Game Controls</h3>
 <ul>
-<li> Pressing the 'u' key while hovering over moved units will undo the move (note, there is a bug where the map loses key focus, click the map first and then the 'u' key will work: https://github.com/triplea-game/triplea/issues/305)</li>
+<li>- Pressing the 'u' key while hovering over moved units will undo the move (note, there is a bug where the map loses key focus, click the map first and then the 'u' key will work: https://github.com/triplea-game/triplea/issues/305)</li>
 </ul>
 
 <h3>AI Updates</h3>
 <ul>
-<li>AI will now do strategic bombing</li>
+<li>- AI will now do strategic bombing</li>
 </ul>
 
 <h3>General Updates</h3>
 <ul>
-<li> Wav audio files have been converted to mp3, reducing game and map download size.  Support for wav files has been dropped.</li> 
+<li>- Wav audio files have been converted to mp3, reducing game and map download size.  Support for wav files has been dropped.</li> 
 </ul>
 
 <br />
