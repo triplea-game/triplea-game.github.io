@@ -7,19 +7,13 @@ permalink: /release_notes/
 
 <div class=".release-notes">
 
-<h3>Pre-Release - 1.9.0.0</h3>
-Download Pre-Release version 1.9.0.0.2402: 
-<a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_windows-x64_1.9.0.0.2402.exe">Windows 64bit</a>
-- <a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_windows_1.9.0.0.2402.exe">Windows 32bit</a>
-- <a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_macos_1.9.0.0.2402.dmg">Mac</a> 
-- <a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_unix_1.9.0.0.2402.sh">Linux</a>
-
+<br />
+<h3>Pre-release - 1.9.0.0</h3>
 <ul>
 
-
 </ul>
-<br />
 
+<br />
 <h3>Changes for 1.8.0.11</h3>
 <ul>
 
