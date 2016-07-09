@@ -8,7 +8,7 @@ permalink: /release_notes/
 <div class=".release-notes">
 
 <br />
-<h2>Pre-release - 1.9.0.0</h2>
+<h2>Prerelease - 1.9.0.0</h2>
 <ul>
 
 
