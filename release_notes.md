@@ -75,7 +75,7 @@ permalink: /release_notes/
 </ul>
 
 <br />
-<h2>Changes for 1.8.0.9</h2><ul>
+<h2>Changes for 1.8.0.9</h2>
 <ul>
   <li>- Bug fix, retreat from naval combat was not possible, now fixed. (redrum)</li>
 
@@ -88,11 +88,11 @@ permalink: /release_notes/
   <li>- Hard AI - Fixed calculating defenses on maps with air/naval bases to properly calculate enemy range. (redrum)</li>
 
   <li>- Hard AI - Fixed bug around not defending against enemy units that were transported the previous turn as they were being marked as already transported when potential enemy attacks were calculated. (redrum)</li>
-
-
+</ul>
 
 <br />
-</ul><h2>Changes for 1.8.0.7</h2><ul>
+<h2>Changes for 1.8.0.7</h2>
+<ul>
   <li>- Hard AI - Improved performance on large maps. (redrum)</li>
 
   <li>- Hard AI - Added support for valuing exposed units when attacking. (redrum)</li>
@@ -148,10 +148,11 @@ permalink: /release_notes/
   <li>- Bug fixes on unit casualty sorters, and switching approximate method in as the default. (veqryn)</li>
 
   <li>- Created a new prototype unit sorter for quicker approximate sorting, including support attachments. (redrum)</li>
-
+</ul>
 
 <br />
-</ul><h2>Changes for 1.8.0.5</h2><ul>
+<h2>Changes for 1.8.0.5</h2>
+<ul>
   <li>- Created a prototype unit sorter for sorting units with support attachments (still in beta) and added it as an option in engine preferences. (veqryn & redrum)</li>
 
   <li>- Updating Substance/Insubstantial look and feel UI to version 7.3. (veqryn)</li>
@@ -203,10 +204,12 @@ permalink: /release_notes/
   <li>- Creating a threaded version of the BattleCalculator, to speed up results. (redrum & veqryn)</li>
 
   <li>- Creating a logging window for ProAI so that players can watch the log. (redrum)</li>
-
+</ul>
 
 <br />
-</ul><h2>Changes for 1.8.0.3</h2><ul>
+
+<h2>Changes for 1.8.0.3</h2>
+<ul>
   <li>- Created new step property option, "repairPlayers", which will allow a player to repair the units owned by a different player. (veqryn)</li>
 
   <li>- Fixed issue where your move phase was skipped if the only unit you owned was a land unit in a transport. (veqryn)</li>
@@ -258,10 +261,13 @@ permalink: /release_notes/
   <li>- Fixed illegal state exception error in landing paratroopers during a battle. (veqryn)</li>
 
   <li>- Possibly final fix for a game hang / frozen bot on game launch. (veqryn)</li>
-
+</ul>
 
 <br />
-</ul><h2>Changes for 1.8.0.1</h2><ul>
+
+<h2>Changes for 1.8.0.1</h2>
+
+<ul>
   <li>- Adding new sci-fi sound for "future" era. (pulicat, cernel, veqryn)</li>
 
   <li>- Allowing "NONE" as a valid option value in sounds.properties file. (veqryn)</li>
@@ -783,7 +789,11 @@ permalink: /release_notes/
   <li>- Fixed bug where having a tech token but not having enough money to buy a new one, would cause you to skip rolling for the existing token. (veqryn)</li>
 
 
-</ul><h2>Changes for 1.6.1.4</h2><ul>
+</ul>
+
+<h2>Changes for 1.6.1.4</h2>
+
+<ul>
   <li>- Adding dotted lines to the LOTR Middle Earth map, to show connections over rivers. (veqryn)</li>
 
   <li>- Not showing tech in stats panel if game xml does not have any technologies. (veqryn)</li>
