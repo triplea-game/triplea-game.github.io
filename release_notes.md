@@ -76,6 +76,7 @@ permalink: /release_notes/
 
 <br />
 <h2>Changes for 1.8.0.9</h2><ul>
+<ul>
   <li>- Bug fix, retreat from naval combat was not possible, now fixed. (redrum)</li>
 
   <li>- Fixed possible infinite loop bug when a corrupt map exists in the map downloads, PR#76. (lafayette)</li>
