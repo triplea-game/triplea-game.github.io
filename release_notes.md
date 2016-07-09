@@ -10,8 +10,6 @@ permalink: /release_notes/
 <br />
 <h2>Prerelease - 1.9.0.0</h2>
 
-
-<h3>Game UI</h3>
 <ul>
   <li>- Minimum Java version is now Java 1.8</li>
 
