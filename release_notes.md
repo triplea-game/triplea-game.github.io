@@ -4,7 +4,21 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+
 <div class=".release-notes">
+
+<h3>Pre-Release - 1.9.0.0</h3>
+Download Pre-Release version 1.9.0.0.2402: 
+<a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_windows-x64_1.9.0.0.2402.exe">Windows 64bit</a>
+- <a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_windows_1.9.0.0.2402.exe">Windows 32bit</a>
+- <a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_macos_1.9.0.0.2402.dmg">Mac</a> 
+- <a href="https://github.com/triplea-game/triplea/releases/download/1.9.0.0.2402/triplea_unix_1.9.0.0.2402.sh">Linux</a>
+
+<ul>
+
+
+</ul>
+<br />
 
 <h3>Changes for 1.8.0.11</h3>
 <ul>
@@ -78,6 +92,7 @@ permalink: /release_notes/
 
 </ul>
 
+<br />
 <h3>Changes for 1.8.0.9</h3><ul>
   <li>- Bug fix, retreat from naval combat was not possible, now fixed. (redrum)</li>
 
@@ -93,6 +108,7 @@ permalink: /release_notes/
 
 
 
+<br />
 </ul><h3>Changes for 1.8.0.7</h3><ul>
   <li>- Hard AI - Improved performance on large maps. (redrum)</li>
 
@@ -151,6 +167,7 @@ permalink: /release_notes/
   <li>- Created a new prototype unit sorter for quicker approximate sorting, including support attachments. (redrum)</li>
 
 
+<br />
 </ul><h3>Changes for 1.8.0.5</h3><ul>
   <li>- Created a prototype unit sorter for sorting units with support attachments (still in beta) and added it as an option in engine preferences. (veqryn & redrum)</li>
 
@@ -205,6 +222,7 @@ permalink: /release_notes/
   <li>- Creating a logging window for ProAI so that players can watch the log. (redrum)</li>
 
 
+<br />
 </ul><h3>Changes for 1.8.0.3</h3><ul>
   <li>- Created new step property option, "repairPlayers", which will allow a player to repair the units owned by a different player. (veqryn)</li>
 
@@ -259,6 +277,7 @@ permalink: /release_notes/
   <li>- Possibly final fix for a game hang / frozen bot on game launch. (veqryn)</li>
 
 
+<br />
 </ul><h3>Changes for 1.8.0.1</h3><ul>
   <li>- Adding new sci-fi sound for "future" era. (pulicat, cernel, veqryn)</li>
 
