@@ -8,13 +8,15 @@ permalink: /release_notes/
 <div class=".release-notes">
 
 <br />
-<h3>Pre-release - 1.9.0.0</h3>
+<h2>Pre-release - 1.9.0.0</h2>
 <ul>
+
+
 
 </ul>
 
 <br />
-<h3>Changes for 1.8.0.11</h3>
+<h2>Changes for 1.8.0.11</h2>
 <ul>
 
   <li>- Minimum Java version is now Java 1.8</li>
@@ -87,7 +89,7 @@ permalink: /release_notes/
 </ul>
 
 <br />
-<h3>Changes for 1.8.0.9</h3><ul>
+<h2>Changes for 1.8.0.9</h2><ul>
   <li>- Bug fix, retreat from naval combat was not possible, now fixed. (redrum)</li>
 
   <li>- Fixed possible infinite loop bug when a corrupt map exists in the map downloads, PR#76. (lafayette)</li>
@@ -103,7 +105,7 @@ permalink: /release_notes/
 
 
 <br />
-</ul><h3>Changes for 1.8.0.7</h3><ul>
+</ul><h2>Changes for 1.8.0.7</h2><ul>
   <li>- Hard AI - Improved performance on large maps. (redrum)</li>
 
   <li>- Hard AI - Added support for valuing exposed units when attacking. (redrum)</li>
@@ -162,7 +164,7 @@ permalink: /release_notes/
 
 
 <br />
-</ul><h3>Changes for 1.8.0.5</h3><ul>
+</ul><h2>Changes for 1.8.0.5</h2><ul>
   <li>- Created a prototype unit sorter for sorting units with support attachments (still in beta) and added it as an option in engine preferences. (veqryn & redrum)</li>
 
   <li>- Updating Substance/Insubstantial look and feel UI to version 7.3. (veqryn)</li>
@@ -217,7 +219,7 @@ permalink: /release_notes/
 
 
 <br />
-</ul><h3>Changes for 1.8.0.3</h3><ul>
+</ul><h2>Changes for 1.8.0.3</h2><ul>
   <li>- Created new step property option, "repairPlayers", which will allow a player to repair the units owned by a different player. (veqryn)</li>
 
   <li>- Fixed issue where your move phase was skipped if the only unit you owned was a land unit in a transport. (veqryn)</li>
@@ -272,7 +274,7 @@ permalink: /release_notes/
 
 
 <br />
-</ul><h3>Changes for 1.8.0.1</h3><ul>
+</ul><h2>Changes for 1.8.0.1</h2><ul>
   <li>- Adding new sci-fi sound for "future" era. (pulicat, cernel, veqryn)</li>
 
   <li>- Allowing "NONE" as a valid option value in sounds.properties file. (veqryn)</li>
@@ -494,7 +496,7 @@ permalink: /release_notes/
   <li>- Created a headless UIContext for use with headless game server, so that it may run on a linux platform that has no configured graphics environment. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.7.0.3</h3><ul>
+</ul><h2>Changes for 1.7.0.3</h2><ul>
   <li>- Got headless game to show options to client's, for changing the game, changing to an autosave, sending a save to the server, and getting the savegame from the host. (veqryn)</li>
 
   <li>- Got headless game to restart its lobby connection once per 8 hours. (veqryn)</li>
@@ -546,7 +548,7 @@ permalink: /release_notes/
   <li>- Fixed possible null pointer in color chooser for color property, which occurred when chosing the color for map text. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.7.0.1</h3><ul>
+</ul><h2>Changes for 1.7.0.1</h2><ul>
   <li>- New attachment properties for Triggers, Politics, and User Actions: "chanceIncrementOnFailure" and "chanceDecrementOnSuccess" which will modify the "chance" value. (veqryn)</li>
 
   <li>- Fixing fuelCost to not be charged for units in transports. (veqryn)</li>
@@ -794,7 +796,7 @@ permalink: /release_notes/
   <li>- Fixed bug where having a tech token but not having enough money to buy a new one, would cause you to skip rolling for the existing token. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.6.1.4</h3><ul>
+</ul><h2>Changes for 1.6.1.4</h2><ul>
   <li>- Adding dotted lines to the LOTR Middle Earth map, to show connections over rivers. (veqryn)</li>
 
   <li>- Not showing tech in stats panel if game xml does not have any technologies. (veqryn)</li>
@@ -980,7 +982,7 @@ permalink: /release_notes/
   <li>- Showed convoy blockade dice rolls in History Panel even if the blockade damage is zero. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.6.1.2</h3><ul>
+</ul><h2>Changes for 1.6.1.2</h2><ul>
   <li>- Fixed bug in Paratroopers code, causing paratrooper attacks in coast territories on maps with scrambling to never actually take the territory. (veqryn)</li>
 
   <li>- Creating a simple Ping method inside of the Chat Controller, that will ping all computers once every minute, hopefully improving everyone's connections. (Sean Bridges & veqryn)</li>
@@ -1022,7 +1024,7 @@ permalink: /release_notes/
   <li>- Fixed null pointer error in MovePanel.selectEndPoint when clicking to move a unit to a territory with no connections. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.6.1.1</h3><ul>
+</ul><h2>Changes for 1.6.1.1</h2><ul>
   <li>- Fixing in loading old engine jars caused by odd pathnames. (veqryn)</li>
 
   <li>- Made AA Guns appear in battle, then disappear after firing if they could not participate any further. (veqryn)</li>
@@ -1102,7 +1104,7 @@ permalink: /release_notes/
   <li>- Increasing max memory from 512mb to 640mb, and up to 768mb for online games. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.6.1</h3><ul>
+</ul><h2>Changes for 1.6.1</h2><ul>
   <li>- Rewriting build file and including META-INF, hopefully fixing issue with Gmail play-by-email emailer on linux machines. (rain)</li>
 
   <li>- Changing trigger property changes to use "-reset-" instead of clear. Can now be used with any attachment option. (veqryn)</li>
@@ -1183,7 +1185,7 @@ permalink: /release_notes/
   <li>- Made DefaultAttachment extend GameDataComponent. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.6</h3><ul>
+</ul><h2>Changes for 1.6</h2><ul>
   <li>- Fixing Global 1940 bugs, and getting it to use Technology completely. (veqryn)</li>
 
   <li>- Allowed downloading of multiple maps/games in one go, by holding down CTRL while selecting maps in the "Download Games" dialog screen, and out of date maps will show up in bold, and maps up-to-date will show in italics. (ddurham)</li>
@@ -1385,7 +1387,7 @@ permalink: /release_notes/
   <li>- Generating Serial IDs for all classes that may need them. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.5.2.1</h3><ul>
+</ul><h2>Changes for 1.5.2.1</h2><ul>
   <li>- Updated 1940 test xml to allow Axis powers to declare war on Americans separately, and for Americans to declare war on each Axis power separately. (veqryn)</li>
 
   <li>- Fixed null pointer error in Dynamix AI's determining of where to put a factory. (veqryn)</li>
@@ -1425,7 +1427,7 @@ permalink: /release_notes/
   <li>- Fixed Air Battle to only allow aircraft capable of intercepting into the battle, instead of also allowing infrastructure too. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.5.2</h3><ul>
+</ul><h2>Changes for 1.5.2</h2><ul>
   <li>- Fixed infinite loop in getAllProducers for a sea placement. (veqryn)</li>
 
   <li>- Removing BattleResults from BattleRecord until we figure out the problem (probably non Serializable) with it always causing the BattleRecordsList to be null. (veqryn) </li>
@@ -1500,7 +1502,7 @@ permalink: /release_notes/
   <li>- Fixed null pointer error in BattleRecordsList getTUVdamageCausedByPlayer. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.5.1</h3><ul>
+</ul><h2>Changes for 1.5.1</h2><ul>
   <li>- A second possible fix for ConcurrentModificationException in BattleModel.refresh -> DiceRoll.isAmphibiousMarine -> BattleTracker.getPendingBattleSites. (veqryn)</li>
 
   <li>- Changed Sea Placements to use all production for all surrounding Factories, if multiple factories touch that sea zone. Will now dynamically shift the production of other sea units away to other legal factories in order to allow the maximum production possible. (frigoref & veqryn)</li>
@@ -1634,7 +1636,7 @@ permalink: /release_notes/
   <li>- Fixed bug with Air Battles where there were more hits than aircraft. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.5</h3><ul>
+</ul><h2>Changes for 1.5</h2><ul>
   <li>- Adding new Game-Play manual. (victor, veqryn, hepster)</li>
 
   <li>- Fixing build xml to export new docs. (veqryn)</li>
@@ -1969,7 +1971,7 @@ Syntax is changed so that that convoyRoute is needed by both territories, while 
   <li>- Fixed bugs in 'example' maps: Tic Tac Toe, King's Table, and Sliding Tiles 8-number. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.4</h3><ul>
+</ul><h2>Changes for 1.4</h2><ul>
   <li>- Adding politicstext.properties for Napoleonic Empires. (veqryn)</li>
 
   <li>- Massive update to Napoleonic Empires: FFA, to allow it to use Politics. (veqryn)</li>
@@ -2239,7 +2241,7 @@ Syntax is changed so that that convoyRoute is needed by both territories, while 
   <li>- Made placements appear as a list, just like moves do, and can now be undone individually. Abstracted undoable moves and placements. (frigoref)</li>
 
 
-</ul><h3>Changes for 1.3.2.3</h3><ul>
+</ul><h2>Changes for 1.3.2.3</h2><ul>
   <li>- Fixed bug where casualty selection window was never shown and battles hanged, due to infinite loop inside default casualty sorting process under special conditions. (veqryn)</li>
 
   <li>- Fixed bug where units that had previously died to strat bombing, rockets, or scrambling, were still present in the battle if there was a conventional battle immediately afterwards in that territory. (veqryn)</li>
@@ -2253,7 +2255,7 @@ Syntax is changed so that that convoyRoute is needed by both territories, while 
   <li>- Fixed error related to two-hit battleships in middle earth. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.3.2.2</h3><ul>
+</ul><h2>Changes for 1.3.2.2</h2><ul>
   <li>- Fixed infinite loops in purchasing methods for both Strong AI and Weak AI, for low cost units. (veqryn)</li>
 
   <li>- Fixed null pointer error in Strong AI landing of air units for players with impassible capitals. (veqryn)</li>
@@ -2265,7 +2267,7 @@ Syntax is changed so that that convoyRoute is needed by both territories, while 
   <li>- Fixed null pointer error in Strong AI sea movement. (veqryn)</li>
 
 
-</ul><h3>Changes for 1.3.2.1</h3><ul>
+</ul><h2>Changes for 1.3.2.1</h2><ul>
   <li>- Added new button to main screen, "Rule Book...", which will open up the user's default web browser and go to the triplea sf page with our future rulebook. (veqryn [Mark Christopher Duncan])</li>
 
   <li>- Updated "unitProduction" so when used in conjunction with "Damage From Bombing Done To Units Instead Of Territories" it sets the allowed number of units to be produced in that territory, thereby finally un-associating the PU production of a territory from the Unit production of a territory.</li>
@@ -2312,7 +2314,7 @@ Syntax is changed so that that convoyRoute is needed by both territories, while 
   <li>- Fixed bug where allied fighters on carriers were not moving with the carriers under certain situations, like when there was an transport ship in the same sea zone, or a harbour or airfield had modified their movement. (veqryn [Mark Christopher Duncan])</li>
 
 
-</ul><h3>Changes for 1.3.1.1</h3><ul>
+</ul><h2>Changes for 1.3.1.1</h2><ul>
   <li>- Allowing lobby to parse user data more effectively. (wisconsin & veqryn [Mark Christopher Duncan])</li>
 
   <li>- Fixed major bug in low luck support attachments, where units got up to double the support they were supposed to get. (veqryn [Mark Christopher Duncan])</li>
@@ -2348,7 +2350,7 @@ Syntax is changed so that that convoyRoute is needed by both territories, while 
   <li>- Fixed build.xml to work for macRelease. (veqryn [Mark Christopher Duncan])</li>
 
 
-</ul><h3>Changes for 1.3.1.0</h3><ul>
+</ul><h2>Changes for 1.3.1.0</h2><ul>
   <li>- Fixed "what should bomber bomb" AI error, in all AIs. Also fixed bug in easy ai where it would not place any units if some were bunkers. (veqryn [Mark Christopher Duncan])</li>
 
   <li>- Fixed moore AI and easy AI to use new repairing method when trying to repair unit damage instead of territory damage. (veqryn [Mark Christopher Duncan])</li>
@@ -2438,7 +2440,7 @@ Syntax is changed so that that convoyRoute is needed by both territories, while 
   <li>- Added new global property, "On Entering Units Destroyed Instead Of Captured", which if true allows units normally captured on entering to be destroyed.  Does not affect non-combat units, only affects combat units with the canBeCapturedOnEnteringBy attachment. (veqryn [Mark Christopher Duncan])</li>
 
 
-</ul><h3>Changes for 1.3.0.0</h3><ul>
+</ul><h2>Changes for 1.3.0.0</h2><ul>
   <li>- Added the new username banning system, which will help a lot on the lobby. Like to ban offensive usernames without necessarily banning the player. (wisconsin)</li>
 
   <li>- Another patch for Dynamix AI (wisconsin)</li>
@@ -2883,11 +2885,11 @@ And lots of small tweaks to purchasing algorithm to allow moore ai to work for m
   <li>- update cruiser and Italian infantry  (veqryn [Mark Christopher Duncan], crystalct)</li>
 
 
-</ul><h3>Changes for 1.2.5.5 stable</h3><ul>
+</ul><h2>Changes for 1.2.5.5 stable</h2><ul>
 
   <li>- better server side INode validation (sgb)</li>
 
-</ul><h3>Changes for 1.2.5.4 stable</h3><ul>
+</ul><h2>Changes for 1.2.5.4 stable</h2><ul>
 
   <li>- ask users to restart after downloading a map as workaround to 2981890 (sgb)</li>
 
@@ -2897,11 +2899,11 @@ And lots of small tweaks to purchasing algorithm to allow moore ai to work for m
 
   <li>- fix bug 2981512 game hangs during purchase units phase with mooreAI (sgb)</li>
 
-</ul><h3>Changes for 1.2.5.3</h3><ul>
+</ul><h2>Changes for 1.2.5.3</h2><ul>
 
   <li>- fix bug 2979108 Multiplayer LL AA guns Java Error (sgb)</li>
 
-</ul><h3>Changes for 1.2.5.2</h3><ul>
+</ul><h2>Changes for 1.2.5.2</h2><ul>
 
   <li>- fix bug 2977842 Black sea zone movement bug (sgb)</li>
 
@@ -2911,7 +2913,7 @@ And lots of small tweaks to purchasing algorithm to allow moore ai to work for m
 
   <li>- validate zip file on map download (sgb)</li>
 
-</ul><h3>Changes for 1.2.5.1</h3><ul>
+</ul><h2>Changes for 1.2.5.1</h2><ul>
 
   <li>- fix bug 2973990 repair rules bug plus new lock not held bug (sgb)</li>
 
@@ -2925,7 +2927,7 @@ And lots of small tweaks to purchasing algorithm to allow moore ai to work for m
 
   <li>- Re-fix bug (2965453) convoy centers/routes with original owners (ComradeKev)</li>
 
-</ul><h3>Changes for 1.2.5</h3><ul>
+</ul><h2>Changes for 1.2.5</h2><ul>
 
   <li>- Re-added Japanese_fade.png flag file for use as kamikaze markers in Pacific (ComradeKev)</li>
 
@@ -2951,7 +2953,7 @@ And lots of small tweaks to purchasing algorithm to allow moore ai to work for m
 
   <li>- fix low luck aa casualty selection when different plane types are present (sgb)</li>
 
-</ul><h3>Changes for 1.2.4</h3><ul>
+</ul><h2>Changes for 1.2.4</h2><ul>
 
   <li>- fix bug (2960696) Strategic Bombing Crash in 1.2.3.0 (sgb)</li>
 
@@ -2965,7 +2967,7 @@ And lots of small tweaks to purchasing algorithm to allow moore ai to work for m
 
   <li>- fix null pointer in strong ai (sgb)</li>
 
-</ul><h3>Changes for 1.2.3</h3><ul>
+</ul><h2>Changes for 1.2.3</h2><ul>
 
   <li>- fix downloaded map skins (sgb)</li>
 
@@ -2995,7 +2997,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 
   <li>- new icon for triplea.exe (ubernaut)</li>
 
-</ul><h3>Changes for 1.2.2</h3><ul>
+</ul><h2>Changes for 1.2.2</h2><ul>
 
   <li>- update flag images in the base flags folder (u-boat,veqryn [Mark Christopher Duncan])</li>
 
@@ -3047,7 +3049,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
  
   <li>- Fix bug (2932947) paratroop checking code allowing naval ships to move through enemy SZ (ComradeKev)</li>
 
-</ul><h3>Changes for 1.2.1</h3><ul>
+</ul><h2>Changes for 1.2.1</h2><ul>
 
   <li>- Update game icons (ubernaut)</li>
 
@@ -3100,7 +3102,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 
   <li>- Fix bug 2919513 units with 0 attack not getting artillery support (ComradeKev)</li>
 
-</ul><h3>Changes for 1.2</h3><ul>
+</ul><h2>Changes for 1.2</h2><ul>
 
   <li>- Fix display of factory damage when unit name is "Factory" rather than "factory" (ComradeKev)</li>
 
@@ -3112,7 +3114,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 
   <li>- Fix bug 2915057 Bombers shouldn't be able to move then pick up paratroops (ComradeKev)</li>
 
-</ul><h3>Changes for 1.1.2</h3><ul>
+</ul><h2>Changes for 1.1.2</h2><ul>
 
   <li>- Add more test cases (ComradeKev)</li>
 
@@ -3148,7 +3150,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 
   <li>- skins can be downloaded/read from the users map folder (sgb)</li>
 
-</ul><h3>Changes for 1.1.1</h3><ul>
+</ul><h2>Changes for 1.1.1</h2><ul>
 
   <li>- new neutral flag images (veqryn [Mark Christopher Duncan])</li>
 
@@ -3212,7 +3214,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 
   <li>- download file notes shows top of notes by default now, rather than scrolling to the middle (sgb)</li>
 
-</ul><h3>Changes for 1.1.0</h3><ul>
+</ul><h2>Changes for 1.1.0</h2><ul>
 
   <li>- update StrongAI files for PUs (ComradeKev)</li>
 
@@ -3369,7 +3371,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 
   <li>- Fix paratroops refusing to fight (ComradeKev)</li>
 
-</ul><h3>Changes for 1.0.3.4</h3><ul>
+</ul><h2>Changes for 1.0.3.4</h2><ul>
 
   <li>- Better internet ip detection (sgb)</li>
 
@@ -3405,7 +3407,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 
   <li>- Fixed neutrals not able to be captured after a failed attempt (ComradeKev)</li>
 
-</ul><h3>Changes for 1.0.3.3</h3><ul>
+</ul><h2>Changes for 1.0.3.3</h2><ul>
 
   <li>- put game name in window title (sgb)</li>
 
@@ -3456,7 +3458,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 	US units that move into enemy occupied SZ in non-combat (trn/sub) fight during Chinese combat
 	Fix null pointer when loading maps with 'Show Map Blends' selected on the View menu
 
-</ul><h3>Changes for 1.0.3.2</h3><ul>
+</ul><h2>Changes for 1.0.3.2</h2><ul>
 
   <li>-  The following list of bugs were fixed- (Comradekev unless otherwise specified)</li>
 	Darkened/moved Italian flag (Seidelin)	
@@ -3478,7 +3480,7 @@ an already downloaded map, the dialog will have the old and new versions in the 
 Added New World Order 5 and 9 player games (Sieg)
 	Added relief map and blending support to NWO map (ComradeKev)
 
-</ul><h3>Changes for 1.0.3.1</h3><ul>
+</ul><h2>Changes for 1.0.3.1</h2><ul>
 
   <li>- update docs to correct how to run TripleA from the command line using the ant run command.</li>
 
@@ -3533,7 +3535,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- updated embedded jre to 6_11 (sgb)</li>
 
-</ul><h3>Changes for 1.0.3.0</h3><ul>
+</ul><h2>Changes for 1.0.3.0</h2><ul>
 
   <li>- Disable game properties button if there are no game properties (Chris McIntosh)</li>
 
@@ -3569,7 +3571,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- 1910223 Ability to cancel odds calculator (Chris McIntosh)</li>
 	
-</ul><h3>Changes for 1.0.2.0</h3><ul>
+</ul><h2>Changes for 1.0.2.0</h2><ul>
 
   <li>- Maps images, and XML for AA50 (Zero Pilot and Black Elk)</li>
 
@@ -3592,7 +3594,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- Break up rulesets into individual rules (while keeping overall ruleset setting) (ComradeKev)</li>
 
-</ul><h3>Changes for 1.0.1.4</h3><ul>
+</ul><h2>Changes for 1.0.1.4</h2><ul>
 
   <li>- Add blank_relief.png to various maps to fix exceptions and fix misspellings in POS *.txt files (ComradeKev)</li>
 
@@ -3605,7 +3607,7 @@ Added New World Order 5 and 9 player games (Sieg)
   <li>- Tweak blending code to account for missing base/relief tiles (ComradeKev)</li>
 	Map makers need to include a blank_relief.png file, nothing extra is required for base tiles.
 
-</ul><h3>Changes for 1.0.1.3</h3><ul>
+</ul><h2>Changes for 1.0.1.3</h2><ul>
 
   <li>- When executing sql in headless lobby, show error messages on the console (sgb)</li>
 
@@ -3638,7 +3640,7 @@ Added New World Order 5 and 9 player games (Sieg)
 	map.mapBlendMode=Linear_Light
 	map.mapBlendAlpha=0.5f
 	
-</ul><h3>Changes for 1.0.1.2</h3><ul>
+</ul><h2>Changes for 1.0.1.2</h2><ul>
   <li>- Fix territory connections in Pacific</li>
 
   <li>- Fix bug where hasLandRouteToEnemyOwnedCapitol causes abend for players with no Capital.  Returns none for 'optional' players</li>
@@ -3663,7 +3665,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- update great war map (Jason Clark)</li>
 
-</ul><h3>Changes for 1.0.1.1</h3><ul>
+</ul><h2>Changes for 1.0.1.1</h2><ul>
 
   <li>- Replace code for using the Large flags for Capital markers and tweak their placements in Pacific (ComradeKev)</li>
 
@@ -3675,7 +3677,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- reduce lobby backup frequency to 7 days (sgb) </li>
 
-</ul><h3>Changes for 1.0.1.0</h3><ul>
+</ul><h2>Changes for 1.0.1.0</h2><ul>
 
   <li>- Fix bug [ 1830015 ] transport load/unload after being in combat (ComradeKev)</li>
 
@@ -3701,13 +3703,13 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- fix [ 2015235 ] Compilation error under OpenJDK (karrde712)</li>
 
-</ul><h3>Changes for 1.0.0.3</h3><ul>
+</ul><h2>Changes for 1.0.0.3</h2><ul>
 
   <li>- allow factories with non 0 movement to move (sgb)</li>
 
   <li>- update great war to 2.2 (Jason Clark)</li>
 
-</ul><h3>Changes for 1.0.0.2</h3><ul>
+</ul><h2>Changes for 1.0.0.2</h2><ul>
 
   <li>- Fix dice click problem, reopen bug [ 1673719 ]  right-click-drag should not deselect unit upon release (sgb)</li>
 
@@ -3715,7 +3717,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- Fix bug  [1988219] lhtr fighters cant land on new carriers (sgb)</li>
 
-</ul><h3>Changes for 1.0</h3><ul>
+</ul><h2>Changes for 1.0</h2><ul>
 
   <li>- add tdice dice servers (sgb)</li>
 
@@ -3727,7 +3729,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- remove non existent irony dice server (sgb)</li>
 
-</ul><h3>Changes for 0.9.4.2</h3><ul>
+</ul><h2>Changes for 0.9.4.2</h2><ul>
 
   <li>- in edit mode, don't always ask the user to choose the units to remove (sgb)</li>
 
@@ -3735,13 +3737,13 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- remove uneeded base tiles, this fixes the white space near algeria (sgb)</li>
 
-</ul><h3>Changes for 0.9.4.1</h3><ul>
+</ul><h2>Changes for 0.9.4.1</h2><ul>
 
   <li>- fix bad anti aliasing effects when scaled at 100% (sgb)</li>
 
   <li>- increase max heap size to 196M (sgb)</li>
 
-</ul><h3>Changes for 0.9.4</h3><ul>
+</ul><h2>Changes for 0.9.4</h2><ul>
 
   <li>- simplify right click map dragging (sgb)</li>
 
@@ -3777,7 +3779,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- add ant run command for running from command line (sgb)</li>
 
-</ul><h3>Changes for 0.9.3</h3><ul>
+</ul><h2>Changes for 0.9.3</h2><ul>
 
   <li>- fix [ 1870424 ] can't leave tic tac toe game after the game is over, also fix tic tac toe networked mode (sgb)</li>
 
@@ -3827,7 +3829,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- use rocket images when a player has rocket tech advance (sgb)</li>
 
-</ul><h3>Changes for 0.9.2</h3><ul>
+</ul><h2>Changes for 0.9.2</h2><ul>
 
   <li>- fix bug where if your capital fell, and you captured another players capital, you could buy units (sgb)</li>
 
@@ -3899,7 +3901,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- Added support for "color" property, including color picker UI (dowobeha)</li>
 
-</ul><h3>Changes for 0.9.1</h3><ul>
+</ul><h2>Changes for 0.9.1</h2><ul>
 
   <li>- implemented minimax AI and alpha-beta AI; currently used in Tic Tac Toe and King's Table (dowobeha)</li>
 
@@ -3997,7 +3999,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- add canals to Great War and Big World (Black Elk)</li>
 
-</ul><h3>Changes for 0.9.0.2</h3><ul>
+</ul><h2>Changes for 0.9.0.2</h2><ul>
 
   <li>- fix bug [ 1640596 ] 0.9.0.1 Revised Map Wrap Issue (sgb)</li>
 
@@ -4005,13 +4007,13 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- allow lobby server to ping clients to ensure the are still there (sgb)</li>
 
-</ul><h3>Changes for 0.9.0.1</h3><ul>
+</ul><h2>Changes for 0.9.0.1</h2><ul>
 
   <li>- Adjusted British starting units (Jason Clark)</li>
 
   <li>- fixed infantry defense in Classic (sgb)</li>
 
-</ul><h3>Changes for 0.9</h3><ul>
+</ul><h2>Changes for 0.9</h2><ul>
 
   <li>- improve great war map (Jason Clark)</li>
 
@@ -4031,7 +4033,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- client only waits 10 seconds for connection to servr to be made before aborting (sgb)</li>
 
-</ul><h3>Changes for 0.8.6</h3><ul>
+</ul><h2>Changes for 0.8.6</h2><ul>
 
   <li>- fix infantry in classic (sgb)</li>
 
@@ -4045,7 +4047,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- fix loby where clients could not find real server address (sgb)</li>
 
-</ul><h3>Changes for 0.8.5</h3><ul>
+</ul><h2>Changes for 0.8.5</h2><ul>
 
   <li>- allow neutrals to have different unit types (sgb)</li>
 
@@ -4067,7 +4069,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- fix some click to continue to press sapce to continue (sgb)</li>
 
-</ul><h3>Changes for 0.8.4</h3><ul>
+</ul><h2>Changes for 0.8.4</h2><ul>
 
   <li>- change click to continue text to press space to continue on battle screens (sgb)</li>
 
@@ -4113,7 +4115,7 @@ Added New World Order 5 and 9 player games (Sieg)
 
   <li>- fix bug  [ 1563227 ] Continue button does not show up (sgb)</li>
 
-</ul><h3>Changes for 0.8.3</h3><ul>
+</ul><h2>Changes for 0.8.3</h2><ul>
 
   <li>- make odds calculator use MustFightBattle, update ui (sgb)</li>
 
@@ -4163,7 +4165,7 @@ the image should be drawn (multiple points are fine).  The image name should be 
 
   <li>- pacific and europe map fixes (Opurt, FlyingSpaghettiMonster)</li>
 
-</ul><h3>Changes for 0.8.2.1</h3><ul>
+</ul><h2>Changes for 0.8.2.1</h2><ul>
 
   <li>- fix installer with embedded java to actually use the embedded java (sgb)</li>
 
@@ -4171,7 +4173,7 @@ the image should be drawn (multiple points are fine).  The image name should be 
 
   <li>- fix nz territory in four if by sea (rod the god)</li>
 
-</ul><h3>Changes for 0.8.2</h3><ul>
+</ul><h2>Changes for 0.8.2</h2><ul>
 
   <li>- fix bug where observers joining mid game may ignore some updates (sgb)</li>
 
@@ -4185,7 +4187,7 @@ the image should be drawn (multiple points are fine).  The image name should be 
 
   <li>- remove nuetral player in capture the flag (sgb)</li>
 
-</ul><h3>Changes for 0.8.1</h3><ul>
+</ul><h2>Changes for 0.8.1</h2><ul>
 
   <li>- add capture the flag map (iron cross)</li>
 
@@ -4207,7 +4209,7 @@ the image should be drawn (multiple points are fine).  The image name should be 
 
   <li>- europe and pacific map fixes (zero pilot)</li>
 
-</ul><h3>Changes for 0.8</h3><ul>
+</ul><h2>Changes for 0.8</h2><ul>
 
   <li>- save last used map skin and unit size (beagle)</li>
 
@@ -4241,7 +4243,7 @@ Change for 0.7.5
 
   <li>- add tripleawarclub dice server (clausewitz, pughead, sgb)</li>
 
-</ul><h3>Changes for 0.7.4</h3><ul>
+</ul><h2>Changes for 0.7.4</h2><ul>
 
   <li>- remove autosave... from console output (sgb)</li>
 
@@ -4291,7 +4293,7 @@ Change for 0.7.5
 
   <li>- remove ISaveableDelegate, all Delegates are saveable (sgb)</li>
 
-</ul><h3>Changes for 0.7.2.4</h3><ul>
+</ul><h2>Changes for 0.7.2.4</h2><ul>
 
   <li>- move some code into swing event thread (sgb)</li>
 
@@ -4299,7 +4301,7 @@ Change for 0.7.5
  
   <li>- should read you need java >= 5.0, not java > 5.0 (sgb)</li>
 
-</ul><h3>Changes for 0.7.2.3</h3><ul>
+</ul><h2>Changes for 0.7.2.3</h2><ul>
 
   <li>- make battle window a dialog (it will always be in front of the main window!) (sgb)</li>
 
@@ -4319,7 +4321,7 @@ Change for 0.7.2.2
 
   <li>- fixed string index out of bounds when rolling pbem dice (sgb)</li>
 
-</ul><h3>Changes for 0.7.2.1</h3><ul>
+</ul><h2>Changes for 0.7.2.1</h2><ul>
 
   <li>- fix stat panel in europe (sgb)</li>
 
@@ -4384,7 +4386,7 @@ changes for 0.7.1
 
   <li>- fix bug located http://maddlinks.com/triplea/index.php?showtopic=707 (Adam Jette)</li>
 
-</ul><h3>Changes for 0.7.0</h3><ul>
+</ul><h2>Changes for 0.7.0</h2><ul>
 
   <li>- add movement help to help menu (sgb)</li>
 
@@ -4410,13 +4412,13 @@ changes for 0.7.1
 
 </ul>
 
-<h3>Changes for 0.6.0.1</h3>
+<h2>Changes for 0.6.0.1</h2>
 
 <ul>
 
   <li>- fix bug [ 1225276 ] Aircraft unable to attack or land (sgb)</li>
 
-</ul><h3>Changes for 0.6.0</h3><ul>
+</ul><h2>Changes for 0.6.0</h2><ul>
 
   <li>- updated developer docs, incomplete for now (George_H)</li>
 
@@ -4434,7 +4436,7 @@ changes for 0.7.1
 
   <li>- Fixed bug where transport moves could be undone before moves where the transport had been loaded/unloaded (sgb)</li>
 
-</ul><h3>Changes for 0.5.4</h3><ul>
+</ul><h2>Changes for 0.5.4</h2><ul>
 
   <li>- fixed bug where units could blitz through territories with an aa gun if they blitzed in 2 steps  (sgb)</li>
 
@@ -4448,7 +4450,7 @@ changes for 0.7.1
 
   <li>- fixed bug [ 1198828 ]Heavy Bomber Tech Broken 0.5.3 (sgb)</li>
 
-</ul><h3>Changes for 0.5.3</h3><ul>
+</ul><h2>Changes for 0.5.3</h2><ul>
 
   <li>- added europe and pacific maps (incomplete versions) by iron cross (George_H)</li>
 
@@ -4502,13 +4504,13 @@ changes for 0.7.1
 
   <li>- put neutral player color in map.properties (sgb)</li>
 
-</ul><h3>Changes for 0.5.2.2</h3><ul>
+</ul><h2>Changes for 0.5.2.2</h2><ul>
 
   <li>- fixed Dont play button on client screen. (sgb)</li>
 
   <li>- threading fixes. (sgb)</li>
 
-</ul><h3>Changes for 0.5.2</h3><ul>
+</ul><h2>Changes for 0.5.2</h2><ul>
 
   <li>- add switch in map.properties to disable scrolling map around the edges (sgb)</li>
  
@@ -4592,7 +4594,7 @@ changes for 0.7.1
 
   <li>- Add micro to Version, ie version can now be xx.xx.xx.xx (sgb)</li>
 
-</ul><h3>Changes for 0.5.1</h3><ul>
+</ul><h2>Changes for 0.5.1</h2><ul>
 
   <li>- Fixed bug where defending transported units were not correctly removed when their transports were killed. (Ali Ibrahim)</li>
 
@@ -4634,7 +4636,7 @@ changes for 0.7.1
 
   <li>- Added capability to bid for allies. (Ali Ibrahim)</li>
 
-</ul><h3>Changes for 0.5.0</h3><ul>
+</ul><h2>Changes for 0.5.0</h2><ul>
 
   <li>- Added TUV (total unit value) column in statistics panel. Added TUV lost in battle as part of battle end message. (Ali Ibrahim)</li>
 
@@ -4654,7 +4656,7 @@ changes for 0.7.1
 
   <li>- Added warning for users using Java 1.5 about some serialization problems which cause an incompatibility with saved games in Java 1.4. (George_H)</li>
 
-</ul><h3>Changes for 0.4.9</h3><ul>
+</ul><h2>Changes for 0.4.9</h2><ul>
 
   <li>- Fix for bug #1010428 bypassing the unit selection popup message when there is only 1 unit to be moved. (Ali Ibrahim)</li>
 
@@ -4674,7 +4676,7 @@ changes for 0.7.1
 
   <li>- Now defending planes can land in any adjacent territory if their carrier is lost in combat. (Ali Ibrahim)</li>
 
-</ul><h3>Changes for 0.4.8</h3><ul>
+</ul><h2>Changes for 0.4.8</h2><ul>
 
   <li>- Automatic casualty selection has been also added (Ali Ibrahim)</li>
 
