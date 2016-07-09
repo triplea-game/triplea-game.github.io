@@ -5,10 +5,10 @@ permalink: /docs/
 ---
 
 * [Release Notes]({{ "/release_notes" | prepend: site.baseurl }})
-* [Bug Report]({{ "/bug_report" | prepend: site.baseurl }})
 
 ## FAQ:
 
+* [Submit Bug Report]({{ "/bug_report" | prepend: site.baseurl }})
 * [Frequently Asked Questions]({{ "/faq" | prepend: site.baseurl }})
 * [Game Options](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4425827.html)
 * [Lobby Rules](http://www.tripleawarclub.org/modules/newbb/viewtopic.php?topic_id=100&forum=1)
