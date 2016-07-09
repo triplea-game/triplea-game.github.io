@@ -13,32 +13,27 @@ permalink: /release_notes/
 
 <h3>Game UI</h3>
 <ul>
-<li>- Map Download Window has been updated to show installed and out of date maps in tabs. Can now remove installed maps from the download window. Maps are now hosted on Github and the download speed is faster, download progress bars have been added</li> 
-<li>- A new settings window is availabe in the game menu, some settings options have been moved there, and some new ones made available.</li>
-<li>- Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.</li>
-<li>- New option to draw nation mini-flags next to, or underneath units</li<>
-</ul>
-
-<h3>Game Controls</h3>
-<ul>
-<li>- Pressing the 'u' key while hovering over moved units will undo the move (note, there is a bug where the map loses key focus, click the map first and then the 'u' key will work: https://github.com/triplea-game/triplea/issues/305)</li>
-</ul>
-
-<h3>AI Updates</h3>
-<ul>
-<li>- AI will now do strategic bombing</li>
-</ul>
-
-<h3>General Updates</h3>
-<ul>
-<li>- Wav audio files have been converted to mp3, reducing game and map download size.  Support for wav files has been dropped.</li> 
-</ul>
-
-<br />
-<h2>Changes for 1.8.0.11</h2>
-<ul>
-
   <li>- Minimum Java version is now Java 1.8</li>
+
+  <li>- New Install4j Installers (gaborbernat)</li>
+  
+  <li>- Combat window auto-continues after a short delay when all defensive units are killed, no more waiting for a needless click in that scenario.</li>
+
+  <li>- Updated canals to check if at least 1 is passable instead of all if (redrum)</li>
+
+  <li>- Map Download Overhaul - Tabbed View with Progress Bars and additional features, download progress bars, and can now remove downloaded maps</li>
+
+  <li>- A new settings window is availabe in the game menu, some settings options have been moved there, and some new ones made available.</li>
+
+  <li>- Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.</li>
+
+  <li>- New option to draw nation mini-flags next to, or underneath units</li<>
+
+  <li>- Pressing the 'u' key while hovering over moved units will undo the move (note, there is a bug where the map loses key focus, click the map first and then the 'u' key will work: https://github.com/triplea-game/triplea/issues/305)</li>
+
+  <li>- Wav audio files have been converted to mp3, reducing game and map download size.  Support for wav files has been dropped.</li> 
+
+  <li>- Improve Planes Can Not Land Warning  #476</li>
 
   <li>- Removing all "Grid" games (Chess, Checkers, Go, Kings Table) as well as inaccessible puzzle games (N-Puzzle and Tic-Tac-Toe). (veqryn)</li>
 
@@ -46,65 +41,39 @@ permalink: /release_notes/
 
   <li>- Performance improvement that allows games to start more quickly, background map parsing is halted when a game is launched, PR#74 (lafayette)</li>
 
-  <li>- PNG files made 17MB smaller with lossless compression 'optipng', PR#146 (lafayette)</li>
-
-  <li>- Install4j now used to create installer packages, PR#218 (gaborbernat)</li>
-
-  <li>- Installer packages automatically deployed to github whenever code is merged, PR#261 (lafayette)</li>
-
   <li>- Performance improvement to speed up map parsing time, read only the game XML data and do not read the entire Zip file from disk. This speeds up map parsing to be typically under 100ms when before it could be a few seconds for largers maps. (lafayette)</li>
+  
+  <li>- Add support for to play mp3 audio files in addition to wav files. </li>
 
-  <li>- Add support for to play mp3 audio files in addition to wav files. PR#201 (lafayette)</li>
-
-  <li>- Bugfix - 'delete corrupt map' game crash when the confirmation dialog window was shown. PR#304 (lafayette)</li>
-
-  <li>- Map parsing performance improvement, some maps with long territory lists will now loader faster. PR#293 (lafayette)</li>
+  <li>- Map parsing performance improvement, some maps with long territory lists will now loader faster. </li>
 
   <li>- Code improvement - Unit test runtime reduced from 31s to 21s. PR#115 (lafayette)</li>
 
   <li>- Map parsing improvement - map zip data is read more efficiently, map data is loaded 10x faster. PR #240 (lafayette)</li>
+  
+  <li>- AI will now do strategic bombing</li>
 
-  <li>- Undo unit moves with 'u' key - PR#253</li>
+  <li>- AI - Added check for whether factories can be placed to purchase (redrum)</li>
 
-  <li>- AI - Added check for whether factories can be placed to purchase  #270 (redrum)</li>
-
-  <li>- AI - consider enemy turn order  #282 (redrum)</li>
+  <li>- AI - consider enemy turn order  (redrum)</li>
 
   <li>- AI - consider multi-nation attacks  (redrum)</li>
+  
+  <li>- AI - Add new Fast AI player</li>
 
-  <li>- Github Map Downloads #286</li>
+  <li>- AI - Add capital value for amphib attacks </li>
 
-  <li>- Map parsing performance improvement #293</li>
+  <li>- Add performance debug console</li>
 
-  <li>- AI - Add capital value for amphib attacks  #316</li>
-
-  <li>- Add a 'clear' button to the error console.  #332</li>
-
-  <li>- Add performance debug console   #333, #335 </li>
-
-  <li>- Updated canals to check if at least 1 is passable instead of all if  #343 (redrum)</li>
-
-  <li>- New Install4j Installers  #372  (gaborbernat)</li>
-
-  <li>- AI - Add new Fast AI player #379</li>
-
-  <li>- Ai remove strong ai  #394</li>
-
-  <li>- Add total units in territory count to TerritoryPanel  #399</li>
-
-  <li>- Show Engine Version on the UI + Consolidate Engine Version and Game Configuration  #426</li>
-
+  <li>- Ai remove strong ai</li>
+  
   <li>- AI - Update casualty selection unit value calculation to consider  #447</li>
 
-  <li>- Map Download Overhaul - Tabbed View with Progress Bars and additional features  #449</li>
+  <li>- Add total units in territory count to TerritoryPanel</li>
 
-  <li>- Improve Planes Can Not Land Warning  #476</li>
-
-  <li>- Remove Delay on the Startup Map and Engine Version Checks - #470</li>
-
-  <li>- Default Politics Action is No - #497</li>
-
-
+  <li>- Show Engine Version on the UI + Consolidate Engine Version and Game Configuration  #426</li>
+  
+  <li>- Bugfix - 'delete corrupt map' game crash when the confirmation dialog window was shown. PR#304 (lafayette)</li>
 </ul>
 
 <br />
