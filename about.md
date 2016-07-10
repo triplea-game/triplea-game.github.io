@@ -19,7 +19,7 @@ TripleA would have continued on this slow trajectory, but two events occurring r
 
 TripleA 0.3.1 was probably the first version that was really playable in networked mode. And since then, increasing community interest, and with great contributions from a number of people, TripleA continues to grow and prosper.
 
-<a id="features">
+<a name="features">
 
 ## TripleA Features
 
