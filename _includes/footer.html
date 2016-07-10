@@ -1,47 +1,57 @@
 <footer id="colophon" class="site-footer">
-
-    <div class="footer-col-wrapper">
-		<div id="footer_col" class="footer_col_1 getting_started">
-			<h3>Getting Started</h2>
-				<ul>
-					<li><a href="{{ "/download" | prepend: site.baseurl }}">Download / Installing</a></li>
-					<li><a href="{{ "/docs" | prepend: site.baseurl }}">Documentation</a></li>
-					<li><a href="{{ "/community" | prepend: site.baseurl }}">Community</a></li>
-					<li><a href="{{ "/contribute" | prepend: site.baseurl }}">Contribute</a></li>
-				</ul>
-			</div>
-		<div id="footer_col" class="footer_col_2 videos">
-			<h3>Videos</h2>
-				<ul>
-					<li><a href="http://youtu.be/MX9ehmKFdmI">Introduction to TripleA</a></li>
-					<li><a href="http://youtu.be/pIE3rpDD6PM">Playing Online</a></li>
-					<li><a href="http://youtu.be/c9cfHsoWQoI">Playing by Email and by Forum</a></li>
+  <div class="footer-col-wrapper">
+    <div id="footer_col" class="footer_col_1 getting_started">
+      <h3>Getting Started</h2>
+      <ul>
+        <li><a href="{{ "/download" | prepend: site.baseurl }}">Download / Installing</a></li>
+        <li><a href="{{ "/docs" | prepend: site.baseurl }}">Documentation</a></li>
+	    	<li><a href="{{ "/community" | prepend: site.baseurl }}">Community</a></li>
+	    	<li><a href="{{ "/contribute" | prepend: site.baseurl }}">Contribute</a></li>
+    	</ul>
+    </div>
+    <div id="footer_col" class="footer_col_2 videos">
+      <h3>Videos</h2>
+      <ul>
+        <li><a href="http://youtu.be/MX9ehmKFdmI">Introduction to TripleA</a></li>
+	    	<li><a href="http://youtu.be/pIE3rpDD6PM">Playing Online</a></li>
+	    	<li><a href="http://youtu.be/c9cfHsoWQoI">Playing by Email and by Forum</a></li>
         <li><a href="http://youtu.be/FtaSoypRveg">Advanced Features</a></li>
         <li><a href="https://www.youtube.com/channel/UC5ZXClXcn6mHxpSTHA3eLZg">TripleA on Youtube</a></li>
       </ul>
     </div>
-      <div id="footer_col" class="footer_col_3 about">
-        <h3>About</h2>
-          <ul>
-          <li><a href="{{ "/about" | prepend: site.baseurl }}">About TripleA</a></li>
-          <li><a href="{{ "/about/#features" | prepend: site.baseurl }}">Features</a></li>
-          <li><a href="{{ "/maps" | prepend: site.baseurl }}">Maps</a></li>
-          <li><a href="http://www.gnu.org/copyleft/gpl.html">License</a></li>
-          <li><a href="http://sourceforge.net/donate/index.php?group_id=44492">Donate</a></li>
-        </ul>
-      </div>
-        <div id="footer_col" class="footer_col_4 development">
-          <h3>Development</h2>
-            <ul>
-            <li><a href="https://github.com/triplea-game/triplea/issues/new">Request a Feature</a></li>
-            <li><a href="https://github.com/triplea-game/triplea">View Source Code on Github</a></li>
-            <li><a href="https://github.com/triplea-game/triplea/issues">Current Issues on Github</a></li>
-            <li><a href="http://tripleadev.1671093.n2.nabble.com/">Development Forum</a></li>
-          </ul>
-        </div>
+    <div id="footer_col" class="footer_col_3 about">
+      <h3>About</h2>
+      <ul>
+        <li><a href="{{ "/about" | prepend: site.baseurl }}">About TripleA</a></li>
+        <li><a href="{{ "/about/#features" | prepend: site.baseurl }}">Features</a></li>
+        <li><a href="{{ "/maps" | prepend: site.baseurl }}">Maps</a></li>
+        <li><a href="http://www.gnu.org/copyleft/gpl.html">License</a></li>
+        <li><a href="http://sourceforge.net/donate/index.php?group_id=44492">Donate</a></li>
+      </ul>
     </div>
+    <div id="footer_col" class="footer_col_4 development">
+      <h3>Development</h2>
+        <ul>
+          <li><a href="https://github.com/triplea-game/triplea/issues/new">Request a Feature</a></li>
+          <li><a href="https://github.com/triplea-game/triplea">View Source Code on Github</a></li>
+          <li><a href="https://github.com/triplea-game/triplea/issues">Current Issues on Github</a></li>
+          <li><a href="http://tripleadev.1671093.n2.nabble.com/">Development Forum</a></li>
+        </ul>
+    </div>
+  </div>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <span class="fb-like" data-href="http://triplea-game.github.io/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></span>
 
-    <!--<img class="footer-img" src="images/nations.png" alt="Powers in a Typical TripleA Game">-->
-    <p class="footer-text"> &copy; 2015 TripleA Contributors. Usage of this software is subject to the <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.
+  <!--<img class="footer-img" src="images/nations.png" alt="Powers in a Typical TripleA Game">-->
+  <br>
+  <br>
+  <p class="footer-text"> &copy; 2015 TripleA Contributors. Usage of this software is subject to the <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.
 
 </footer>
