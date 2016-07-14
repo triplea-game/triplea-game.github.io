@@ -7,36 +7,32 @@ permalink: /release_notes/
 ## Prerelease - 1.9.0.0
 
 *   \- Minimum Java version is now Java 1.8
-*   \- New Install4j Installers (gaborbernat)
+*   \- New Install4j Installers
 *   \- Combat window auto-continues after a short delay when all defensive units are killed, no more waiting for a needless click in that scenario.
-*   \- Updated canals to check if at least 1 is passable instead of all if (redrum)
+*   \- Updated canals to check if at least 1 is passable instead of all
 *   \- Map Download Overhaul - Tabbed View with Progress Bars and additional features, download progress bars, and can now remove downloaded maps
+*   \- Downloaded maps are now playable right away, no game restart needed
 *   \- A new settings window is availabe in the game menu, some settings options have been moved there, and some new ones made available.
 *   \- Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.
 *   \- New option to draw nation mini-flags next to, or underneath units
 *   \- Pressing the 'u' key while hovering over moved units will undo the move (note, there is a bug where the map loses key focus, click the map first and then the 'u' key will work: [View issue Ticket](https://github.com/triplea-game/triplea/issues/305))
 *   \- Wav audio files have been converted to mp3, reducing game and map download size. Support for wav files has been dropped.
-*   \- Improve Planes Can Not Land Warning #476
-*   \- Removing all "Grid" games (Chess, Checkers, Go, Kings Table) as well as inaccessible puzzle games (N-Puzzle and Tic-Tac-Toe). (veqryn)
-*   \- Performance improvement for bot servers to reduce CPU usage when hosting games, PR#53\. (lafayette)
-*   \- Performance improvement that allows games to start more quickly, background map parsing is halted when a game is launched, PR#74 (lafayette)
-*   \- Performance improvement to speed up map parsing time, read only the game XML data and do not read the entire Zip file from disk. This speeds up map parsing to be typically under 100ms when before it could be a few seconds for largers maps. (lafayette)
+*   \- Removing all "Grid" games (Chess, Checkers, Go, Kings Table) as well as inaccessible puzzle games (N-Puzzle and Tic-Tac-Toe).
+*   \- Performance improvements: bot servers will use less CPU, games will start faster, maps are parsed more quickly but are no longer loaded in the background
+*   \- Performance improvement that allows games to start more quickly, background map parsing is halted when a game is launched
+*   \- Performance improvement to speed up map parsing time, read only the game XML data and do not read the entire Zip file from disk. This speeds up map parsing to be typically under 100ms when before it could be a few seconds for largers maps
 *   \- Add support for to play mp3 audio files in addition to wav files.
-*   \- Map parsing performance improvement, some maps with long territory lists will now loader faster.
-*   \- Code improvement - Unit test runtime reduced from 31s to 21s. PR#115 (lafayette)
-*   \- Map parsing improvement - map zip data is read more efficiently, map data is loaded 10x faster. PR #240 (lafayette)
 *   \- AI will now do strategic bombing
-*   \- AI - Added check for whether factories can be placed to purchase (redrum)
-*   \- AI - consider enemy turn order (redrum)
-*   \- AI - consider multi-nation attacks (redrum)
+*   \- AI - Added check for whether factories can be placed to purchase
+*   \- AI - consider enemy turn order
+*   \- AI - consider multi-nation attacks
 *   \- AI - Add new Fast AI player
 *   \- AI - Add capital value for amphib attacks
-*   \- Add performance debug console
 *   \- Ai remove strong ai
-*   \- AI - Update casualty selection unit value calculation to consider #447
+*   \- AI - Update casualty selection unit value calculation to consider
 *   \- Add total units in territory count to TerritoryPanel
-*   \- Show Engine Version on the UI + Consolidate Engine Version and Game Configuration #426
-*   \- Bugfix - 'delete corrupt map' game crash when the confirmation dialog window was shown. PR#304 (lafayette)
+*   \- Show Engine Version on the UI + Consolidate Engine Version and Game Configuration
+*   \- Bugfix - 'delete corrupt map' game crash when the confirmation dialog window was shown
 
 ## Changes for 1.8.0.9
 
