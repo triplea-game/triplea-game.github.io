@@ -13,7 +13,7 @@ permalink: /release_notes/
 *   \- Combat window auto-continues after a short delay when a dice roll results in all misses, or all units killed
 *   \- Map Download Overhaul - Tabbed View with progress bars, can remove downloaded maps from the download window, and a game restart is no longer required to play new maps
 *   \- An updated, beta version, map creator has been added, available from the engine settings menu from the main launch screen
-*   \- Improved missing map behavior when joining games, the game will still crash, but instead of an error message there is now a prompt asking if you would like to download the missing map. Clicking 'yes' will begin teh missing map download.
+*   \- Improved missing map behavior when joining games, the game will still crash, but instead of an error message there is now a prompt asking if you would like to download the missing map. Clicking 'yes' will begin the missing map download.
 *   \- Updated canals to check if at least 1 canal is passable between any two sea territories, rather than checking that every canal is passable
 *   \- A new settings window is availabe from the game menu, some settings options have been moved there, and some new ones made available.
 *   \- Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.
