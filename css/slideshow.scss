@@ -3,7 +3,7 @@
 
 /* Slideshow container */
 .slideshow-container {
- max-height: 750px;
+ max-height: 100%;
  position: absolute;
  display: block;
  bottom: 0;
@@ -87,20 +87,14 @@
   text-align: center;
 }
 
-/* Fading animation */
-.fade {
- -webkit-animation-name: fade;
- -webkit-animation-duration: 1.5s;
- animation-name: fade;
- animation-duration: 1.5s;
+@media screen and (max-device-height: 750px){
+  .frame{
+    height: 250px;
+  }
 }
 
-@-webkit-keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
-}
-
-@keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
+@media screen and (max-device-aspect-ratio: 3/4){
+  .frame{
+    height: 250px;
+  }
 }
