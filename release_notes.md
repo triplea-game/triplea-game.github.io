@@ -4,7 +4,7 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## Prerelease - 1.9.0.0
+## Changes for 1.9.0.0
 
 *   \- Minimum Java version is now Java 1.8
 *   \- New Install4j Installers available for all OS, replaces makensis installers
