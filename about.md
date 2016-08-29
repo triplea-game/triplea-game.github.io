@@ -59,7 +59,6 @@ Though the majority of our maps and games revolve around World War II, we also h
 * Futuristic games, like Star Wars, or Zombieland
 
 ### User Created Content:
-* TripleA contains the ability to download maps.  Just click the "Download Maps" button, and put in the link of where the maps are coming from.  This will display a list of all the maps hosted by that website.  These links can be found on our forum and in our online lobby.  (We do not provide the links ourselves since the maps are user created and hosted by such users.)
-* Though TripleA only comes with four maps and games installed, there are over 60 user created maps and over 100 user created games for these maps.  Many of these games, like "New World Order, have generated quite a following.
-* Simple and easy to create your own maps and games for.  
+* TripleA contains the ability to create and download user made maps.
+* Many of these maps, like "New World Order" have generated quite a following.
 * Rules can vary by map, depending on what the map creator wants.
