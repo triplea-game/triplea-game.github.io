@@ -4,23 +4,31 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## Prerelease - 1.9.0.0
+## Changes for 1.9.0.0
 
 *   \- Minimum Java version is now Java 1.8
-*   \- New Install4j Installers
-*   \- Game download size reduced to about 50MB from 350MB
+*   \- New Install4j Installers available for all OS, replaces makensis installers
 *   \- Wav audio files have been converted to mp3, reducing game and map download size. Support for wav files has been dropped.
-*   \- Combat window auto-continues after a short delay when a dice roll results in all misses, or all units killed
-*   \- Map Download Overhaul - Tabbed View with progress bars, can remove downloaded maps from the download window, and a game restart is no longer required to play new maps
 *   \- An updated, beta version, map creator has been added, available from the engine settings menu from the main launch screen
-*   \- Improved missing map behavior when joining games, the game will still crash, but instead of an error message there is now a prompt asking if you would like to download the missing map. Clicking 'yes' will begin the missing map download.
-*   \- Updated canals to check if at least 1 canal is passable between any two sea territories, rather than checking that every canal is passable
-*   \- A new settings window is availabe from the game menu, some settings options have been moved there, and some new ones made available.
-*   \- Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.
-*   \- New option to draw nation mini-flags next to, or underneath units
-*   \- Pressing the 'u' key while hovering over moved units will undo the move (note, there is a bug where the map loses key focus in multiplayer games, to work around this, click the map first and then the 'u' key will work: [View issue Ticket](https://github.com/triplea-game/triplea/issues/305))
 *   \- Removing all "Grid" games (Chess, Checkers, Go, Kings Table) as well as inaccessible puzzle games (N-Puzzle and Tic-Tac-Toe).
 *   \- Performance improvement, bot servers will use less CPU, games will start faster
+
+### Game Rule Updates
+*   \- Updated canals to check if at least 1 canal is passable between any two sea territories, rather than checking that every canal is passable
+
+### Game Engine UI and Behavior
+*   \- Combat window auto-continues after a short delay when a dice roll results in all misses, or all units hit
+*   \- Improved missing map behavior when joining games, the game will still crash, but instead of an error message there is now a prompt asking if you would like to download the missing map. Clicking 'yes' will begin the missing map download.
+*   \- A new settings window is availabe from the game menu, some settings options have been moved there, and some new ones made available.
+*   \- Unit route drawing updated to draw smoother routes, with arrows at the end of the route line to indicate move direction.
+*   \- Add total army unit count to the TerritoryPanel
+*   \- Main screen now shows the Engine Version
+*   \- Core game settings consolidated and are now defined in a 'game_engine.properties'. The file controls game engine version and lobby URL
+*   \- New option to draw nation mini-flags next to, or underneath units
+*   \- Pressing the 'u' key while hovering over moved units will undo the move (note, there is a bug where the map loses key focus in multiplayer games, to work around this, click the map first and then the 'u' key will work: [View issue Ticket](https://github.com/triplea-game/triplea/issues/305))
+
+### AI Changes
+
 *   \- AI will now do strategic bombing
 *   \- AI - Added check for whether factories can be placed to purchase
 *   \- AI - consider enemy turn order
@@ -29,13 +37,16 @@ permalink: /release_notes/
 *   \- AI - Add capital value for amphib attacks
 *   \- Ai - remove strong ai
 *   \- AI - Update casualty selection unit value calculation to consider
-*   \- Add total army unit count to the TerritoryPanel
-*   \- Show Engine Version on the UI
-*   \- Core game settings consolidated and are now defined in a 'game_engine.properties'. The file controls game engine version and lobby URL
-*   \- Bugfix - 'delete corrupt map' game crash when the confirmation dialog window was shown
-*   \- Bugfix - edit menu select nation now has scrollbars when there is a long nation list
+
+### Map Changes
+*   \- Map Download Overhaul - Tabbed View with progress bars, can remove downloaded maps from the download window, and a game restart is no longer required to play new maps
 *   \- Maps have been moved to Github, they will download faster, and map development can now be done with far less administrative support.
 *   \- Game engine will pick up map 'clones' from the downloaded maps folder. This means you can clone a map repo directly in the download maps, update it, play it, and then you can commit and push the changes to then update the main map repo. Map makers should no longer have to do any map zipping or unzipping.
+
+### Bug Fixes
+*   \- Bugfix - 'delete corrupt map' game crash when the confirmation dialog window was shown
+*   \- Bugfix - edit menu select nation now has scrollbars when there is a long nation list
+
 
 ## Changes for 1.8.0.9
 
