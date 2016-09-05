@@ -7,7 +7,7 @@ markdown: kramdown
 
 # TripleA version information. Update each time a new version is released.
 triplea-version: 1.8.0.9
-windows-32bit-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3010/TripleA_1.9.0.0.3010_windows-32bit.exe 
-windows-64bit-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3010/TripleA_1.9.0.0.3010_windows-64bit.exe
-mac-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3010/TripleA_1.9.0.0.3010_macos.dmg
-linux-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3010/TripleA_1.9.0.0.3010_unix.sh 
+windows-32bit-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3057/TripleA_1.9.0.0.3057_windows-32bit.exe 
+windows-64bit-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3057/TripleA_1.9.0.0.3057_windows-64bit.exe
+mac-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3057/TripleA_1.9.0.0.3057_macos.dmg
+linux-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3057/TripleA_1.9.0.0.3057_unix.sh 
