@@ -9,6 +9,10 @@ body {
 a {
     color: $brand-color;
 }
+ul > li, ol > li {
+  display:list-item;
+  margin-left: 2em;
+}
 code {
     background-color: $grey-color-light;
     border: 1px solid $grey-color;
