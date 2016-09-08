@@ -1,13 +1,7 @@
 # Site settings
 title: "TripleA: The World's Foremost Open Source Grand Strategy Game"
-description: TripleA is a free online turn based strategy game and board game engine, similar to such board games as Axis &amp; Allies or Risk. TripleA comes with multiple games and over 100 more games can be downloaded from the user community. Supports single player vs AI, hot-seat, Play by Email and Forum, and a hosted Online lobby for live play online.
+description: TripleA is a free online turn based strategy game and board game engine, similar to such board games as Axis &amp; Allies or Risk. TripleA comes with multiple games and over 100 more maps can be downloaded from the user community. Supports single player vs AI, hot-seat, play by email and forum, and a hosted Online lobby for live play online.
 
-# Build settings
 markdown: kramdown
 
-# TripleA version information. Update each time a new version is released.
-triplea-version: 1.8.0.9
-windows-32bit-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3096/TripleA_1.9.0.0.3096_windows-32bit.exe 
-windows-64bit-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3096/TripleA_1.9.0.0.3096_windows-64bit.exe
-mac-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3096/TripleA_1.9.0.0.3096_macos.dmg
-linux-link: https://github.com/triplea-game/triplea/releases/download/1.9.0.0.3096/TripleA_1.9.0.0.3096_unix.sh 
+game-version: 1.9.0.0.3133
