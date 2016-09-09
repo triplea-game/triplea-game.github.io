@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 1.8.0.9 Upgrade Notes
+permalink: /upgrade_notes/
 ---
 
 ## Upgrading from 1.8.0.9 to 1.9
