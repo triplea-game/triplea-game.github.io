@@ -4,10 +4,11 @@ title: All Maps
 permalink: /maps/all/
 ---
 
-<p><a href="{{ "/maps" | prepend: site.baseurl }}">Maps</a> |  <a href="{{ "/maps/categories" | prepend: site.baseurl }}">Categories</a> | <a href="{{ "/maps/mods" | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ "/maps/tools" | prepend: site.baseurl }}">Map Tools</a> | <a href="{{ "/maps/all" | prepend: site.baseurl }}">All</a></p>
+<p><a href="{{ "/maps" | prepend: site.baseurl }}">Maps</a> |  <a href="{{ "/maps/categories" | prepend: site.baseurl }}">Categories</a> | <a href="{{ "/maps/mods" | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ "/maps/all" | prepend: site.baseurl }}">All</a></p>
 
 <div class="maps-col-wrapper">
   {% for map in site.data.triplea_maps %}
+  {% if map.mapType != "MAP_TOOL" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
     <h3>
       <a href="{{ map.url }}" title="{{ map.mapName }}">
@@ -21,5 +22,6 @@ permalink: /maps/all/
       </p>
 
   </div>
+  {% endif %}
   {% endfor %}
 </div>
