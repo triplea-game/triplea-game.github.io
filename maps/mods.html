@@ -11,15 +11,11 @@ permalink: /maps/mods/
 {% for map in site.data.triplea_maps) %}
 {% if map.mapType == "MAP_MOD" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
-    <h3>
-      <a href="{{ map.url }}" title="{{ map.mapName }}">
-        {{ map.mapName }}
-      </a>
-    </h3>
+    <h3>{{ map.mapName }}</h3>
       <!--<p class="maps_col_desc">{{ map.description }}</p>-->
       <p>
   <!--<span class="maps_col_version">Verison {{ map.version }}</span>-->
-  <a class="maps_col_button button" href="{{ map.url }}">Download</a>
+  <a class="maps_col_button button" href="{{ "/docs/downloading_maps" | prepend: site.baseurl }}">Download</a>
 </p>
   </div>
 {% endif %}
@@ -31,15 +27,11 @@ permalink: /maps/mods/
 {% for map in site.data.triplea_maps) %}
 {% if map.mapType == "MAP_SKIN" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
-    <h3>
-      <a href="{{ map.url }}" title="{{ map.mapName }}">
-        {{ map.mapName }}
-      </a>
-    </h3>
+    <h3>{{ map.mapName }}</h3>
       <!--<p class="maps_col_desc">{{ map.description }}</p>-->
       <p>
   <!--<span class="maps_col_version">Verison {{ map.version }}</span>-->
-  <a class="maps_col_button button" href="{{ map.url }}">Download</a>
+  <a class="maps_col_button button" href="{{ "/docs/downloading_maps" | prepend: site.baseurl }}">Download</a>
 </p>
   </div>
 {% endif %}
