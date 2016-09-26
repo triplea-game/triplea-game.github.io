@@ -211,6 +211,40 @@ a:hover {
 }
 
 /**
+ * Maps Page
+ */
+
+#maps-col-wrapper {
+  width: 50%;
+  float: left;
+}
+
+#maps_col {
+  width: 30%;
+  float: left;
+  background-color: $grey-color-light;
+  border: 1px solid $grey-color;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+}
+.maps-col-section {
+  clear: both;
+}
+
+.section-title {
+  padding-top: 0.75em;
+}
+
+.maps_col_button {
+    padding-top: 0.75rem;
+    padding-right: 1rem;
+    padding-bottom: 0.78125rem;
+    padding-left: 1rem;
+    float: right;
+}
+
+/**
  * Community Page
  */
 

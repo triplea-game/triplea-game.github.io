@@ -15,7 +15,3 @@ permalink: /docs/
 * [Lobby Conduct Rules](http://www.tripleawarclub.org/modules/newbb/viewtopic.php?topic_id=100&forum=1)
 * [Game Rules Manual]({{ "/files/TripleA_RuleBook.pdf" | prepend: site.baseurl }})
 * [TripleA Wiki Rulebook](http://en.wikibooks.org/wiki/TripleA)
-
-
-
-
