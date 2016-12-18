@@ -5,21 +5,6 @@ permalink: /developer_documentation/
 ---
 		<h2>Developer Documentation :: Quick Nav</h2>
 		<ul>
-			<li><b>1.0</b> <a href="#sec_1">Project Management With Subversion</a></li>
-
-			<li><b>2.0</b> <a href="#sec_2">Compiling The TripleA Source Code</a></li>
-				<ul>
-					<li><b>2.1</b> <a href="#sec_2.1">Prerequisites</a></li>
-					<li><b>2.2</b> <a href="#sec_2.2">ANT Commands</a></li>
-					<li><b>2.3</b> <a href="#sec_2.3">Compiling on Microsoft Windows Systems</a></li>
-					<li><b>2.4</b> <a href="#sec_2.4">Compiling on GNU/Linux, Mac OS X, and UNIX Style Systems</a></li>
-				</ul>
-			
-			<li><b>3.0</b> <a href="#sec_3">Running TripleA</a></li>
-				<ul>
-					<li><b>3.1</b> <a href="#sec_3.1">How TripleA Locates its Root Directory</a></li>
-				</ul>
-			
 			<li><b>4.0</b> <a href="#sec_4">Network Configuration</a></li>
 				<ul>
 					<li><b>4.1</b> <a href="#sec_4.1">Acquiring the IP Address</a></li>
@@ -41,7 +26,7 @@ permalink: /developer_documentation/
 					<li><b>5.1.8</b> <a href="#sec_5.1.8">Making a Map</a>
 				</ul>
 					
-				<li><b>5.2</b> <a href="#sec_5.2">Map Configuration</a></li></li>
+				<li><b>5.2</b> <a href="#sec_5.2">Map Configuration</a></li>
 					<ul>
 						<li><b>5.2.1</b> <a href="#sec_5.2.1">Map Properties</a></li>
 						<li><b>5.2.2</b> <a href="#sec_5.2.2">Capital Cities</a></li>
@@ -61,1000 +46,18 @@ permalink: /developer_documentation/
 						<li><b>5.3.9</b> <a href="#sec_5.3.9">Production Rules</a></li>
 						<li><b>5.3.10</b> <a href="#sec_5.3.10">Unit Attachment</a></li>
 						<li><b>5.3.11</b> <a href="#sec_5.3.11">Tech Attachment</a></li>
-						<li><b>5.3.12</b> <a href="#sec_5.3.12">Territory Attachment</a></li>
-						<li><b>5.3.13</b> <a href="#sec_5.3.13">Initializations</a></li>
-						<li><b>5.3.14</b> <a href="#sec_5.3.14">Game Properties</a></li>
 					</ul>
 			
-			<li><b>6.0</b> <a href="#sec_6">Engine Code Overview</a></li>
+			<li><b>6.0</b> <a href="#sec_6.5">Engine Code Overview</a></li>
 				<ul>
-					<li><b>6.1</b> <a href="#sec_6.1">Design Goals</a></li>
-					<li><b>6.2</b> <a href="#sec_6.2">The Big Picture</a></li>
-					<li><b>6.3</b> <a href="#sec_6.3">Game Data</a></li>
-					<li><b>6.4</b> <a href="#sec_6.4">Attachments</a></li>
 					<li><b>6.5</b> <a href="#sec_6.5">Game Play Sequence</a></li>
 					<li><b>6.6</b> <a href="#sec_6.6">Delegates</a></li>
-					<li><b>6.7</b> <a href="#sec_6.7">Step Life Cycle</a></li>
-					<li><b>6.8</b> <a href="#sec_6.8">Changing Game Data</a></li>
-					<li><b>6.9</b> <a href="#sec_6.9">Game Players</a></li>
-					<li><b>6.10</b> <a href="#sec_6.10">Communication</a></li>
 				</ul>
-			
-			<li><b>7.0</b> <a href="#sec_7">TripleA Security</a></li>
-				<ul>
-					<li><b>7.1</b> <a href="#sec_7.1">Common Misconceptions</a></li>
-					<li><b>7.2</b> <a href="#sec_7.2">Random Numbers and Encryption</a></li>
-					<li><b>7.3</b> <a href="#sec_7.3">Online Security</a></li>
-					<li><b>7.4</b> <a href="#sec_7.4">PBEM Security</a></li>
-					<li><b>7.5</b> <a href="#sec_7.5">Statistics</a></li>
-				</ul>
-			
-			<li><b>8.0</b> <a href="#sec_8">AI (Artificial Intelligence)</a></li>
-				
-			<li><b>9.0</b> <a href="#sec_9">TripleA Release Model</a></li>
-			<li><b>10.0</b> <a href="#sec_10">Developer Programming Conventions</a></li>
-			<li><b>11.0</b> <a href="#sec_11">Credits & Acknowledgements</a></li>
 		</ul>
 		<hr/>
 		<br/>
 		
-		<h2><a name="sec_1">1.0</a> Project Management With Subversion</h2>
-		<blockquote>
-			<p>
-				TripleA's source code is managed through the use of
-				<a href="http://sourceforge.net" target="_blank">Source-Forge's</a>
-				<b>Subversion</b> (svn) server. Developers use
-				subversion to read, write, remove, and revert files for the TripleA project.
-			</p>
 
-			<p>
-				The trunk for triplea can be accessed using the subversion url, https://svn.code.sf.net/p/triplea/code/trunk  <br>
-
-				The repository can be browsed online <a href="https://sourceforge.net/p/triplea/code/HEAD/tree/"> here</a>
-
-			</p>
-
-
-
-			<p>
-				If you are using windows it is highly recomended that you use <a href="http://tortoisesvn.tigris.org/">TortoiseSVN</a> as you svn client.
-
-			</p>
-
-			
-		</blockquote>
-		
-		
-			
-			
-		
-		<h2><a name="sec_2">2.0</a> Compiling The TripleA Source Code</h2>
-		<blockquote>
-			<p>
-				This section will go through the various details on how to successfully compile
-				the TripleA source code in order to get a runnable copy. TripleA can be compiled
-				in many different ways and with many different IDEs. For consistency and all around
-				compatibility; TripleA must be able to be compiled using the Java compiler by
-				Sun Micro systems and the compilation process be controlled by Apache's ANT. All these
-				tools are to be run from the command line.
-			</p>
-			
-			
-			<h4><a name="sec_2.1">2.1</a> Prerequisites</h4>
-			<blockquote>
-				<p>
-					There are a few prerequisites that need to be fulfilled before attempting to
-					start compilation process. We assume that the following packages (listed below)
-					are fully and properly installed.
-					
-					<ul>
-						<li>Apache ANT (<a target="_blank" href="http://ant.apache.org">http://ant.apache.org</a>)</li>
-						<li>Sun Micro Systems Compliant Java JDK (<a target="_blank" href="http://java.sun.com">http://java.sun.com</a>)</li>
-					</ul>
-				</p>
-				
-				<p>
-					These packages can be installed on various operating systems which include GNU/Linux, SGI/IRIX,
-					MS/Windows, Mac OS X, and others that allow for it.
-				</p>
-				
-				
-				<p>
-					<a href="#top">- Top -</a>
-				</p>
-			</blockquote>
-			
-			
-			<h4><a name="sec_2.2">2.2</a> ANT Commands</h4>
-			<blockquote>
-				<p>
-					These are a list of command line parameters that can be used with ANT on
-					TripleA. Each command tells ANT to do something different with the TripleA
-					source code.
-				</p>
-				
-				<p>
-					<table border="1" cellspacing="2" cellpadding="4">
-						<tr>
-							<td aligh="center" width="170" bgcolor="#ffcc99">
-								<b>Command</b>
-							</td>
-							
-							<td align="center" bgcolor="#ffcc99">
-								<b>Description</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td valign="top">
-								<b>ant compile</b>
-							</td>
-							
-							<td>
-								Compiles all TripleA source code files. Compiled classes are
-								placed in the <i>classes</i> folder.
-							</td>
-						</tr>
-						
-						<tr>
-							<td valign="top">
-								<b>ant compileClean</b>
-							</td>
-							
-							<td>
-								Removes previously compiled folders such as the
-								<i>classes, release, and savedGames</i> folders.
-								Once the removal is successful, it will compile
-								the TripleA source files.
-							</td>
-						</tr>
-						
-						<tr>
-							<td valign="top">
-								<b>ant clean</b>
-							</td>
-							
-							<td>
-								Removes the previously compiled copy of TripleA.
-								This will also remove the <i>savedGames, and release</i>
-								folders that may have been created with other ANT commands.
-							</td>
-						</tr>
-						
-						<tr>
-							<td valign="top">
-								<b>ant zip</b>
-							</td>
-							
-							<td>
-								Cleans, compiles, and packages a compiled copy of TripleA
-								in a Zip file. The zip file is placed in a folder named <i>release</i>.
-							</td>
-						</tr>
-						
-						<tr>
-							<td valign="top">
-								<b>ant zipSource</b>
-							</td>
-							
-							<td>
-								Runs the clean command and then packages all TripleA source files
-								in a Zip file. The Zip file is placed in a folder named <i>release</i>.
-							</td>
-						</tr>
-						<tr>
-							<td valign="top">
-								<b>ant release</b>
-							</td>
-							
-							<td>
-								Runs the clean command, then creates all the release files (except the mac specific builds) and places them in the release folder.
-								This command must be done on a windows machine with NSIS installed.
-							</td>
-						</tr>
-						
-						
-						<tr>
-							<td valign="top">
-								<b>ant patch</b>
-							</td>
-							
-							<td>
-								Constructs a <i>patch.jar</i> file with specified java class files
-								that were indicated in the <i>build.xml</i> document. This patch.jar
-								file can be used for a quick fix.
-							</td>
-						</tr>
-						
-						<tr>
-							<td valign="top">
-								<b>ant javadoc</b>
-							</td>
-							
-							<td>
-								Generates Java Documentation HTML using source code comments.
-							</td>
-						</tr>
-						
-						<tr>
-							<td valign="top">
-								<b>ant test</b>
-							</td>
-							
-							<td>
-								Initiates the JUnit tests.
-							</td>
-						</tr>
-						<tr>
-							<td valign="top">
-								<b>ant run</b>
-							</td>
-							
-							<td>
-								Compiles and launches TripleA
-							</td>
-						</tr>						
-					</table>
-				</p>
-				
-				<p>
-					<a href="#top">- Top -</a>
-				</p>
-			</blockquote>
-
-
-			<h4><a name="sec_2.3">2.3</a> Compiling on Microsoft Windows Systems</h4>
-			<blockquote>
-				<p>
-					A complete guide to compiling TripleA on MS/Windows has been
-					generously written by a member of the TripleA community, ZeroPilot.
-				</p>
-				
-				<p>
-					 The first step is to extract the contents of the zip file into a location
-					 of your choice. Once you have extracted all the files, you will see a folder
-					 named <i>triplea_x_x_x</i> (where x_x_x represent the version number). Note,
-					 it has the same name as the pre-compiled package. If you are going to install
-					 both the source and the pre-compiled version, it is highly recommended that you
-					 create separate directories for them first; if not one will overwrite the other.
-				</p>
-				
-				<p>
-					<table border="1" cellspacing="2" cellpadding="2" width="400">
-						<tr>
-							<td bgcolor="#ffcc99" colspan="2">
-								<b>Helpful Information</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/info.png" width="48" height="48" alt="info image"/>
-							</td>
-							
-							<td>
-								<span style="font-style: italic; font-size: small;">
-									Be sure to download the Java SDK SE (Standard Edition) and not
-									the EE (Enterprise Edition.) Most users find it difficult to
-									get the Enterprise Edition working. On top of that you don't
-									need it to compile TripleA.
-								</span>
-							</td>
-						
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					 We assume you have <i>ANT</i> installed, as well as a suitable <i>Java JDK</i> whose version is 1.5
-					 or higher.
-				</p>
-				
-				<p>
-					 Go into the directory where you extracted the TripleA source code. There should be a file named
-					 <b>.ant.properties</b>. Open it using MS Wordpad <i>not</i> notepad. If the source package you
-					 downloaded somehow did not come with that file, then create one. You can do this by creating an
-					 ordinary text file and then renaming it to <b>.ant.properties</b> exactly. This property file
-					 includes two peices of information:
-					 
-					 <ol>
-
-					 	<li>The version number of TripleA</li>
-					 </ol>
-
-					 Open the <b>.ant.properties</b> file and edit it to include the information below:
-					 <br/>
-					 <br/>
-					 <table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Info For The .ant.properties File</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								triplea.version=<i>X_X_X</i>
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					For completness sake; this is how my <b>.ant.properties</b> file would look like:
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Example Of The .ant.properties File</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								triplea.version=0_8_1
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>	
-				</p>
-				
-				<p>
-					 You should consider installing both the Java SDK and ANT at the root level of the C: drive.
-					 It is known that ANT in particular sometimes does not like spaces in the path name (nor for
-					 the path to be extremely long). You will notice that the typical Windows installation location
-					 of <b>Program Files</b> will have a space in its path (the space between Program and Files.
-					 It is not known how often this truly causes a problem (if ever), but the "pros" say they install
-					 their compiling tools in their root C: directory to avoid pitfalls. Thus it is recommended that
-					 we do the same. The last thing we need is &quot;extra&quot; problems.
-				</p>
-				
-				<p>
-					 For simplicity's sake, we shall install both the Java SDK SE and Ant at the root or C: Drive
-					 as well as TripleA and JUnit. JUnit is easily installed, you just need to extract the contents
-					 of it into its own folder. TripleA just needs to use a single JAR file that comes with JUnit.
-				</p>
-				
-				<p>
-					 Once we have installed the <b>Java SDK SE, JUnit</b> and <b>ANT</b> on your PC, start the Command
-					 Prompt (terminal) program. In Windows XP it can be found by navigating through the Start menu:
-					 <br/>
-					 <br/>
-					 <table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Location Of The Command Prompt</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								Start <b>-></b> All Programs <b>-></b> Accessories <b>-></b> Command Prompt
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					 In Command Prompt, enter this command and hit the <b>Enter</b> key:
-					 <br/>
-					 <br/>
-					 <table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Java Command</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								java -version
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					The results of that command should show an informational message about the new Java SDK SE
-					that we have just installed. If you see a message about the default Windows Java version
-					then that means that Windows is not recognizing the newly installed Java. If you get an
-					error message saying that the command cannot be found; that means Windows cannot see the
-					Java executable.
-				</p>
-				
-				<p>
-					 Now in Command Prompt enter this ANT command and hit the <b>Enter</b> key:
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Ant Command</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								ant -version
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					You will probably see a message as such:
-					<blockquote>
-						 &quot;Ant is not recognized as a internal or external command, operable program or batch file.&quot;
-					</blockquote>
-					
-					Even though the Java SDK SE and ANT have been installed properly, there are instances
-					where they are inaccessible through the command prompt. This can be fixed by modifying
-					the Windows Environment Variables. Find the Environment Variables options in Windows by
-					following the menus below:
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2" width="790">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Location Of Windows Environment Variables</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								Start <b>-></b> Control Panel <b>-></b> System <b>-></b> Advanced (tab) <b>-></b> Environmental Variables (button)
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					 Here we will add information for Windows to recognize both programs so it will pass your
-					 Command Prompt calls to the right place. You will want to make the following additions to
-					 the &quot;User Variables&quot; section at the top and <b>NOT</b> the System Variables.
-				</p>
-				
-				<p>
-					 There is no good reason to make these additions as System Variables unless you absolutely
-					 need all user accounts on your PC to be able to run these command line programs.
-					 Messing around with System Variables is risky because (unlike the User Variables) it
-					 has the potential to really mess up the system if you enter something wrong. So let's take
-					 the safe road and simply enter the following as User Variables.
-				</p>
-				
-				<p>
-					The Variable Name should be entered exactly as indicated. The Variable Value will be your exact
-					path to the Java SDK SE folder. This may vary depending on where Java was installed. In this
-					document we will go by the example that Java and ANT are installed in the Root level of C: Drive.
-					Under &quot;User Variables&quot;, <i>(not system variables)</i> click on the &quot;New&quot;
-					button and enter the following information:
-					<br/>
-					<br/>
-					<table border="0" cellspacing="2" cellpadding="2">
-						<tr>
-							<td>
-								<table border="1" cellspacing="2" cellpadding="2" width="400">
-									<tr>
-										<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-											<b>Java User Variable</b>
-										</td>
-									</tr>
-						
-									<tr>
-										<td align="left" valign="top" height="48" width="48">
-											<img src="images/txt.png" width="48" height="48" alt="text image"/>
-										</td>
-							
-										<td bgcolor="#ffffcc">
-											<code>
-											Variable name: JAVA_HOME<br/>
-											Variable value: C:\j2sdk1.5_06
-											</code>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<table border="1" cellspacing="2" cellpadding="2" width="400">
-									<tr>
-										<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-											<b>ANT User Variable</b>
-										</td>
-									</tr>
-						
-									<tr>
-										<td align="left" valign="top" height="48" width="48">
-											<img src="images/txt.png" width="48" height="48" alt="text image"/>
-										</td>
-							
-										<td bgcolor="#ffffcc">
-											<code>
-											Variable name: ANT_HOME<br/>
-											Variable value: C:\apache-ant-1.6.2
-											</code>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2" width="400">
-						<tr>
-							<td bgcolor="#ffcc99" colspan="2">
-								<b>Helpful Information</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/info.png" width="48" height="48" alt="info image"/>
-							</td>
-							
-							<td valign="top">
-								<span style="font-style: italic; font-size: small;">
-									 The easiest way to get this path exactly correct is to open the
-									 Java SDK SE folder and select a subfolder inside (bin folder, for
-									 example) then view the properties on it. The &quot;Location&quot; shown in
-									 the properties window will be the path you need to enter here, and
-									 you can simply select it and copy/paste it in to avoid any typos.
-								</span>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					The next step is to add both Java SDK SE and ANT's paths into the User Variables.
-					The <i>Variable Name</i> field should be entered exactly as shown. The <i>Variable Value</i> field will
-					display the exact paths to the BIN folders located inside both the Java SDK and Ant folders.
-					The two entries separated by a semi-colon &quot;;&quot; and no spaces between them.
-					Be sure to include the trailing slash &quot;\&quot; after <i>bin</i> in the path names.
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Path Variable</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								Variable name: PATH<br/>
-								Variable value: C:\j2sdk1.5_06\bin\;C:\apache-ant-1.6.2\bin\
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					 Click <b>OK</b> on all the Windows to save the new settings. In order for these changes to take
-					 effect you must either log out then back in, or restart your computer.
-				</p>
-				
-				<p>
-					Once you have done that, then fire up the Command Prompt program once again.
-					Enter &quot;java -version&quot; again and hit the <b>Enter</b> key. This time
-					we should see something similar below. Likewise, enter &quot;ant -version&quot;
-					afterwards:
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Output of &quot;java -version&quot; Command</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								java version "1.5.0_06"<br>
-								Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_06-b05)<br>
-								Java HotSpot(TM) Client VM (build 1.5.0_06-b05, mixed mode, sharing)<br>
-
-								</code>
-							</td>
-						</tr>
-					</table>
-					
-					<br/>
-					
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Output of &quot;ant -version&quot; Command</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								Apache Ant version 1.6.2 compiled on July 16 2004
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					If you get an error, please recheck your Environmental Variables entries and proofread your paths very carefully.
-					Did you copy/paste the paths to avoid typos? Check if you restarted the computer or logged out/in. Review the
-					instructions again and double check everything. If all goes well you should get the proper returns from your
-					Command Prompt version check.
-				</p>
-				
-				<p>
-					Now that everything is set up, we can finally compile TripleA! Open the command prompt
-					and go inside the directory where TripleA was installed. For simplicity sake we will pretend
-					that we have installed TripleA at the root level of C: Drive. So going into the TripleA
-					directory would be as shown below:
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Entering The TripleA Directory</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								<b>[Step 1]</b>&nbsp;&nbsp;C:><br/>
-								<b>[Step 2]</b>&nbsp;&nbsp;C:>cd triplea_0_6_0_1<br/>
-								<b>[Step 3]</b>&nbsp;&nbsp;C:\triplea_0_6_0_1>
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					Once we are inside the TripleA directory (when the command prompt looks like <i>C:\triplea_0_6_0_1></i>)
-					we are ready to issue our ANT commands. Type &quot;ant compile&quot; and the results
-					should yield something similar to what's below:
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Results of &quot;ant compile&quot; Command</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-<pre>
-Buildfile: build.xml
-
-init:
-
-compile:
-    [mkdir] Created dir: /home/sgb/dev/triplea/classes
-     [copy] Copying 20 files to /home/sgb/dev/triplea/classes
-    [javac] Compiling 381 source files to /home/sgb/dev/triplea/classes
-    [javac] Note: /home/sgb/dev/triplea/src/games/strategy/triplea/delegate/TechnologyDelegate.java uses unchecked or unsafe operations.
-    [javac] Note: Recompile with -Xlint:unchecked for details.
-   [delete] Deleting 1 files from /home/sgb/dev/triplea/classes
-    [javac] Compiling 1 source file to /home/sgb/dev/triplea/classes
-
-BUILD SUCCESSFUL
-Total time: 13 seconds
-</pre>
-
-								</code>
-							</td>
-						</tr>
-					</table>
-				</p>
-				
-				<p>
-					TripleA has been compiled successfuly.  Note, the triplea.exe, triplea.bat and triplea.sh files will not work at this point, as they rely on triplea.jar to be created.  Use the command
-					ant run to start triplea from the command line.
-				</p>
-				
-				<p>
-					<a href="#top">- Top -</a>
-				</p>
-			</blockquote>
-			
-			
-			<h4><a name="sec_2.4">2.4</a> Compiling on GNU/Linux, Mac OS X, and UNIX Style Systems</h4>
-			<blockquote>
-				<p>
-					Compiling TripleA on UNIX or GNU styled operating systems such as GNU/Linux,
-					SGI/IRIX, and Apple/MAC OS X (just to name a few), is straight forward. As
-					always we assume that you have ANT, JUnit, and a suitable Java SDK
-					installed as mentioned in <a href="#sec_2.1">section 2.1</a>.
-				</p>
-				
-				<p>
-					There are four main steps that need to be take to successfully compile TripleA.
-					<ol>
-						<li>Download TripleA</li>
-						<li>Unzip TripleA in a suitable directory</li>
-						<li>Edit the <b>.ant.properties</b> file</li>
-						<li>Execute the <i>ant compile</i> command</li>
-					</ol>
-				</p>
-				
-				<p>
-					<b>Step 1</b>
-					<br/>
-					<br/>
-					We can safely assume that you have downloaded the TripleA zip file that contains
-					the source code. The file name should have the word &quot;source&quot; in it;
-					like so <i>triplea_source_0_6_0_1.zip</i>.
-				</p>
-				
-				<p>
-					<b>Step 2</b>
-					<br/>
-					<br/>
-					
-					Unzip the TripleA source zip file into a suitable directory of your choice. You
-					can use your favorite extraction utility to do this. We have found that most UNIX
-					styled systems tend to have the <b>unzip</b> command available.
-					
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" border="0" alt="shell image"/>
-							</td>
-						
-							<td valign="middle" bgcolor="#ffffcc">
-								<code>
-								unzip -L triplea_source_x_x_x.zip
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					<b>Step 3</b>
-					<br/>
-					<br/>
-					
-					Using your favorite text editor open and modify the <b>.ant.properties</b> file
-					that is located in the TripleA root directory (ie. /home/george/triplea_0_6_0_1).
-					If this file is missing then please create one with the same name. Make sure that it
-					begins with a dot as it is supposed to be a hidden file.
-				</p>
-				
-				<p>
-					It is not necessary to have a <b>.ant.properties</b> file to compile TripleA, but
-					it is needed when making zip releases and using JUnit.
-				</p>
-				
-				<p>
-					These are the values that <b>.ant.properties</b> keeps track of:
-					<ul>
-						<li>Version number of TripleA</li>
-					</ul>
-					
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Info For The .ant.properties File</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								triplea.version=<i>X_X_X</i>
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					As always, for completness sake; this is an example of how a <b>.ant.properties</b> file would look like:
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Example Of The .ant.properties File</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								triplea.version=0_6_0_1
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					<b>Step 4</b>
-					<br/>
-					<br/>
-					Open up your favorite terminal and go inside the root of the TripleA directory.
-					Once there, execute the ANT command below to compile TripleA:
-					
-					<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-								ant compile
-								</code>
-							</td>
-						</tr>
-					</table>
-					
-					<br/>
-					<br/>
-					
-					This should yeild some successful ANT compile messages as shown below:
-					
-					<br/>
-					<br/> 
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>Results of &quot;ant compile&quot; Command</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								<code>
-<pre>
-Buildfile: build.xml
-
-init:
-
-compile:
-    [mkdir] Created dir: /home/sgb/dev/triplea/classes
-     [copy] Copying 20 files to /home/sgb/dev/triplea/classes
-    [javac] Compiling 381 source files to /home/sgb/dev/triplea/classes
-    [javac] Note: /home/sgb/dev/triplea/src/games/strategy/triplea/delegate/TechnologyDelegate.java uses unchecked or unsafe operations.
-    [javac] Note: Recompile with -Xlint:unchecked for details.
-   [delete] Deleting 1 files from /home/sgb/dev/triplea/classes
-    [javac] Compiling 1 source file to /home/sgb/dev/triplea/classes
-
-BUILD SUCCESSFUL
-Total time: 13 seconds
-</pre>
-								</code>
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					TripleA has been compiled successfuly.  Note, the triplea.exe, triplea.bat and triplea.sh files will not work at this point, as they rely on triplea.jar to be created.  Use the command
-					ant run to start triplea from the command line.
-				</p>
-				
-				<p>
-					<a href="#top">- Top -</a>
-				</p>
-			</blockquote>
-		</blockquote>
-		
-		<h2><a name="sec_3">3.0</a> Running TripleA</h2>
-		<blockquote>
-			<p>
-				Typically a developer will use an IDE to run TripleA.  If that is the case, use your IDE to launch the class games.strategy.engine.framework.GameRunner.  Make sure that the data folder is
-				on the class path.  To run TripleA from the command line, use the ant run command, which will compile and launch TripleA.
-			</p>
-						
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		
-		
-		
 		<h2><a name="sec_3.1">3.1</a> How TripleA Locates its Root Directory</h2>
 		<blockquote>
 			<p>
@@ -1078,7 +81,7 @@ Total time: 13 seconds
 				<table border="1" cellspacing="2" cellpadding="1">
 					<tr>
 						<td align="left" valign="top" rowspan="4" height="48" width="48">
-							<img src="images/info.png" width="48" height="48" alt="info image"/>
+							<img src="https://cloud.githubusercontent.com/assets/12397753/21297111/73f2adf6-c52e-11e6-83bc-2ce4211aa753.png" width="48" height="48" alt="info image"/>
 						</td>
 					</tr>
 					
@@ -1129,7 +132,7 @@ Total time: 13 seconds
 				<table border="1" cellspacing="2" cellpadding="2">	
 					<tr>
 						<td align="left" valign="top" height="48" width="48">
-							<img src="images/source_java.png" width="48" height="48" alt="java image"/>
+							<img src="https://cloud.githubusercontent.com/assets/12397753/21297124/74197684-c52e-11e6-9112-1dae5e681d0d.png" width="48" height="48" alt="java image"/>
 						</td>
 							
 						<td bgcolor="#ffffcc">
@@ -1279,7 +282,7 @@ Total time: 13 seconds
 			<table border="0" align="center">
 				<tr>
 					<td>
-						<img src="images/router_example.png" width="528" height="444" alt="router diagram" />
+						<img src="https://cloud.githubusercontent.com/assets/12397753/21297120/7407aa6c-c52e-11e6-93f3-15d5d0b9086f.png" width="528" height="444" alt="router diagram" />
 					</td>
 				</tr>
 				
@@ -1298,7 +301,7 @@ Total time: 13 seconds
 				<table border="1" cellspacing="2" cellpadding="1">
 					<tr>
 						<td align="left" valign="top" rowspan="4" height="48" width="48">
-							<img src="images/info.png" width="48" height="48" alt="info image"/>
+							<img src="https://cloud.githubusercontent.com/assets/12397753/21297111/73f2adf6-c52e-11e6-83bc-2ce4211aa753.png" width="48" height="48" alt="info image"/>
 						</td>
 					</tr>
 					
@@ -1349,7 +352,7 @@ Total time: 13 seconds
 				<table border="1" cellspacing="2" cellpadding="2">	
 					<tr>
 						<td align="left" valign="top" height="48" width="48">
-							<img src="images/source_java.png" width="48" height="48" alt="java image"/>
+							<img src="https://cloud.githubusercontent.com/assets/12397753/21297124/74197684-c52e-11e6-9112-1dae5e681d0d.png" width="48" height="48" alt="java image"/>
 						</td>
 							
 						<td bgcolor="#ffffcc">
@@ -1575,7 +578,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297126/7419f280-c52e-11e6-8d3f-ba1b713eb548.png" width="48" height="48" alt="shell image"/>
 							</td>
 								
 							<td bgcolor="#ffffcc">
@@ -1593,7 +596,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 					<table border="0">
 						<tr>
 							<td>
-								<img src="images/center_picker.png" width="696" height="491" alt="center picker" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297105/73e0e7f6-c52e-11e6-824d-8efc7eeff9bd.png" width="696" height="491" alt="center picker" />
 							</td>
 						</tr>
 
@@ -1758,7 +761,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297126/7419f280-c52e-11e6-8d3f-ba1b713eb548.png" width="48" height="48" alt="shell image"/>
 							</td>
 								
 							<td bgcolor="#ffffcc">
@@ -1776,7 +779,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 					<table border="0">
 						<tr>
 							<td>
-								<img src="images/polygon_grabber_1.png" width="598" height="524" alt="polygon grabber" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297122/740ab75c-c52e-11e6-9e22-81ac9b83f8c8.png" width="598" height="524" alt="polygon grabber" />
 							</td>
 						</tr>
 
@@ -1925,7 +928,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 					<table border="0">
 						<tr>
 							<td>
-								<img src="images/polygon_grabber_2.png" width="598" height="524" alt="island mode 1" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297117/740667f6-c52e-11e6-911d-6e9665331a55.png" width="598" height="524" alt="island mode 1" />
 							</td>
 						</tr>
 
@@ -1938,7 +941,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 					<table border="0">
 						<tr>
 							<td>
-								<img src="images/polygon_grabber_3.png" width="598" height="524" alt="island mode 2" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297118/74079478-c52e-11e6-9cb2-0b489d651f71.png" width="598" height="524" alt="island mode 2" />
 							</td>
 						</tr>
 
@@ -1980,7 +983,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297126/7419f280-c52e-11e6-8d3f-ba1b713eb548.png" width="48" height="48" alt="shell image"/>
 							</td>
 								
 							<td bgcolor="#ffffcc">
@@ -2059,7 +1062,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 					<table border="0">
 						<tr>
 							<td>
-								<img src="images/placement_picker.png" width="594" height="520" alt="placement picker" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297121/74082c08-c52e-11e6-9d8e-1487e0a3c2ef.png" width="594" height="520" alt="placement picker" />
 							</td>
 						</tr>
 						
@@ -2120,7 +1123,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297126/7419f280-c52e-11e6-8d3f-ba1b713eb548.png" width="48" height="48" alt="shell image"/>
 							</td>
 								
 							<td bgcolor="#ffffcc">
@@ -2138,7 +1141,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 					<table border="0">
 						<tr>
 							<td>
-								<img src="images/autoplacement_finder.png" width="560" height="333" alt="auto-placement finder" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297108/73e1117c-c52e-11e6-93cc-c6a686942d65.png" width="560" height="333" alt="auto-placement finder" />
 							</td>
 						</tr>
 						
@@ -2180,7 +1183,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297126/7419f280-c52e-11e6-8d3f-ba1b713eb548.png" width="48" height="48" alt="shell image"/>
 							</td>
 								
 							<td bgcolor="#ffffcc">
@@ -2192,25 +1195,8 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						</tr>
 					</table>
 					<br/>
-				</p>
-				
-				<p>
-					<table border="0">
-						<tr>
-							<td>
-								<img src="images/tile_image_breaker.png" width="553" height="263" alt="tile image breaker" />
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								Fig 5.1.5.0
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
+
+
 				<p>
 					<table border="1" cellspacing="0" cellpadding="2">
 						<tr>
@@ -2278,8 +1264,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						</tr>
 					</table>
 					<br/>
-				</p>
-				
+
 				<p>
 					Once the Tile Image Breaker is done, all the tiles will be saved
 					in the directory that has been selected at the start.
@@ -2325,7 +1310,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297126/7419f280-c52e-11e6-8d3f-ba1b713eb548.png" width="48" height="48" alt="shell image"/>
 							</td>
 								
 							<td bgcolor="#ffffcc">
@@ -2454,7 +1439,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/shellscript.png" width="48" height="48" alt="shell image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297126/7419f280-c52e-11e6-8d3f-ba1b713eb548.png" width="48" height="48" alt="shell image"/>
 							</td>
 								
 							<td bgcolor="#ffffcc">
@@ -2923,7 +1908,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -2988,7 +1973,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3020,27 +2005,27 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="center">
-								<img src="images/Americans_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297110/73e54abc-c52e-11e6-8e18-0bf4e95cc24c.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/Australians_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297107/73e0f7a0-c52e-11e6-8c25-c6ad3cc6a8b2.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/British_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297109/73e1561e-c52e-11e6-8f23-d7624ee2e7a4.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/Chinese_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297106/73e0ebc0-c52e-11e6-82bc-3872d8847b88.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/European-Union_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297114/73f616c6-c52e-11e6-9d68-0a280ae95245.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/Germans_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297113/73f3035a-c52e-11e6-8054-5d64cf165b8b.png" width="100" height="100" alt="" />
 							</td>
 						</tr>
 						
@@ -3072,27 +2057,27 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="center">
-								<img src="images/Italians_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297112/73f2dfce-c52e-11e6-993f-49c284686c21.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/Japanese_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297115/73f664fa-c52e-11e6-8746-d7b227a16968.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/Mid-East_large.png" width="98" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297116/73f6bdba-c52e-11e6-8600-e020ef26c59f.png" width="98" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/Red-China_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297119/74079d10-c52e-11e6-845f-0de5d6934694.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/Russians_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297123/7418a5ce-c52e-11e6-850d-8e65b2353c5d.png" width="100" height="100" alt="" />
 							</td>
 							
 							<td align="center">
-								<img src="images/UK_Union-Jack_large.png" width="100" height="100" alt="" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297127/741bec7a-c52e-11e6-8780-54691e72d99d.png" width="100" height="100" alt="" />
 							</td>
 						</tr>
 
@@ -3138,7 +2123,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3163,7 +2148,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3203,7 +2188,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3248,7 +2233,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3269,7 +2254,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td>
-								<img src="images/vc.png" width="22" height="18" alt="vc image" />
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297128/741c18d0-c52e-11e6-887a-3c6afd6d2505.png" width="22" height="18" alt="vc image" />
 							</td>
 						</tr>
 					
@@ -3290,7 +2275,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3315,7 +2300,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3359,7 +2344,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3438,7 +2423,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3465,7 +2450,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3497,7 +2482,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3584,7 +2569,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3606,7 +2591,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3668,7 +2653,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 								Name of the so					
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3692,7 +2677,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 					The resources for the game needs to have some sor					
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3760,7 +2745,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3894,7 +2879,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -3974,7 +2959,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -4091,7 +3076,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -4121,7 +3106,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -4301,7 +3286,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -4326,7 +3311,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -4514,7 +3499,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -4619,7 +3604,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -4702,7 +3687,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 
 							<td bgcolor="#ffffcc">
@@ -5114,7 +4099,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -5379,7 +4364,7 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						
 						<tr>
 							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
+								<img src="https://cloud.githubusercontent.com/assets/12397753/21297125/7419bcde-c52e-11e6-9e84-17bda2ad3d06.png" width="48" height="48" alt="text image"/>
 							</td>
 							
 							<td bgcolor="#ffffcc">
@@ -5401,80 +4386,13 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 						</tr>
 					</table>
 					<br/>
-				</p>
-				
 			<p>
 				<a href="#top">- Top -</a>
 			</p>
 		</blockquote>
 		
 		
-		<h4><a name="sec_5.3.12">5.3.12</a> Territory Attachment</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		
-		<h4><a name="sec_5.3.13">5.3.13</a> Initializations</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		
-		<h4><a name="sec_5.3.14">5.3.14</a> Game Properties</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h2><a name="sec_6">6.0</a> Engine Code Overview</h2>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_6.1">6.1</a> Design Goals</h4>
-		<blockquote>
 
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_6.2">6.2</a> The Big Picture</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_6.3">6.3</a> Game Data</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_6.4">6.4</a> Attachments</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
 		<h4><a name="sec_6.5">6.5</a> Game Play Sequence</h4>
 		<blockquote>
 			
@@ -5495,315 +4413,3 @@ public static InetAddress findInetAddress() throws SocketException, UnknownHostE
 				<a href="#top">- Top -</a>
 			</p>
 		</blockquote>
-		
-		<h4><a name="sec_6.7">6.7</a> Step Life Cycle</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_6.8">6.8</a> Changing Game Data</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_6.9">6.9</a> Game Players</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_6.10">6.10</a> Communication</h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h2><a name="sec_7">7.0</a> TripleA Security</h2>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_7.1">7.1</a> </h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_7.2">7.2</a> </h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_7.3">7.3</a> </h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_7.4">7.4</a> </h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h4><a name="sec_7.5">7.5</a> </h4>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-
-		<h2><a name="sec_8">8.0</a> AI</h2>
-		<blockquote>
-			<p>
-			If you are interested in writing an AI, there is a functioning AI in the package games.strategy.triplea.weakAI.  Extending the class AbstractAI is the best place to start when writing an AI.<p>
-
-			<p>To add your AI to the game, you must modify games.strategy.triplea.TripleA.  The two methods
-<code>
-<pre>
-public Set<IGamePlayer> createPlayers(Map playerNames)
-public String[] getServerPlayerTypes()
-</pre>
-</code>	Create the mapping between AI names and AI instances.
-
-
-			
-
-			</p>
-
-		</blockquote>
-		
-		<h2><a name="sec_9">9.0</a> TripleA Release Model</h2>
-		<blockquote>
-			<p>
-				This section will go over the three types of releases :<br/>
-				<ul>
-					<li>SVNS</li>
-					<li>Unstable</li>
-					<li>Stable</li>
-				</ul>
-			</p>
-			
-			<p>
-				It will also
-				discuss the numbering system of the packages and how they play a role
-				in the development process. We also take into account issues that need
-				to be dealt with while developing TripleA using this release model.
-				Certain issues such as whitebox testing by developers and blackbox
-				testing by the end user, adding new features, user requests of new
-				features, and many more which will be addressed later.
-			</p>
-			
-			<table border="1" cellspacing="2" cellpadding="2">
-				<tr>
-					<td align="left" valign="top" height="48" width="48">
-						<img src="images/info.png" width="48" height="48" alt="info image" />
-					</td>
-							
-					<td valign="middle">
-						SVN ---&gt; Unstable ---&gt; Stable ---&gt; Future Requirements ---&gt; SVN ...etc
-					</td>
-				</tr>
-			</table>
-			
-			<p>
-				The release model follows a spiral pattern. This spiral pattern
-				allows TripleA to be worked on in several stages, thus being the SVN,
-				Unstable, and Stable stage. A spiral pattern is imperative to any form
-				of development. This type of model ensures the software will be
-				developed, tested, released, and improved over time.
-			</p>
-			
-			<h3>SVN:</h3>
-
-			<p>
-				The SVN package is meant to be used by developers only. Of course it is not
-				strictly restricted to developers but, anyone can check out a fresh
-				copy of the SVN and run it. Although it should be considered highly
-				unstable. The SVN is where the bulk of the coding will take place. This
-				is basically the experimental developing grounds where new features are
-				developed. Below are a list of issues that we exepect from a SVN build at
-				this stage:
-				<ol>
-					<li>Expected to contain freshly developed features that may not exists in other builds</li>
-					<li>Expect high instability, program crashes, bugs, and run-time errors</li>
-					<li>Expect new builds of the SVN almost nightly</li>
-					<li>Should not be compile broken. The SVN must compile without errors</li>
-					<li>Testing grounds for the design and implementation of new features</li>
-				</ol>
-			</p>
-			
-			<p>
-				SVN packages will not be released and placed on the main
-				download site. Users can obtain a copy of the SVN anonymously through
-				sourceforge.
-			</p>
-			
-			<h3>Unstable:</h3>
-
-			<p>
-				Once certain requirements are made and implemented into the SVN, it
-				is ready for testing. An Unstable build is released with a numbering
-				system that portrays its version number, feature number, release number,
-				and sometimes a micro-release number.<br/>
-				<br/>
-				The version number indicates if there have been any huge over all changes
-				to the software. This includes very drastic changes.<br/>
-				<br/>
-				The feature number indicates whether there has been any feature changes
-				or additions. Such changes or additions will cause the current software
-				to be incompatible with a software of a previous feature number.<br/>
-				<br/>
-				The release number indicates that no new features were added but various
-				bug fixes were made. With bug fixes made to the software; it will make it
-				incompatible with software of a previous release number.<br/>
-				<br/>
-				The micro-release number does not appear very often. It shows that there
-				was an un-expected bug that was fixed quickly and released as soon as possible.
-				Software with the same version, feature, and release number are compatible with
-				other software of the same kind even if the micro-release number is different.
-				Compatibility mainly refers to saved game files and such.
-			</p>
-
-			<p>
-					A practical example:<br/>
-					<br/>
-					<table border="1" cellspacing="2" cellpadding="2">
-						<tr>
-							<td align="left" valign="top" colspan="2" bgcolor="#ccccff">
-								<b>File Name Example</b>
-							</td>
-						</tr>
-						
-						<tr>
-							<td align="left" valign="top" height="48" width="48">
-								<img src="images/txt.png" width="48" height="48" alt="text image"/>
-							</td>
-							
-							<td bgcolor="#ffffcc">
-								TripleA_Unstable_0_5_4.zip<br/>
-								<br/>
-								TripleA_Stable_0_6_0_1_1.zip
-							</td>
-						</tr>
-					</table>
-					<br/>
-				</p>
-				
-				<p>
-					The unstable build is packaged and released in order to test the
-					newly implemented features that have been added during the SVN stage.
-					This build is intended for use by developers and the end user. The
-					purpose of an unstable build is to increase the speed of error detection
-					and possible bug fixes. Due to the nature of Open Source projects,
-					developers cannot devote 100% of their efforts on this project due to
-					lack of funds and other social constraints (ie. other jobs,
-					families...etc).
-				</p>
-
-				<p>
-					This stage allows the community of users to test the new build and
-					perform blackbox testing. They are expected to test the new features of
-					the software and report bugs if any should occur. Users are also
-					encouraged to go a bit further and look into the source code to see if
-					they can offer a bug fix or a suggestion for new implementation.
-				</p>
-
-				<p>
-					Developers (and programming knowledgable users) can perform whitebox
-					testing where they look at the source code of newly implemented
-					features and purposely try to cause the software to crash or behave
-					unexpectidely. This helps to locate bugs and security holes from which
-					blackbox testing may over look. As usefull as whitebox testing may be;
-					blackbox testing helps find bugs in the over all useability of the
-					software. Such things as bad user interface design, complex use of
-					images/colors, confusing actions that hurt playability (ie. too many
-					buttons, inproper implementation of mouse clicks, bad window behaviour
-					..etc).
-				</p>
-
-				<p>
-					Unstable builds can be re-released with bug fixes so that it can be
-					tested again. Once a build has been in the testing stage for a solid
-					duration of time that allows users to fully use all the features (ie. 2
-					weeks or more) then a summary report can be made that outlines the
-					number of bugs found and the percentage of those bugs that have been
-					fixed to those that could not be fixed but work-arounds have been made.
-					After that it will be up to the project manager to discuss with the
-					rest of the development team if a testing build is ready to be released
-					as Stable.
-				</p>
-
-				<h3>Stable:</h3>
-
-				<p>
-					A Stable release should indicate that the software is fully playable
-					and the game can be played from start to finish without any program
-					crashes or bugs that will yield undesirable side-effects. As this
-					should hold true, life is not perfect. Stable builds are allowed to
-					contain a minimal amount of bugs that will not harm game-play (ie.
-					non-combat moves during combat stage, map abnormalities, anything that
-					can be worked around).
-				</p>
-
-				<p>
-					Stable builds should go through a minimum of 2 weeks of testings as an
-					&quot;Unstable&quot; package in order to weed out the obvious bugs.
-				</p>
-				
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h2><a name="sec_10">10.0</a> Developer Programming Conventions</h2>
-		<blockquote>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<h2><a name="sec_11">11.0</a> Credits & Acknowledgements</h2>
-		<blockquote>
-			<p>
-				<ul>
-					<li><b>Iron Cross</b> : TripleA Banner and background watermark</li>
-					<li><b>Sean Bridges</b> : Engine Code Overview sections (not done yet)</li>
-					<li><b>Zero Pilot</b> : Compiling on Windows Guide</li>
-					<li>Icon images from <a href="http://www.kde.org">KDE</a>'s Crystal icons package</li>
-				</ul>
-			</p>
-			
-			<p>
-				<a href="#top">- Top -</a>
-			</p>
-		</blockquote>
-		
-		<hr/>
-		<a href="http://sourceforge.net"><img src="images/sflogo.png" width="125" height="37" border="0" alt="sf logo"/></a>
-		<br/>
-		<a href="http://sourceforge.net/donate/index.php?group_id=44492"><img src="images/project-support.jpg" width="88" height="32" border="0" alt="support"/></a>
