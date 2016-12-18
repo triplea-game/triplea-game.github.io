@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Help &amp; Rules
-permalink: /docs/
+permalink: /help/
 ---
 
 ## Help
@@ -18,6 +18,12 @@ permalink: /docs/
 
 ## Older Documentation
 * [Readme]({{ "/playing_the_game_engine_readme" | prepend: site.baseurl }})
+* [Game Playing Guide]({{ "/game_playing_guide" | prepend: site.baseulr }})
+* [Developer Documentation]({{ "/developer_documentation" | prepend: site.baseulr }})
+* [Engine Code Overview]({{ "/engine_code_overview" | prepend: site.baseulr }})
+* [How To Create Custom Maps]({{ "/how_to_create_custom_maps" | prepend: site.baseulr }})
+* [Map And Map Skin Making Overview]({{ "/map_and_map_skin_making_overview" | prepend: site.baseulr }})
+* [Release Model]({{ "/release_model" | prepend: site.baseulr }})
 
 
 ## FAQ
