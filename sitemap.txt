@@ -1,6 +1,6 @@
 http://triplea-game.github.io/
 http://triplea-game.github.io/about/
 http://triplea-game.github.io/contribute/
-http://triplea-game.github.io/docs/
+http://triplea-game.github.io/help/
 http://triplea-game.github.io/maps/
 http://triplea-game.github.io/community/

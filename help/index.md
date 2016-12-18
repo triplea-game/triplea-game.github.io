@@ -1,10 +1,32 @@
 ---
 layout: page
-title: Frequently Asked Questions
-permalink: /faq/
+title: Help &amp; Rules
+permalink: /help/
 ---
 
-# Frequently Asked Questions
+## Help
+* [Submitting Bug Reports]({{ "/bug_report" | prepend: site.baseurl }})
+* [Set up Port Forwarding To Host Lobby Games](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4085700.html)
+* [User Interface help and tips]({{ "/ui_help" | prepend: site.baseurl }})
+
+## Rules
+
+* [Lobby Conduct Rules](http://www.tripleawarclub.org/modules/newbb/viewtopic.php?topic_id=100&forum=1)
+* [Game Rules Manual]({{ "/files/TripleA_RuleBook.pdf" | prepend: site.baseurl }})
+* [TripleA Wiki Rulebook](http://en.wikibooks.org/wiki/TripleA)
+
+
+## Older Documentation
+* [Readme]({{ "/playing_the_game_engine_readme" | prepend: site.baseurl }})
+* [Game Playing Guide]({{ "/game_playing_guide" | prepend: site.baseulr }})
+* [Developer Documentation]({{ "/developer_documentation" | prepend: site.baseulr }})
+* [Engine Code Overview]({{ "/engine_code_overview" | prepend: site.baseulr }})
+* [How To Create Custom Maps]({{ "/how_to_create_custom_maps" | prepend: site.baseulr }})
+* [Map And Map Skin Making Overview]({{ "/map_and_map_skin_making_overview" | prepend: site.baseulr }})
+* [Release Model]({{ "/release_model" | prepend: site.baseulr }})
+
+
+## FAQ
 
 > Q. How do you set way points when moving.
 
@@ -58,37 +80,3 @@ After the game has started, click on the "Help" menu option near the top of the 
 
 Yes, save the game, load it again and change the setting before starting.
 
-## User Interface help notes:
-
-### Selecting Units
-* Left click on a unit stack to select 1 unit.
-* ALT-Left click on a unit stack to select 10 units of that type in the stack.
-* CTRL-Left click on a unit stack to select all units of that type in the stack.
-* Shift-Left click on a unit to select all units in the territory.
-* Left click on a territory but not on a unit to bring up a selection window for inputing the desired selection.
-
-### Deselecting Units
-* Right click somewhere not on a unit stack to unselect the last selected unit.
-* Right click on a unit stack to unselect one unit in the stack.
-* ALT-Right click on a unit stack to unselect 10 units of that type in the stack.
-* CTRL-Right click on a unit stack to unselect all units of that type in the stack.
-* CTRL-Right click somewhere not on a unit stack to unselect all units selected.
-
-### Moving Units to a new Territories
-* After selecting units Left click on a territory to move units there (do not Left click and Drag, instead select units, then move the mouse, then select the territory).
-* CTRL-Left click on a territory to select the territory as a way point (this will force the units to move through this territory on their way to the destination).
-
-### Moving the Map Screen
-* Right click and Drag the mouse to move your screen over the map.
-Left click on the map (anywhere), then use the Arrow Keys to move your map around.
-* Left click in the Minimap at the top right of the screen, and Drag the mouse.
-* Move the mouse to the edge of the map window, and the screen will scroll in that direction.
-scrolling the mouse wheel will move the map up and down.
-
-### Zooming Out
-* Holding ALT while Scrolling the Mouse Wheel will zoom the map in and out.
-* Select 'Zoom' from the 'View' menu, and change to the desired level.
-
-### Turn off Art
-* Deselect 'Map Details' in the 'View' menu, to show a map without the artwork.
-* Select a new 'Map Skin' from the 'View' menu to show a different kind of artwork (not all maps have skins).
