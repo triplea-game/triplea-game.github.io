@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Help&colon; Downloading Maps
-permalink: /docs/downloading_maps/
+permalink: /downloading_maps/
 ---
 
 As of TripleA 1.9, downloading maps has become much easier. Since only the Tutorial comes by default with the engine, it is imperative that you download some maps and get started playing right away.

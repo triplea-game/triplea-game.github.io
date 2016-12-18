@@ -5,15 +5,21 @@ permalink: /help/
 ---
 
 ## Help
+
 * [Submitting Bug Reports]({{ "/bug_report" | prepend: site.baseurl }})
 * [Set up Port Forwarding To Host Lobby Games](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4085700.html)
 * [User Interface help and tips]({{ "/ui_help" | prepend: site.baseurl }})
+* [Downloading Maps]({{ "/downloading_maps" | prepend: site.baseurl }})
 
 ## Rules
 
 * [Lobby Conduct Rules](http://www.tripleawarclub.org/modules/newbb/viewtopic.php?topic_id=100&forum=1)
 * [Game Rules Manual]({{ "/files/TripleA_RuleBook.pdf" | prepend: site.baseurl }})
 * [TripleA Wiki Rulebook](http://en.wikibooks.org/wiki/TripleA)
+
+## Development
+
+* [Developer Getting Started](https://github.com/triplea-game/triplea#development-)
 
 
 ## Older Documentation
