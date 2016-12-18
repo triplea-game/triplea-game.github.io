@@ -8,7 +8,7 @@ permalink: /bug_report/
 
 ## Filing a bug report:
 
-* Createa a <a href="http://github.com/account"> github account</a>
+* Create a <a href="http://github.com/account"> github account</a>
 * Submit a tracking issue: <a href="https://github.com/triplea-game/triplea/issues/new">https://github.com/triplea-game/triplea/issues/new</a>, you'll need to give the topic a title, and fill out a description of what you would like done.  Please try to be as concise and specific as you can. Always please try to give specific examples of problems, map names, etc, to help make it very easy to focus in directly on what the problem is. 
 
 
