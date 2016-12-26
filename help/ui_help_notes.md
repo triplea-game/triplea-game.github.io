@@ -1,7 +1,7 @@
 ---
 layout: page
 title: User Interface Help Notes
-permalink: /ui_help/
+permalink: /help/ui
 ---
 
 ## User Interface help notes:

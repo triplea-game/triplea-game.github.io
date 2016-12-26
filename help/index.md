@@ -9,7 +9,7 @@ permalink: /help/
 * [Submitting Bug Reports]({{ "/bug_report" | prepend: site.baseurl }})
 * [Host Lobby Games (set up port forwarding)](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4085700.html)
 * [Host a Bot in the Lobby](https://github.com/triplea-game/lobby#run-hosted-bots)
-* [User Interface help and tips]({{ "/ui_help" | prepend: site.baseurl }})
+* [User Interface help and tips]({{ "/help/ui" | prepend: site.baseurl }})
 * [Downloading Maps]({{ "/downloading_maps" | prepend: site.baseurl }})
 * [FAQ]({{ "/help/faq" | prepend: site.baseurl }})
 
