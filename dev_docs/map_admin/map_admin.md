@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Map Admin Documentation
-permalink: /dev_docs/maps/administration
+permalink: /dev_docs/map_admin/
 ---
 
 

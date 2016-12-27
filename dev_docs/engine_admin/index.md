@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Adminsitrative Documentation
-permalink: /dev_docs/admin/
+permalink: /dev_docs/engine_admin/
 ---
 
 - [Build Pipeline]({{ "/dev_docs/admin/build_pipeline" | prepend: site.baseurl }})

@@ -4,9 +4,10 @@ title: TripleA Project Documentation
 permalink: /dev_docs/
 ---
 
-* [Map Maker Documentation]({{ "/dev_docs/maps" | prepend: site.baseurl }})
-* [Developer Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})
-* [Administrator Documentation]({{ "/dev_docs/admin" | prepend: site.baseurl }})
+* [Map Making]({{ "/dev_docs/maps" | prepend: site.baseurl }})
+* [Development]({{ "/dev_docs/dev" | prepend: site.baseurl }})
+* [Admin - Game Engine]({{ "/dev_docs/engine_admin/" | prepend: site.baseurl }})
+* [Admin - Maps]({{ "/dev_docs/map_admin/" | prepend: site.baseurl }})
 
 
 ## Older (legacy) Documentation
