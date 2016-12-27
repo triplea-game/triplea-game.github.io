@@ -1,8 +1,8 @@
-
-
-
-## Code Format
-
+---
+layout: page
+title: Code Format
+permalink: /dev_docs/dev/code_format
+---
 
 When discussing formatting, please keep in mind:
 - https://en.wikipedia.org/wiki/Law_of_triviality
@@ -46,3 +46,6 @@ For the most part, following Google java style: http://google.github.io/stylegui
 Project preferences > Java > java format, import and select the eclipse format xml file. (note, be sure you repeat this if the formatter ever changes to pick up any updates)
 
 
+--------
+
+Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

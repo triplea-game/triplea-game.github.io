@@ -1,3 +1,9 @@
+---
+layout: page
+title: How to Release
+permalink: /dev_docs/admin/how_to_release
+---
+
 
 ## Release Testing
 1. Test the following situations at a bare minimum (our unit tests cover virtually nothing):  
@@ -122,3 +128,6 @@ We need to update the website’s main page, and also the news page.  These two 
 
 Once the above is done, you have officially released TripleA!  
 
+------------
+
+Up to: [Admin Documentation]({{ "/dev_docs/admin" | prepend: site.baseurl }})

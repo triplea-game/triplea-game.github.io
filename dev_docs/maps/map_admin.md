@@ -1,5 +1,9 @@
+---
+layout: page
+title: Map Admin Documentation
+permalink: /dev_docs/maps/administration
+---
 
-## General Admin Documentation
 
 To clone everything:
 ```
@@ -137,6 +141,10 @@ ancient_times latest = (0.9) -> current = 0.5/ancient_times.zip
 world_war_ii_v6_1941 latest = (0.9) -> current = 0.3/world_war_ii_v6_1941.zip
    is latest - diplomacy-map_skin1
 1914-cow-empires latest = (0.8) -> current = 0.4/1914-cow-empires.zip
-```
+
+
+------------
+
+Up to [Map Documentation]({{ "/dev_docs/maps" | prepend: site.baseurl }})
 
 

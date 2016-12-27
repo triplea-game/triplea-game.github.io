@@ -1,3 +1,9 @@
+---
+layout: page
+title: Version Numbers
+permalink: /dev_docs/dev/version_numbers
+---
+
 ## About the TripleA Version Number:  
 The last step before tagging is to bump the version number.  
 This is non-trivial, and we have a very specific scheme we follow because it does affect a lot of things, such as loading old savegames.  
@@ -45,3 +51,7 @@ Our last release (and current version number) was 1.8.0.7, but after several mon
 4(.build) = development release
 ```
 (http://github.com/triplea-game/triplea/issues/323#issuecomment-170802217 for background)
+
+--------
+
+Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

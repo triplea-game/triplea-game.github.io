@@ -1,4 +1,8 @@
-## Java Code Guidelines for Pull Requests
+---
+layout: page
+title: Java Code Guidelines
+permalink: /dev_docs/dev/code_guidelines
+---
 
 ### Use google code conventions when there is disagreement on format etc..
 - When in doubt, follow: https://google.github.io/styleguide/javaguide.html
@@ -64,3 +68,6 @@ public int processXmlData(Unit unit, XmlTransmitter transmitter) {
 ```
 In the above, note that we are logging the values of the two arg, if there were any interesting intermediate values in the method, we would log those too. Without this information, if we ever do get an exception, and it is related to data, we'll be scratching our heads on how to reproduce the problem. 
 
+--------
+
+Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

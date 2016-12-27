@@ -1,4 +1,8 @@
-# Map Making Documentation
+---
+layout: page
+title: Map Maker Documentation
+permalink: /dev_docs/maps/map_making
+---
 
 
 ## How to Request Map XML Updates
@@ -44,6 +48,17 @@ The version field indicates to the game engine when a map should be marked as ou
 * To indicate in game that your map should be redownloaded, update the version number in the triplea_maps.yaml file.
 
 
+## How to play a map pre-release
+Three ways:
+1. If the map is officially part of the maps project, then look for the releases section of the map, and then look for the zip file download link. Example:
+* https://github.com/triplea-maps/world_war_ii_g40_balanced/
+* https://github.com/triplea-maps/world_war_ii_g40_balanced/releases
+
+2. You can also go to the main page of the map, and click "clone or download", and save the map repo as a zip. Then extract the contents of that zip into the triplea 'downloadedMaps' folder (you can set this path from within the game via the settings window)
+
+3. You can do a 'git' clone of the map repo directly to 'downloadedMaps'
+
+
 
 ## Github repo change ownership option
 
@@ -72,3 +87,6 @@ Legacy note: we do not need travis to zip the map files if we are using the repo
 * You should find that you no longer have to do any map zipping or unzipping.
 
 
+------------
+
+Up to [Map Documentation]({{ "/dev_docs/maps" | prepend: site.baseurl }})

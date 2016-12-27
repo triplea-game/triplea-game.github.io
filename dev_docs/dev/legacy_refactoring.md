@@ -1,4 +1,8 @@
-# Legacy Refactoring
+---
+layout: page
+title: Legacy Refactoring
+permalink: /dev_docs/dev/legacy_refactoring
+---
 
 This page lists examples of existing code conventions/patterns that we are trying to update
 to be more useful. 
@@ -39,3 +43,6 @@ whenever possible since state is easier to understand/reason about when it is im
 Ways to fix this is to see if we can move the class variable to the methods that use it. Often there is only one method. 
 See about extracting a variable and surrounding methods to a new class/module. 
 
+--------
+
+Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

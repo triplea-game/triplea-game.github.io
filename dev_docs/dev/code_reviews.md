@@ -1,3 +1,9 @@
+---
+layout: page
+title: Code Reviews
+permalink: /dev_docs/dev/code_reviews
+---
+
 This page describes the roles in a Pull Request (PR), guidelines for what is expected from code reviewers, how to become one, and guidelines of what is expected from someone that submits code.
 
 # Process
@@ -48,3 +54,7 @@ Avoid self merges:
 ## Code Reviewer
 - Mention both positive and negatives, not just negatives
 - Avoid line by line nitpicking, instead summarize
+
+--------
+
+Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})
