@@ -2,6 +2,8 @@
 layout: default
 title: Screenshots
 ---
+
+Open the images below in a new tab to see full size
     
 <img src="https://cloud.githubusercontent.com/assets/8350879/16852385/30dd0b98-4a08-11e6-8bc3-921306b31b0f.png"/>
 <img src="https://cloud.githubusercontent.com/assets/8350879/16852380/2bae922c-4a08-11e6-8b77-713dcff90477.png"/>

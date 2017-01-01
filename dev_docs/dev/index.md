@@ -1,0 +1,23 @@
+---
+layout: page
+title: Developer Documentation
+permalink: /dev_docs/dev/
+---
+
+- [Dev Setup]({{ "/dev_docs/dev/setup" | prepend: site.baseurl }})
+- [Git Setup and Tips]({{ "/dev_docs/dev/git_setup_and_tips" | prepend: site.baseurl }})
+- [Code Guidelines]({{ "/dev_docs/dev/code_guidelines" | prepend: site.baseurl }})
+- [Code Reviews]({{ "/dev_docs/dev/code_reviews" | prepend: site.baseurl }})
+- [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseurl }})
+- [Legacy Code Updates - Refactoring Projects]({{ "/dev_docs/dev/legacy_refactoring" | prepend: site.baseurl }})
+- [Version Numbering]({{ "/dev_docs/dev/version_numbers" | prepend: site.baseurl }})
+
+## Github Links
+- [Github Project](https://github.com/triplea-game/triplea)
+- [Initiatives and Projects](https://github.com/triplea-game/triplea/issues/1073)
+- [Bug backlog](https://github.com/triplea-game/triplea/issues?q=is%3Aissue+is%3Aopen+label%3A%22Bug+Backlog%22)
+
+------------
+
+Up to [TripleA Project Documentation]({{ "/dev_docs/" | prepend: site.baseurl }})
+
