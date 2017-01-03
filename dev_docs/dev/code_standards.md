@@ -7,6 +7,13 @@ permalink: /dev_docs/dev/code_standards
 
 According to [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseurl }})
 
+## Tests included for any new code
+
+- New (Non-AI) code should keep the current code coverage rate, not decrease it
+- Follow the [testing pyramid](http://martinfowler.com/bliki/TestPyramid.html), write mostly unit tests
+- Tests are difficult in the tripleA project for the existing code. Any significant changes will likely require a few iterations of simplification and test retrofits before any new  code can be added. There is some leniency for fixing/refactoring existing code cruft without retrofitting tests, there is a a lot less for new code, or major updates.
+ 
+
 ## DRY
 
 Do not repeat yourself: Basically [do not copy and paste](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), consolidate redundant code
