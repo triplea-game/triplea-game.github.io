@@ -37,7 +37,7 @@ void foo(Unit u, Attachment a, int b) {
 </pre>
 
 
-### Consistent Naming
+## Consistent Naming
 - Write TripleA with a capitol 'A'
 - Stay with the Java Code Standard, e.g: variable names lowercase, constants uppercase, class names start with a capitol letter etc.
 - Acronyms are in caps, for examaple "UIContext"
