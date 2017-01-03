@@ -1,45 +1,43 @@
 ---
 layout: page
-title: Java Code Guidelines
-permalink: /dev_docs/dev/code_guidelines
+title: Java Code Guidelines and Standards
+permalink: /dev_docs/dev/code_standards
 ---
+## Code is formatted
 
-## Use google code conventions when there is disagreement on format etc..
-- When in doubt, follow: https://google.github.io/styleguide/javaguide.html
+According to [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseurl }})
 
-## Please Use the auto-code formatter
-- https://github.com/triplea-game/triplea/wiki/Code-Format
+## DRY
 
-
-## DRY - do not repeat yourself
-- https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
-Avoid copy/paste code, repetitious code.
+Do not repeat yourself: Basically [do not copy and paste]{{ https://en.wikipedia.org/wiki/Don%27t_repeat_yourself }}, consolidate redundant code
 
 ## Spell out variable names
 
-#### Avoid
-```
-void foo(Unit u, Attachment a, int b) {
- if( b > 0 ) ...
- :
-}
-```
-
-
-#### Prefer
-```
+***Prefer***
+(note the variable names)
+<pre>
 void foo(Unit unit, Attachment attachment, int count) {
  if( count > 0 ) ...
  :
 }
-```
+</pre>
 
-*notable exceptions*
-- `Exception e`
-- `for(int i; ...`
+***notable exceptions***
+<pre>
+Exception e
+for(int i; ...
+</pre>
 
-## Consistent Naming
+***Avoid***
+<pre>
+void foo(Unit u, Attachment a, int b) {
+ if( b > 0 ) ...
+ :
+}
+</pre>
 
+
+### Consistent Naming
 - Write TripleA with a capitol 'A'
 - Stay with the Java Code Standard, e.g: variable names lowercase, constants uppercase, class names start with a capitol letter etc.
 - Acronyms are in caps, for examaple "UIContext"
@@ -55,9 +53,11 @@ Use empty collection types (empty set, empty list), or Optional instead.
 When you have a good reason to deprecate a method or class, add both - a @Deprecated annotation _and_ a @deprecated documentation in the javadocs
 
 ## Handle exceptions
+
 - `ClientLogger` is a utility class to log errors. Can be used as: `ClientLogger.logError(e)`
 - Always log surrounding context, if there are any args or relevant variable values, log them, for example:
-```
+
+<pre>
 public int processXmlData(Unit unit, XmlTransmitter transmitter) {
   try{
      transmitter.send(unit)
@@ -66,8 +66,8 @@ public int processXmlData(Unit unit, XmlTransmitter transmitter) {
      ClientLogger.logError(failMsg, e);
   }
 }
+</pre>
 
-```
 In the above, note that we are logging the values of the two method arguments. If there were any other interesting variable values in the method or class, we would log those too. Without this information, if we ever do get an exception, and it is related to data, we'll be scratching our heads on how to reproduce the problem. 
 
 ## Method and variable ordering
@@ -77,7 +77,7 @@ Try to organize methods and variables so that new elements are used immediately 
 ### Variable Ordering Example 
 
 #### Prefer
-```
+<pre>
 int first = 2;
 int firstSquared = first * first;
 
@@ -85,10 +85,11 @@ int second = 3;
 int secondSquared = second * second;
 
 double distance = Math.sqrt(firstSquared + secondSquared);
-```
+</pre>
 
 #### Avoid
-```
+
+<pre>
 int first = 2;
 int second = 3;
 
@@ -96,13 +97,13 @@ int firstSquared = first * first;
 int secondSquared = second * second;
 
 double distance = Math.sqrt(firstSquared + secondSquared);
-```
+</pre>
 
-### Method Ordering example
+### Method Ordering Example
 
 #### Prefer
 
-```
+<pre>
   // constructor is listed first
   public constructor() {
      int a = helperMethod1();
@@ -144,14 +145,13 @@ double distance = Math.sqrt(firstSquared + secondSquared);
       :
       :
   }
+</pre>
 
-```
+### Avoid
 
-#### Avoid
-```
+<pre>
 
   // private method that is defined above the first method that uses it
-  
   private int helperMethod1() {
     :
     :
@@ -162,6 +162,7 @@ double distance = Math.sqrt(firstSquared + secondSquared);
      boolean b = helperMethod2(a);
   }
 
+  // skipped definition of 'helperMethod1' and 'helperMethod2'
   public boolean firstPublicMethod1() {
      :
      :
@@ -178,6 +179,8 @@ double distance = Math.sqrt(firstSquared + secondSquared);
     :
   }
 
+  // no consistent ordering here, private methods are at least grouped, but there is no
+  // consistent greater structure here.
   private void helperMethod3() {
      helperMethod5();
      :
@@ -191,8 +194,7 @@ double distance = Math.sqrt(firstSquared + secondSquared);
       :
       :
   }
-
-```
+</pre>
 
 --------
 
