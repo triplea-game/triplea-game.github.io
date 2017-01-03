@@ -39,8 +39,8 @@ void foo(Unit u, Attachment a, int b) {
 
 ## Consistent Naming
 - Write TripleA with a capitol 'A'
-- Stay with the Java Code Standard, e.g: variable names lowercase, constants uppercase, class names start with a capitol letter etc.
 - Acronyms are in caps, for examaple "UIContext"
+- Stay with google java naming convention, please see: [google naming convention]({{http://google.github.io/styleguide/javaguide.html#s5-naming}}), e.g: camelCase, no underscore or 'm_' prefixes, immutable objects are in caps
 
 ## Prefer library implementations when available (do not re-invent the wheel)
 - First use a `java.lang` feature if there is one to accomplish your task
