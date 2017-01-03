@@ -9,7 +9,7 @@ According to [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseur
 
 ## DRY
 
-Do not repeat yourself: Basically [do not copy and paste]{{ https://en.wikipedia.org/wiki/Don%27t_repeat_yourself }}, consolidate redundant code
+Do not repeat yourself: Basically [do not copy and paste](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), consolidate redundant code
 
 ## Spell out variable names
 
@@ -40,7 +40,7 @@ void foo(Unit u, Attachment a, int b) {
 ## Consistent Naming
 - Write TripleA with a capitol 'A'
 - Acronyms are in caps, for examaple "UIContext"
-- Stay with google java naming convention, please see: [google naming convention]({{http://google.github.io/styleguide/javaguide.html#s5-naming}}), e.g: camelCase, no underscore or 'm_' prefixes, immutable objects are in caps
+- Stay with google java naming convention, please see: [google naming convention](http://google.github.io/styleguide/javaguide.html#s5-naming), e.g: camelCase, no underscore or 'm_' prefixes, immutable objects are in caps
 
 ## Prefer library implementations when available (do not re-invent the wheel)
 - First use a `java.lang` feature if there is one to accomplish your task
@@ -71,7 +71,7 @@ public int processXmlData(Unit unit, XmlTransmitter transmitter) {
 In the above, note that we are logging the values of the two method arguments. If there were any other interesting variable values in the method or class, we would log those too. Without this information, if we ever do get an exception, and it is related to data, we'll be scratching our heads on how to reproduce the problem. 
 
 ## Method and variable ordering
-Try to organize methods and variables so that new elements are used immediately and only *after* they are declared. This basically attempts to allow for code to be read from top to bottom once. For some good background reading and details on how to do this, please see Chapter 5 'Formatting' in *Clean Code*: http://ricardogeek.com/docs/clean_code.pdf
+Try to organize methods and variables so that new elements are used immediately and only *after* they are declared. This basically attempts to allow for code to be read from top to bottom once. For some good background reading and details on how to do this, please see Chapter 5 'Formatting' in [Clean Code](http://ricardogeek.com/docs/clean_code.pdf)
 
 
 ### Variable Ordering Example 
