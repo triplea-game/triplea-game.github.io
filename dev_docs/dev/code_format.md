@@ -1,13 +1,10 @@
----
+dddddd---
 layout: page
 title: Code Format
 permalink: /dev_docs/dev/code_format
 ---
 
-When discussing formatting, please keep in mind:
-- https://en.wikipedia.org/wiki/Law_of_triviality
-- http://bikeshed.com/
-- The goal of formatting/conventions is to add healthy constraints to how code is written. This is to benefit people reading code allowing them to make valid assumptions.
+The goal of formatting/conventions is to add healthy constraints to how code is written. This is to benefit people reading code allowing them to make valid assumptions, and to understand more code faster
 
 ### Format
 Please import these IDE formatter templates:
