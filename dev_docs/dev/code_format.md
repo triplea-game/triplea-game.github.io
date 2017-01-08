@@ -11,17 +11,11 @@ Please import these IDE formatter templates:
 - https://github.com/triplea-game/triplea/blob/master/triplea_java_eclipse_format_style.xml
 - https://github.com/triplea-game/triplea/blob/master/triplea_java_eclipse_cleanup.xml
 
-
-For the most part, following Google java style: http://google.github.io/styleguide/javaguide.html. Disagreements in formatting can be resolved by looking to the style guide.
+For the most part, we are following Google java style: http://google.github.io/styleguide/javaguide.html
 
 
 ### Line Endings
-- use LF line endings for java files
-- avoid using CRLF unless there is a pretty solid reason. For example, if it is known that many people are using notepad to open text files on a regular basis. In that case CRLF is nice for notepad. From a coding point of view we likely should try to present a UI to prevent users from having to manipulate text files. 
-
-### Some Previous Format Discussions
-- https://github.com/triplea-game/triplea/issues/18
-- https://github.com/triplea-game/triplea/issues/19
+- use LF line endings for java files, avoid using CRLF unless there is a pretty solid reason for it.
 
 ### Current Deviations from google formatter
 - setting id="org.eclipse.jdt.core.formatter.comment.line_length" value="120"
