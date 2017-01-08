@@ -1,4 +1,4 @@
-dddddd---
+---
 layout: page
 title: Code Format
 permalink: /dev_docs/dev/code_format
