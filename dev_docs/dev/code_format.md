@@ -8,6 +8,7 @@ For the most part, we are following [Google java style](http://google.github.io/
 
 ## Format
 Please import these IDE formatter templates:
+
 - [https://github.com/triplea-game/triplea/blob/master/triplea_java_eclipse_format_style.xml](https://github.com/triplea-game/triplea/blob/master/triplea_java_eclipse_format_style.xml)
 - [https://github.com/triplea-game/triplea/blob/master/triplea_java_eclipse_cleanup.xml](https://github.com/triplea-game/triplea/blob/master/triplea_java_eclipse_cleanup.xml)
 
