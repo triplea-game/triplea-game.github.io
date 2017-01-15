@@ -4,6 +4,6 @@ description: TripleA is a free online turn based strategy game and board game en
 markdown: kramdown
 
 #version and download size values are just for fallback purposes
-game-version: 1.9.0.0.3453
-# size of the win64 download, won't be exact for each downloader, but will give a good benchmark
+game-version: 1.9.0.0.3566
+# size of the win64 download, won't be exact for each downloader, but will give a good benchmark 
 dl-size-mb: 43
