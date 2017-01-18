@@ -203,6 +203,11 @@ double distance = Math.sqrt(firstSquared + secondSquared);
   }
 </pre>
 
+
+## Mock Objects
+
+Prefer replacing hand crafted mock objects with mockito.
+
 --------
 
 Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})
