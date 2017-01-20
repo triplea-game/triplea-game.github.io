@@ -6,25 +6,25 @@ permalink: /download/
 
 
 <p class="dl-install4j-credit"><small>Installer powered by <a href="http://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" /></a></small></p>
-<p>Select below to begin downloading the TripleA installer (<span id="dl-size-mb">{{ site.dl-size-mb }}</span> MB):</p>
-<a id="win64" href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_windows-64bit.exe"
+<p>Select below to begin downloading the TripleA installer (<span id="dl-size-mb">N/A</span> MB):</p>
+<a id="win64" href="https://github.com/triplea-game/triplea/releases/latest"
        target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" />
   <p>TripleA for Windows <strong>(64 bit)</strong></p>
 </a>
 
 
-<a id="win32" href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_windows-32bit.exe"
+<a id="win32" href="https://github.com/triplea-game/triplea/releases/latest"
       target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" />
   <p>TripleA for Windows <strong>(32 bit)</strong></p>
 </a>
-<a id="macos" href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_macos.dmg"
+<a id="macos" href="https://github.com/triplea-game/triplea/releases/latest"
       target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
   <img src="../images/operating-systems/mac100.png" />
   <p>TripleA for Mac</p>
 </a>
-<a id="linux" href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_unix.sh"
+<a id="linux" href="https://github.com/triplea-game/triplea/releases/latest"
       target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
   <img src="../images/operating-systems/linux100.png" />
   <p>TripleA for Linux</p>
@@ -94,18 +94,25 @@ function setLink(url, size){
   }
   if(id !== null){
     document.getElementById(id).href = url;
+    var readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
     document.getElementById(id).addEventListener("mouseover", function(){
-      document.getElementById("dl-size-mb").innerHTML = Math.round(10 * size / (1024 * 1024)) / 10;
+      document.getElementById("dl-size-mb").innerHTML = readableSize;
     });
+    return readableSize;
   }
 }
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function(){
   if(this.status == 200 && this.readyState == 4){
     var release = JSON.parse(this.responseText);
+    var average = 0;
     release['assets'].forEach(function(currentAsset){
-      setLink(currentAsset['browser_download_url'], currentAsset['size']);
+      var readableSize = setLink(currentAsset['browser_download_url'], currentAsset['size']);
+      if(readableSize){
+        average += readableSize;
+      }
     });
+    document.getElementById("dl-size-mb").innerHTML = "~" + Math.round((average / 4) * 10) / 10;
   }
 };
 xhttp.open("GET", "https://api.github.com/repos/triplea-game/triplea/releases/latest", true);
