@@ -1,11 +1,10 @@
 function hideShowInstallationText(which) {
-  if (!document.getElementById) {
-    return;
-  }
-  if (which.style.display=="block") {
-    which.style.display="none";
-  }
-  else {
+  [].forEach.call(document.getElementsByClassName("installation-instructions"), function(current){
+    if(current !== which){
+      current.style.display="none";
+    }
+  });
+  if(which){
     which.style.display="block";
   }
 }
