@@ -76,6 +76,16 @@ permalink: /download/
   <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
 <script>
+function hideShowInstallationText(which) {
+  [].forEach.call(document.getElementsByClassName("installation-instructions"), function(current){
+    if(current !== which){
+      current.style.display="none";
+    }
+  });
+  if(which){
+    which.style.display="block";
+  }
+}
 if (typeof String.prototype.endsWith !== 'function') {
     String.prototype.endsWith = function(suffix) {
       return this.indexOf(suffix, this.length - suffix.length) !== -1;
