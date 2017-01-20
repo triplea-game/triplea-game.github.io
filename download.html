@@ -94,6 +94,7 @@ function setLink(url, size){
   }
   if(id !== null){
     document.getElementById(id).href = url;
+    document.getElementById(id).target = "";
     var readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
     document.getElementById(id).addEventListener("mouseover", function(){
       document.getElementById("dl-size-mb").innerHTML = readableSize;
