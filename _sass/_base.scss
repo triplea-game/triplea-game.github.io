@@ -282,7 +282,7 @@ a:hover {
     color: $brand-color;
     text-decoration: none;
   }
-  #footer_col {
+  .footer_col {
     float: left;
     width: 25%;
     padding: 10px 0 20px 0;
@@ -393,7 +393,7 @@ a:hover {
 #colophon {
   float: none;
   clear: none;
-  #footer_col {
+  .footer_col {
     float: none;
     width: 100%;
     text-align: center;
