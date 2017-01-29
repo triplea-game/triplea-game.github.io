@@ -15,4 +15,4 @@ Several individuals have sponsored the TripleA project. For a list (or if you ar
 
 * The TripleA project thanks [Axis&Allies.org](http://www.axisandallies.org/) for participating in the 2012 Donation Drive.
 * The TripleA project thanks [Field Marshal Games](http://www.fieldmarshalgames.com/) for participating in the 2012 Donation Drive.
-* The TripleA project thanks [YourKit, LLC](http://www.yourkit.com/) for providing liscences of it's full featured [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) for TripleA developers. A [YourKit .NET Profiler](http://www.yourkit.com/.net/profiler/index.jsp) was also provided.
+* The TripleA project thanks [YourKit, LLC](http://www.yourkit.com/) for providing licences of it's full featured [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) for TripleA developers. A [YourKit .NET Profiler](http://www.yourkit.com/.net/profiler/index.jsp) was also provided.
