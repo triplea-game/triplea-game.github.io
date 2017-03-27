@@ -11,6 +11,7 @@ Please import these IDE formatter templates:
 
 - [https://github.com/triplea-game/triplea/blob/master/eclipse/format/triplea_java_eclipse_format_style.xml](https://github.com/triplea-game/triplea/blob/master/eclipse/format/triplea_java_eclipse_format_style.xml)
 - [https://github.com/triplea-game/triplea/blob/master/eclipse/format/triplea_java_eclipse_cleanup.xml](https://github.com/triplea-game/triplea/blob/master/eclipse/format/triplea_java_eclipse_cleanup.xml)
+- [https://github.com/triplea-game/triplea/blob/master/eclipse/format/triplea.importorder](https://github.com/triplea-game/triplea/blob/master/eclipse/format/triplea.importorder)
 
 ### Installing the formatter in IntelliJ
 1. Import the xml into intellij's java code style, and then choose it as your style
