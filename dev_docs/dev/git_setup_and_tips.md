@@ -4,6 +4,52 @@ title: Git Setup and Tips
 permalink: /dev_docs/dev/git_setup_and_tips
 ---
 
+## FAQ
+
+> My branch contains extra commits, how do I remove them?
+
+Rebase or merge on to the latest upstream master.
+
+Add the upstream remote:
+```
+git remote add upstream git@github.com:triplea-game/triplea.git
+```
+
+Verify it:
+```
+git remote -v
+```
+
+Get the list of branches from the remote:
+```
+git fetch upstream
+```
+
+Rebase on to the upstream master:
+
+
+```
+git rebase (remote_name) <branch_name>`
+git rebase upstream master 
+```
+
+For rebase command, if you do not specify remote_name, it will assume a local branch. Example:
+```
+git rebase master ## rebases onto my current local master branch
+```
+
+Rebase takes your current branch, and stacks the commits on top of the branch you are rebasing onto. It is generally good to rebase pretty frequently to make sure your newest commits are out ahead of everything else.
+
+But, if you are getting a branch reviewed, rebase rewrites your branch history to be newer, and should be avoided. Instead do merges there, which will lead to merge commits (which are okay). Any in-flight reviews and commit SHA's will remain the same if you are doing a merge. So teh rule of thumb is do rebase if nobody else in the world has 'seen' your branch, do a merge if anyone else might have reviewed or pulled your branch. 
+
+Merge syntax is about similar to a rebase:
+```
+git merge upstream/master
+git merge master ## merges current branch with local master
+```
+
+## General Tips
+
 ### Create fork of tripleA repo on github
 Done via github.com, click the "fork" button: https://github.com/triplea-game/triplea
 
@@ -184,6 +230,8 @@ $ git push second_change_branch origin
 ```
 
 One key is to note that we keep switching back to master.
+
+
 
 --------
 

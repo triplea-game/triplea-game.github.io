@@ -4,6 +4,22 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## 1.9.0.0.3627
+
+* Game no longer shuts down when host disconnects, allows game to be saved.
+* All rocket targets are now selected before dice are rolled. 
+* Removed non-default 'brute force' casualty selection option
+
+## 1.9.0.0.3566
+
+* SBR and air battles now fought at the beginning of combat automatically
+* Progress indicator added to the 'map snapshot' feature
+
+## 1.9.0.0.3453
+
+* Primarily bug fixes. SBR rules now working again on most maps (map XMLs updated, download of latest maps required)
+
+
 ## Changes for 1.9.0.0
 
 * Minimum Java version is now Java 1.8

@@ -63,7 +63,6 @@ a:hover {
 /**
  * Main menu
  */
-
 .site-nav {
   > ul {
     width: 95%;
@@ -282,7 +281,7 @@ a:hover {
     color: $brand-color;
     text-decoration: none;
   }
-  #footer_col {
+  .footer_col {
     float: left;
     width: 25%;
     padding: 10px 0 20px 0;
@@ -306,18 +305,29 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 
+  .fb-like.fb_iframe_widget{
+    margin-left: calc(50% - 60px);
+  }
+
+  #headline > h2 {
+      font-size: 2em;
+      margin-top: 50px;
+  }
+
 .site-nav {
   > ul {
-    padding-left: 1.7855em;
+    padding: 0;
+    width: 100%;
     list-style-type: none;
     font-family: $secondary-font-family;
   > li {
-    margin: 0px 0px 0px -10px;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
+    margin: 0;
+  	display: inline-block;
+  	width: 100%;
+  	text-align: center;
+    padding: 0;
     > h1 {
-      margin: 40px 20px 40px 0;
+      margin: 40px 0 40px 0;
       font-size: 30px;
       a {
         color: lighten($text-color, 10%);
@@ -332,14 +342,14 @@ a:hover {
       display: block;
       height: 100px;
       width: 100px;
-      margin: 0 7px 0 0;
+      margin: 0;
     }
     &.menu-items {
-      margin: 0px 0 0px -15px;
-      padding: 20px 10px 20px 0px;
+      margin: 0;
+      padding: 10px 0px 10px 0px;
     }
     &.dl {
-	margin: 0px 0px 0px -18px;
+      margin: 0;
       float: left;
     }
     > a {
@@ -353,7 +363,7 @@ a:hover {
     &.dl a {
       padding-top: 1.0rem;
       padding-bottom: 1.0625rem;
-      margin: 30px 0 30px 0;
+      margin: 0;
       font-weight: normal;
       color: $background-color;
       :hover {
@@ -393,7 +403,7 @@ a:hover {
 #colophon {
   float: none;
   clear: none;
-  #footer_col {
+  .footer_col {
     float: none;
     width: 100%;
     text-align: center;
