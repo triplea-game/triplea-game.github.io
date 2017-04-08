@@ -8,7 +8,7 @@ permalink: /maps-list/mods/
 
 <div class="maps-col-section mod">
 <h2 class="section-title">Map Mods</h2>
-{% for map in site.data.triplea_maps) %}
+{% for map in site.data.triplea_maps %}
 {% if map.mapType == "MAP_MOD" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
     <h3>{{ map.mapName }}</h3>
@@ -24,7 +24,7 @@ permalink: /maps-list/mods/
 
 <div class="maps-col-section skin">
 <h2 class="section-title">Map Skins</h2>
-{% for map in site.data.triplea_maps) %}
+{% for map in site.data.triplea_maps %}
 {% if map.mapType == "MAP_SKIN" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
     <h3>{{ map.mapName }}</h3>
