@@ -32,6 +32,7 @@ permalink: /download/
 <p>Upgrading from 1.8.0.9? <a href="/upgrade_notes">read here for upgrade notes</a></p>
 <p>See what has changed in the <a href="/release_notes">release notes</a></p>
 <p>Download <a href="/old_downloads">previous TripleA releases here</a></p>
+<p>Download <a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code from Github Releases</a></p>
 
 
 <div id="windows-install" class="installation-instructions">
@@ -124,6 +125,7 @@ xhttp.onreadystatechange = function(){
       }
     });
     document.getElementById("dl-size-mb").innerHTML = "~" + Math.round((average / 4) * 10) / 10;
+    document.getElementById("sourceLink").href = release['zipball_url'];
   }
 };
 xhttp.open("GET", "https://api.github.com/repos/triplea-game/triplea/releases/latest", true);
