@@ -9,7 +9,7 @@ permalink: /help/
 
 ## Lobby
 
-* [Lobby Conduct Rules](http://www.tripleawarclub.org/modules/newbb/viewtopic.php?topic_id=100&forum=1)
+* [Lobby Conduct Rules](https://forums.triplea-game.org/topic/4/lobby-rules)
 * [How to Host Lobby Games - set up port forwarding](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4085700.html)
 * [Host a Bot in the Lobby](https://github.com/triplea-game/lobby#run-hosted-bots)
 
