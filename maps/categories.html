@@ -8,7 +8,7 @@ permalink: /maps-list/categories/
 
 <div class="maps-col-section high_quality">
 <h2 class="section-title">High Quality Maps</h2>
-{% for map in site.data.triplea_maps) %}
+{% for map in site.data.triplea_maps %}
 {% if map.mapCategory == "BEST" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
     <h3>{{ map.mapName }}</h3>
@@ -24,7 +24,7 @@ permalink: /maps-list/categories/
 
 <div class="maps-col-section quality">
 <h2 class="section-title">Quality Maps</h2>
-{% for map in site.data.triplea_maps) %}
+{% for map in site.data.triplea_maps %}
 {% if map.mapCategory == "GOOD" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
     <h3>{{ map.mapName }}</h3>
@@ -40,7 +40,7 @@ permalink: /maps-list/categories/
 
 <div class="maps-col-section experimental">
 <h2 class="section-title">Other Maps / Experimental / In Development</h2>
-{% for map in site.data.triplea_maps) %}
+{% for map in site.data.triplea_maps %}
 {% if map.mapCategory == "EXPERIMENTAL" %}
   <div id="maps_col" class="maps_col_{{ map.mapName }}">
     <h3>{{ map.mapName }}</h3>
