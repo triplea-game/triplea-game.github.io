@@ -6,6 +6,10 @@ permalink: /maps/
 
 TripleA is very versatile and can be used for scenarios from Hannibal crossing the Alps to very futuristic and modern time periods. Here are a few examples of the most popular maps on TripleA. (A comprehensive download list can be found inside TripleA using the 'Download Maps' feature.)
 
+TripleA will very soon have a new maps listing that will display all of its maps with ratings on playability, recommended settings, and more. Giving feedback about your favorite maps will help support your favorite maps on TripleA.
+
+[Give Maps feedback]({{ "/maps/feedback/" | prepend: site.baseurl }})
+
 ## Big World
 
 ![Big World Map]({{ "/images/maps/BigWorld.png" | prepend: site.baseurl }})
