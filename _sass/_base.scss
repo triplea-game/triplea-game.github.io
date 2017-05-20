@@ -1,7 +1,59 @@
 /**
  * Miscellaneous Styles
  */
-
+.thickTable {
+  border-width: 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: separate;
+  td {
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 10px;
+    padding: 10px;
+  }
+}
+.thinTable {
+  border-width: 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: separate;
+  td {
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 0;
+    padding: 10px;
+  }
+}
+.table1 {
+  border-width: 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: separate;
+  td {
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 0;
+    padding: 20px;
+  }
+}
+#topScroller {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #8d1c21;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  :hover {
+    background-color: #555;
+  }
+}
 body {
     background: $background-color;
     font-family: $base-font-family;
@@ -218,7 +270,7 @@ a:hover {
   float: left;
 }
 
-#maps_col {
+.maps_col {
   width: 30%;
   float: left;
   background-color: $grey-color-light;
@@ -252,7 +304,7 @@ a:hover {
  float: left;
 }
 
-#community_col, #community-dev_col {
+.community_col, #community-dev_col {
  width: 30%;
  float: left;
  padding: 10px;
