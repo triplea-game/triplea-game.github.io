@@ -6,44 +6,43 @@ permalink: /download/
 
 
 <p class="dl-install4j-credit"><small>Installer powered by <a href="http://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" /></a></small></p>
-<p>Select below to begin downloading the TripleA installer ({{ site.dl-size-mb }} MB):</p>
-<a href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_windows-64bit.exe"
+<p>Select below to begin downloading the TripleA installer (<span id="dl-size-mb">N/A</span> MB):</p>
+<a id="win64" href="https://github.com/triplea-game/triplea/releases/latest"
        target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" />
   <p>TripleA for Windows <strong>(64 bit)</strong></p>
 </a>
 
 
-<a href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_windows-32bit.exe" 
+<a id="win32" href="https://github.com/triplea-game/triplea/releases/latest"
       target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" />
   <p>TripleA for Windows <strong>(32 bit)</strong></p>
 </a>
-<a href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_macos.dmg"
+<a id="macos" href="https://github.com/triplea-game/triplea/releases/latest"
       target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
   <img src="../images/operating-systems/mac100.png" />
   <p>TripleA for Mac</p>
 </a>
-<a href="https://github.com/triplea-game/triplea/releases/download/{{ site.game-version }}/TripleA_{{ site.game-version }}_unix.sh " 
+<a id="linux" href="https://github.com/triplea-game/triplea/releases/latest"
       target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
   <img src="../images/operating-systems/linux100.png" />
   <p>TripleA for Linux</p>
 </a>
-
-</p>
 <p>Upgrading from 1.8.0.9? <a href="/upgrade_notes">read here for upgrade notes</a></p>
 <p>See what has changed in the <a href="/release_notes">release notes</a></p>
 <p>Download <a href="/old_downloads">previous TripleA releases here</a></p>
+<p>Download <a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code from Github Releases</a></p>
 
 
 <div id="windows-install" class="installation-instructions">
   <h2>Windows Installation</h2>
   <p>Run the installer once the download completes</p>
-  <p>Follow the on-screen prompts to finish the installation</p> 
+  <p>Follow the on-screen prompts to finish the installation</p>
   <p>When the installation is complete, you will be able to launch TripleA from the start menu.</p>
-  <br />
+  <br>
   <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText(document.getElementById('windows-install'))">(Hide)</a></p>
+  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
 
 <div id="mac-install" class="installation-instructions">
@@ -56,12 +55,12 @@ permalink: /download/
   <p>For detailed help of how to install from a DMG, please see this <a href="http://www.howtogeek.com/177619/how-to-install-applications-on-a-mac-everything-you-need-to-know/">how-to article</a>.</p>
   <br/>
   <p>If you get a "TripleA is damaged and cannot be opened" warning, follow these steps:</p>
-  <p>Apple menu > System Preferences > Security & Privacy > General tab under the header "Allow applications downloaded from:"</p>
+  <p>Apple menu > System Preferences > Security &amp; Privacy > General tab under the header "Allow applications downloaded from:"</p>
   <p>Change "Allow Applications Downloaded From:" to "Anywhere"</p>
   <p>This setting will reset to "Mac App Store and identified developers" every 30 days, you may need to repeat this step.</p>
-  <br />
-  <p">New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText(document.getElementById('mac-install'))">(Hide)</a></p>
+  <br>
+  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
+  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
 
 <div id="linux-install" class="installation-instructions">
@@ -73,7 +72,62 @@ permalink: /download/
   <p>TripleA requires Java 8 or later to be installed</p>
   <p><a href=" https://www.java.com/de/download/linux_manual.jsp">Oracle JREs</a>
       are recommended, sounds may not work with OpenJRE. </p>
-  <br />
-  <p">New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText(document.getElementById('linux-install'))">(Hide)</a></p>
+  <br>
+  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
+  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
+<script>
+function hideShowInstallationText(which) {
+  [].forEach.call(document.getElementsByClassName("installation-instructions"), function(current){
+    if(current !== which){
+      current.style.display="none";
+    }
+  });
+  if(which){
+    which.style.display="block";
+  }
+}
+if (typeof String.prototype.endsWith !== 'function') {
+    String.prototype.endsWith = function(suffix) {
+      return this.indexOf(suffix, this.length - suffix.length) !== -1;
+    };
+}
+function setLink(url, size){
+  var id = null;
+  if(url.endsWith("64bit.exe")){
+    id = "win64";
+  } else if(url.endsWith("32bit.exe")){
+    id = "win32";
+  } else if(url.endsWith("macos.dmg")){
+    id = "macos";
+  } else if(url.endsWith("unix.sh")){
+    id = "linux";
+  }
+  if(id !== null){
+    document.getElementById(id).href = url;
+    document.getElementById(id).target = "";
+    var readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
+    document.getElementById(id).addEventListener("mouseover", function(){
+      document.getElementById("dl-size-mb").innerHTML = readableSize;
+    });
+    return readableSize;
+  }
+}
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){
+  if(this.status == 200 && this.readyState == 4){
+    var release = JSON.parse(this.responseText);
+    var average = 0;
+    release['assets'].forEach(function(currentAsset){
+      var readableSize = setLink(currentAsset['browser_download_url'], currentAsset['size']);
+      if(readableSize){
+        average += readableSize;
+      }
+    });
+    document.getElementById("dl-size-mb").innerHTML = "~" + Math.round((average / 4) * 10) / 10;
+    document.getElementById("sourceLink").href = release['zipball_url'];
+  }
+};
+xhttp.open("GET", "https://api.github.com/repos/triplea-game/triplea/releases/latest", true);
+xhttp.send();
+</script>
