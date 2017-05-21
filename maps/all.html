@@ -3,21 +3,15 @@ layout: page
 title: All Maps
 permalink: /maps-list/all/
 ---
-
 <p><a href="{{ "/maps-list" | prepend: site.baseurl }}">Maps</a> |  <a href="{{ "/maps-list/categories" | prepend: site.baseurl }}">Categories</a> | <a href="{{ "/maps-list/mods" | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ "/maps-list/all" | prepend: site.baseurl }}">All</a></p>
-
 <div class="maps-col-wrapper">
   {% for map in site.data.triplea_maps %}
   {% if map.mapType != "MAP_TOOL" %}
   <div class="maps_col" data-map-name="{{ map.mapName }}">
     <h3>{{ map.mapName }}</h3>
-    <!-- TODO Change this, it "causes" HTML warnings-->
-      <!-- <p class="maps_col_desc">{{ map.description }}</p> -->
       <p>
-        <!-- <span class="maps_col_version">Verison {{ map.version }}</span> -->
         <a class="maps_col_button button" href="{{ "/docs/downloading_maps" | prepend: site.baseurl }}">Download</a>
       </p>
-
   </div>
   {% endif %}
   {% endfor %}
