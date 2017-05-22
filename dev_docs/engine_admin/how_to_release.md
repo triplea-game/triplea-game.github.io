@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: How to Release
 permalink: /dev_docs/admin/how_to_release
 ---

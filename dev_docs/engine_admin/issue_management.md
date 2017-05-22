@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Issue Management
 permalink: /dev_docs/admin/issue_management
 ---

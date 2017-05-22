@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Java Code Guidelines and Standards
 permalink: /dev_docs/dev/code_standards
 ---

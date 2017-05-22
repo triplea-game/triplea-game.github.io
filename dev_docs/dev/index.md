@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Game Engine Developer Documentation
 permalink: /dev_docs/dev/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Mac and Unix Game Freezse Troubleshooting
 permalink: /game_freeze_troubleshooting
 ---

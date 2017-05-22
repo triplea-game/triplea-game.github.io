@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Build Pipeline
 permalink: /dev_docs/admin/build_pipeline
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Dev Setup
 permalink: /dev_docs/dev/setup
 ---

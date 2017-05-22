@@ -3,21 +3,8 @@ layout: default
 ---
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/github-gist.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
-<button onclick="topFunction()" title="Go to top" id="topScroller">Top</button>
 <script>
 	hljs.initHighlightingOnLoad();
-
-	window.onscroll = function () {
-	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	        document.getElementById("topScroller").style.display = "block";
-	    } else {
-	        document.getElementById("topScroller").style.display = "none";
-	    }
-	};
-	function topFunction() {
-	    document.body.scrollTop = 0;
-	    document.documentElement.scrollTop = 0;
-	};
 </script>
 <div class="post">
   <article class="post-content">
