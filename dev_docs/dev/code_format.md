@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Code Format
 permalink: /dev_docs/dev/code_format
 ---

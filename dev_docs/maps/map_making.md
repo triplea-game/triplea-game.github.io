@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Map Maker Documentation
 permalink: /dev_docs/maps/map_making
 ---

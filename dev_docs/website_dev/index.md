@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Website Developer Documentation
 permalink: /dev_docs/website_dev/
 ---

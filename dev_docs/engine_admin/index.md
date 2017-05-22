@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Adminsitrative Documentation
 permalink: /dev_docs/engine_admin/
 ---

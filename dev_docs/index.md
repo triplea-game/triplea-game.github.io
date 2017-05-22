@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: TripleA Project Documentation
 permalink: /dev_docs/
 ---

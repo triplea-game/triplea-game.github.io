@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Legacy Refactoring
 permalink: /dev_docs/dev/legacy_refactoring
 ---

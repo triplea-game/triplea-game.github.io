@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: TripleA Maps Documentation
 permalink: /dev_docs/maps/
 ---

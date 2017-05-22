@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Map Admin Documentation
 permalink: /dev_docs/map_admin/
 ---

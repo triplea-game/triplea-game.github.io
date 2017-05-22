@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Code Reviews
 permalink: /dev_docs/dev/code_reviews
 ---
