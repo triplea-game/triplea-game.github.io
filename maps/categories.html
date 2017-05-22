@@ -8,10 +8,10 @@ permalink: /maps-list/categories/
 <h2 class="section-title">High Quality Maps</h2>
 {% for map in site.maps %}
 {% if map.mapCategory == "BEST" %}
-  <div class="maps_col" data-map-name="{{ map.mapName }}">
+  <div class="maps_col" data-map-name="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
       <p>
-        <a class="maps_col_button button" href="{{ "/map/" | prepend: site.baseurl | append: map.mapName }}">Download</a>
+        <a class="maps_col_button button" href="{{ "/map/" | prepend: site.baseurl | append: map.slug }}">Download</a>
       </p>
   </div>
 {% endif %}
@@ -21,10 +21,10 @@ permalink: /maps-list/categories/
 <h2 class="section-title">Quality Maps</h2>
 {% for map in site.maps %}
 {% if map.mapCategory == "GOOD" %}
-  <div class="maps_col" data-map-name="{{ map.mapName }}">
+  <div class="maps_col" data-map-name="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
       <p>
-        <a class="maps_col_button button" href="{{ "/map/" | prepend: site.baseurl | append: map.mapName }}">Download</a>
+        <a class="maps_col_button button" href="{{ "/map/" | prepend: site.baseurl | append: map.slug }}">Download</a>
       </p>
   </div>
 {% endif %}
@@ -34,10 +34,10 @@ permalink: /maps-list/categories/
 <h2 class="section-title">Other Maps / Experimental / In Development</h2>
 {% for map in site.maps %}
 {% if map.mapCategory == "EXPERIMENTAL" %}
-  <div class="maps_col" data-map-name="{{ map.mapName }}">
+  <div class="maps_col" data-map-name="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
       <p>
-        <a class="maps_col_button button" href="{{ "/map/" | prepend: site.baseurl | append: map.mapName }}">Download</a>
+        <a class="maps_col_button button" href="{{ "/map/" | prepend: site.baseurl | append: map.slug }}">Download</a>
       </p>
   </div>
 {% endif %}
