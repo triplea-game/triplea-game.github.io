@@ -2,7 +2,8 @@
 layout: default
 ---
 <h2>{{ page.mapName }} v{{ page.version }}</h2>
-<h4>Category: {{ page.mapCategory }}</h4>
+{% if page.mapCategory %}<h4>Category: {{ page.mapCategory }}</h4>{% endif %}
+{% if page.mapType == "MAP_SKIN" %}<h4>Type: Map Skin</h4>{% endif %}
 <img src="{{ page.img }}">
 {{ content }}
 <br>
