@@ -14,9 +14,10 @@ permalink: /dev_docs/dev/
 - [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseurl }})
 - [Code Reviews]({{ "/dev_docs/dev/code_reviews" | prepend: site.baseurl }})
 - [Version Numbering]({{ "/dev_docs/dev/version_numbers" | prepend: site.baseurl }})
-
+- [Testing]({{ "/dev_docs/dev/testing" | prepend: site.baseurl }})
 
 ## Github Links
+
 - [Github Project](https://github.com/triplea-game/triplea)
 - [Initiatives and Projects](https://github.com/triplea-game/triplea/issues/1073)
 - [Bug backlog](https://github.com/triplea-game/triplea/issues?q=is%3Aissue+is%3Aopen+label%3A%22Bug+Backlog%22)
