@@ -73,13 +73,13 @@ to unit types, players, territories, or resources.
 
 
 This tells the xml parser to create an instance of
-UnitAttatchment, attach it to the infantry unit type, and initialize the
+UnitAttachment, attach it to the infantry unit type, and initialize the
 attachment with an attack value of 1, and a defense value of 2.
 
 
 
 The game parser uses the java bean syntax for setting the
-attatchment values.If an attachment
+attachment values.If an attachment
 has an option name of code, then it will call setCode(value) to set the
 attachments value.The setCode method
 will always use a string as its argument.
@@ -94,9 +94,9 @@ will stop the parser, and terminate the program.
 
 
 
-getAttatchment,
+getAttachment,
 where key is the name of the attachment. 
-In the above example key would be unitAttatchment.  Objects implementing the Attatchable
+In the above example key would be unitAttachment.  Objects implementing the Attatchable
 interface are PlayerID, Resource, Territory, and UnitType.
 
 

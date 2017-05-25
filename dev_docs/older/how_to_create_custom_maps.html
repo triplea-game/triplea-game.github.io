@@ -58,9 +58,9 @@ line to be
 <h2>Changing unit strengths</h2>
 To change the attack, defense or movement points of a unit look for a
 line that looks like
-<pre><code>&lt;attatchmentList&gt;</code></pre><br>
+<pre><code>&lt;attachmentList&gt;</code></pre><br>
 Beneath that you will see a series of lines like<br>
-<pre><code>&lt;attatchment name="unitAttatchment" attatchTo="infantry" javaClass="games.strategy.triplea.attatchments.UnitAttatchment" type="unitType"&gt;
+<pre><code>&lt;attachment name="unitAttachment" attatchTo="infantry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType"&gt;
   &lt;option name="movement" value="1" /&gt;
   &lt;option name="transportCost" value="1" /&gt;
   &lt;option name="attack" value="1" /&gt;
@@ -73,9 +73,9 @@ the other unit types.<br>
 </h2>
 To change the production value of the Caucus, look for a line that
 looks like
-<pre><code>&lt;attatchment name="territoryAttatchment" attatchTo="Caucasus" javaClass="games.strategy.triplea.attatchments.TerritoryAttatchment" type="territory"&gt;
+<pre><code>&lt;attachment name="territoryAttachment" attatchTo="Caucasus" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"&gt;
   <span style="font-weight: bold;">&lt;option name="production" value="3" /&gt;</span>
-&lt;/attatchment&gt;<br>
+&lt;/attachment&gt;<br>
 </code></pre>
 By changing the line <br>
 <pre><code>&lt;option name="production" <span style="font-weight: bold;">value="3"</span>/&gt;</code></pre>
@@ -86,11 +86,11 @@ You will change the production of the caucus to 10.
 You can change the location of the capitals for each player by moving a
 line.&nbsp; The capital for the us is specified in the capital setting
 below<br>
-<pre><code>&lt;attatchment name="territoryAttatchment" attatchTo="East US" javaClass="games.strategy.triplea.attatchments.TerritoryAttatchment" type="territory"&gt;
+<pre><code>&lt;attachment name="territoryAttachment" attatchTo="East US" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory"&gt;
   &lt;option name="production" value="12" /&gt;
   &lt;option name="originalFactory" value="true" /&gt;
   <span style="font-weight: bold;">&lt;option name="capital" value="Americans" /&gt;</span>
-&lt;/attatchment&gt;</code></pre>
+&lt;/attachment&gt;</code></pre>
 By moving this line to another territory, you will change the capital
 of the US to a different state.<br>
 <h2>Changing turn sequence</h2>
