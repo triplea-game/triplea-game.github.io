@@ -22,26 +22,20 @@ Do not repeat yourself: Basically [do not copy and paste](https://en.wikipedia.o
 
 ***Prefer***
 (note the variable names)
-<pre>
-void foo(Unit unit, Attachment attachment, int count) {
+<pre><code>void foo(Unit unit, Attachment attachment, int count) {
  if( count > 0 ) ...
  :
-}
-</pre>
+}</code></pre>
 
 ***notable exceptions***
-<pre>
-Exception e
-for(int i; ...
-</pre>
+<pre><code>Exception e
+for(int i; ...</code></pre>
 
 ***Avoid***
-<pre>
-void foo(Unit u, Attachment a, int b) {
+<pre><code>void foo(Unit u, Attachment a, int b) {
  if( b > 0 ) ...
  :
-}
-</pre>
+}</code></pre>
 
 
 ## Consistent Naming
@@ -64,16 +58,14 @@ When you have a good reason to deprecate a method or class, add both - a @Deprec
 - `ClientLogger` is a utility class to log errors. Can be used as: `ClientLogger.logError(e)`
 - Always log surrounding context, if there are any args or relevant variable values, log them, for example:
 
-<pre>
-public int processXmlData(Unit unit, XmlTransmitter transmitter) {
-  try{
+<pre><code>public int processXmlData(Unit unit, XmlTransmitter transmitter) {
+  try {
      transmitter.send(unit)
   } catch (IOException e ) {
      String failMsg = String.format("Failed to send unit data: %s, using transmitter: %s", unitData, transmitter);
      ClientLogger.logError(failMsg, e);
   }
-}
-</pre>
+}</code></pre>
 
 In the above, note that we are logging the values of the two method arguments. If there were any other interesting variable values in the method or class, we would log those too. Without this information, if we ever do get an exception, and it is related to data, we'll be scratching our heads on how to reproduce the problem.
 
@@ -84,50 +76,42 @@ Try to organize methods and variables so that new elements are used immediately 
 ### Variable Ordering Example
 
 #### Prefer
-<pre>
-int first = 2;
+<pre><code>int first = 2;
 int firstSquared = first * first;
 
 int second = 3;
 int secondSquared = second * second;
 
-double distance = Math.sqrt(firstSquared + secondSquared);
-</pre>
+double distance = Math.sqrt(firstSquared + secondSquared);</code></pre>
 
 #### Avoid
 
-<pre>
-int first = 2;
+<pre><code>int first = 2;
 int second = 3;
 
 int firstSquared = first * first;
 int secondSquared = second * second;
 
-double distance = Math.sqrt(firstSquared + secondSquared);
-</pre>
+double distance = Math.sqrt(firstSquared + secondSquared);</code></pre>
 
 ### Method Ordering Example
 
 #### Prefer
 
-<pre>
-  // constructor is listed first
+<pre><code>  // constructor is listed first
   public constructor() {
      int a = helperMethod1();
      boolean b = helperMethod2(a);
   }
-
   // helperMethod1 is the first thing used in the constructor, so we start by defining that first.
   private int helperMethod1() {
     :  // any methods called by helperMethod1 would be defined next
     :  // in this example we just do generic processing, so next we define helperMethod2 since that was next
   }
-
   private boolean helperMethod2() {
     :
     :
   }
-
   // now when we see the first public method, we know all the private methods above it until the constructor are there
   // only to support construction. Note that we gain now quite a bit of information based simply on where methods are places
   public boolean firstPublicMethod1() {
@@ -137,38 +121,30 @@ double distance = Math.sqrt(firstSquared + secondSquared);
      helperMethod4();
      :
   }
-
   private void helperMethod3() {
      helperMethod5();
      :
   }
-
   private void helperMethod5() { // We'll fully define the code path that followed helperMethod3() first
       :                          // before we define helperMethod4()
       :
   }
-
   private void helperMethod4() {
       :
       :
-  }
-</pre>
+  }</code></pre>
 
 ### Avoid
 
-<pre>
-
-  // private method that is defined above the first method that uses it
+<pre><code>  // private method that is defined above the first method that uses it
   private int helperMethod1() {
     :
     :
   }
-
   public constructor() {
      int a = helperMethod1();
      boolean b = helperMethod2(a);
   }
-
   // skipped definition of 'helperMethod1' and 'helperMethod2'
   public boolean firstPublicMethod1() {
      :
@@ -177,7 +153,6 @@ double distance = Math.sqrt(firstSquared + secondSquared);
      helperMethod4();
      :
   }
-
   // all private methods grouped at bottom of file.
   // There is at least some structure here, but for java files that are much longer that quickly breaks down.
   // For example, at 500, or 1000+ lines, all of the private methods grouped togeter can become a jumble.
@@ -185,23 +160,19 @@ double distance = Math.sqrt(firstSquared + secondSquared);
     :
     :
   }
-
   // no consistent ordering here, private methods are at least grouped, but there is no
   // consistent greater structure here.
   private void helperMethod3() {
      helperMethod5();
      :
   }
-
   private void helperMethod5() {
       :
   }
-
   private void helperMethod4() {
       :
       :
-  }
-</pre>
+  }</code></pre>
 
 
 ## Mock Objects
