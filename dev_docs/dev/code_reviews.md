@@ -12,7 +12,7 @@ This page describes the roles in a Pull Request (PR), guidelines for what is exp
 ### Code contributor:
 - will be just that, the person that submits a PR.
 - a code contributor will be expected to do 99% of the work in a PR. That is purely to keep overhead low, we do not have payed full time people working on the project whose job is to do reviews. Thus, if there is a choice between a reviewer or a contributor doing work, the choice will be for the contributor to do it. This is to decentralize the work as much as possible.
-- code contributors should test their work quite thoroughly 
+- code contributors should test their work quite thoroughly
 
 ### PR Guidelines for a code contributor
 - describe functional changes
@@ -23,7 +23,7 @@ This page describes the roles in a Pull Request (PR), guidelines for what is exp
 ### Code reviewer role:
 - would have write access
 - be responsible for shepherding PRs, and hitting the merge button at the appropriate time.
-- reviewers will do functional reviews when functionality has changed. The functional review will generally be pretty brief, mostly a smoke test to make things work as described, and also look good to someone else who did not author the original code. To facilitate this, please be as clear as possible when submitting PRs as how they can be tested, which areas of functionality were updated, make it easy for 
+- reviewers will do functional reviews when functionality has changed. The functional review will generally be pretty brief, mostly a smoke test to make things work as described, and also look good to someone else who did not author the original code. To facilitate this, please be as clear as possible when submitting PRs as how they can be tested, which areas of functionality were updated, make it easy for
 
 ### Requirements for someone to become a code reviewer
 - contribute some code
@@ -49,12 +49,8 @@ Avoid self merges:
 # Review Guidelines
 
 ## Code Submitter
-- Focus on code updates first to respond to PR commentary. In places where there is disagreement, see if you can first update the code to achieve whatever possible common ground you might be able to find. Then for anything remaining, discuss why the code is good enough left in the current state. 
+- Focus on code updates first to respond to PR commentary. In places where there is disagreement, see if you can first update the code to achieve whatever possible common ground you might be able to find. Then for anything remaining, discuss why the code is good enough left in the current state.
 
 ## Code Reviewer
 - Mention both positive and negatives, not just negatives
 - Avoid line by line nitpicking, instead summarize
-
---------
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

@@ -20,7 +20,3 @@ Configuration for install4j. Creates platform specific installation binaries
 http://github.com/triplea-game/triplea/blob/master/.travis.yml
 
 The travis.yml build file is a series of steps (gradle build commands for the most part) that run in a Linux container provided by travis.org. After gradle does compilation, unit testing, packaging of jars, gradle kicks off the install4j build. Finally the travis config specifies a list of which output files are to be deployed to github releses.
-
-------------
-
-Up to: [Admin Documentation]({{ "/dev_docs/admin" | prepend: site.baseurl }})

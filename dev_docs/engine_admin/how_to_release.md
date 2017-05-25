@@ -55,7 +55,7 @@ Download all maps for a robot, and run lobby bots:
 @tripleawarclub:/home/triplea/lobby-scripts$ sudo -u triplea mkdir maps
 @tripleawarclub:/home/triplea/lobby-scripts$ cd maps
 ## downloads all maps to the current folder
-@tripleawarclub:/home/triplea/lobby-scripts/maps$ sudo -u triplea ../download_all_maps 
+@tripleawarclub:/home/triplea/lobby-scripts/maps$ sudo -u triplea ../download_all_maps
 @tripleawarclub:/home/triplea/lobby-scripts/maps$ cd ../
 @tripleawarclub:/home/triplea/lobby-scripts$ sudo rm -rf ../bots_1_9/maps/
 @tripleawarclub:/home/triplea/lobby-scripts$ sudo -u triplea mv maps/ ../bots_1_9/
@@ -127,7 +127,3 @@ We need to update the website’s main page, and also the news page.  These two 
 
 
 Once the above is done, you have officially released TripleA!  
-
-------------
-
-Up to: [Admin Documentation]({{ "/dev_docs/admin" | prepend: site.baseurl }})

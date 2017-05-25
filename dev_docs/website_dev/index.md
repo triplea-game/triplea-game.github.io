@@ -58,12 +58,3 @@ Though the site has been designed to allow as few points of maintenance as possi
 
 * The version number and links round line 11 of `_config.yml` need to be updated with information about the new release. A pull request can be made, and merged as soon as the new version is live.
 * (Deprecated) Update `news.md` with a link and a changelog.
-
-
-
-------------
-
-Up to [TripleA Project Documentation]({{ "/dev_docs/" | prepend: site.baseurl }})
-
-
-
