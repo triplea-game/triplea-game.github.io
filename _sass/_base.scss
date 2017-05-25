@@ -57,9 +57,9 @@
 #backButton {
   right: 30px;
   display: block;
-  :hover {
-    text-decoration: none !important;
-  }
+}
+#backButton:hover {
+  text-decoration: none !important;
 }
 body {
     background: $background-color;
