@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: longpage
 title: Testing
 permalink: /dev_docs/dev/testing
 ---
