@@ -37,11 +37,11 @@
     padding: 20px;
   }
 }
-#topScroller {
+#topScroller, #backButton {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 102px;
   z-index: 99;
   border: none;
   outline: none;
@@ -52,6 +52,13 @@
   border-radius: 10px;
   :hover {
     background-color: #555;
+  }
+}
+#backButton {
+  right: 30px;
+  display: block;
+  :hover {
+    text-decoration: none !important;
   }
 }
 body {
