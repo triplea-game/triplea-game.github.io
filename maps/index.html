@@ -3,7 +3,7 @@ layout: page
 title: Maps
 permalink: /maps-list/
 ---
-<p><a href="{{ "/maps-list" | prepend: site.baseurl }}">Maps</a> |  <a href="{{ "/maps-list/categories" | prepend: site.baseurl }}">Categories</a> | <a href="{{ "/maps-list/mods" | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ "/maps-list/all" | prepend: site.baseurl }}">All</a></p>
+<p><a href="{{ '/maps-list' | prepend: site.baseurl }}">Maps</a> |  <a href="{{ '/maps-list/categories' | prepend: site.baseurl }}">Categories</a> | <a href="{{ '/maps-list/mods' | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ '/maps-list/all' | prepend: site.baseurl }}">All</a></p>
 <div class="maps-col-wrapper">
   <h2 class="section-title">Featured Maps</h2>
   {% for map in site.data.triplea_maps %}
@@ -11,7 +11,7 @@ permalink: /maps-list/
   <div class="maps_col" data-map-name="{{ map.mapName }}">
     <h3>{{ map.mapName }}</h3>
       <p>
-        <a class="maps_col_button button" href="{{ "/docs/downloading_maps" | prepend: site.baseurl }}">Download</a>
+        <a class="maps_col_button button" href="{{ '/docs/downloading_maps' | prepend: site.baseurl }}">Download</a>
       </p>
   </div>
   {% endif %}
