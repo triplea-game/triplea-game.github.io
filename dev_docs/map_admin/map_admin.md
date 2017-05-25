@@ -11,7 +11,7 @@ $ cd ~/work/maps  ## or wherever you wish to use as a working root folder
 $ git clone git@github.com:triplea-maps/Project.git
 $ ./Project/bin/clone_all.sh
 ```
-Note, new map repos will take time to show up in the github CLI API, perhaps up to a day or more. 
+Note, new map repos will take time to show up in the github CLI API, perhaps up to a day or more.
 
 
 Links:
@@ -62,7 +62,7 @@ Usage: ./createMapRepo.sh -m <MAP>
      -b ~/.github/bot_token
      -p ~/.github/bot_password
 
-$ ./Project/bin/createMapRepo.sh -m big_world_1939.zip 
+$ ./Project/bin/createMapRepo.sh -m big_world_1939.zip
 
 ```
 
@@ -85,7 +85,7 @@ Assuming you know that all of the latest map versoins are safe - run the update 
 
 ```
 
-dan@dan-desk:~/work/maps/Project/production_config$ ../bin/check_map_versions.sh 
+dan@dan-desk:~/work/maps/Project/production_config$ ../bin/check_map_versions.sh
 
 
 -------------------------
@@ -103,7 +103,7 @@ greyhawk latest = (0.9) -> current = 0.9/greyhawk.zip
 :
 world_at_war_variants latest = (0.9) -> current = 0.9/world_at_war_variants.zip
 big_world_1939 latest = (0.11) -> current = 0.11/big_world_1939.zip
-invasion_usa latest = (0.50) -> current = 0.50/invasion_usa.zip 
+invasion_usa latest = (0.50) -> current = 0.50/invasion_usa.zip
 world_war_ii_g40_balanced latest = (0.13) -> current = 0.13/world_war_ii_g40_balanced.zip
 
 
@@ -120,7 +120,7 @@ Not Latest: 89
 
 
 
-dan@dan-desk:~/work/maps/Project/production_config$ ../bin/check_map_versions.sh 
+dan@dan-desk:~/work/maps/Project/production_config$ ../bin/check_map_versions.sh
 
 -------------------------
 version check
@@ -141,10 +141,3 @@ ancient_times latest = (0.9) -> current = 0.5/ancient_times.zip
 world_war_ii_v6_1941 latest = (0.9) -> current = 0.3/world_war_ii_v6_1941.zip
    is latest - diplomacy-map_skin1
 1914-cow-empires latest = (0.8) -> current = 0.4/1914-cow-empires.zip
-
-
-------------
-
-Up to [Map Documentation]({{ "/dev_docs/maps" | prepend: site.baseurl }})
-
-

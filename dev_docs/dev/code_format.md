@@ -16,7 +16,7 @@ Please import these IDE formatter templates:
 ### Installing the formatter in IntelliJ
 1. Import the xml into intellij's java code style, and then choose it as your style
 2. Edit the general and java code style to use 2 spaces for tab size and indent, and 4 for continuation indent.
-3. On java code style imports tab, change class and name counts to 99, and then delete the two lines under "packages to use import with *"
+3. On java code style imports tab, change class and name counts to 99, and then delete the two lines under "packages to use import with \*"
 4. Download the plugin "Eclipse Code Formatter" and restart intellij
 5. Open up settings again and go to 'other settings' and enable the plugin. Make sure the following are checked: "Use the Eclipse code formatter", "Enable Java", "Use Eclipse 4.4 Java formatter / otherwise Eclipse 4.5 ....", "Optimize Imports"
 6. Browse and select the Eclipse java formatter config file.
@@ -33,7 +33,3 @@ Project preferences > Java > java format, import and select the eclipse format x
 
 ## Line Endings
 - use LF line endings for java files, avoid using CRLF unless there is a pretty solid reason for it.
-
---------
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

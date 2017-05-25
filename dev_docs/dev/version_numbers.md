@@ -13,7 +13,7 @@ What this means, is that we need to decide on what to bump the version number to
 If our changes have rendered savegames unable to load, most likely because we changed one of the serialized data objects that are part of either the GameData object or any of the Delegate objects, then we MUST bump our version number by a major, minor, and/or point.  
 UI changes, AI changes, rules and logic changes, and even API changes in most cases, usually do not cause savegame compatibility to break.  In this case, we should test extensively by grabbing various savegames from the previous versions (that have the same major.minor.point) and making sure they all load and play just fine (you can find lots of savegames in the forum at A&A.org).  Assuming savegames still load and play just fine, then we ONLY bump the ‘micro’ number.  
 A further thing to note: We generally bump the version numbers once we make a savegame breaking change to the engine, even if we are not ready to release for another few months.  This is so that people who download and test the development branch or pre-release jars do not have issues with trying to load old savegames.  Development build should end with an EVEN micro, and full releases should end in an ODD micro.  
-  
+
 Last thing to note about backwards compatibility: We include a folder called ‘old’ that contains older versions of TripleA.  If TripleA tries to open a savegame that was made from a version of triplea with a different major.minor.point, it would normally not be able to do so, and so instead starts a new process directing the appropriate TripleA jar file in the old directory to open this savegame.  This also works when trying to join an ‘older’ game in the lobby; TripleA will tell the older jar to open and join that lobby game.  
 Because micro number changes do not matter for savegames, version 1.7.0.5 of triplea can open 1.7.0.3 and 1.7.0.2 and 1.7.0.1 savegames (and of course can not open 1.7.1.x or 1.6.x.x, etc).  This means that we do not need to include every single triplea release in the ‘old’ directory, we only need the ‘latest’ triplea release for any given major.minor.point combination.  
 So, to give a full example:  
@@ -24,7 +24,7 @@ Our last release (and current version number) was 1.8.0.7, but after several mon
 
 ```
 1.8.0.12 = test release compatible with 1.8.0.11
-1.8.0.12(.build) = development build after 1.8.0.12 
+1.8.0.12(.build) = development build after 1.8.0.12
 1.8.0.13 = stable release compatible with 1.8.011
 1.8.0.14 = test release compatible with 1.8.0.11
 1.8.0.15 = stable release compatible with 1.8.011
@@ -45,13 +45,9 @@ Our last release (and current version number) was 1.8.0.7, but after several mon
 1.11.1 = release compatible with 1.11.0
 2(.0) = first release where saves are encoded in a cross-engine format
 2(.build) = first development release after 2.0
-3(.0) = next release 
+3(.0) = next release
 3(.build) = development release
 4(.0) = next release
 4(.build) = development release
 ```
 (http://github.com/triplea-game/triplea/issues/323#issuecomment-170802217 for background)
-
---------
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

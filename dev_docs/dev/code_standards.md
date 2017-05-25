@@ -12,7 +12,7 @@ According to [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseur
 - New (Non-AI) code should keep the current code coverage rate, not decrease it
 - Follow the [testing pyramid](http://martinfowler.com/bliki/TestPyramid.html), write mostly unit tests
 - Tests are difficult in the tripleA project for the existing code. Any significant changes will likely require a few iterations of simplification and test retrofits before any new  code can be added. There is some leniency for fixing/refactoring existing code cruft without retrofitting tests, there is a a lot less for new code, or major updates.
- 
+
 
 ## DRY
 
@@ -75,13 +75,13 @@ public int processXmlData(Unit unit, XmlTransmitter transmitter) {
 }
 </pre>
 
-In the above, note that we are logging the values of the two method arguments. If there were any other interesting variable values in the method or class, we would log those too. Without this information, if we ever do get an exception, and it is related to data, we'll be scratching our heads on how to reproduce the problem. 
+In the above, note that we are logging the values of the two method arguments. If there were any other interesting variable values in the method or class, we would log those too. Without this information, if we ever do get an exception, and it is related to data, we'll be scratching our heads on how to reproduce the problem.
 
 ## Method and variable ordering
 Try to organize methods and variables so that new elements are used immediately and only *after* they are declared. This basically attempts to allow for code to be read from top to bottom once. For some good background reading and details on how to do this, please see Chapter 5 'Formatting' in [Clean Code](http://ricardogeek.com/docs/clean_code.pdf)
 
 
-### Variable Ordering Example 
+### Variable Ordering Example
 
 #### Prefer
 <pre>
@@ -116,7 +116,7 @@ double distance = Math.sqrt(firstSquared + secondSquared);
      int a = helperMethod1();
      boolean b = helperMethod2(a);
   }
- 
+
   // helperMethod1 is the first thing used in the constructor, so we start by defining that first.
   private int helperMethod1() {
     :  // any methods called by helperMethod1 would be defined next
@@ -127,7 +127,7 @@ double distance = Math.sqrt(firstSquared + secondSquared);
     :
     :
   }
-  
+
   // now when we see the first public method, we know all the private methods above it until the constructor are there
   // only to support construction. Note that we gain now quite a bit of information based simply on where methods are places
   public boolean firstPublicMethod1() {
@@ -142,12 +142,12 @@ double distance = Math.sqrt(firstSquared + secondSquared);
      helperMethod5();
      :
   }
-  
+
   private void helperMethod5() { // We'll fully define the code path that followed helperMethod3() first
       :                          // before we define helperMethod4()
       :
   }
-  
+
   private void helperMethod4() {
       :
       :
@@ -192,11 +192,11 @@ double distance = Math.sqrt(firstSquared + secondSquared);
      helperMethod5();
      :
   }
-  
-  private void helperMethod5() { 
+
+  private void helperMethod5() {
       :
   }
-  
+
   private void helperMethod4() {
       :
       :
@@ -207,7 +207,3 @@ double distance = Math.sqrt(firstSquared + secondSquared);
 ## Mock Objects
 
 Prefer replacing hand crafted mock objects with mockito.
-
---------
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

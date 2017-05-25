@@ -2,6 +2,7 @@
 layout: longpage
 title: TripleA Project Documentation
 permalink: /dev_docs/
+root: /help
 ---
 
 * [Map Making]({{ "/dev_docs/maps" | prepend: site.baseurl }})
@@ -20,7 +21,3 @@ permalink: /dev_docs/
 * [Map And Map Skin Making Overview]({{ "/map_and_map_skin_making_overview" | prepend: site.baseurl }})
 * [Release Model]({{ "/release_model" | prepend: site.baseurl }})
 * [Game Freeze Troubleshooting]({{ "/game_freeze_troubleshooting" | prepend: site.baseurl }})
-
-------------
-
-Up to [Help and Rules]({{ "/help" | prepend: site.baseurl }})

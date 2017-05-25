@@ -29,7 +29,7 @@ Note that eclipse and NetBeans are currently not supporting JUnit 5. Therefore w
 Development - Building
 ======================
 
-[Gradle](http://gradle.org) is used. The gradlew (on Windows gradlew.bat) file is a proxy to execute build commands. 
+[Gradle](http://gradle.org) is used. The gradlew (on Windows gradlew.bat) file is a proxy to execute build commands.
 On first call these files will install the correct version of Gradle on your system. Most commonly used commands:
 
 * creates a jar file from the project, dependencies are not added:
@@ -79,7 +79,7 @@ Labels have 'tiers'. We'll have one set of labels to broadly categorize issues, 
 
 ## Install Dev Environment Requirements
 
-### Github account: 
+### Github account:
 go to github.com and create an account. (strong recommendation to set up two factor authentication so that your account will remain secure)
 
 ### Local Install:
@@ -131,7 +131,3 @@ Main game launcher is "GameRunner.java". When running, you need the following fo
 - assets
 
 Same for when running tests.
-
---------
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})

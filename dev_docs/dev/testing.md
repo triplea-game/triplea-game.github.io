@@ -40,7 +40,3 @@ Ensure compatibility between network nodes running different versions.
 1. Connect to lobby started in (1) using NEW and start a game with bot.
     * Ensure OLD and NEW select players in adversarial roles.
 1. Progress far enough in the game to fight a battle.
-
----
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})
