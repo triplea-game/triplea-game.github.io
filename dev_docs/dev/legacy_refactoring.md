@@ -22,7 +22,7 @@ same code at a higher level without the needless redundancy.
 
 ## Non-Isolated Testing
 
-* Testing happens far too often at a high level. For example, if we set up a full WWII game to then test artillery support, 
+* Testing happens far too often at a high level. For example, if we set up a full WWII game to then test artillery support,
 that is a whole lot of effort given the number of permutations:
 - countries
 - round, whether abilities are activated
@@ -31,18 +31,14 @@ that is a whole lot of effort given the number of permutations:
 - amphib assault?
 - blitz attack?
 
-Let's say for each case we only have 2 options, it's 2^6 test cases! If we add anything else, then we have to double our 
+Let's say for each case we only have 2 options, it's 2^6 test cases! If we add anything else, then we have to double our
 test cases. At this pace we won't be able to add new code and maintain effective test coverage. Instead if we break
 up that logic into modules, we can make it an additive problem.
 
 ## Too Many and Unnecessary Class Variables
 
-Class variables represent class state. In general state is not a very good thing, and we shoudl favor immutable states 
+Class variables represent class state. In general state is not a very good thing, and we shoudl favor immutable states
 whenever possible since state is easier to understand/reason about when it is immutable (and automatic thread safety! oh yeah)
 
-Ways to fix this is to see if we can move the class variable to the methods that use it. Often there is only one method. 
-See about extracting a variable and surrounding methods to a new class/module. 
-
---------
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})
+Ways to fix this is to see if we can move the class variable to the methods that use it. Often there is only one method.
+See about extracting a variable and surrounding methods to a new class/module.

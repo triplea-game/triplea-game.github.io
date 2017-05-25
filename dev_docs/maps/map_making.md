@@ -17,8 +17,8 @@ permalink: /dev_docs/maps/map_making
 ## Adding or replacing files
 * Similar to updating files, the github website will allow you to do this. To do it in bulk you may need to do some git. Github desktop from github is a pretty easy tool, there is also Git for Windows, source tree which are other good git clients.
 
- 
-## New Map Development 
+
+## New Map Development
 
 * Perhaps teh biggest trick is to get get the folder structure right.
 
@@ -68,7 +68,7 @@ Create a repository in github. Use the same general layout as the other map repo
 ## Getting More Help
 - Ask questions here: github.com/triplea-maps/Project/issues/new
 - Or Jump on gitter: https://gitter.im/triplea-maps/Project
-  - You can chat there about maps, map making. And also you'll hear announcements as well, and the general community chatter. If you drop off for some time, for a few weeks or a few months, then you'll need to review the docs a bit to see what you missed. At least, that is the intent. So if you have any questions, where you want to reach map makers and the map admins, you can ask them on gitter, and chances are decent they'll be answered within hours or a day. 
+  - You can chat there about maps, map making. And also you'll hear announcements as well, and the general community chatter. If you drop off for some time, for a few weeks or a few months, then you'll need to review the docs a bit to see what you missed. At least, that is the intent. So if you have any questions, where you want to reach map makers and the map admins, you can ask them on gitter, and chances are decent they'll be answered within hours or a day.
 
 
 
@@ -85,8 +85,3 @@ Legacy note: we do not need travis to zip the map files if we are using the repo
 
 * We are integrated with Travis that will watch map repositories for updates. Whenever a map repository is updated, Travis will kick and will version the map, and publish a map zip to the '/releases' section of the map repo. For example: https://github.com/triplea-maps/age_of_tribes/releases
 * You should find that you no longer have to do any map zipping or unzipping.
-
-
-------------
-
-Up to [Map Documentation]({{ "/dev_docs/maps" | prepend: site.baseurl }})

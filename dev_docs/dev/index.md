@@ -21,8 +21,3 @@ permalink: /dev_docs/dev/
 - [Github Project](https://github.com/triplea-game/triplea)
 - [Initiatives and Projects](https://github.com/triplea-game/triplea/issues/1073)
 - [Bug backlog](https://github.com/triplea-game/triplea/issues?q=is%3Aissue+is%3Aopen+label%3A%22Bug+Backlog%22)
-
-------------
-
-Up to [TripleA Project Documentation]({{ "/dev_docs/" | prepend: site.baseurl }})
-

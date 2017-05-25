@@ -30,7 +30,7 @@ Rebase on to the upstream master:
 
 ```
 git rebase (remote_name) <branch_name>`
-git rebase upstream master 
+git rebase upstream master
 ```
 
 For rebase command, if you do not specify remote_name, it will assume a local branch. Example:
@@ -40,7 +40,7 @@ git rebase master ## rebases onto my current local master branch
 
 Rebase takes your current branch, and stacks the commits on top of the branch you are rebasing onto. It is generally good to rebase pretty frequently to make sure your newest commits are out ahead of everything else.
 
-But, if you are getting a branch reviewed, rebase rewrites your branch history to be newer, and should be avoided. Instead do merges there, which will lead to merge commits (which are okay). Any in-flight reviews and commit SHA's will remain the same if you are doing a merge. So teh rule of thumb is do rebase if nobody else in the world has 'seen' your branch, do a merge if anyone else might have reviewed or pulled your branch. 
+But, if you are getting a branch reviewed, rebase rewrites your branch history to be newer, and should be avoided. Instead do merges there, which will lead to merge commits (which are okay). Any in-flight reviews and commit SHA's will remain the same if you are doing a merge. So teh rule of thumb is do rebase if nobody else in the world has 'seen' your branch, do a merge if anyone else might have reviewed or pulled your branch.
 
 Merge syntax is about similar to a rebase:
 ```
@@ -101,7 +101,7 @@ $ git commit
 ### cherry pick commits between branches
 `$ git cherry-pick *commit sha*`
 
-git finds the commit identified by the SHA passed in, which can be on any branch, and applies that commit to the local branch. 
+git finds the commit identified by the SHA passed in, which can be on any branch, and applies that commit to the local branch.
 
 
 ### revert files
@@ -178,7 +178,7 @@ Update Attachment Object      879cea8
 New Util Functionality        3cd8c65
 ```
 
-Notice that the last commit has very little to do with the other 3. What you can do is carve off the last commit on to it's own branch, and then submit that for a PR. This then allows a PR for the first 2 commits to be more focused, and easier to review. 
+Notice that the last commit has very little to do with the other 3. What you can do is carve off the last commit on to it's own branch, and then submit that for a PR. This then allows a PR for the first 2 commits to be more focused, and easier to review.
 
 There are several ways to slice it. Before slicing a PR, you need to be sure of two things:
 1. You have pushed your branch to the remote. If you mess things up *really* badly, you can get your work back.
@@ -209,7 +209,7 @@ $ git push origin util_function_branch
 And submit a PR for it.
 
 The other branch can go on with the unique commit in it, git will recognize it as the same commit from the other branches. IF the commit is totally unrelated, then in the other branch you may want to get rid of it. There are a couple of ways to do this:
-- You can delete the commit in the other branch by using `git rebase -i HEAD~2` (after which you'll want to run `gupdate`). 
+- You can delete the commit in the other branch by using `git rebase -i HEAD~2` (after which you'll want to run `gupdate`).
 - If the commit is the last one like it is here, you can pull the git commit pointer back by one `git reset --soft HEAD` and then reset and undo the file changes. `git reset <path..to..file>; git checkout <path..to..file>`
 
 ### Splicing a PR while working
@@ -230,9 +230,3 @@ $ git push second_change_branch origin
 ```
 
 One key is to note that we keep switching back to master.
-
-
-
---------
-
-Up to: [Dev Documentation]({{ "/dev_docs/dev" | prepend: site.baseurl }})
