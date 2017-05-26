@@ -3,6 +3,11 @@ layout: longpage
 title: Java Code Guidelines and Standards
 permalink: /dev_docs/dev/code_standards
 ---
+
+## Checkstyle
+
+This project uses Checkstyle to enforce code guidelines and standards. See the [Checkstyle]({{ "/dev_docs/dev/checkstyle" | prepend: site.baseurl }}) page for information on setting up and running Checkstyle in your development environment.
+
 ## Code is formatted
 
 According to [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseurl }})
