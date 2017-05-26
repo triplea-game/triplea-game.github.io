@@ -7,7 +7,7 @@ layout: default
 <img src="{% if page.img %}{{ page.img }}{% else %}{{ '/images/missing_map.png' | prepend: site.baseurl }}{% endif %}">
 {{ content }}
 <br>
-<a href="{{ page.dlurl }}">Manual Download</a>
+<a href="{{ page.downloadUrl }}">Manual Download</a>
 <br>
 <a href="triplea:{{ page.mapName }}" style="display: none;">Open with TripleA (Currently not working)</a>
 <!-- WIP this needs a better design -->
