@@ -471,22 +471,26 @@ a:hover {
         font-size: 1.5em;
       }
     }
-}
+  }
+
+  #body {
+     padding-bottom: 525px !important;
+  }
 }
 
 html, body {
-   margin:0;
-   padding:0;
-   height:100%;
+   margin: 0;
+   padding: 0;
+   height: 100%;
 }
 #container {
-   min-height:100%;
+   min-height: 100%;
    position:relative;
 }
 #body {
-   padding-bottom:190px;
+   padding-bottom: 190px;
 }
 #colophon {
-   position:absolute;
-   bottom:0;
+   position: absolute;
+   bottom: 0;
 }
