@@ -272,9 +272,11 @@ a:hover {
  * Maps Page
  */
 
-#maps-col-wrapper {
-  width: 50%;
-  float: left;
+.maps-col-wrapper::after, .maps-col-section::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 .maps_col {
