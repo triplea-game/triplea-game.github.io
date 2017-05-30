@@ -2,6 +2,7 @@
 layout: longpage
 title: Engine Code Overview
 permalink: /engine_code_overview/
+root: /dev_docs/
 ---
 
 
@@ -43,8 +44,8 @@ Territory names
 * Players and alliances
 * Unit types
 * Production rules
-* Initial unit placement, 
-* Initial territory ownership 
+* Initial unit placement,
+* Initial territory ownership
 * Initial resource allocation
 * Attachments (more later)
 * Game play sequence
@@ -56,7 +57,7 @@ accessed through the GameData object.
 
 The xml file format must be general enough to describe the
 data for any turn based strategy game, yet specific enough to be able to
-describe a game completely. 
+describe a game completely.
 
 
 The problem is that each game differs in the type of data
@@ -73,13 +74,13 @@ to unit types, players, territories, or resources.
 
 
 This tells the xml parser to create an instance of
-UnitAttatchment, attach it to the infantry unit type, and initialize the
+UnitAttachment, attach it to the infantry unit type, and initialize the
 attachment with an attack value of 1, and a defense value of 2.
 
 
 
 The game parser uses the java bean syntax for setting the
-attatchment values.If an attachment
+attachment values.If an attachment
 has an option name of code, then it will call setCode(value) to set the
 attachments value.The setCode method
 will always use a string as its argument.
@@ -94,9 +95,10 @@ will stop the parser, and terminate the program.
 
 
 
-getAttatchment,
+
+getAttachment,
 where key is the name of the attachment. 
-In the above example key would be unitAttatchment.  Objects implementing the Attatchable
+In the above example key would be unitAttachment.  Objects implementing the Attatchable
 interface are PlayerID, Resource, Territory, and UnitType.
 
 
@@ -149,7 +151,7 @@ changes, and then add them through the Delegates DelegateBridge.
 
 
 In the game xml file you can specify the sequence of steps
-the game goes through in the gamePlay tag. 
+the game goes through in the gamePlay tag.
 
 
 
@@ -191,11 +193,11 @@ and that the game cycles through these 4 steps until the game ends.
 
 
  The
-     delegates start method is called. 
-     
+     delegates start method is called.
+
  If a
      GamePlayer is specified in the game xml file for the step, then the
-     players start method is called. 
+     players start method is called.
      The argument to start is the name of the step specified in the game
      xml file.
  The
@@ -214,7 +216,7 @@ To preserve network transparency game data is not changed
 directly by the delegates.All changes
 to game data are made by through the DelegateBridge.addChange(Change
 aChange).This allows the game engine
-to synchronize changes in game data between machines. 
+to synchronize changes in game data between machines.
 
 
 
@@ -260,7 +262,7 @@ valid, alter the GameData.
 
 
 Communication between delegates and game players is done
-through a simple remote method invocation scheme. 
+through a simple remote method invocation scheme.
 
 
 
@@ -294,4 +296,3 @@ GamePlayers PlayerBridge.
 
 The game engine takes care of routing these messages across
 the network if necessary.
-
