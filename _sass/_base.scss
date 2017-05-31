@@ -335,6 +335,8 @@ a:hover {
   padding: 20px 10% 15px 10%;
   background: url('../images/footer_bg.png') repeat-x;
   color: $secondary-text-color;
+  position: absolute;
+  bottom: 0;
   a {
     color: #fff;
   }
@@ -491,8 +493,4 @@ html, body {
 }
 #body {
    padding-bottom: 190px;
-}
-#footer {
-   position: absolute;
-   bottom: 0;
 }
