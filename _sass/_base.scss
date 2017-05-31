@@ -115,9 +115,6 @@ a:hover {
   background-color: $brand-color-dark;
   color: $background-color;
 }
-#mirror, #other-downloads {
-  text-decoration: underline;
-}
 
 /**
  * Main menu
@@ -211,7 +208,7 @@ a:hover {
  * Page content
  */
 
-.page-content {
+#page-content {
   margin: 0 10% 20px 10%;
   line-height: 2em;
   & h2 {
@@ -219,20 +216,12 @@ a:hover {
     padding-bottom: 0.5em;
   }
 }
-.post-title, .main h1 {
+.post-title {
   font-size: 2em;
   font-family: $secondary-font-family;
   padding-bottom: 0.5em;
 }
-
-/**
- * Download Page
- */
-
-.dl-intro {
-  margin: 0 5% 2% 5%;
-}
-
+//This Formatting is not looking perfect on mobile
 .dl-links {
   width: 18%;
 }
@@ -241,31 +230,12 @@ a:hover {
   margin-top: 10px;
 }
 
-.dl-install4j-credit, .dl-direct-link, .rulebook-reminder {
+.dl-install4j-credit {
   text-align: right;
 }
 
 .installation-instructions {
   display: none;
-}
-
-/**
- * Contibute Page
- */
-
-#contribute-col-wrapper {
-  width: 50%;
-  float: left;
-}
-
-#contribute_col {
-  width: 45%;
-  float: left;
-  background-color: $grey-color-light;
-  border: 1px solid $grey-color;
-  border-radius: 3px;
-  padding: 10px;
-  margin: 5px;
 }
 
 /**
@@ -304,29 +274,12 @@ a:hover {
     float: right;
 }
 
-/**
- * Community Page
- */
-
-#community-col-wrapper, #community-dev-col-wrapper {
- width: 50%;
- float: left;
-}
-
-.community_col, #community-dev_col {
+.community_col {
  width: 30%;
  float: left;
  padding: 10px;
  margin: 5px;
 }
-
-#dev-community-intro {
-    clear: both;
-}
-
-/**
- * Footer
- */
 
 #footer {
   float: left;
@@ -365,10 +318,9 @@ a:hover {
 /**
  * Overriding the nav bar and footer when used with a mobile device
  */
-
 @media only screen and (max-width: 600px) {
 
-  .fb-like.fb_iframe_widget{
+  .fb-like.fb_iframe_widget {
     margin-left: calc(50% - 60px);
   }
 
@@ -435,32 +387,6 @@ a:hover {
       }
     }
     }
-  }
-
-  #contribute-col-wrapper {
-    width: 100%;
-    float: none;
-  }
-
-  #contribute_col {
-    width: 90%;
-    float: none;
-  }
-
-  #community-col-wrapper, #community-dev-col-wrapper {
-   width: 100%;
-   float: none;
-  }
-
-  #community_col, #community-dev_col {
-   width: 90%;
-   float: none;
-   padding: 10px;
-   margin: 5px;
-  }
-
-  #dev-community-intro {
-      clear: none;
   }
 
   #footer {
