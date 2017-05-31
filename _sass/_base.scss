@@ -328,7 +328,7 @@ a:hover {
  * Footer
  */
 
-#colophon {
+#footer {
   float: left;
   clear: both;
   width: 80%;
@@ -461,7 +461,7 @@ a:hover {
       clear: none;
   }
 
-  #colophon {
+  #footer {
     float: none;
     clear: none;
     .footer_col {
@@ -492,7 +492,7 @@ html, body {
 #body {
    padding-bottom: 190px;
 }
-#colophon {
+#footer {
    position: absolute;
    bottom: 0;
 }
