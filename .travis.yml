@@ -1,5 +1,4 @@
 language: generic
-rvm:
-  - 2.2
+before_install: rvm reinstall ruby-head --binary
 install: gem install jekyll
 script: jekyll build
