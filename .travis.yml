@@ -1,7 +1,3 @@
 language: generic
-addons:
-  apt:
-    packages:
-      - ruby-full
 install: gem install jekyll
 script: jekyll build
