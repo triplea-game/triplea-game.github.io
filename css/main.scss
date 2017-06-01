@@ -18,4 +18,8 @@ $grey-color-dark: darken($grey-color, 25%);
 
 @import "fonts";
 @import "foundation";
-@import "base";
+@import 'content';
+@import 'misc';
+@media only screen and (max-width: 600px) {
+  @import 'mobile';
+}
