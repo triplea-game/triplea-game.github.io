@@ -1,0 +1,8 @@
+language: generic
+addons:
+  apt:
+    packages:
+      - ruby-full
+      - rubygems-integration
+install: gem install jekyll
+script: jekyll build
