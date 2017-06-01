@@ -3,37 +3,30 @@ layout: page
 title: Download
 permalink: /download/
 ---
-
-
 <p class="dl-install4j-credit"><small>Installer powered by <a href="http://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j Icon"></a></small></p>
 <p>Select below to begin downloading the TripleA installer (<span id="dl-size-mb">N/A</span> MB):</p>
-<a id="win64" href="https://github.com/triplea-game/triplea/releases/latest"
-       target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
+
+<a id="win64" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
   <p>TripleA for Windows <strong>(64 bit)</strong></p>
 </a>
-
-
-<a id="win32" href="https://github.com/triplea-game/triplea/releases/latest"
-      target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
+<a id="win32" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
   <p>TripleA for Windows <strong>(32 bit)</strong></p>
 </a>
-<a id="macos" href="https://github.com/triplea-game/triplea/releases/latest"
-      target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
+<a id="macos" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
   <img src="../images/operating-systems/mac100.png" alt="Mac Icon">
   <p>TripleA for Mac</p>
 </a>
-<a id="linux" href="https://github.com/triplea-game/triplea/releases/latest"
-      target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
+<a id="linux" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
   <img src="../images/operating-systems/linux100.png" alt="Linux Icon">
   <p>TripleA for Linux</p>
 </a>
-<p>Upgrading from 1.8.0.9? <a href="/upgrade_notes">read here for upgrade notes</a></p>
-<p>See what has changed in the <a href="/release_notes">release notes</a></p>
-<p>Download <a href="/old_downloads">previous TripleA releases here</a></p>
-<p>Download <a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code from Github Releases</a></p>
 
+<p>Upgrading from 1.8.0.9? <a href="{{ '/upgrade_notes/' | prepend: site.baseurl }}">read here for upgrade notes</a></p>
+<p>See what has changed in the <a href="{{ '/release_notes' | prepend: site.baseurl }}">release notes</a></p>
+<p>Download <a href="{{ '/old_downloads' | prepend: site.baseurl }}">previous TripleA releases here</a></p>
+<p>Download <a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code from Github Releases</a></p>
 
 <div id="windows-install" class="installation-instructions">
   <h2>Windows Installation</h2>
@@ -70,8 +63,7 @@ permalink: /download/
   <p>Follow the installation prompts to complete the installation</p>
   <br>
   <p>TripleA requires Java 8 or later to be installed</p>
-  <p><a href=" https://www.java.com/de/download/linux_manual.jsp">Oracle JREs</a>
-      are recommended, sounds may not work with OpenJRE. </p>
+  <p><a href="https://java.com/en/download/help/linux_install.xml">Oracle JREs</a> are recommended, sounds may not work with OpenJRE.</p>
   <br>
   <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
   <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>

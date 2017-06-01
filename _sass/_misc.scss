@@ -1,0 +1,99 @@
+.thickTable {
+  border-width: 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: separate;
+  td {
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 10px;
+    padding: 10px;
+  }
+}
+.thinTable {
+  border-width: 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: separate;
+  td {
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 0;
+    padding: 10px;
+  }
+}
+.table1 {
+  border-width: 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: separate;
+  td {
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 0;
+    padding: 20px;
+  }
+}
+#topScroller, #backButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 102px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #8d1c21;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  :hover {
+    background-color: #555;
+  }
+}
+#backButton {
+  right: 30px;
+  display: block;
+}
+#backButton:hover {
+  text-decoration: none !important;
+}
+
+.community-col {
+ width: 30%;
+ float: left;
+ padding: 10px;
+ margin: 5px;
+}
+
+.maps-col-wrapper::after, .maps-col-section::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.maps-col {
+  width: 30%;
+  float: left;
+  background-color: $grey-color-light;
+  border: 1px solid $grey-color;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+}
+.maps-col-section {
+  clear: both;
+}
+
+.section-title {
+  padding-top: 0.75em;
+}
+
+.maps-col-button {
+    padding-top: 0.75rem;
+    padding-right: 1rem;
+    padding-bottom: 0.78125rem;
+    padding-left: 1rem;
+    float: right;
+}
