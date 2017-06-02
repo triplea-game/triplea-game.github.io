@@ -32,3 +32,17 @@ At least one code reviewer must:
 Before merge:
 - all comments questions should be answered/addressed
 
+
+# Code Review Ordering
+- Reviewers should start with the oldest PRs and work their way forward in time. Favor merging things in that order as well. The reason for the merge order is to make merge conflicts a bit more precictable, if you are the first PR in the queue, then there should be no merge conflicts. If 2nd, then in theory you would only have to worry about the one open PR request to cause merge conflicts.
+
+# Tips and Questions to ask when code reviewing
+- Does anything *have* to change in the PR for it to be accepted?
+- Was the risk of this PR correctly identified and considered?
+- Is the overall design reasonable? Are we adding more to the mess than cleaning?
+- Does the logic look correct?
+- Any major code smells?
+- Were unit tests added or updated?
+- Without having looked at the code diff, do the commit comments make sense? Once you look at the code diff, were the commit comment still meaningful and complete?
+
+
