@@ -9,7 +9,6 @@ root: /help
 * [Development - Game Engine]({{ "/dev_docs/dev" | prepend: site.baseurl }})
 * [Development - Website]({{ "/dev_docs/website_dev" | prepend: site.baseurl }})
 * [Admin - Game Engine]({{ "/dev_docs/engine_admin/" | prepend: site.baseurl }})
-* [Admin - Maps]({{ "/dev_docs/map_admin/" | prepend: site.baseurl }})
 
 
 ## Older (legacy) Documentation
