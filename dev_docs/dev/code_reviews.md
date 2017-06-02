@@ -34,7 +34,7 @@ Before merge:
 
 
 # Code Review Ordering
-- Reviewers should start with the oldest PRs and work their way forward in time. Favor merging things in that order as well. The reason for the merge order is to make merge conflicts a bit more precictable, if you are the first PR in the queue, then there should be no merge conflicts. If 2nd, then in theory you would only have to worry about the one open PR request to cause merge conflicts.
+- Reviewers should start with the oldest PRs and work their way forward in time. Favor merging things in that order as well. The reason for the merge order is to make merge conflicts a bit more predictable, if you are the first PR in the queue, then there should be no merge conflicts. If 2nd, then in theory you would only have to worry about the one open PR request to cause merge conflicts.
 
 # Tips and Questions to ask when code reviewing
 - Does anything *have* to change in the PR for it to be accepted?
