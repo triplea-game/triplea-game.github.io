@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h2>{{ page.mapName }}</h2>
+<h2>{{ page.mapName | escape }}</h2>
 {% if page.mapCategory %}<h4>Category: {{ page.mapCategory }}</h4>{% endif %}
 {% if page.mapType == "MAP_SKIN" %}<h4>Type: Map Skin</h4>{% endif %}
 <img src="{% if page.img %}{{ page.img }}{% else %}{{ '/images/missing_map.png' | prepend: site.baseurl }}{% endif %}" alt="Map Thumbnail">
