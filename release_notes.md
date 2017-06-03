@@ -156,7 +156,7 @@ permalink: /release_notes/
 * Some updates for 'Great War' world war 1 map, and Pact of Steel 2\. (veqryn)
 * Possible fix for "Could not stop delegate execution" bug. (veqryn)
 * Fixed possible bug where a corrupted game save had the initialization delegate get called more than once. (veqryn)
-* Adding a new AI called "Hard AI". Also renamed AI's: EZ Fodder -> Easy AI, Moore N Able -> Medium AI, Dynamix -> Land Only AI. (redrum)
+* Adding a new AI called "Hard AI". Also renamed AI's: EZ Fodder -\> Easy AI, Moore N Able -\> Medium AI, Dynamix -\> Land Only AI. (redrum)
 * Fix for infinite crash-reload loop on loading a corrupt autosave on a host bot. (veqryn)
 * Fixed issue with Victory trigger not being able to use html properly. (veqryn)
 * Fixed illegal state exception error in landing paratroopers during a battle. (veqryn)
@@ -265,7 +265,7 @@ permalink: /release_notes/
 * Fixed error where games with a round offset where doubling what round the game started on each time it was saved via the history panel. (veqryn)
 * Creating a headless chat service, so that server can be created in a headless environment and still chat. (veqryn)
 * Fixed bug causing fatal errors in client-server games when client owned very last step/delegate of game (only applied to some grid based games). (veqryn)
-* Adding a log file for the headless server located at /log/headless-game-server-<servername>-log<#>.txt, to keep track of events. (veqryn)</servername>
+* Adding a log file for the headless server located at /log/headless-game-server-\<servername\>-log\<#\>.txt, to keep track of events. (veqryn)\</servername\>
 * Adding many more additional commands to headless game server console, including show connections, ban player, save game, and stop game. (veqryn)
 * Stopped headless game server from being able to load any savegame for a map to which it does not have the required map files for. (veqryn)
 * Possible fix another possible hang/freeze point causing a Could Not Block Delegate Execution error. (veqryn)
@@ -362,7 +362,7 @@ permalink: /release_notes/
 * Created caching mechanism for the game notes, so that it is only in memory when the notes tab is open and otherwise can be cleared from memory if needed. (veqryn)
 * Created a new Unit Attachment option, "damageableAA", which allows this AA gun type unit to cause damage to a two hitpoint unit instead of outright killing it. (veqryn)
 * Fixed bug where AA shots on 2 hitpoint units with Choose AA Casualties on was resulting in no damage or killed unit. Also changed battle display to show "typeAA" for each AA Fire phase, instead of a generic identifier. (veqryn)
-* Allowing custom AA hit and miss sounds for irregular AA types, with the folder being located at "battle_<typeaa>\_hit" and "battle_<typeaa>\_miss" (folder must be lowercase though), where <typeaa>is the unit attachment "typeAA" of that unit. (veqryn)</typeaa></typeaa></typeaa>
+* Allowing custom AA hit and miss sounds for irregular AA types, with the folder being located at "battle_\<typeaa\>\_hit" and "battle_\<typeaa\>\_miss" (folder must be lowercase though), where \<typeaa\>is the unit attachment "typeAA" of that unit. (veqryn)\</typeaa\>\</typeaa\>\</typeaa\>
 * Adding text labels to the Battle Calculator for the number of hitpoints and the total attack or defense power of each side. (veqryn)
 * Adding a new Hot Key "F" for 'Find Units', which will highlight all units you own that have movement left, but only during a movement phase. (frigoref)
 * Allowed Edit Mode to add land units to a sea zone if there are either transports already there or transports also being added at the same time. (veqryn)
@@ -462,7 +462,7 @@ permalink: /release_notes/
 * Allowing the map to be scrolled by using the arrow keys and/or WASD. (veqryn)
 * Added original owner, whenCapturedByGoesTo, captureUnitOnEnteringBy, and changeUnitOwners to the Territory tooltip and territory tab info. (veqryn)
 * Fixing Move Panel and Place Panel so that Undoing a move or place will not result in scrolling back to the top, and will instead scroll to make sure that the move under the undoed move is still visible. (veqryn)
-* Allowing all sounds to have a player associated with them. Just name the sound "<soundname>\_<playername>". If the player sound does not exist, it will use the default non-player sound. (veqryn)</playername></soundname>
+* Allowing all sounds to have a player associated with them. Just name the sound "\<soundname\>\_\<playername\>". If the player sound does not exist, it will use the default non-player sound. (veqryn)\</playername\>\</soundname\>
 
 * Added a ton more new sounds to the engine. (veqryn)
 * Changed Sounds so that instead of specific sound files, the engine will search for specific sound folder. The engine will then randomly select a sound in that folder and play it. This allows for randomized sounds. (veqryn)
@@ -482,7 +482,7 @@ permalink: /release_notes/
 * Fixed bug in Triggers that use "chance" and also have more than 1 action or event inside them, so that they will no longer test once for each action, and instead only one time total. (veqryn)
 * Created new tab, "Notes", which will just show the game notes, on the right side of the screen. (veqryn)
 * Getting the objective panel to not refresh more than every 10 seconds, and adding a "Refresh" button so that it can be manually refreshed. (veqryn)
-* Getting the objectives on the objective tab to show up in colors (red = true, blue = used up), and show more information: <#of uses left><t=true f="false"><#of objectives filled>. (veqryn)</t=true>
+* Getting the objectives on the objective tab to show up in colors (red = true, blue = used up), and show more information: \<#of uses left\>\<t=true f="false"\>\<#of objectives filled\>. (veqryn)\</t=true\>
 * Including on Objective tab whether condition is currently true or not, and getting it to update with the game. (veqryn)
 * Creating new text file, "objectives.properties", which will hold all the details about what objectives to show on the objective tab. (veqryn)
 * Creating new stats panel, "Objective" Tab, which will contain a list of all national objectives and any other conditions the map maker wants. (veqryn)
@@ -534,7 +534,7 @@ permalink: /release_notes/
 * Getting MooreAI to submerge subs if only enemy air is left. (hakon)
 * Fixing "Edit Unit Bombing Damage" for maps that use territory based damage, such as ww2v3\. (veqryn)
 * Allowing new option for the Play By Email / Play By Forum poster, to "Include Overall Dice Statistics" in the post/email. (veqryn)
-* Improving the menu "GAME -> SHOW DICE STATS" to give information per player, as well as totals. (veqryn)
+* Improving the menu "GAME -\> SHOW DICE STATS" to give information per player, as well as totals. (veqryn)
 * Getting engine to record if the dice thrown is in Combat or not, for the dice statistics. (veqryn)
 * Getting engine to record which player is rolling dice for the dice statistics. (veqryn)
 * Adding scroll bars to edit place unit panel and non-tabbed purchase unit panel. (veqryn)
@@ -685,7 +685,7 @@ permalink: /release_notes/
 * Expanded Tech delegate UI element to use helpPayTechCost. (veqryn)
 * Created new PlayerAttachment option, "helpPayTechCost", which will allow other players to help pay the cost of technology. (veqryn)
 * Created new PlayerAttachment option, "shareTechnology", which will automatically give all technology to other players during tech activation phase. (veqryn)
-* Changed priority of AA casualty choosing system to: chooseAACasualties -> isRollAAIndividually -> isRandomAACasualties. This means that "choose aa" overrides all, while "roll aa individually" will only override "random aa". (veqryn)
+* Changed priority of AA casualty choosing system to: chooseAACasualties -\> isRollAAIndividually -\> isRandomAACasualties. This means that "choose aa" overrides all, while "roll aa individually" will only override "random aa". (veqryn)
 * Allowed "unitAbilitiesGained" to give "canBlitz" and "canBombard". (veqryn)
 * Created new techAbilityAttachment, "unitAbilitiesGained", which allows units to gain abilities when technology is discovered. (veqryn)
 * Created new techAbilityAttachment, "rocketNumberPerTerritory", which controls the maximum number of dice to be rolled per territory. (veqryn)
@@ -773,7 +773,7 @@ permalink: /release_notes/
 * Rewrote the framework for how sounds are loaded and played, in order to allow more flexible expansion of sound options. Moved sound files to separate user visible folder. (frigoref)
 * Temporary hack fix for bug where client computer can not use paratroopers at all, but hosts can. (veqryn)
 * Finalizing Alpha rules for test xml. (veqryn)
-* Improving in-game Help -> Movement/Selecting Help menu tips. (veqryn)
+* Improving in-game Help -\> Movement/Selecting Help menu tips. (veqryn)
 * Holding down ALT key while selecting or deselecting units will now add/remove 10 units at a time. (veqryn)
 * Possible fix for battle window disappearing after closing, with battle panel not becoming visible again. (frigoref)
 * Abstraction of ClientGame and ServerGame into AbstractGame. (frigoref)
@@ -797,14 +797,14 @@ permalink: /release_notes/
 * Fixing "Not in an event, but trying to add child" error for placing a carrier and moving fighters to be on it. (veqryn)
 * Fixing email/forum turn summary poster to use
 
-    <pre> and </pre>
+    \<pre\> and \</pre\>
 
     tags, instead of  . (veqryn)
 * Fixed null pointer error in BattleRecordsList getTUVdamageCausedByPlayer. (veqryn)
 
 ## Changes for 1.5.1
 
-* A second possible fix for ConcurrentModificationException in BattleModel.refresh -> DiceRoll.isAmphibiousMarine -> BattleTracker.getPendingBattleSites. (veqryn)
+* A second possible fix for ConcurrentModificationException in BattleModel.refresh -\> DiceRoll.isAmphibiousMarine -\> BattleTracker.getPendingBattleSites. (veqryn)
 * Changed Sea Placements to use all production for all surrounding Factories, if multiple factories touch that sea zone. Will now dynamically shift the production of other sea units away to other legal factories in order to allow the maximum production possible. (frigoref & veqryn)
 * Fixed null pointer error in trying to place a construction to a sea zone. (veqryn)
 * Locking the map when user's mouse is over the history panel, and then unlocking for each click on a history node. (frigoref) [edit: this is undone/rolled-back for now, pending finding a better way to lock/unlock a user's interface without writing to the cache/registry each time]
@@ -856,7 +856,7 @@ permalink: /release_notes/
 * Fixed null pointer error for players who have damaged units but no repair frontier. (veqryn)
 * Adding Europe 1940 as test xml. (veqryn)
 * Fixed more "Lock not held" errors, and a potential null pointer in the battle calculator. (veqryn)
-* Possible fix for ConcurrentModificationException in BattleModel.refresh -> DiceRoll.isAmphibiousMarine -> BattleTracker.getPendingBattleSites. (veqryn)
+* Possible fix for ConcurrentModificationException in BattleModel.refresh -\> DiceRoll.isAmphibiousMarine -\> BattleTracker.getPendingBattleSites. (veqryn)
 * Fixing bug with displaying up total resources when more than one unit creates resources. (veqryn)
 * Allowed users to use Edit Mode to create new units for normal players, based on both their production frontier and any units they have on the board. (veqryn)
 * Allowing users to use Edit Mode to create and place new "Neutral" (null player) units, but only selecting from ones on the board. (veqryn)
@@ -906,7 +906,7 @@ permalink: /release_notes/
 * Changing how attachments are created by the game parser. (frigoref & veqryn)
 * Changing build.xml and editing a test suite to ignore certain tests for the time being. Also setting svn to ignore 'classes.jar', 'fb.xml', and 'TEST-games.strategy.AllTests.txt/xml'. (qwertgold)
 * Adding findbugs folder for use with ANT. (qwertgold)
-* Creation of new xml entry, <triplea minimumversion="1.5">, which should be used by ALL new maps. If an older TripleA tries to play a map built for a newer TripleA, then it will simply ignore the map instead of throwing tons of java errors at the user. (veqryn)</triplea>
+* Creation of new xml entry, \<triplea minimumversion="1.5"\>, which should be used by ALL new maps. If an older TripleA tries to play a map built for a newer TripleA, then it will simply ignore the map instead of throwing tons of java errors at the user. (veqryn)\</triplea\>
 * Complete rewrite of AxisAndAllies.org forum poster. Also added help html pages for the pbem / pbf system. (qwertgold)
 * Creating some unit tests for purchasing with multiple resources. (edwin van der wal)
 * Adding folders for future resources images, and filling with some general images. (veqryn, hepster, rofl)
@@ -1167,7 +1167,7 @@ permalink: /release_notes/
 * Created new unit attachment, createsResourcesList, which allows units to create resources like PUs and techTokens each turn for their owner. (veqryn)
 * Created framework and objects for having individual relationships between players, rather than set alliances and war as the only option. (edwin van der wal, with some help from frigoref and veqryn)
 * Created politics delegate, which will eventually be filled with the logic and ui elements to allow players to change their alliances and relationships with other players. (edwin van der wal)
-<delegate name="politics" javaclass="games.strategy.triplea.delegate.PoliticsDelegate" display="Politics">* Fixed inability to save games during placement phase. (frigoref)* Added ability to customize tooltips for units, using "tooltips.properties". (edwin van der wal)* Stop caching of production_tabs properties, will now read the file each time purchase screen is displayed. (edwin van der wal)* Small fixes to new production_tabs properties and display. User specified production tabs must include all units possible to be purchased by a player, or else an error will be thrown. (veqryn)* Added ability to customize production tabs for each map, using "production_tabs.properties" and "production_tabs.PlayerName.properties". (edwin van der wal)* Added matches for dependencies and transported by. (veqryn)* Fixed route finder to find better routes for units. Will stop finding sea routes for land units, and land routes for sea units. Will try to avoid enemies, AA guns, and neutrals. (veqryn)* Fixed bugs in canInvadeOnlyFrom. (veqryn)* Created new unit attachment, canInvadeOnlyFrom, which determines if a unit can conduct amphibious assaults or if it has to disembark in noncombat. (edwin van der wal)* Made placements appear as a list, just like moves do, and can now be undone individually. Abstracted undoable moves and placements. (frigoref)</delegate>
+\<delegate name="politics" javaclass="games.strategy.triplea.delegate.PoliticsDelegate" display="Politics"\>* Fixed inability to save games during placement phase. (frigoref)* Added ability to customize tooltips for units, using "tooltips.properties". (edwin van der wal)* Stop caching of production_tabs properties, will now read the file each time purchase screen is displayed. (edwin van der wal)* Small fixes to new production_tabs properties and display. User specified production tabs must include all units possible to be purchased by a player, or else an error will be thrown. (veqryn)* Added ability to customize production tabs for each map, using "production_tabs.properties" and "production_tabs.PlayerName.properties". (edwin van der wal)* Added matches for dependencies and transported by. (veqryn)* Fixed route finder to find better routes for units. Will stop finding sea routes for land units, and land routes for sea units. Will try to avoid enemies, AA guns, and neutrals. (veqryn)* Fixed bugs in canInvadeOnlyFrom. (veqryn)* Created new unit attachment, canInvadeOnlyFrom, which determines if a unit can conduct amphibious assaults or if it has to disembark in noncombat. (edwin van der wal)* Made placements appear as a list, just like moves do, and can now be undone individually. Abstracted undoable moves and placements. (frigoref)\</delegate\>
 
 ## Changes for 1.3.2.3
 
@@ -1340,7 +1340,7 @@ permalink: /release_notes/
 * Added history entries for many triggers. (veqryn [Mark Christopher Duncan])
 * Updated ui and utilities to allow islands to be selectable if they are inside a sea zone that ends or begins with "Sea Zone". Previously only allowed water territories to end with, not begin with "Sea Zone". (veqryn [Mark Christopher Duncan])
 * Updated giveUnits and takeUnits to not throw Java errors for older maps. Not backwards compatible, just ignore it if true or false. (veqryn [Mark Christopher Duncan])
-* Dice change: now allows max dice sides to be set in the xml, <dicesides value="6">. Defaults to 6 if not present. Can be any number between 1 and 200\. This will allow many new types of games to be made. (veqryn [Mark Christopher Duncan] and gansito)</dicesides>
+* Dice change: now allows max dice sides to be set in the xml, \<dicesides value="6"\>. Defaults to 6 if not present. Can be any number between 1 and 200\. This will allow many new types of games to be made. (veqryn [Mark Christopher Duncan] and gansito)\</dicesides\>
 * Bug fix in Trigger Attachments Tech change, was disqualifying techs based on attached player instead of aPlayer. (veqryn [Mark Christopher Duncan])
 * Redid canBeGivenByTerritoryTo unit attachment to be a colon delimited list of players, who are the players this unit can be given to. Also added a missing toString. (veqryn [Mark Christopher Duncan])
 * Completely redid giveUnitControl to be flexible. giveUnitControl and changeUnitOwners are now lists of players to give to, and a new unit attachment, canBeGivenByTerritory, and a new global property, "Give Units By Territory".
@@ -1390,7 +1390,7 @@ permalink: /release_notes/
 * Bunker rules allowed by new unit property, isConstruction, and new game properties for it (crystalct), heavily modified and bugs fixed, with updated NWO and POS2\. (veqryn [Mark Christopher Duncan])
 * Updating Pact of Steel 2, to take advantage of latest technology list abilities. (veqryn [Mark Christopher Duncan])
 * Patch for technology lists, to allow creation of new technologies and renaming of old ones. Allows adding new technologies by trigger. (squid daddy)
-* Created two new properties for map.properties, "map.showConvoyNames=true" and "map.useNation_convoyFlags=true". If useNation_convoyFlags is true, the flags folder of a game must have "<nation_name>\_convoy.png" for each nation with convoys. Convoy names can be moved in name_place.txt (veqryn [Mark Christopher Duncan])</nation_name>
+* Created two new properties for map.properties, "map.showConvoyNames=true" and "map.useNation_convoyFlags=true". If useNation_convoyFlags is true, the flags folder of a game must have "\<nation_name\>\_convoy.png" for each nation with convoys. Convoy names can be moved in name_place.txt (veqryn [Mark Christopher Duncan])\</nation_name\>
 * Increasing Max Memory to 512mb for linux/mac/windows, and to 192mb for the server. (veqryn [Mark Christopher Duncan])
 * New Property, "Low Luck for AntiAircraft", will turn on Low Luck only for Anti Aircraft shots. (veqryn [Mark Christopher Duncan])
 * Allowed blockade and convoy images to be moved with 2 new txt files: "blockade.txt" and "convoy.txt". Also fixed bug where a convoy zone that was occupied territory displayed the wrong owner, and the bug where a convoy route was displayed as a convoy zone. (veqryn [Mark Christopher Duncan])
@@ -1499,9 +1499,9 @@ permalink: /release_notes/
 * fixed load of PacificTest.java (ComradeKev)
 * fix bug 2987400 remove ww2v2 from isNavalBombardCasualtiesReturnFire calculations (ComradeKev)
 * fix bug 2981507 isNeutralsImpassable not considered for air non-combat movement (ComradeKev)
-* fix bug 2975757 paratroops walking on water with movement >1 (ComradeKev)
+* fix bug 2975757 paratroops walking on water with movement \>1 (ComradeKev)
 * fix bug 2986683 add bombard property to control bombarding attack power (ComradeKev)
-* feature 2802942 artillery supporting >1 inf, defaults to 1 (ComradeKev)
+* feature 2802942 artillery supporting \>1 inf, defaults to 1 (ComradeKev)
 * feature 2969513 configurable tech roll cost by player, defaults to 5 (ComradeKev)
 * fix bug 2979946 AA Always On only recording last territory casualties (ComradeKev)
 * fix bug 2983390 continued battles (subs) not fought when transport bridge used (ComradeKev)
@@ -1608,7 +1608,7 @@ permalink: /release_notes/
 * Fix bug (2933797) Battle Calc in Edit Mode- removed unnecessary checks for edit mode (ComradeKev)
 * Allow submersible subs to travel under enemy ships in combat and non-combat (except DDs) (ComradeKev)
 * Update options panel height to 15 items to fit on smaller screens (ComradeKev)
-* Fix bug (2933341) Exception if paratroop transport cost > bomber capacity (ComradeKev)
+* Fix bug (2933341) Exception if paratroop transport cost \> bomber capacity (ComradeKev)
 * Fix bug (2932947) paratroop checking code allowing naval ships to move through enemy SZ (ComradeKev)
 
 ## Changes for 1.2.1
@@ -1851,7 +1851,7 @@ permalink: /release_notes/
 * Better error message if no server properties for this version (sgb)
 * Mods can now be installed without unzipping anything. Simply create a zip file with contents that look like any of the folder in maps. (sgb)
 * Add new Game chooser dialog that shows games notes. (sgb)
-* Move xml files from games folder to /maps/<mapname>/games. For example, revised.xml is now in maps/revised/games (sgb)</mapname>
+* Move xml files from games folder to /maps/\<mapname\>/games. For example, revised.xml is now in maps/revised/games (sgb)\</mapname\>
 * Add chat ignore feature, thanks to Tango for the icon - [http://tango.freedesktop.org/Tango_Icon_Library](http://tango.freedesktop.org/Tango_Icon_Library) (sgb)
 * Add full TripleA 50 support (ComradeKev)
 
@@ -2278,7 +2278,7 @@ permalink: /release_notes/
 
 * move some code into swing event thread (sgb)
 * dont let players press dont place once player selection is done (sgb)
-* should read you need java >= 5.0, not java > 5.0 (sgb)
+* should read you need java \>= 5.0, not java \> 5.0 (sgb)
 
 ## Changes for 0.7.2.3
 
@@ -2371,7 +2371,7 @@ permalink: /release_notes/
 * added extra dice statistics such as, median, variance, and standard deviation (George_H)
 * fix bug [ 1023326 ] Fig Landing Problem, J1 (sgb)
 * more flexible validation for planes landing on carriers (sgb)
-* add stat export menu item Game->Export Game Stats (sgb)
+* add stat export menu item Game-\>Export Game Stats (sgb)
 * upgraded plastic look and feel to version 1.3.1 (sgb)
 * add vc drawing and added vc cities to stats (sgb)
 * better email address ui and validation, allow up to 5 emails in to and copy (sgb)
