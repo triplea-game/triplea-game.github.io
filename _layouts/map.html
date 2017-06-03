@@ -9,5 +9,5 @@ layout: default
 <br>
 <a href="{{ page.downloadUrl }}" class="button">Manual Download (v{{ page.version }})</a>
 <br>
-<a href="triplea:{{ page.mapName }}" style="display: none;" class="button">Open with TripleA (Currently not working)</a>
+<a href="triplea:{{ page.mapName | escape }}" style="display: none;" class="button">Open with TripleA (Currently not working)</a>
 <!-- WIP this needs a better design -->
