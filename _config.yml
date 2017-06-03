@@ -16,3 +16,7 @@ defaults:
       type: maps
     values:
       layout: map
+
+exclude:
+  - README.md
+  - CNAME
