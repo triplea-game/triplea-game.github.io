@@ -7,7 +7,7 @@ permalink: /release_notes/
 ## 1.9.0.0.3627
 
 * Game no longer shuts down when host disconnects, allows game to be saved.
-* All rocket targets are now selected before dice are rolled. 
+* All rocket targets are now selected before dice are rolled.
 * Removed non-default 'brute force' casualty selection option
 
 ## 1.9.0.0.3566
@@ -1315,12 +1315,12 @@ permalink: /release_notes/
 * Fixed issue where battle calc calls with AA units was generating divide by zero. (veqryn [Mark Christopher Duncan])
 * Fixed bug where battles never ended between units with zero attack/defense power. (veqryn [Mark Christopher Duncan])
 * Added new menu option during a game, "Roll Dice...", in the "Game" drop down menu. It allows a player to roll as many dice, with any dice sides, that they want, independant from playing the game. (veqryn [Mark Christopher Duncan])
-* Added new unit attachments, <option name="isAAforCombatOnly" value="true">and</option> <option name="isAAforBombingThisUnitOnly" value="true">, allow units to be AA guns for only certain attack types. (veqryn [Mark Christopher Duncan])</option>
-* Added new unit attachments, <option name="attackAAmaxDieSides" value="6">and</option> <option name="attackAA" value="1">, which allow you to independently set the attack values and max dice sides for AA units. Radar Tech changed to add "1" to the attack values.</option>
+* Added new unit attachments, \<option name="isAAforCombatOnly" value="true"\>and\</option\> \<option name="isAAforBombingThisUnitOnly" value="true"\>, allow units to be AA guns for only certain attack types. (veqryn [Mark Christopher Duncan])\</option\>
+* Added new unit attachments, \<option name="attackAAmaxDieSides" value="6"\>and\</option\> \<option name="attackAA" value="1"\>, which allow you to independently set the attack values and max dice sides for AA units. Radar Tech changed to add "1" to the attack values.\</option\>
 
 * Fixed a bug where a player with both Mechanized Infantry and Paratroopers technology could no longer do any mechanized infantry movement because the validator was checking for paratroopers first. (veqryn [Mark Christopher Duncan])
 * Created Low Luck for Strategic Bombing and Rockets. New global property, "Low Luck for Bombing and Territory Damage", and new Unit Attachments, bombingMaxDieSides and bombingBonus. Can be used to set different values for strategic bombing and rocket attacks, separate from the rest of the game. (veqryn [Mark Christopher Duncan])
-* Added new unit attachment, <option name="givesMovement" value="1:fighter">, and global property, "Units May Give Bonus Movement", which allow units to give movement to other units. (veqryn [Mark Christopher Duncan])</option>
+* Added new unit attachment, \<option name="givesMovement" value="1:fighter"\>, and global property, "Units May Give Bonus Movement", which allow units to give movement to other units. (veqryn [Mark Christopher Duncan])\</option\>
 * Fixed edit mode to allow changing ownership of sea territories, so long as it is not un-owned. (veqryn [Mark Christopher Duncan])
 * Fixed convoy zone movement validation, and created new global property to manage it: "Naval Units May Not NonCombat Move Into Controlled Sea Zones". Previously was disallowing moves into convoy zones during non-combat, and was marking transported land units as having been in battle. (veqryn [Mark Christopher Duncan])
 * Updates to Pact of Steel 2, so that Japanese make use of isKamikaze and isSuicide. (veqryn [Mark Christopher Duncan])
@@ -1349,14 +1349,14 @@ permalink: /release_notes/
 * Dynamix AI patch, various small improvements and logic fixes. (wisconsin)
 * New game property, "Low Luck for Technology", which will apply low luck rules to rolling for tech. (veqryn [Mark Christopher Duncan])
 * Dynamix AI logging patch, should make logs easier to read. (wisconsin)
-* Completely re-wrote NoPuDelegate, and re-wrote the Rules Attachment for productionPerXTerritories. Now looks like: <option name="productionPerXTerritories" value="infantry" count="2">, and you can have multiple instances of this. (veqryn [Mark Christopher Duncan])</option>
+* Completely re-wrote NoPuDelegate, and re-wrote the Rules Attachment for productionPerXTerritories. Now looks like: \<option name="productionPerXTerritories" value="infantry" count="2"\>, and you can have multiple instances of this. (veqryn [Mark Christopher Duncan])\</option\>
 * Small bug fix for Support attachments (squiddaddy), and a bug fix for the new placement logic. (veqryn [Mark Christopher Duncan])
 * Dynamix AI patch, adding more features and improving some logic. (wisconsin)
-* New Repair options. New unit attachment: <option name="repairsUnits" value="battleship:bunker">will cause the attached unit to repair units in the list. New game properties: "Battleships repair at beginning of round" and "Two HitPoint Units Require Repair Facilities". (veqryn [Mark Christopher Duncan])</option>
+* New Repair options. New unit attachment: \<option name="repairsUnits" value="battleship:bunker"\>will cause the attached unit to repair units in the list. New game properties: "Battleships repair at beginning of round" and "Two HitPoint Units Require Repair Facilities". (veqryn [Mark Christopher Duncan])\</option\>
 * Created 2 new autosaves: autosave_round_even and autosave_round_odd, which will autosave at the beginning of each round. Provides only the last 2 rounds in order to keep file spam to a minimum. (veqryn [Mark Christopher Duncan])
 * New Carrier-Fighter interleaver for AI casualty selection. Another patch for Dynamix AI. (wisconsin)
 * Fixed bug where the NoPuPurchase delegate was calling the normal Purchase delegate if the player had PUs left over, Resulting in the player getting multiple purchase screens. (veqryn [Mark Christopher Duncan])
-* New game property, "Unit Placement Restrictions", and new Unit Attachment option, <option name="unitPlacementRestrictions" value="territory1:territory2">, prevent a unit or units from being placed in any given territory. (veqryn [Mark Christopher Duncan])</option>
+* New game property, "Unit Placement Restrictions", and new Unit Attachment option, \<option name="unitPlacementRestrictions" value="territory1:territory2"\>, prevent a unit or units from being placed in any given territory. (veqryn [Mark Christopher Duncan])\</option\>
 * Beginning work on Unit Placement Restrictions. (veqryn [Mark Christopher Duncan])
 * Moore AI's casualty picking fixed to work with all maps, not just ww2vX maps. (veqryn [Mark Christopher Duncan])
 * Caching of game data to speed up dynamix ai and multiple battle calcing in one turn. And another patch for Dynamix AI. (wisconsin)
