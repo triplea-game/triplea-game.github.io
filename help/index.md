@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Help &amp; Rules
+title: "Help & Rules"
 permalink: /help/
 ---
 * [Submitting Bug Reports]({{ "/bug_report" | prepend: site.baseurl }})

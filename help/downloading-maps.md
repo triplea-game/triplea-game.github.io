@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Help&colon; Downloading Maps
+title: "Help: Downloading Maps"
 permalink: /downloading_maps/
 ---
 
@@ -13,7 +13,7 @@ As of TripleA 1.9, downloading maps has become much easier. Since no maps come b
 - [In-Game Download Process](#sec1)
 - [Manual Map Installation](#sec2)
 
-<a name="sec1"></a>
+<a id="sec1"></a>
 
 ## In-Game Download Process
 
@@ -27,7 +27,7 @@ Most of the time, you will want to play maps collected and curated by the develo
 6. The map will begin downloading. Unless you are downloading many maps at once or very large maps, this will only take a few minutes ![TripleA map download]({{ "/images/docs/triplea-maps-installing.png" | prepend: site.baseurl }})
 7. Once the download is complete, close the window and start playing your new map! ![TripleA map download complete]({{ "/images/docs/triplea-maps-dowload-complete.png" | prepend: site.baseurl }})
 
-<a name="sec2"></a>
+<a id="sec2"></a>
 
 ## Manual Map Installation
 
