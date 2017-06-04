@@ -8,217 +8,217 @@ permalink: /news/
 
 TripleA 1.8.0.9 Stable has been released.
 
-A full [changelog](https://github.com/triplea-game/triplea/blob/master/[changelog.txt)
+A full [changelog](https://github.com/triplea-game/triplea/blob/master/changelog.txt)
 
 ### Monday, August 17, 2015
 
 TripleA 1.8.0.7 Stable has been released.
 
-A full [changelog](https://github.com/triplea-game/triplea/blob/master/[changelog.txt)
+A full [changelog](https://github.com/triplea-game/triplea/blob/master/changelog.txt)
 
 ### Thursday, January 1, 2015
 
 TripleA 1.8.0.5 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_5_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_5_stable/changelog.txt)
 
 ### Tuesday, November 11, 2014
 
 TripleA 1.8.0.4 Beta has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_4_beta/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_4_beta/changelog.txt)
 
 ### Saturday, March 22, 2014
 
 TripleA 1.8.0.3 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_3_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_3_stable/changelog.txt)
 
 ### Monday, February 24, 2014
 
 TripleA 1.8.0.1 Beta has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_1_beta/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_8_0_1_beta/changelog.txt)
 
 ### Monday, May 21, 2013
 
 TripleA 1.7.0.3 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_7_0_3_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_7_0_3_stable/changelog.txt)
 
 ### Sunday, May 5, 2013
 
 TripleA 1.7.0.1 Beta has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_7_0_1_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_7_0_1_unstable/changelog.txt)
 
 ### Saturday, December 22, 2012
 
 TripleA 1.6.1.4 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_4_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_4_stable/changelog.txt)
 
 ### Sunday, August 19, 2012
 
 TripleA 1.6.1.2 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_2_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_2_stable/changelog.txt)
 
 ### Tuesday, July 31, 2012
 
 TripleA 1.6.1.1 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_1_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_1_stable/changelog.txt)
 
 ### Saturday, July 8, 2012
 
 TripleA 1.6.1 Unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_1_unstable/changelog.txt)
 
 ### Wednesday, June 13, 2012
 
 TripleA 1.6 Unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_6_unstable/changelog.txt)
 
 ### Friday, April 13, 2012
 
 TripleA 1.5.2.1 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_2_1_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_2_1_stable/changelog.txt)
 
 ### Friday, March 24, 2012
 
 TripleA 1.5.2 Beta has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_2_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_2_unstable/changelog.txt)
 
 ### Sunday, March 11, 2012
 
 TripleA 1.5.1 Unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_1_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_1_unstable/changelog.txt)
 
 ### Monday, January 30, 2012
 
 TripleA 1.5 Unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_5_unstable/changelog.txt)
 
 ### Saturday, November 5, 2011
 
 TripleA 1.4 Unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_4_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_4_unstable/changelog.txt)
 
 ### Friday, July 22, 2011
 
 TripleA 1.3.2.2 Stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_2_2_stable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_2_2_stable/changelog.txt)
 
 ### Wednesday, June 29, 2011
 
 TripleA 1.3.2.1 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_2_1_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_2_1_unstable/changelog.txt)
 
 ### Monday, May 23, 2011
 
 TripleA 1.3.1.1 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_1_1_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_1_1_unstable/changelog.txt)
 
 ### Saturday, May 14, 2011
 
 TripleA 1.3.1 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_1_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_1_unstable/changelog.txt)
 
 ### Monday, April 18, 2011
 
 TripleA 1.3 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_unstable/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_3_unstable/changelog.txt)
 
 ### Monday, August 16, 2010
 
 TripleA 1.2.5.5 stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_5_stable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_5_stable/triplea/changelog.txt)
 
 ### Sunday, April 24, 2010
 
 TripleA 1.2.5.4 stable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_4_stable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_4_stable/triplea/changelog.txt)
 
 ### Sunday, March 21, 2010
 
 TripleA 1.2.5.2 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_2_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_2_unstable/triplea/changelog.txt)
 
 ### Sunday, March 21, 2010
 
 TripleA 1.2.5.1 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_1_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_1_unstable/triplea/changelog.txt)
 
 ### Wednesday, March 13, 2010
 
 TripleA 1.2.5 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_5_unstable/triplea/changelog.txt)
 
 ### Wednesday, March 6, 2010
 
 TripleA 1.2.4 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_4_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_4_unstable/triplea/changelog.txt)
 
 ### Wednesday, February 27, 2010
 
 TripleA 1.2.3 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_3_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_3_unstable/triplea/changelog.txt)
 
 ### Wednesday, February 14, 2010
 
 TripleA 1.2.2 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_2_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_2_unstable/triplea/changelog.txt)
 
 ### Wednesday, January 13, 2010
 
 TripleA 1.2.1 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_1_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_1_unstable/triplea/changelog.txt)
 
 ### Sunday, December 21, 2009
 
 TripleA 1.2 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_2_unstable/triplea/changelog.txt)
 
 ### Sunday, December 13, 2009
 
 TripleA 1.1.2 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_1_2_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_1_2_unstable/triplea/changelog.txt)
 
 ### Sunday, November 29, 2009
 
 TripleA 1.1.1 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_1_1_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_1_1_unstable/triplea/changelog.txt)
 
 ### Thursday, October 29, 2009
 
 TripleA 1.1 unstable has been released.
 
-A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_1_0_unstable/triplea/[changelog.txt)
+A full [changelog](https://triplea.svn.sourceforge.net/svnroot/triplea/branches/1_1_0_unstable/triplea/changelog.txt)
 
 ### Monday, June 14, 2009
 
