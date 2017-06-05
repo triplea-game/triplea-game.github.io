@@ -1,21 +1,21 @@
 ---
 layout: longpage
 title: Java Code Guidelines and Standards
-permalink: /dev_docs/dev/code_standards
+permalink: /dev_docs/dev/code_standards/
 ---
 
 ## Checkstyle
 
-This project uses Checkstyle to enforce code guidelines and standards. See the [Checkstyle]({{ "/dev_docs/dev/checkstyle" | prepend: site.baseurl }}) page for information on setting up and running Checkstyle in your development environment.
+This project uses Checkstyle to enforce code guidelines and standards. See the [Checkstyle]({{ "/dev_docs/dev/checkstyle/" | prepend: site.baseurl }}) page for information on setting up and running Checkstyle in your development environment.
 
 ## Code is formatted
 
-According to [Code Format]({{ "/dev_docs/dev/code_format" | prepend: site.baseurl }})
+According to [Code Format]({{ "/dev_docs/dev/code_format/" | prepend: site.baseurl }})
 
 ## Tests included for any new code
 
 - New (Non-AI) code should keep the current code coverage rate, not decrease it
-- Follow the [testing pyramid](http://martinfowler.com/bliki/TestPyramid.html), write mostly unit tests
+- Follow the [testing pyramid](https://martinfowler.com/bliki/TestPyramid.html), write mostly unit tests
 - Tests are difficult in the tripleA project for the existing code. Any significant changes will likely require a few iterations of simplification and test retrofits before any new  code can be added. There is some leniency for fixing/refactoring existing code cruft without retrofitting tests, there is a a lot less for new code, or major updates.
 
 
@@ -75,7 +75,7 @@ When you have a good reason to deprecate a method or class, add both - a @Deprec
 In the above, note that we are logging the values of the two method arguments. If there were any other interesting variable values in the method or class, we would log those too. Without this information, if we ever do get an exception, and it is related to data, we'll be scratching our heads on how to reproduce the problem.
 
 ## Method and variable ordering
-Try to organize methods and variables so that new elements are used immediately and only *after* they are declared. This basically attempts to allow for code to be read from top to bottom once. For some good background reading and details on how to do this, please see Chapter 5 'Formatting' in [Clean Code](http://ricardogeek.com/docs/clean_code.pdf)
+Try to organize methods and variables so that new elements are used immediately and only *after* they are declared. This basically attempts to allow for code to be read from top to bottom once. For some good background reading and details on how to do this, please see Chapter 5 'Formatting' in [Clean Code](http://ricardogeek.com/docs/clean_code.html)
 
 
 ### Variable Ordering Example

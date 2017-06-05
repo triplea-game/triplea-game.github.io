@@ -11,13 +11,13 @@ permalink: /dev_docs/dev/setup
     - [Gradle integration plugin](https://marketplace.eclipse.org/content/buildship-gradle-integration)
 
 *Netbeans*
-  - Use the [Gradle plugin](http://plugins.netbeans.org/plugin/44510/gradle-support)
+  - Use the [Gradle plugin](https://plugins.netbeans.org/plugin/44510/gradle-support)
 
 *Intellij IDEA*
   - Import the project as a gradle project, specify the settings.gradle file
   - Plugins to Install:
-    - [eclipse code formatter plugin](https://plugins.jetbrains.com/plugin/6546)
-    - [eclipse launcher plugin (eclipser)](https://plugins.jetbrains.com/plugin/7153?pr=idea)
+    - [eclipse code formatter plugin](https://plugins.jetbrains.com/plugin/6546-eclipse-code-formatter)
+    - [eclipse launcher plugin (eclipser)](https://plugins.jetbrains.com/plugin/7153-eclipser)
       - Once installed, right click the eclipse launchers found in 'triplea/eclipse/launchers'
       - Select 'convert with eclipser', then the launchers will be available to run as intelliJ run configurations
 
@@ -29,7 +29,7 @@ Note that eclipse and NetBeans are currently not supporting JUnit 5. Therefore w
 Development - Building
 ======================
 
-[Gradle](http://gradle.org) is used. The gradlew (on Windows gradlew.bat) file is a proxy to execute build commands.
+[Gradle](https://gradle.org) is used. The gradlew (on Windows gradlew.bat) file is a proxy to execute build commands.
 On first call these files will install the correct version of Gradle on your system. Most commonly used commands:
 
 * creates a jar file from the project, dependencies are not added:

@@ -44,9 +44,9 @@ Take part and prevail in Tolkien-based epical conflict  In the south evil armies
 
 ## Game of the Month
 
-TripleA now has a new featured map each month with a special AI challenge. [Click here](http://www.tripleawarclub.org/modules/newbb/viewforum.php?forum=36) to learn more.
+TripleA now has a new featured map each month with a special AI challenge. [Click here](https://www.tripleawarclub.org/modules/newbb/viewforum.php?forum=36) to learn more.
 
 ### Past Games of the Month
-* [World War II v5 Second Edition](http://tripleadev.1671093.n2.nabble.com/Game-of-the-month-3-tp7589447.html) (September/October 2015)
+* [World War II v5 Second Edition](http://tripleadev.1671093.n2.nabble.com/Game-of-the-month-3-td7589447.html) (September/October 2015)
 * [New World Order](http://tripleadev.1671093.n2.nabble.com/Game-of-the-Month-2-td7588951.html) (August 2015)
 * [World War II Revised](http://tripleadev.1671093.n2.nabble.com/Game-of-the-Month-1-td7588663.html) (July 2015)

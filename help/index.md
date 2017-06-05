@@ -3,8 +3,8 @@ layout: page
 title: "Help & Rules"
 permalink: /help/
 ---
-* [Submitting Bug Reports]({{ "/bug_report" | prepend: site.baseurl }})
-* [FAQ]({{ "/help/faq" | prepend: site.baseurl }})
+* [Submitting Bug Reports]({{ "/bug_report/" | prepend: site.baseurl }})
+* [FAQ]({{ "/help/faq/" | prepend: site.baseurl }})
 
 ## Lobby
 
@@ -15,11 +15,11 @@ permalink: /help/
 ## Game Manuals and Rules
 
 * [Game Rules Manual]({{ "/files/TripleA_RuleBook.pdf" | prepend: site.baseurl }})
-* [TripleA Wiki Rulebook](http://en.wikibooks.org/wiki/TripleA)
+* [TripleA Wiki Rulebook](https://en.wikibooks.org/wiki/TripleA)
 
 ## Game Play Help
-* [User Interface help and tips]({{ "/help/ui" | prepend: site.baseurl }})
-* [Downloading Maps]({{ "/downloading_maps" | prepend: site.baseurl }})
+* [User Interface help and tips]({{ "/help/ui/" | prepend: site.baseurl }})
+* [Downloading Maps]({{ "/downloading_maps/" | prepend: site.baseurl }})
 
 ## Project Documentation for Map Makers and Developers
 * [Map Maker and Developer Documentation]({{ "/dev_docs/" | prepend: site.baseurl }})
