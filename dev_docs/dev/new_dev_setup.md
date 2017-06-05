@@ -11,7 +11,7 @@ permalink: /dev_docs/dev/setup
     - [Gradle integration plugin](https://marketplace.eclipse.org/content/buildship-gradle-integration)
 
 *Netbeans*
-  - Use the [Gradle plugin](https://plugins.netbeans.org/plugin/44510/gradle-support)
+  - Use the [Gradle plugin](http://plugins.netbeans.org/plugin/44510/gradle-support)
 
 *Intellij IDEA*
   - Import the project as a gradle project, specify the settings.gradle file
