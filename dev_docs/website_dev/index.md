@@ -17,8 +17,8 @@ This is a guide for contribution to the website. For now, please start all featu
 ## About the site
 This is the official TripleA website, which is in early development. Please  start an issue if you want to help out/have a request. There are a few places where you can go to discuss the site:
 
-* [Development Forum Thread for General Discussion About the Site on the Dev Forum](http://tripleadev.1671093.n2.nabble.com/TripleA-Website-Redesign-Migration-to-Github-Pages-tp7589306p7589426.html)
-* [Development Forum Thread for volunteering to help out](http://tripleadev.1671093.n2.nabble.com/TripleA-Website-Development-tp7589352p7589383.html)
+* [Development Forum Thread for General Discussion About the Site on the Dev Forum](http://tripleadev.1671093.n2.nabble.com/TripleA-Website-td7589306.html#a7589426)
+* [Development Forum Thread for volunteering to help out](http://tripleadev.1671093.n2.nabble.com/TripleA-Website-Development-td7589352.html#a7589383)
 * [Trello Board for Content Changes](https://trello.com/b/Q5ndwlqD)
 
 ## I have an idea for / want to write a page, what should I do?
@@ -48,7 +48,7 @@ This will get a local version of the blog running on your machine, accessible on
 
 - [Jekyll](http://jekyllrb.com/docs/home/) The static site generator used for the site
 - [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/) How the site is hosted
-- [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) The templating language used with Jekyll by Shopify
+- [Liquid](https://help.shopify.com/themes/liquid/basics) The templating language used with Jekyll by Shopify
 
 ## Points of Maintenance
 

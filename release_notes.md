@@ -95,7 +95,7 @@ permalink: /release_notes/
 * Hard AI - Units of the same type are now moved all at once rather than one at a time. (redrum)
 * Hard AI - Fixed several rare NullPointerException errors. (redrum)
 * Hard AI - Added support for nations without capitals. (redrum)
-* Source code migrated to github - [GitHub Repository](http://github.com/triplea-game/triplea) (veqryn)
+* Source code migrated to github - [GitHub Repository](https://github.com/triplea-game/triplea) (veqryn)
 * Fixed maxBuilt to include unplaced units, PR#62\. (LaFayette)
 * Added a convenience button to undo all moves during a phase, PR#61\. (LaFayette)
 * Removed obsolete Dynamix (land-only) AI. (veqryn)

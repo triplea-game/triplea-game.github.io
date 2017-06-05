@@ -23,9 +23,9 @@ In online games, the dice are rolled on two computers, and are encrypted (for mo
 
 A. You are probably behind a router and/or a firewall. Read these for more details,
 
-* [How to Host a TripleA game](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-tp4074312p4085700.html)
+* [How to Host a TripleA game](http://tripleadev.1671093.n2.nabble.com/Download-Maps-Links-Hosting-Games-General-Information-td4074312.html#a4085700)
 
-* <http://portforward.com/>
+* [portforward.com](https://portforward.com/)
 
 
 > Q. How do I open a port under Linux?

@@ -15,5 +15,5 @@ Note, new map repos will take time to show up in the github CLI API, perhaps up 
 
 
 Links:
-- [Admin Maintenance Wiki Docs](http://github.com/triplea-maps/Project/wiki/Adding-a-New-Official-Map-Repository)
-- [Travis Builds - http://travis-ci.org/triplea-maps](http://travis-ci.org/triplea-maps)
+- [Admin Maintenance Wiki Docs](https://github.com/triplea-maps/Project/wiki/Adding-a-New-Official-Map-Repository)
+- [Travis Builds - http://travis-ci.org/triplea-maps](https://travis-ci.org/triplea-maps)
