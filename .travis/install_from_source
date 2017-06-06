@@ -1,0 +1,12 @@
+#!/bin/bash
+mkdir ./.binary/
+cd ./.binary/
+../.travis/download_html_validator
+git clone https://github.com/w3c/css-validator.git
+cd ./css-validator/
+ant jar -q
+cd ..
+git clone https://github.com/RoiEXLab/link-checker.git
+cd ./link-checker/
+./gradlew jar -q
+cd ../../
