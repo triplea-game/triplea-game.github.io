@@ -1,4 +1,12 @@
+
 Bot Account: https://github.com/tripleabuilderbot
+
+## Overview
+
+An admin owned account used for automated build tasks that require repository write access.
+
+
+## Personal Access Keys
 
 - Travis automated releases key
   - Usage: https://github.com/triplea-game/triplea/blob/master/.travis.yml#L32)
