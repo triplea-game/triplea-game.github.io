@@ -1,0 +1,4 @@
+.*https?://(triplea\.)?sourceforge\.net.*Received fatal alert: handshake_failure.*
+.*https://github.com/triplea-game/triplea/releases/download/1\.8\.0\.9/.*returned code 403.*
+Link 'http://www\.fieldmarshalgames\.com/' returned code 503
+.*http://www\.winzip\.com.*' was redirected permanently to 'http://www\.winzip\.com/.*

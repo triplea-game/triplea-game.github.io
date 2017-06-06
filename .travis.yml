@@ -1,4 +1,27 @@
 language: generic
-before_install: rvm reinstall ruby-head --binary
+addons:
+  apt:
+    packages:
+      - python3
+before_install:
+  - rvm reinstall ruby-head --binary
+  - jdk_switcher use oraclejdk8
+  - mkdir ./.binary/
+  - cd ./.binary/
+  - ../.travis/download_html_validator
+  - git clone https://github.com/w3c/css-validator.git
+  - cd ./css-validator/
+  - ant jar -q
+  - cd ..
+  - git clone https://github.com/RoiEXLab/link-checker.git
+  - cd ./link-checker/
+  - ./gradlew jar -q
+  - cd ../../
 install: gem install jekyll
-script: jekyll build
+before_script: rm ./googlecfd75a4bac031411.html
+script: 
+  - jekyll serve --detach --no-watch
+  - java -jar ./.binary/vnu.jar --skip-non-html _site/
+  - java -jar ./.binary/css-validator/css-validator.jar -warning 1 -vextwarning true http://localhost:4000 | tee out.log | grep -Pzo "Warnings[^\x{0000}]*(?=Valid CSS information)" | cat && ! grep -Pzo "[^\x{0000}]*Sorry! We found the following errors[^\x{0000}]*?((?=Warnings)|(?=Valid CSS information))" out.log
+  - java -jar ./.binary/link-checker/build/libs/link-checker.jar -s http://localhost:4000 -d _site/ -if ./.travis/ignore-list.txt
+  - pkill -9 -f jekyll
