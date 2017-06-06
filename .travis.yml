@@ -6,17 +6,7 @@ addons:
 before_install:
   - rvm reinstall ruby-head --binary
   - jdk_switcher use oraclejdk8
-  - mkdir ./.binary/
-  - cd ./.binary/
-  - ../.travis/download_html_validator
-  - git clone https://github.com/w3c/css-validator.git
-  - cd ./css-validator/
-  - ant jar -q
-  - cd ..
-  - git clone https://github.com/RoiEXLab/link-checker.git
-  - cd ./link-checker/
-  - ./gradlew jar -q
-  - cd ../../
+  - ./.travis/install_from_source
 install: gem install jekyll
 before_script: rm ./googlecfd75a4bac031411.html
 script: 
