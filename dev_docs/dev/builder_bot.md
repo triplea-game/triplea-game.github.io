@@ -1,4 +1,8 @@
-
+---
+title: Builder Bot
+layout: longpage
+permalink: /dev_docs/dev/builder_bot/
+---
 Bot Account: https://github.com/tripleabuilderbot
 
 ## Overview
@@ -17,8 +21,8 @@ An admin owned account used for automated build tasks that require repository wr
     Description: Write-Access to triplea github.io website repo to add map description files
 - Push Tag
   - Usage: https://github.com/triplea-game/triplea/blob/master/.travis/push_tag#L13
-    Description: write permission to triplea repo for creating a new tag on each release. 
-      The tags are primarily for convenience, so we can relatively easily checkout a specific 
+    Description: write permission to triplea repo for creating a new tag on each release.
+      The tags are primarily for convenience, so we can relatively easily checkout a specific
       version that we released. This is also a carry-over of the process TripleA used when
       hosted in SVN.
 
@@ -42,4 +46,4 @@ Snapshot:
 
 ## Tips
 
-- Using 'private' mode browsing is useful when logging in as the bot account. 
+- Using 'private' mode browsing is useful when logging in as the bot account.
