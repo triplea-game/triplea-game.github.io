@@ -5,6 +5,7 @@ cd ./.binary/
 ../.travis/download_html_validator
 git clone https://github.com/w3c/css-validator.git
 cd ./css-validator/
+git checkout 10409468e78e5aef25e11603c48dd8ac3b99a67d
 ant jar -q
 cd ..
 git clone https://github.com/RoiEXLab/link-checker.git
