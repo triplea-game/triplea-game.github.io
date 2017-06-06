@@ -1,0 +1,15 @@
+Bot Account: https://github.com/tripleabuilderbot
+
+- Travis automated releases key
+  - Usage: https://github.com/triplea-game/triplea/blob/master/.travis.yml#L32)
+    Description: This key allows travis to push to github releases. It is set up by the
+      travis ruby set up program when first configuring travis with triplea.
+- Map Push Key
+  - Usage: https://github.com/triplea-game/triplea/blob/master/.travis/push_maps_yaml#L10
+    Description: Write-Access to triplea github.io website repo to add map description files
+- Push Tag
+  - Usage: https://github.com/triplea-game/triplea/blob/master/.travis/push_tag#L13
+    Description: write permission to triplea repo for creating a new tag on each release. 
+      The tags are primarily for convenience, so we can relatively easily checkout a specific 
+      version that we released. This is also a carry-over of the process TripleA used when
+      hosted in SVN.
