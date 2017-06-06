@@ -1,11 +1,17 @@
 #!/usr/bin/python3
+import os
 import zipfile
 import urllib.request
+import urllib.parse
 import json
 import re
 from shutil import copy
 
-with urllib.request.urlopen("https://api.github.com/repos/validator/validator/releases/latest") as url:
+request = urllib.request.Request("https://api.github.com/repos/validator/validator/releases/latest");
+token = os.getenv("AUTH_TOKEN");
+if token:
+	request.add_header("Authorization", "token " + token);
+with urllib.request.urlopen(request) as url:
 	assets = json.loads(url.read().decode())["assets"];
 	for asset in assets:
 		if re.match("^vnu\\.jar.*zip$", asset["name"]):
