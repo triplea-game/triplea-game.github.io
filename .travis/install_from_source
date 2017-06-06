@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 mkdir ./.binary/
 cd ./.binary/
 ../.travis/download_html_validator
