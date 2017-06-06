@@ -15,6 +15,7 @@ permalink: /dev_docs/dev/
 - [Code Reviews]({{ "/dev_docs/dev/code_reviews/" | prepend: site.baseurl }})
 - [Version Numbering]({{ "/dev_docs/dev/version_numbers/" | prepend: site.baseurl }})
 - [Testing]({{ "/dev_docs/dev/testing/" | prepend: site.baseurl }})
+- [Builder Bot]({{ "/dev_docs/dev/builder_bot/" | prepend: site.baseurl }})
 
 ## Github Links
 
