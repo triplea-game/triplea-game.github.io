@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Screenshots
+permalink: /screenshots/
 ---
 Open the images below in a new tab to see full size
 
