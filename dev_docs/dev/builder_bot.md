@@ -15,7 +15,7 @@ An admin owned account used for automated build tasks that require repository wr
   - Description: This key allows Travis to push to github releases. It is set up by the
       Travis ruby set up program when first configuring travis with TripleA.
 - Map Push Key
-  - Usage: [Code Snippet](https://github.com/triplea-game/triplea/blob/master/.travis/push_maps_yaml#L10)
+  - Usage: [Code Snippet](https://github.com/triplea-game/triplea/blob/master/.travis/push_maps#L8)
   - Description: Write-Access to TripleA github.io website repo to add map description files
 - Push Tag
   - Usage: [Code Snippet](https://github.com/triplea-game/triplea/blob/master/.travis/push_tag#L13)
