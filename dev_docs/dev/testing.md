@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Testing
-permalink: /dev_docs/dev/testing
+permalink: /dev_docs/dev/testing/
 ---
 
 ## Game compatibility testing

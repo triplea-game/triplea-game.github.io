@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Code Format
-permalink: /dev_docs/dev/code_format
+permalink: /dev_docs/dev/code_format/
 ---
 
 For the most part, we are following [Google java style](http://google.github.io/styleguide/javaguide.html)

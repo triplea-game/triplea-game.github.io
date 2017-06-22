@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Legacy Refactoring
-permalink: /dev_docs/dev/legacy_refactoring
+permalink: /dev_docs/dev/legacy_refactoring/
 ---
 
 This page lists examples of existing code conventions/patterns that we are trying to update
