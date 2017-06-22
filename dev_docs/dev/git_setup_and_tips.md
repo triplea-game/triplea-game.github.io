@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Git Setup and Tips
-permalink: /dev_docs/dev/git_setup_and_tips
+permalink: /dev_docs/dev/git_setup_and_tips/
 ---
 
 ## Tools

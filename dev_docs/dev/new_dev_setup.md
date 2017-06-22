@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Dev Setup
-permalink: /dev_docs/dev/setup
+permalink: /dev_docs/dev/setup/
 ---
 
 *Eclipse*

@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Code Reviews
-permalink: /dev_docs/dev/code_reviews
+permalink: /dev_docs/dev/code_reviews/
 ---
 
 This page describes the roles in a Pull Request (PR), guidelines for what is expected from code reviewers, how to become one, and guidelines of what is expected from someone that submits code.

@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Version Numbers
-permalink: /dev_docs/dev/version_numbers
+permalink: /dev_docs/dev/version_numbers/
 ---
 
 
