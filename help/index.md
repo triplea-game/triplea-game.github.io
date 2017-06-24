@@ -22,5 +22,3 @@ permalink: /help/
 * [User Interface help and tips]({{ "/help/ui/" | prepend: site.baseurl }})
 * [Downloading Maps]({{ "/downloading_maps/" | prepend: site.baseurl }})
 
-## Project Documentation for Map Makers and Developers
-* [Map Maker and Developer Documentation]({{ "/dev_docs/" | prepend: site.baseurl }})
