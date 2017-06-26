@@ -1,24 +1,14 @@
 [![Travis](https://img.shields.io/travis/triplea-game/triplea-game.github.io.svg?style=flat-square)](https://travis-ci.org/triplea-game/triplea-game.github.io)
 # [TripleA Website](http://triplea-game.github.io/)
 
-This repo hosts the website for TripleA, an open-source grand-strategy board game engine. You can find the live site [here](http://triplea-game.github.io/). If you're a web developer or designer looking to contribute, read on.
+This is the official TripleA website. This repository hosts the website source code. The TripleA site runs on [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/). Pages are written in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-## Getting Started (github.io website)
-The TripleA site runs on [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/). Pages are written in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+## A Guide on How-To-Contribute
 
 This is a guide for contribution to the website. For now, please start all feature requests as issues. Please note that we will often hesitate to accept pull requests without prior approval, but it is very easy to start an issue first, so that we can help you fit your idea into the project.
 
-## About the site
-This is the official TripleA website, which is in early development. Please  start an issue if you want to help out/have a request. There are a few places where you can go to discuss the site:
 
-* [Development Forum Thread for General Discussion About the Site on the Dev Forum](http://tripleadev.1671093.n2.nabble.com/TripleA-Website-td7589306.html#a7589426)
-* [Development Forum Thread for volunteering to help out](http://tripleadev.1671093.n2.nabble.com/TripleA-Website-Development-td7589352.html#a7589383)
-* [Trello Board for Content Changes](https://trello.com/b/Q5ndwlqD)
-
-## I have an idea for / want to write a page, what should I do?
-1. Comment on the [README card](https://trello.com/c/3R0yIP99) on the [Trello board](https://trello.com/b/Q5ndwlqD), and a dev should respond by either addressing your concern or making a card for it.
-2. Write any content in [Markdown](https://daringfireball.net/projects/markdown/) with the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) like the other pages. If you can, follow the instructions below to test your changes.
-3. If you have confirmation, then send a pull request, which will will first test, then if everything works alright, merge. If you're not sure on how to use Git, [look no further](https://github.com/triplea-game/triplea/wiki/DevSetup--Git-Workflow).
 
 ## Making code changes
 
@@ -44,11 +34,5 @@ This will get a local version of the blog running on your machine, accessible on
 - [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/) How the site is hosted
 - [Liquid](https://help.shopify.com/themes/liquid/basics) The templating language used with Jekyll by Shopify
 
-## Points of Maintenance
 
-Though the site has been designed to allow as few points of maintenance as possible, here are areas that must be updated.
-
-### Every Time TripleA is Updated
-
-* The version number and links round line 11 of `_config.yml` need to be updated with information about the new release. A pull request can be made, and merged as soon as the new version is live.
-* (Deprecated) Update `news.md` with a link and a changelog.
+** Tip:** Write any content in [Markdown](https://daringfireball.net/projects/markdown/) with the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) like the other pages. If you can, follow the instructions below to test your changes.
