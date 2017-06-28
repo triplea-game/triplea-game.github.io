@@ -5,6 +5,7 @@ permalink: /help/
 ---
 * [Submitting Bug Reports]({{ "/bug_report/" | prepend: site.baseurl }})
 * [FAQ]({{ "/help/faq/" | prepend: site.baseurl }})
+* [Set maximum RAM for TripleA]({{ "/help/set-ram/" | prepend: site.baseurl }})
 
 ## Lobby
 
