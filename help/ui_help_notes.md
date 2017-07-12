@@ -1,7 +1,7 @@
 ---
 layout: page
 title: User Interface Help Notes
-permalink: /help/ui
+permalink: /help/ui/
 ---
 
 ## User Interface help notes:
@@ -38,4 +38,3 @@ scrolling the mouse wheel will move the map up and down.
 ### Turn off Art
 * Deselect 'Map Details' in the 'View' menu, to show a map without the artwork.
 * Select a new 'Map Skin' from the 'View' menu to show a different kind of artwork (not all maps have skins).
-
