@@ -1,10 +1,8 @@
 ---
 layout: longpage
 title: Map Maker Documentation
-permalink: /dev_docs/maps/map_making
+permalink: /dev_docs/maps/map_making/
 ---
-
-
 ## How to Request Map XML Updates
 * This can be done using just your web browser:
   * Find the github map repo of the map you would like to update: https://github.com/triplea-maps

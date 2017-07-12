@@ -1,10 +1,8 @@
 ---
 layout: longpage
 title: How to Release
-permalink: /dev_docs/admin/how_to_release
+permalink: /dev_docs/admin/how_to_release/
 ---
-
-
 ## Release Testing
 1. Test the following situations at a bare minimum (our unit tests cover virtually nothing):  
  1.	Can download maps, and can see and load both maps that come with triplea and downloaded maps.  

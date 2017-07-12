@@ -1,9 +1,8 @@
 ---
 layout: longpage
 title: Issue Management
-permalink: /dev_docs/admin/issue_management
+permalink: /dev_docs/admin/issue_management/
 ---
-
 ### Things we track in github issues
 - game bugs: existing functionality that simply does not work as advertised (game rule violation, errors, etc.)
 - feature requests: anything a person would like added to the game

@@ -1,7 +1,7 @@
 ---
 layout: longpage
 title: Build Pipeline
-permalink: /dev_docs/admin/build_pipeline
+permalink: /dev_docs/admin/build_pipeline/
 ---
 
 ## build.gradle
