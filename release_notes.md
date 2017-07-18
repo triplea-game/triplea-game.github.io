@@ -4,6 +4,12 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## 1.9.0.0.5792
+
+* Bug Fix: Fix game crash when game release version is updated
+* Set all buttons to select alliances more easily
+*
+
 ## 1.9.0.0.3627
 
 * Game no longer shuts down when host disconnects, allows game to be saved.
