@@ -4,7 +4,7 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## 1.9.0.0.5792 - July 18th 2017
+## 1.9.0.0.5802 - July 19th 2017
 
 * Bug Fix: Fix game crash when game release version is updated
 * Set all buttons to select alliances more easily
