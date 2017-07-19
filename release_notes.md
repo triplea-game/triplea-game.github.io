@@ -6,9 +6,9 @@ permalink: /release_notes/
 
 ## 1.9.0.0.5802 - July 19th 2017
 
-* Bug Fix: Fix game crash when game release version is updated
+* Improved naming of auto save games.
 * Set all buttons to select alliances more easily
-*
+* Bug Fix: Fix game crash when game release version is updated
 
 ## 1.9.0.0.3627
 
