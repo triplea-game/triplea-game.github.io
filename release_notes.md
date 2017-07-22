@@ -4,6 +4,10 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## 1.9.0.0.5855 - July 22nd 2017
+
+* Compatibility fixes for moderator actions.
+
 ## 1.9.0.0.5802 - July 19th 2017
 
 * Improved naming of auto save games.
