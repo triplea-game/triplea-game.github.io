@@ -7,7 +7,7 @@ title: About
 TripleA is a networked open source strategy gaming engine that allows for customized user editable maps and rules. Typically game rules are based upon Axis and Allies rules.
 
 
-TripleA is released under the GNU Public License (GPL). This license means the work is completely non-commercial, and is not allowed for use as part of other commercial projects.
+TripleA is released under the GNU Public License (GPL). This license means you are free to distribute this work and any derivatives you make from this work either commercially or non-commercially but only under the terms of the GPL (i.e. must make source code available to your users and must allow your users themselves to freely distribute the work and any further derivatives under the GPL).
 
 ## About TripleA
 
