@@ -2,7 +2,15 @@
 set -e
 mkdir ./.binary/
 cd ./.binary/
-../.travis/download_html_validator
+
+VALIDATOR_VERSION=17.9.0
+VALIDATOR_TMP_ZIP=$(mktemp --suffix=.zip)
+wget \
+  -O "$VALIDATOR_TMP_ZIP" \
+  "https://github.com/validator/validator/releases/download/$VALIDATOR_VERSION/vnu.jar_$VALIDATOR_VERSION.zip"
+unzip -j "$VALIDATOR_TMP_ZIP" dist/vnu.jar
+rm "$VALIDATOR_TMP_ZIP"
+
 git clone https://github.com/w3c/css-validator.git
 cd ./css-validator/
 git checkout 10409468e78e5aef25e11603c48dd8ac3b99a67d
