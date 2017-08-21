@@ -1,8 +1,4 @@
 language: generic
-addons:
-  apt:
-    packages:
-      - python3
 before_install:
   - rvm reinstall ruby-head --binary
   - jdk_switcher use oraclejdk8
