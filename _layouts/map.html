@@ -7,7 +7,6 @@ layout: default
 <img src="{% if page.img %}{{ page.img }}{% else %}{{ '/images/missing_map.png' | prepend: site.baseurl }}{% endif %}" alt="Map Thumbnail">
 {{ content }}
 <br>
-<a href="{{ page.downloadUrl }}" class="button">Manual Download (v{{ page.version }})</a>
-<br>
-<a href="triplea:{{ page.mapName | escape | replace: " ", "%20"  }}" style="display: none;" class="button">Open with TripleA (Currently not working)</a>
-<!-- WIP this needs a better design -->
+<a href="triplea:{{ page.mapName | escape | replace: " ", "%20"  }}" class="button">Download with TripleA</a>
+<p style="margin-top: -20px; font-size: 12px;">(Requires pre-release 1.9.0.0.6322 or higher)</p><!-- TODO remove this notice once a new stable release with this feature is out -->
+<a href="{{ page.downloadUrl }}">Manual Download (v{{ page.version }})</a>
