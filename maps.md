@@ -6,7 +6,7 @@ permalink: /maps/
 
 TripleA is very versatile and can be used for scenarios from Hannibal crossing the Alps to very futuristic and modern time periods. Here are a few examples of the most popular maps on TripleA.
 
-A list of all available Maps can be found [here]({{"/maps-list/" | prepend: site.baseurl }}) or from inside the TripleA client, where you can download them as well.
+A list of all available Maps can be found [here]({{"/maps-list/all/" | prepend: site.baseurl }}) or from inside the TripleA client, where you can download them as well.
 
 ## Big World
 
