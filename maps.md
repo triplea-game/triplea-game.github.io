@@ -4,7 +4,9 @@ title: Maps
 permalink: /maps/
 ---
 
-TripleA is very versatile and can be used for scenarios from Hannibal crossing the Alps to very futuristic and modern time periods. Here are a few examples of the most popular maps on TripleA. (A comprehensive download list can be found inside TripleA using the 'Download Maps' feature.)
+TripleA is very versatile and can be used for scenarios from Hannibal crossing the Alps to very futuristic and modern time periods. Here are a few examples of the most popular maps on TripleA.
+
+A list of all available Maps can be found [here]({{"/maps-list/" | prepend: site.baseurl }}) or from inside the TripleA client, where you can download them as well.
 
 ## Big World
 
@@ -41,10 +43,6 @@ The empires of Europe are at war. The upstart French Republic has followed in th
 ![Middle Earth Map]({{ "/images/maps/MiddleEarth.png" | prepend: site.baseurl }})
 
 Take part and prevail in Tolkien-based epical conflict  In the south evil armies gather in an attempt to destroy the proud nation of Gondor. Elsewhere, Elves along with their allies attempt to stop expansion of Goblins, Rhun and Saruman.
-
-## Game of the Month
-
-TripleA now has a new featured map each month with a special AI challenge. [Click here](https://www.tripleawarclub.org/modules/newbb/viewforum.php?forum=36) to learn more.
 
 ### Past Games of the Month
 * [World War II v5 Second Edition](http://tripleadev.1671093.n2.nabble.com/Game-of-the-month-3-td7589447.html) (September/October 2015)
