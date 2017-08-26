@@ -62,5 +62,5 @@ Though the majority of our maps and games revolve around World War II, we also h
 
 ## Software Licensing
 
-TripleA is released under the GNU Public License (GPL). This license means you are free to distribute this work and any derivatives you make from this work either commercially or non-commercially but only under the terms of the GPL (i.e. must make source code available to your users and must allow your users themselves to freely distribute the work and any further derivatives under the GPL).
-
+TripleA is released under the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) (GPL); either version 2
+of the License, or (at your option) any later version. This license means you are free to distribute this work and any derivatives you make from this work either commercially or non-commercially but only under the terms of the GPL (i.e. must make source code available to your users and must allow your users themselves to freely distribute the work and any further derivatives under the GPL).
