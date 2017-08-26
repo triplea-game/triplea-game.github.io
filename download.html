@@ -23,21 +23,12 @@ permalink: /download/
   <p>TripleA&nbsp;for Linux</p>
 </a>
 
-<h2>Additional Links</h2>
-<p><a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes</a></p>
-<p><a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code</a></p>
-<p><a href="{{ '/old_downloads/' | prepend: site.baseurl }}">Previous TripleA Releases</a></p>
-<p><a href="https://github.com/triplea-game/triplea/releases/">Early Release Download</a></p>
-
-
 <div id="windows-install" class="installation-instructions">
   <h2>Windows Installation</h2>
   <p>Run the installer once the download completes</p>
   <p>Follow the on-screen prompts to finish the installation</p>
   <p>When the installation is complete, you will be able to launch TripleA from the start menu.</p>
   <br>
-  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
 
 <div id="mac-install" class="installation-instructions">
@@ -54,8 +45,6 @@ permalink: /download/
   <p>Change "Allow Applications Downloaded From:" to "Anywhere"</p>
   <p>This setting will reset to "Mac App Store and identified developers" every 30 days, you may need to repeat this step.</p>
   <br>
-  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
 
 <div id="linux-install" class="installation-instructions">
@@ -67,18 +56,29 @@ permalink: /download/
   <p>TripleA requires Java 8 or later to be installed</p>
   <p><a href="https://java.com/en/download/help/linux_install.xml">Oracle JREs</a> are recommended, sounds may not work with OpenJRE.</p>
   <br>
-  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
+<p><a href="" id="hideButton" style="display: none;" onclick="hideShowInstallationText()">(Hide)</a></p>
+
+<h2>Additional Links</h2>
+<p><a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes</a></p>
+<p><a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code</a></p>
+<p><a href="{{ '/old_downloads/' | prepend: site.baseurl }}">Previous TripleA Releases</a></p>
+<p><a href="https://github.com/triplea-game/triplea/releases/">Early Release Download</a></p>
+<p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
+
 <script>
+const hideButton = document.getElementById("hideButton");
 function hideShowInstallationText(which) {
   [].forEach.call(document.getElementsByClassName("installation-instructions"), function(current){
     if(current !== which){
-      current.style.display="none";
+      current.style.display = "none";
     }
   });
   if(which){
-    which.style.display="block";
+    which.style.display = "block";
+    hideButton.style.display = "initial";
+  } else {
+    hideButton.style.display = "none";
   }
 }
 if (typeof String.prototype.endsWith !== 'function') {
