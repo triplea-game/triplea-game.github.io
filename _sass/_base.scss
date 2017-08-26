@@ -92,13 +92,11 @@
   font-family: $secondary-font-family;
   padding-bottom: 0.5em;
 }
-//This Formatting is not looking perfect on mobile
 .dl-links {
-  width: 18%;
-}
-
-.dl-links p {
-  margin-top: 10px;
+  min-width: 18%;
+  p {
+    margin-top: 10px;
+  }
 }
 
 .dl-install4j-credit {

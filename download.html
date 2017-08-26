@@ -4,40 +4,32 @@ title: Download
 permalink: /download/
 ---
 <p class="dl-install4j-credit"><small>Installer powered by <a href="http://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j Icon"></a></small></p>
-<p>Download the TripleA installer (<span id="dl-size-mb">N/A</span> MB):</p>
+<p class="mobile-smaller-text">Download the TripleA installer (<span id="dl-size-mb">N/A</span>&nbsp;MB):</p>
 
 <a id="win64" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
-  <p>TripleA for Windows <strong>(64 bit)</strong></p>
+  <p>TripleA&nbsp;for Windows <strong>(64&nbsp;bit)</strong></p>
 </a>
 <a id="win32" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
   <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
-  <p>TripleA for Windows <strong>(32 bit)</strong></p>
+  <p>TripleA&nbsp;for Windows <strong>(32&nbsp;bit)</strong></p>
 </a>
 <a id="macos" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
   <img src="../images/operating-systems/mac100.png" alt="Mac Icon">
-  <p>TripleA for Mac</p>
+  <p>TripleA&nbsp;for Mac</p>
 </a>
 <a id="linux" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
   <img src="../images/operating-systems/linux100.png" alt="Linux Icon">
-  <p>TripleA for Linux</p>
+  <p>TripleA&nbsp;for Linux</p>
 </a>
 
-<h2>Additional Links</h2>
-<p><a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes</a></p>
-<p><a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code</a></p>
-<p><a href="{{ '/old_downloads/' | prepend: site.baseurl }}">Previous TripleA Releases</a></p>
-<p><a href="https://github.com/triplea-game/triplea/releases/">Early Release Download</a></p>
-
+<p class="show-on-install">New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a><br><br></p>
 
 <div id="windows-install" class="installation-instructions">
   <h2>Windows Installation</h2>
   <p>Run the installer once the download completes</p>
   <p>Follow the on-screen prompts to finish the installation</p>
   <p>When the installation is complete, you will be able to launch TripleA from the start menu.</p>
-  <br>
-  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
 
 <div id="mac-install" class="installation-instructions">
@@ -53,9 +45,6 @@ permalink: /download/
   <p>Apple menu > System Preferences > Security &amp; Privacy > General tab under the header "Allow applications downloaded from:"</p>
   <p>Change "Allow Applications Downloaded From:" to "Anywhere"</p>
   <p>This setting will reset to "Mac App Store and identified developers" every 30 days, you may need to repeat this step.</p>
-  <br>
-  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
 
 <div id="linux-install" class="installation-instructions">
@@ -66,19 +55,31 @@ permalink: /download/
   <br>
   <p>TripleA requires Java 8 or later to be installed</p>
   <p><a href="https://java.com/en/download/help/linux_install.xml">Oracle JREs</a> are recommended, sounds may not work with OpenJRE.</p>
-  <br>
-  <p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
-  <p><a href="#" onclick="hideShowInstallationText()">(Hide)</a></p>
 </div>
+
+<p><a class="show-on-install" onclick="hideShowInstallationText()">Hide<br><br></a></p>
+
+<div>
+  <h2>Additional Links</h2>
+  <p><a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes</a></p>
+  <p><a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Source Code</a></p>
+  <p><a href="{{ '/old_downloads/' | prepend: site.baseurl }}">Previous TripleA Releases</a></p>
+  <p><a href="https://github.com/triplea-game/triplea/releases/">Early Release Download</a></p>
+</div>
+
 <script>
+const additionalElements = document.getElementsByClassName("show-on-install");
 function hideShowInstallationText(which) {
   [].forEach.call(document.getElementsByClassName("installation-instructions"), function(current){
     if(current !== which){
-      current.style.display="none";
+      current.style.display = "none";
     }
   });
   if(which){
-    which.style.display="block";
+    which.style.display = "block";
+    [].forEach.call(additionalElements, current => current.style.display = "block");
+  } else {
+    [].forEach.call(additionalElements, current => current.style.display = "none");
   }
 }
 if (typeof String.prototype.endsWith !== 'function') {
