@@ -16,11 +16,16 @@ layout: page
   function search(input){
     const queryArray = input.value.trim().split(" ");
     [].forEach.call(document.getElementsByClassName("maps-col"), function(current){
-      if(queryArray.every(string => current.dataset.mapName.toLowerCase().includes(string.toLowerCase()))){
-        current.style.display = "";
+      if(queryArray.every(string => unescapeHtml(current.dataset.mapName).toLowerCase().includes(string.toLowerCase()))){
+        current.removeAttribute("style");
       } else {
         current.style.display = "none";
       }
     });
+  }
+  function unescapeHtml(input){
+    var element = document.createElement("textarea");
+    element.innerHTML = input;
+    return element.childNodes.length === 0 ? "" : element.childNodes[0].nodeValue;
   }
 </script>
