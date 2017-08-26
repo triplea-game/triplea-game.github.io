@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: maplist
 title: All Maps
 permalink: /maps-list/all/
 ---
-<p><a href="{{ '/maps-list/featured/' | prepend: site.baseurl }}">Featured Maps</a> |  <a href="{{ '/maps-list/categories/' | prepend: site.baseurl }}">Categories</a> | <a href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ '/maps-list/all/' | prepend: site.baseurl }}">All</a></p>
 <div class="maps-col-wrapper">
   {%- for map in site.maps %}
   {% if map.mapType != "MAP_TOOL" -%}
