@@ -6,5 +6,21 @@ layout: page
   | <a href="{{ '/maps-list/featured/' | prepend: site.baseurl }}">Featured Maps</a>
   | <a href="{{ '/maps-list/categories/' | prepend: site.baseurl }}">Categories</a>
   | <a href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Mods and Skins</a>
+  <input id="mapSearch" type="search" placeholder="Search" oninput="search(this)">
 </p>
-{{ content }}
+<div>
+  {{ content }}
+</div>
+
+<script>
+  function search(input){
+    const queryArray = input.value.trim().split(" ");
+    [].forEach.call(document.getElementsByClassName("maps-col"), function(current){
+      if(queryArray.every(string => current.dataset.mapName.toLowerCase().includes(string.toLowerCase()))){
+        current.style.display = "";
+      } else {
+        current.style.display = "none";
+      }
+    });
+  }
+</script>
