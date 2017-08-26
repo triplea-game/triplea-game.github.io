@@ -6,23 +6,23 @@ permalink: /maps-list/mods/
 <p><a href="{{ '/maps-list/' | prepend: site.baseurl }}">Maps</a> |  <a href="{{ '/maps-list/categories/' | prepend: site.baseurl }}">Categories</a> | <a href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ '/maps-list/all/' | prepend: site.baseurl }}">All</a></p>
 <div class="maps-col-section mod">
   <h2 class="section-title">Map Mods</h2>
-  {% for map in site.maps %}
-  {% if map.mapType == "MAP_MOD" %}
+  {%- for map in site.maps -%}
+  {%- if map.mapType == "MAP_MOD" %}
   <div class="maps-col" data-map-name="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
     <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">Download</a></p>
   </div>
-  {% endif %}
-  {% endfor %}
+  {%- endif -%}
+  {%- endfor %}
 </div>
 <div class="maps-col-section skin">
   <h2 class="section-title">Map Skins</h2>
-  {% for map in site.maps %}
-  {% if map.mapType == "MAP_SKIN" %}
+  {%- for map in site.maps -%}
+  {%- if map.mapType == "MAP_SKIN" %}
     <div class="maps-col" data-map-name="{{ map.slug }}">
       <h3>{{ map.mapName }}</h3>
       <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">Download</a></p>
     </div>
-  {% endif %}
-  {% endfor %}
+  {%- endif -%}
+  {%- endfor %}
 </div>
