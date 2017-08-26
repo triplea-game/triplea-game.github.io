@@ -7,7 +7,7 @@ permalink: /maps-list/mods/
   <h2 class="section-title">Map Mods</h2>
   {%- for map in site.maps -%}
   {%- if map.mapType == "MAP_MOD" %}
-  <div class="maps-col" data-map-name="{{ map.slug }}">
+  <div class="maps-col" data-map-name="{{ map.mapName }}" data-map-name-slug="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
     <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
   </div>
@@ -18,7 +18,7 @@ permalink: /maps-list/mods/
   <h2 class="section-title">Map Skins</h2>
   {%- for map in site.maps -%}
   {%- if map.mapType == "MAP_SKIN" %}
-    <div class="maps-col" data-map-name="{{ map.slug }}">
+    <div class="maps-col" data-map-name="{{ map.mapName }}" data-map-name-slug="{{ map.slug }}">
       <h3>{{ map.mapName }}</h3>
       <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
     </div>
