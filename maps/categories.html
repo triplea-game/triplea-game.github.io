@@ -3,14 +3,14 @@ layout: page
 title: Map Categories
 permalink: /maps-list/categories/
 ---
-<p><a href="{{ '/maps-list/' | prepend: site.baseurl }}">Maps</a> |  <a href="{{ '/maps-list/categories/' | prepend: site.baseurl }}">Categories</a> | <a href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ '/maps-list/all/' | prepend: site.baseurl }}">All</a></p>
+<p><a href="{{ '/maps-list/' | prepend: site.baseurl }}">Featured Maps</a> |  <a href="{{ '/maps-list/categories/' | prepend: site.baseurl }}">Categories</a> | <a href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Mods and Skins</a> | <a href="{{ '/maps-list/all/' | prepend: site.baseurl }}">All</a></p>
 <div class="maps-col-section high_quality">
   <h2 class="section-title">High Quality Maps</h2>
   {%- for map in site.maps -%}
   {%- if map.mapCategory == "BEST" %}
   <div class="maps-col" data-map-name="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
-    <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">Download</a></p>
+    <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
   </div>
   {%- endif -%}
   {%- endfor %}
@@ -21,7 +21,7 @@ permalink: /maps-list/categories/
   {%- if map.mapCategory == "GOOD" %}
   <div class="maps-col" data-map-name="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
-    <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">Download</a></p>
+    <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
   </div>
   {%- endif -%}
   {%- endfor %}
@@ -32,7 +32,7 @@ permalink: /maps-list/categories/
   {%- if map.mapCategory == "EXPERIMENTAL" %}
   <div class="maps-col" data-map-name="{{ map.slug }}">
     <h3>{{ map.mapName }}</h3>
-    <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">Download</a></p>
+    <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
   </div>
   {%- endif -%}
   {%- endfor %}
