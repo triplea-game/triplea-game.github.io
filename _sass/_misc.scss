@@ -85,6 +85,12 @@
   height: 100%;
 }
 
+#no-result {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
 .flex-container {
   display: flex;
   padding: 5px;

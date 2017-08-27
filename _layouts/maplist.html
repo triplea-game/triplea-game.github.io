@@ -8,8 +8,12 @@ layout: page
 <div>
   {{ content }}
 </div>
+<div id="no-result">
+  <h3>No results.</h3>
+</div>
 
 <script>
+  const noResultDiv = document.getElementById("no-result");
   function search(input){
     const queryArray = input.value.trim().split(" ");
     Array.prototype.forEach.call(document.getElementsByClassName("maps-col"), function(current){
@@ -20,12 +24,17 @@ layout: page
       }
     });
     document.querySelectorAll(".section-title").forEach(function(current){
-      if(Array.prototype.filter.call(current.nextElementSibling.childNodes, element => element.nodeType == 1).every(currentCol => currentCol.style.display === "none")){
+      if(Array.prototype.filter.call(current.nextElementSibling.childNodes, element => element.nodeType == 1).every(col => col.style.display === "none")){
         current.style.display = "none";
       } else {
         current.removeAttribute("style");
       }
     });
+    if(Array.prototype.every.call(document.querySelectorAll(".maps-col"), col => col.style.display === "none")){
+      noResultDiv.style.display = "block";
+    } else {
+      noResultDiv.removeAttribute("style");
+    }
   }
   function unescapeHtml(input){
     var element = document.createElement("textarea");
