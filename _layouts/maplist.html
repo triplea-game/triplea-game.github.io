@@ -1,10 +1,10 @@
 ---
 layout: page
 ---
-<p>
-  Show: <a href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Maps</a> | <a href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Skins</a>
-  <input id="mapSearch" type="search" placeholder="Search" oninput="search(this)">
-</p>
+<div class="flex-container">
+  <a class="small-button" href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Maps</a> <a class="small-button" style="margin-left: 5px;" href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Skins</a>
+  <span style="flex-grow: 1;"><input class="flex-right-align-item" type="search" placeholder="Search" oninput="search(this)"></span>
+</div>
 <div>
   {{ content }}
 </div>
@@ -12,11 +12,18 @@ layout: page
 <script>
   function search(input){
     const queryArray = input.value.trim().split(" ");
-    [].forEach.call(document.getElementsByClassName("maps-col"), function(current){
+    Array.prototype.forEach.call(document.getElementsByClassName("maps-col"), function(current){
       if(queryArray.every(string => unescapeHtml(current.dataset.mapName).toLowerCase().includes(string.toLowerCase()))){
         current.removeAttribute("style");
       } else {
         current.style.display = "none";
+      }
+    });
+    document.querySelectorAll(".section-title").forEach(function(current){
+      if(Array.prototype.filter.call(current.nextElementSibling.childNodes, element => element.nodeType == 1).every(currentCol => currentCol.style.display === "none")){
+        current.style.display = "none";
+      } else {
+        current.removeAttribute("style");
       }
     });
   }
