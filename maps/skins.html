@@ -8,8 +8,8 @@ permalink: /maps-list/mods/
   {%- if map.mapType == "MAP_SKIN" %}
     <div class="maps-col" data-map-name="{{ map.mapName | escape }}" data-map-name-slug="{{ map.slug }}">
       <div class="maps-col-content-wrapper">
-        <h3>{{ map.mapName | escape }}</h3>
-        <p><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
+        <h3 class="maps-col-item">{{ map.mapName | escape }}</h3>
+        <p class="maps-col-item"><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
       </div>
     </div>
   {%- endif -%}
