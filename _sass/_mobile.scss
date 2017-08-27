@@ -89,6 +89,12 @@
   min-width: unset !important;
 }
 
+.maps-col-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
 #footer {
   float: none;
   clear: none;
