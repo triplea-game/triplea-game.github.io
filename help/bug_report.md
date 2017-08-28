@@ -4,13 +4,21 @@ title: Bug Reports
 permalink: /bug_report/
 ---
 
-* <a href="https://github.com/triplea-game/triplea/issues?q=is%3Aissue+is%3Aopen+label%3ABug">Open Bug List</a>
-
-## Filing a bug report:
-
-* Create a <a href="https://github.com/account"> github account</a>
-* Submit a tracking issue: <a href="https://github.com/triplea-game/triplea/issues/new">https://github.com/triplea-game/triplea/issues/new</a>, you'll need to give the topic a title, and fill out a description of what you would like done.  Please try to be as concise and specific as you can. Always please try to give specific examples of problems, map names, etc, to help make it very easy to focus in directly on what the problem is. 
+## How to Submit a Bug Report
 
 
-## Handling bug reports
-The overall goal is to keep a tracking ticket so we can discuss and identify problems/features, and pick them up as time and effort becomes available. Secondly, issue's tend to be most ideal when they are an isolated, bite-sized nugget. The hope is someone can pick up on upe, read it quickly, and really understand enough context of the problem and have directions to reproduce the problem, at which point they can immediately begin work.
+* Use this link to start a tracking issue: <https://github.com/triplea-game/triplea/issues/new>. 
+
+Give a brief description of what you are seeing, please include as many details as you can to help us find the problem. For example, which map were you playing? You can attach save games by 'zipping' them first, then the zip file can be attached.
+
+* You will need to create a [GitHub Account](https://github.com/account) if you do not have one already.
+
+
+## Send us Suggestions!
+
+Is there anything on your wish list, anything you would like see changed? Check out [our forums](https://forums.triplea-game.org/category/42/feature-requests-ideas).
+
+
+## Open Bugs
+
+* [Open Bug List](https://github.com/triplea-game/triplea/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A%20bug%22)
