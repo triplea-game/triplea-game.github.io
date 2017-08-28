@@ -156,10 +156,31 @@ a:hover {
     color: #fff;
     transition: background-color 300ms ease-out;
 }
-.button:hover {
+
+.button:hover, .small-button:hover {
   text-decoration: none;
   background-color: $brand-color-dark;
   color: $background-color;
+}
+
+.small-button {
+  border-radius: 3px;
+  border-width: 1px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: $brand-color;
+  border-color: $brand-color-dark;
+  color: #fff;
+  transition: background-color 300ms ease-out;
+  margin: 2px;
 }
 
 html, body {

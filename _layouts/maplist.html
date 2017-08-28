@@ -1,27 +1,40 @@
 ---
 layout: page
 ---
-<p>
-  <a href="{{ '/maps-list/all/' | prepend: site.baseurl }}">All</a>
-  | <a href="{{ '/maps-list/featured/' | prepend: site.baseurl }}">Featured Maps</a>
-  | <a href="{{ '/maps-list/categories/' | prepend: site.baseurl }}">Categories</a>
-  | <a href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Mods and Skins</a>
-  <input id="mapSearch" type="search" placeholder="Search" oninput="search(this)">
-</p>
+<div class="flex-container">
+  <a class="small-button" href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Maps</a> <a class="small-button" style="margin-left: 5px;" href="{{ '/maps-list/mods/' | prepend: site.baseurl }}">Skins</a>
+  <span style="flex-grow: 1;"><input class="flex-right-align-item" type="search" placeholder="Search" oninput="search(this)"></span>
+</div>
 <div>
   {{ content }}
 </div>
+<div id="no-result">
+  <h3>No results.</h3>
+</div>
 
 <script>
+  const noResultDiv = document.getElementById("no-result");
   function search(input){
     const queryArray = input.value.trim().split(" ");
-    [].forEach.call(document.getElementsByClassName("maps-col"), function(current){
+    Array.prototype.forEach.call(document.getElementsByClassName("maps-col"), function(current){
       if(queryArray.every(string => unescapeHtml(current.dataset.mapName).toLowerCase().includes(string.toLowerCase()))){
         current.removeAttribute("style");
       } else {
         current.style.display = "none";
       }
     });
+    document.querySelectorAll(".section-title").forEach(function(current){
+      if(Array.prototype.filter.call(current.nextElementSibling.childNodes, element => element.nodeType == 1).every(col => col.style.display === "none")){
+        current.style.display = "none";
+      } else {
+        current.removeAttribute("style");
+      }
+    });
+    if(Array.prototype.every.call(document.querySelectorAll(".maps-col"), col => col.style.display === "none")){
+      noResultDiv.style.display = "block";
+    } else {
+      noResultDiv.removeAttribute("style");
+    }
   }
   function unescapeHtml(input){
     var element = document.createElement("textarea");

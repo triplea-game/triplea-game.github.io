@@ -85,6 +85,12 @@
   text-align: center;
 }
 
+.maps-col-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
 #footer {
   float: none;
   clear: none;
