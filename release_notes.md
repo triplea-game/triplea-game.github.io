@@ -12,6 +12,11 @@ permalink: /release_notes/
 * Improve security of network game authentication (#2107).
 * Add option to securely save PBEM/PBF credentials (#1955).
 * Fix out-of-date map check (#1695).
+* Fight a single battle automatically
+* Upgrade retreat options - no double prompt with one valid territory
+    - don't offer prompt when only defenseless units remain
+- Show dice details by default in PBF/PBEM
+- Auto fight battles with no defenders who can fire and no dependent battles
 
 ## 1.9.0.0.5855 - July 22nd 2017
 
@@ -38,8 +43,6 @@ permalink: /release_notes/
 
 * Primarily bug fixes. SBR rules now working again on most maps (map XMLs updated, download of latest maps required)
 
-
-## Changes for 1.9.0.0
 
 * Minimum Java version is now Java 1.8
 * New Install4j Installers available for all OS, replaces makensis installers
