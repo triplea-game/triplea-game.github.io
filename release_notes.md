@@ -4,6 +4,15 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## 1.9.0.0.7062 - October 14th 2017
+
+* Add option to securely save lobby credentials (#2395).
+* Fix console opening when playing a network game (#2289).
+* Fix threading errors reported when starting Map Creator (#2238).
+* Improve security of network game authentication (#2107).
+* Add option to securely save PBEM/PBF credentials (#1955).
+* Fix out-of-date map check (#1695).
+
 ## 1.9.0.0.5855 - July 22nd 2017
 
 * Compatibility fixes for moderator actions.
