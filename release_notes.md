@@ -14,9 +14,24 @@ permalink: /release_notes/
 * Fix out-of-date map check (#1695).
 * Fight a single battle automatically
 * Upgrade retreat options - no double prompt with one valid territory
-    - don't offer prompt when only defenseless units remain
-- Show dice details by default in PBF/PBEM
-- Auto fight battles with no defenders who can fire and no dependent battles
+  * don't offer prompt when only defenseless units remain
+* Show dice details by default in PBF/PBEM
+* Auto fight battles with no defenders who can fire and no dependent battles
+* Add experimental savegame format (#2128)
+* Setting Menu Overhaul (#2137)
+* Bugfix: Maps can have AI-only players(#2149)
+* Removal of the Beta Map Creator (#2156)
+* Enabled TripleA to download Maps via a browser (#2274)
+* Updated many outdated links
+* Improved internal password security (#2101)
+* General smaller performance improvements
+* Several smaller usability improvements
+* Using Java 1.8.0_144 for the installer now (#2384)
+* Removed the 'old jar' functionality (#2284)
+
+And many more internal changes, bugfixes etc.
+See the full List [here](https://github.com/triplea-game/triplea/pulls?utf8=%E2%9C%93&q=merged%3A%3E2017-07-22)
+
 
 ## 1.9.0.0.5855 - July 22nd 2017
 
@@ -27,6 +42,7 @@ permalink: /release_notes/
 * Improved naming of auto save games.
 * Set all buttons to select alliances more easily
 * Bug Fix: Fix game crash when game release version is updated
+* Associate TripleA savegames with TripleA
 
 ## 1.9.0.0.3627
 
