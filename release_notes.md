@@ -4,7 +4,7 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## 1.9.0.0.7062 - October 14th 2017
+## 1.9.0.0.7062 - October 11th 2017
 
 ### Added
 * Add 'remember me' option when logging in to lobby, credentials are securely saved on your computer (#2395)
@@ -37,10 +37,9 @@ permalink: /release_notes/
 * Removed the 'old jar' functionality (#2284)
 
 And many more internal changes, bugfixes, etc.
-See the [full list here](https://github.com/triplea-game/triplea/pulls?utf8=%E2%9C%93&q=merged%3A%3E2017-07-22).
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-01-21T12%3A42%3A00-05%3A00..2017-10-11T12%3A16%3A00-04%3A00).
 
-
-## 1.9.0.0.3635
+## 1.9.0.0.3635 - January 21st 2017
 
 * Game no longer shuts down when host disconnects, allows game to be saved.
 * All rocket targets are now selected before dice are rolled.
