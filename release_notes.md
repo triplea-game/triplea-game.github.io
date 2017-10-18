@@ -18,21 +18,19 @@ permalink: /release_notes/
 * Show dice details by default in PBF/PBEM
 * Auto fight battles with no defenders who can fire and no dependent battles
 * Setting Menu Overhaul (#2137)
-* Removal of the Beta Map Creator (#2156)
 * Enabled TripleA to download Maps via a browser (#2274)
-* Updated many outdated links
 * Improved internal password security (#2101)
-* General smaller performance improvements
-* Several smaller usability improvements
-* Using Java 1.8.0_144 for the installer now (#2384)
-* Removed the 'old jar' functionality (#2284)
 
 ### Fixed
-* Fix console opening when playing a network game (#2289).
-* Fix threading errors reported when starting Map Creator (#2238).
-* Fix out-of-date map check (#1695).
-* Fix: Maps can have AI-only players(#2149)
+* console opening when playing a network game (#2289).
+* threading errors reported when starting Map Creator (#2238).
+* out-of-date map check (#1695).
+* Maps can have AI-only players(#2149)
+* Updated many outdated game links
 
+### Removed
+* Removal of the Beta Map Creator (#2156)
+* Removed the 'old jar' functionality (#2284)
 
 And many more internal changes, bugfixes etc,
 See the [full List here](https://github.com/triplea-game/triplea/pulls?utf8=%E2%9C%93&q=merged%3A%3E2017-07-22)
