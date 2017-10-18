@@ -9,6 +9,7 @@ permalink: /release_notes/
 ### Added
 * Add 'remember me' option when logging in to lobby, credentials are to securely saved on your computer (#2395).
 * Add option to securely save PBEM/PBF credentials (#1955).
+* Set all buttons to select alliances more easily in single player mode
 
 ### Changed
 * Upgrade retreat options - no double prompt with one valid territory
@@ -18,6 +19,8 @@ permalink: /release_notes/
 * Setting Window available from the file menu was overhauled (#2137)
 * Show dice details is now a default option in PBF/PBEM
 * Enabled TripleA to download Maps via a browser (#2274)
+* Associate TripleA savegames with TripleA at the OS level when running the installer.
+* Improved naming of auto save games.
 * Improved internal password security (#2101)
 * Improve security of network game authentication (#2107).
 
@@ -27,6 +30,7 @@ permalink: /release_notes/
 * out-of-date map check (#1695).
 * Maps can have AI-only players(#2149)
 * Updated many outdated game links
+* Fix game crash when game release version is updated
 
 ### Removed
 * Removal of the Beta Map Creator (#2156)
@@ -36,18 +40,7 @@ And many more internal changes, bugfixes etc,
 See the [full List here](https://github.com/triplea-game/triplea/pulls?utf8=%E2%9C%93&q=merged%3A%3E2017-07-22)
 
 
-## 1.9.0.0.5855 - July 22nd 2017
-
-* Compatibility fixes for moderator actions.
-
-## 1.9.0.0.5802 - July 19th 2017
-
-* Improved naming of auto save games.
-* Set all buttons to select alliances more easily
-* Bug Fix: Fix game crash when game release version is updated
-* Associate TripleA savegames with TripleA
-
-## 1.9.0.0.3627
+## 1.9.0.0.3635
 
 * Game no longer shuts down when host disconnects, allows game to be saved.
 * All rocket targets are now selected before dice are rolled.
