@@ -13,13 +13,13 @@ permalink: /release_notes/
 ### Changed
 * Upgrade retreat options - no double prompt with one valid territory
   * don't offer prompt when only defenseless units remain
-* Improve security of network game authentication (#2107).
-* Fight a single battle automatically
-* Show dice details by default in PBF/PBEM
-* Auto fight battles with no defenders who can fire and no dependent battles
-* Setting Menu Overhaul (#2137)
+* Game play speedup, automatically select a single battle for combat
+* Game play speedup, automatically select defenseless unit battles first. For example, when selecting battles to fight, all battles against undefended transports would be auto-selected first.
+* Setting Window available from the file menu was overhauled (#2137)
+* Show dice details is now a default option in PBF/PBEM
 * Enabled TripleA to download Maps via a browser (#2274)
 * Improved internal password security (#2101)
+* Improve security of network game authentication (#2107).
 
 ### Fixed
 * console opening when playing a network game (#2289).
