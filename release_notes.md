@@ -7,34 +7,34 @@ permalink: /release_notes/
 ## 1.9.0.0.7062 - October 11th 2017
 
 ### Added
-* Add 'remember me' option when logging in to lobby, credentials are securely saved on your computer (#2395)
-* Add option to securely save PBEM/PBF credentials (#1955)
-* Set all buttons to select alliances more easily in single player mode
+* 'Remember me' option when logging in to lobby, credentials are securely saved on your computer (#2395)
+* Option to securely save PBEM/PBF credentials (#1955)
+* Buttons to select alliances more easily in single-player mode
 
 ### Changed
-* Upgrade retreat options - no double prompt with one valid territory
+* Upgraded retreat options - no double prompt with one valid territory
   * Don't offer prompt when only defenseless units remain
 * Game play speedup, automatically select a single battle for combat
 * Game play speedup, automatically select defenseless unit battles first (e.g. when selecting battles to fight, all battles against undefended transports would be auto-selected first)
-* Overhaul Settings Window available from the file menu (#2137)
+* Overhauled Settings Window available from the file menu (#2137)
 * Show dice details is now a default option in PBF/PBEM
-* Enable TripleA to download Maps via a browser (#2274)
-* Associate TripleA savegames with TripleA at the OS level when running the installer
-* Improve naming of auto save games
-* Improve internal password security (#2101)
-* Improve security of network game authentication (#2107)
+* Enabled TripleA to download Maps via a browser (#2274)
+* Associated TripleA savegames with TripleA at the OS level when running the installer
+* Improved naming of auto save games
+* Improved internal password security (#2101)
+* Improved security of network game authentication (#2107)
 
 ### Fixed
 * Console opening when playing a network game (#2289)
 * Threading errors reported when starting Map Creator (#2238)
 * Out-of-date map check (#1695)
-* Maps can have AI-only players (#2149)
-* Update many outdated game links
-* Fix game crash when game release version is updated
+* Maps so they can have AI-only players (#2149)
+* Many outdated game links
+* Game crash when game release version is updated
 
 ### Removed
-* Removal of the Beta Map Creator (#2156)
-* Removed the 'old jar' functionality (#2284)
+* Beta Map Creator (#2156)
+* 'Old jar' functionality (#2284)
 
 And many more internal changes, bugfixes, etc.
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-01-21T12%3A42%3A00-05%3A00..2017-10-11T12%3A16%3A00-04%3A00).
