@@ -4,7 +4,7 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## 1.9.0.0.7062 - October 11th 2017
+## Next Compatible Release
 
 ### Added
 * 'Remember me' option when logging in to lobby, credentials are securely saved on your computer (#2395)
