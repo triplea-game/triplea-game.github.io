@@ -4,6 +4,9 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## 1.9.0.0.7218 - Nov 1st 2017
+
+
 ## 1.9.0.0.7062 - October 11th 2017
 
 ### Added
