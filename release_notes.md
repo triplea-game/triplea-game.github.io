@@ -18,7 +18,7 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 
 ### Fixed
 * Slow battle calculator (#2544)
-* Map blend rendering when zoom < 100%
+* Map blend rendering when zoom < 100% (#2542)
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-11T12%3A16%3A00-04%3A00..2017-10-28T19%3A46%3A00-04%3A00).
 
