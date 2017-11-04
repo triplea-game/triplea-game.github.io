@@ -8,7 +8,7 @@ permalink: /release_notes/
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-10-28T19%3A46%3A00-04%3A00).
 
-## 1.9.0.0.7342 - October 28th 2017
+## 1.9.0.0.7342 - November 1st 2017
 
 ### Added
 * Wait indicator during lobby login (#2548)
