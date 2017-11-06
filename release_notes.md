@@ -6,7 +6,11 @@ permalink: /release_notes/
 
 ## Unreleased
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-10-28T19%3A46%3A00-04%3A00).
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-02T18%3A11%3A00-04%3A00).
+
+## 1.9.0.0.7378 - November 5th 2017
+
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-28T19%3A46%3A00-04%3A00..2017-11-02T18%3A11%3A00-04%3A00).
 
 ## 1.9.0.0.7342 - November 1st 2017
 
