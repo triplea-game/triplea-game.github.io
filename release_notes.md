@@ -4,15 +4,15 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## Unreleased
+## [Unreleased](https://github.com/triplea-game/triplea/releases)
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-02T18%3A11%3A00-04%3A00).
 
-## 1.9.0.0.7378 - November 5th 2017
+## [1.9.0.0.7378](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7378) - November 5th 2017
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-28T19%3A46%3A00-04%3A00..2017-11-02T18%3A11%3A00-04%3A00).
 
-## 1.9.0.0.7342 - November 1st 2017
+## [1.9.0.0.7342](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7342) - November 1st 2017
 
 ### Added
 * Wait indicator during lobby login (#2548)
@@ -26,7 +26,7 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-11T12%3A16%3A00-04%3A00..2017-10-28T19%3A46%3A00-04%3A00).
 
-## 1.9.0.0.7062 - October 11th 2017
+## [1.9.0.0.7062](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7062) - October 11th 2017
 
 ### Added
 * 'Remember me' option when logging in to lobby, credentials are securely saved on your computer (#2395)
@@ -61,7 +61,7 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 And many more internal changes, bugfixes, etc.
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-01-21T12%3A42%3A00-05%3A00..2017-10-11T12%3A16%3A00-04%3A00).
 
-## 1.9.0.0.3635 - January 21st 2017
+## [1.9.0.0.3635](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.3635) - January 21st 2017
 
 * Game no longer shuts down when host disconnects, allows game to be saved.
 * All rocket targets are now selected before dice are rolled.
