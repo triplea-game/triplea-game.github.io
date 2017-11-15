@@ -6,9 +6,32 @@ permalink: /release_notes/
 
 ## [Unreleased](https://github.com/triplea-game/triplea/releases)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-02T18%3A11%3A00-04%3A00).
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-14T00%3A21%3A00-05%3A00).
+
+## [1.9.0.0.7527](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7527) - November 14th 2017
+
+### Added
+* Wait indicator while loading default map at startup (#2573)
+* Wait indicator while parsing maps (#2572)
+
+### Changed
+* Parse maps in parallel (#2571, #2572)
+
+### Fixed
+* History reflection attachment calls (#2607)
+* Combat client settings (#2599)
+* Hotmail PBEM (#2598)
+* Game crash when attacking neutral territories (#2596)
+
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-02T18%3A11%3A00-04%3A00..2017-11-14T00%3A21%3A00-05%3A00).
 
 ## [1.9.0.0.7378](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7378) - November 5th 2017
+
+### Added
+* Support for dice image "0" (#2561)
+
+### Changed
+* Only check non-transported units for requiresUnitToMove (#2560)
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-28T19%3A46%3A00-04%3A00..2017-11-02T18%3A11%3A00-04%3A00).
 
