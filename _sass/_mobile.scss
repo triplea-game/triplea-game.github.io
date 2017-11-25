@@ -2,6 +2,14 @@
   margin-left: calc(50% - 60px);
 }
 
+.community-col-wrapper {
+  flex-direction: column;
+}
+
+.community-col {
+  width: 95%;
+}
+
 #headline > h2 {
     font-size: 2em;
     margin-top: 50px;

@@ -38,9 +38,15 @@
   }
 }
 
+.community-col-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+
 .community-col {
  width: 30%;
- float: left;
  padding: 10px;
  margin: 5px;
 }
