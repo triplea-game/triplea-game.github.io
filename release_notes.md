@@ -8,8 +8,6 @@ permalink: /release_notes/
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-14T00%3A21%3A00-05%3A00).
 
-## [1.9.0.0.7527](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7527) - November 14th 2017
-
 ### Added
 * Wait indicator while loading default map at startup (#2573)
 * Wait indicator while parsing maps (#2572)
