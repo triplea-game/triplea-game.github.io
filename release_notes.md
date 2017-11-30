@@ -10,16 +10,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 
 ## [1.9.0.0.7621](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7621) - November 25th 2017
 
-### Fixed
-* Air units not able to attack after being transported by allied carrier (#2634)
-* Unexpected hits to multi-hit units in Hard AI games (#2617)
-* Slow battle calculator in network games (#2617)
-* Bot crash when joining game (#2610)
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-14T00%3A21%3A00-05%3A00..2017-11-25T20%3A11%3A00-05%3A00).
-
-## [1.9.0.0.7527](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7527) - November 14th 2017
-
 ### Added
 * Wait indicator while loading default map at startup (#2573)
 * Wait indicator while parsing maps (#2572)
@@ -28,12 +18,16 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * Parse maps in parallel (#2571, #2572)
 
 ### Fixed
+* Air units not able to attack after being transported by allied carrier (#2634)
+* Unexpected hits to multi-hit units in Hard AI games (#2617)
+* Slow battle calculator in network games (#2617)
+* Bot crash when joining game (#2610)
 * History reflection attachment calls (#2607)
 * Combat client settings (#2599)
 * Hotmail PBEM (#2598)
 * Game crash when attacking neutral territories (#2596)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-02T18%3A11%3A00-04%3A00..2017-11-14T00%3A21%3A00-05%3A00).
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-02T18%3A11%3A00-04%3A00..2017-11-25T20%3A11%3A00-05%3A00).
 
 ## [1.9.0.0.7378](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7378) - November 5th 2017
 
