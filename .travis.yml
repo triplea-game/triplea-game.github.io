@@ -4,7 +4,7 @@ before_install:
   - jdk_switcher use oraclejdk8
   - ./.travis/install_from_source
 install: gem install jekyll
-before_script: rm ./googlecfd75a4bac031411.html
+before_script: rm ./google*.html
 script: 
   - jekyll serve --detach --no-watch
   - java -jar ./.binary/vnu.jar --skip-non-html _site/
