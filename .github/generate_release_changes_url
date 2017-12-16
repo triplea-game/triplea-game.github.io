@@ -1,0 +1,72 @@
+#!/bin/bash
+#
+# Generates an URL used to display all merged PRs included with a specific
+# release or all unreleased merged PRs.  This URL is intended to be embedded
+# in the release notes.
+#
+
+readonly FALSE=1
+readonly TRUE=0
+
+main() {
+  check_usage "$@" || exit 1
+
+  if [[ $# -eq 1 ]]; then
+    format_unreleased_url "$1"
+  else
+    format_released_url "$1" "$2"
+  fi
+}
+
+check_usage() {
+  if [[ $# -eq 1 || $# -eq 2 ]]; then
+    return $TRUE
+  fi
+
+  echo "usage: $0 <last_release> [<current_release>]"
+  echo
+  echo "  last_release:    The tag of the last release."
+  echo "  current_release: The tag of the current release."
+  echo
+  echo "If <current_release> is specified, the generated URL will include all"
+  echo "PRs merged between the date of <last_release> and the date of"
+  echo "<current_release> (i.e. all merged PRs included in <current_release>)."
+  echo
+  echo "If <current_release> is not specified, the generated URL will include"
+  echo "all PRs merged since the date of <last_release> (i.e. all merged PRs"
+  echo "that have not yet been released)."
+  return $FALSE
+}
+
+get_release_date() {
+  local -r release_tag=$1
+  curl \
+      --silent \
+      --show-error \
+      --header "Accept: application/vnd.github.v3+json" \
+      "https://api.github.com/repos/triplea-game/triplea/releases/tags/$release_tag" \
+    | jq -r '.published_at'
+}
+
+format_released_url() {
+  local -r from_tag=$1
+  local -r from_date=$(get_release_date "$from_tag")
+  local -r encoded_from_date=$(uri_encode "$from_date")
+  local -r to_tag=$2
+  local -r to_date=$(get_release_date "$to_tag")
+  local -r encoded_to_date=$(uri_encode "$to_date")
+  echo "https://github.com/triplea-game/triplea/pulls?q=merged%3A$encoded_from_date..$encoded_to_date"
+}
+
+format_unreleased_url() {
+  local -r from_tag=$1
+  local -r from_date=$(get_release_date "$from_tag")
+  local -r encoded_from_date=$(uri_encode "$from_date")
+  echo "https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D$encoded_from_date"
+}
+
+uri_encode() {
+  echo -n "$1" | jq -s -R -j @uri
+}
+
+main "$@"
