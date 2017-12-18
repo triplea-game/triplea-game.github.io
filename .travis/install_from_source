@@ -13,7 +13,7 @@ rm "$VALIDATOR_TMP_ZIP"
 
 git clone https://github.com/w3c/css-validator.git
 cd ./css-validator/
-git checkout 10409468e78e5aef25e11603c48dd8ac3b99a67d
+git checkout 6fa098871f6f60bd8471cfd0ee30a2a6a2f2f52a
 ant jar -q
 cd ..
 git clone https://github.com/RoiEXLab/link-checker.git
