@@ -8,6 +8,6 @@ before_script: rm ./google*.html
 script: 
   - jekyll serve --detach --no-watch
   - java -jar ./.binary/vnu.jar --skip-non-html _site/
-  - java -jar ./.binary/css-validator/css-validator.jar -vextwarning true http://localhost:4000
+  - java -jar ./.binary/css-validator/css-validator.jar -vextwarning true -output json http://localhost:4000
   - java -jar ./.binary/link-checker/build/libs/link-checker.jar -s http://localhost:4000 -d _site/ -if ./.travis/ignore-list.txt
   - pkill -9 -f jekyll
