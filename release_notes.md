@@ -6,6 +6,9 @@ permalink: /release_notes/
 
 ## [Unreleased](https://github.com/triplea-game/triplea/releases)
 
+### Changed
+* Error messages pop-up shown instead of error console. A 'view details' button can be clicked to see the error console with full details. (#2782)
+
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-25T15%3A11%3A00-05%3A00).
 
 ## [1.9.0.0.7621](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7621) - November 25th 2017
