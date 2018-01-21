@@ -6,10 +6,24 @@ permalink: /release_notes/
 
 ## [Unreleased](https://github.com/triplea-game/triplea/releases)
 
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2018-01-10T18%3A12%3A06Z).
+
+## [1.9.0.0.8304](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.8304) - January 20th 2018
+
+### Added
+* Setting to always show console when any output is written (#2705)
+* MARTI staging server to dice server list (#2685)
+
 ### Changed
 * Error messages pop-up shown instead of error console. A 'view details' button can be clicked to see the error console with full details. (#2782)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-25T15%3A11%3A00-05%3A00).
+### Fixed
+* Casualty selection window size (#2813)
+* Exception when assigning a default color to a player (#2704)
+* Chat message history navigation keys (#2654)
+* Prompt to download Tutorial map (#2650)
+
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-25T20%3A11%3A09Z..2018-01-10T18%3A12%3A06Z).
 
 ## [1.9.0.0.7621](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7621) - November 25th 2017
 
