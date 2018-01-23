@@ -6,40 +6,40 @@ permalink: /maps-list/maps/categories/
 <span class="flex-container row-reverse"><span class="flex-right-align-item">Sort by: <a href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Alphabet</a></span></span>
 <h2 class="section-title mobile-smaller-text">High Quality Maps</h2>
 <div class="maps-col-wrapper">
-  {%- for map in site.maps -%}
-  {%- if map.mapCategory == "BEST" %}
+  {% for map in site.maps %}
+  {% if map.mapCategory == "BEST" %}
   <div class="maps-col" data-map-name="{{ map.mapName | escape }}" data-map-name-slug="{{ map.slug }}">
     <div class="maps-col-content-wrapper">
       <h3 class="maps-col-item">{{ map.mapName | escape }}</h3>
       <p class="maps-col-item"><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
     </div>
   </div>
-  {%- endif -%}
-  {%- endfor %}
+  {% endif %}
+  {% endfor %}
 </div>
 <h2 class="section-title mobile-smaller-text">Quality Maps</h2>
 <div class="maps-col-wrapper">
-  {%- for map in site.maps -%}
-  {%- if map.mapCategory == "GOOD" %}
+  {% for map in site.maps %}
+  {% if map.mapCategory == "GOOD" %}
   <div class="maps-col" data-map-name="{{ map.mapName | escape }}" data-map-name-slug="{{ map.slug }}">
     <div class="maps-col-content-wrapper">
       <h3 class="maps-col-item">{{ map.mapName | escape }}</h3>
       <p class="maps-col-item"><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
     </div>
   </div>
-  {%- endif -%}
-  {%- endfor %}
+  {% endif %}
+  {% endfor %}
 </div>
 <h2 class="section-title mobile-smaller-text">Other&nbsp;Maps / Experimental / In&nbsp;Development</h2>
 <div class="maps-col-wrapper">
-  {%- for map in site.maps -%}
-  {%- if map.mapCategory == "EXPERIMENTAL" %}
+  {% for map in site.maps %}
+  {% if map.mapCategory == "EXPERIMENTAL" %}
   <div class="maps-col" data-map-name="{{ map.mapName | escape }}" data-map-name-slug="{{ map.slug }}">
     <div class="maps-col-content-wrapper">
       <h3 class="maps-col-item">{{ map.mapName | escape }}</h3>
       <p class="maps-col-item"><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
     </div>
   </div>
-  {%- endif -%}
-  {%- endfor %}
+  {% endif %}
+  {% endfor %}
 </div>
