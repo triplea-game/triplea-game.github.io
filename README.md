@@ -18,6 +18,13 @@ If you are interested in making changes to the design, functionality, or structu
 
 `gem install jekyll`
 
+
+Ubuntu:
+```bash
+sudo apt-get install ruby ruby-dev make gcc
+sudo gem install jekyll bundler
+```
+
 **2. Run a local version of the blog.** Using Git, clone the latest version of this repository to your local machine using the following command:
 
 `git clone https://github.com/triplea-game/triplea-game.github.io.git`
