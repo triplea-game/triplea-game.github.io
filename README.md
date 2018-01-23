@@ -21,7 +21,7 @@ If you are interested in making changes to the design, functionality, or structu
 
 Ubuntu:
 ```bash
-sudo apt-get install ruby ruby-dev make gcc
+sudo apt install ruby ruby-dev make gcc
 sudo gem install jekyll bundler
 ```
 
