@@ -1,4 +1,8 @@
 language: generic
+cache:
+  directories:
+    - /home/travis/.rvm/
+    - ./.binary/
 before_install:
   - rvm reinstall ruby-head --binary
   - jdk_switcher use oraclejdk8

@@ -1,5 +1,11 @@
 #!/bin/bash
 set -e
+
+if [ -d "./.binary/" ]; then
+  echo "Skipping Build, .binary folder already exists."
+  exit
+fi
+
 mkdir ./.binary/
 cd ./.binary/
 
