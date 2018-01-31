@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
-mkdir ./.binary/
+
+if [ -f "./.binary/vnu.jar" ]; then
+  echo "Skipping Build, .binary folder already exists."
+  exit
+fi
+
+mkdir -p ./.binary/
 cd ./.binary/
 
 VALIDATOR_VERSION=17.9.0
