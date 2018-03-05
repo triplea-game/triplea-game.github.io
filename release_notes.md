@@ -19,9 +19,7 @@ permalink: /release_notes/
 * Chat message history navigation keys (#2654)
 * Prompt to download Tutorial map (#2650)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2018-01-10T18%3A12%3A06Z).
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-25T20%3A11%3A09Z..2018-01-10T18%3A12%3A06Z).
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-25T20%3A11%3A09Z).
 
 ## [1.9.0.0.7621](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7621) - November 25th 2017
 
