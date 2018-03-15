@@ -6,20 +6,54 @@ permalink: /release_notes/
 
 ## [Unreleased](https://github.com/triplea-game/triplea/releases)
 
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2018-03-08T18%3A20%3A54Z).
+
+## [1.9.0.0.9687](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.9687) - March 12th 2018
+
 ### Added
+* Unit option fuelFlatCost (#3244)
+* Resources and territory effects icon support (#3118)
+* XML resource property isDisplayedFor (#3034)
+* Estimate player income (#3033)
+* Player resource bar (#3013)
+* Unit property and logic for whenCapturedSustainsDamage (#2989)
+* Check so disabled units can't move (#2988)
+* Property to allow loading in hostile sea zones (#2984)
+* Hit differential detail (#2807)
 * Setting to always show console when any output is written (#2705)
+* Unit repaired changes into (#2691)
+* Unit option for when hit points damaged changes into (#2689)
 * MARTI staging server to dice server list (#2685)
+* Capacity for land transports (#2673)
 
 ### Changed
+* Enhance route message with background and fuel costs (#3189)
+* Improve settings window layout (#2952)
+* Upgrade license to GPL-3.0-or-later (#2949)
+* Update battle calculator unit ordering (#2941)
+* Remove give map feedback feature (#2927)
+* Use minimum size instead of size for battle frame (#2839)
 * Error messages pop-up shown instead of error console. A 'view details' button can be clicked to see the error console with full details. (#2782)
+* Use latest Substance L&F library (#2680)
+* Remove War Club play-by-forum (#2669)
 
 ### Fixed
+* Lock not held exceptions in various use cases (#3174, #3212)
+* Infinite loop when unable to parse default map (#3036)
+* Lobby divider location on resize (#2998)
+* NullPointerException when closing game (#2997)
+* Undo bombing change that should set previous bombing not HP damage (#2990)
+* Non-deterministic ordering of political action roundels (#2978)
+* Incorrect TUV in battle calculator when retreating (#2970)
+* Code that is adding paratroopers to a second transport (#2825)
 * Casualty selection window size (#2813)
+* Exception when lobby host override set but port override not set (#2771)
+* Table rendering of start time in lobby (#2718)
 * Exception when assigning a default color to a player (#2704)
 * Chat message history navigation keys (#2654)
 * Prompt to download Tutorial map (#2650)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2017-11-25T20%3A11%3A09Z).
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-25T20%3A11%3A09Z..2018-03-08T18%3A20%3A54Z).
 
 ## [1.9.0.0.7621](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7621) - November 25th 2017
 
