@@ -10,6 +10,31 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 
 ## [1.9.0.0.12226](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.12226) - September 28th 2018
 
+* Allow Option for Unit Overflow to Left Instead of Right: https://forums.triplea-game.org/topic/680/allow-option-for-unit-overflow-to-left-instead-of-right
+* Group and Sort Units onto Placements Logically: https://forums.triplea-game.org/topic/681/group-and-sort-units-onto-placements-logically
+* Improve Hotkeys: https://forums.triplea-game.org/topic/690/improve-hotkeys
+* Improve Resources Tab: https://forums.triplea-game.org/topic/702/improve-resources-tab
+* Display Territory Naval Base and Air Base Info: https://forums.triplea-game.org/topic/678/territory-naval-base-and-air-base-info
+* Support Loading Unzipped Maps From In-game Downloads: https://forums.triplea-game.org/topic/706/loading-unzipped-map-from-in-game-download
+* Allow 0 cost unit production rules: https://forums.triplea-game.org/topic/758/zero-cost-production
+* AI - Improved Neutral Categorization: https://forums.triplea-game.org/topic/776/ai-improve-neutral-categorization
+* AI - Add Support for Land Transporting Units: https://github.com/triplea-game/triplea/pull/3439
+* PBF/PBEM - need indication when the game play is connected to a verified dice roller: https://github.com/triplea-game/triplea/pull/3441
+* Unit Icons Added By Conditions: https://forums.triplea-game.org/topic/882/unit-icons-added-by-conditions
+* Add Small Map Properties: https://forums.triplea-game.org/topic/887/mini-me-map-options
+* Add Resources Cost to User and Political Actions: https://forums.triplea-game.org/topic/418/expand-useractionattachment-politicalactionattachment-to-all-resources
+* Remove AA attack limit of half dice side value: https://github.com/triplea-game/triplea/pull/3489
+* AI - Place triggered sea units: https://github.com/triplea-game/triplea/pull/3542
+* Add Unit count and damage display outline: https://forums.triplea-game.org/topic/917/unit-count-and-damage-display-outline
+* Allow political notifications to only targets (Feudal Japan): https://github.com/triplea-game/triplea/issues/3558
+* Add Unit Tooltips: https://github.com/triplea-game/triplea/pull/3477
+* Include Dice Stats from Save Game: https://github.com/triplea-game/triplea/issues/3478
+* Improve Route Finder to Consider Territory Effects: https://forums.triplea-game.org/topic/945/improve-route-finder-to-consider-territory-effects
+* AI - place units on non infra factories: https://github.com/triplea-game/triplea/pull/3645
+* Unit Tooltip Improvements & Poll: https://forums.triplea-game.org/topic/942/unit-tooltip-improvements-poll
+* Add Support for Land Transports Moving Through Canals: https://forums.triplea-game.org/topic/984/add-support-for-land-transports-moving-through-canals
+* Enhance Route Finding To Consider Canals: https://forums.triplea-game.org/topic/1007/enhance-route-finding-to-consider-canals
+
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2018-03-08T18%3A20%3A54Z..2018-09-27T03%3A53%3A14Z).
 
 ## [1.9.0.0.9687](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.9687) - March 12th 2018
