@@ -11,20 +11,21 @@ readonly TRUE=0
 main() {
   check_usage "$@" || exit 1
 
-  if [[ $# -eq 1 ]]; then
-    format_unreleased_url "$1"
+  if [[ $# -eq 2 ]]; then
+    format_unreleased_url "$1" "$2"
   else
-    format_released_url "$1" "$2"
+    format_released_url "$1" "$2" "$3"
   fi
 }
 
 check_usage() {
-  if [[ $# -eq 1 || $# -eq 2 ]]; then
+  if [[ $# -eq 2 || $# -eq 3 ]]; then
     return $TRUE
   fi
 
-  echo "usage: $0 <last_release> [<current_release>]"
+  echo "usage: $0 <branch> <last_release> [<current_release>]"
   echo
+  echo "  branch:          The name of the release branch (e.g. master)."
   echo "  last_release:    The tag of the last release."
   echo "  current_release: The tag of the current release."
   echo
@@ -49,20 +50,24 @@ get_release_date() {
 }
 
 format_released_url() {
-  local -r from_tag=$1
+  local -r branch_name=$1
+  local -r encoded_branch_name=$(uri_encode "$branch_name")
+  local -r from_tag=$2
   local -r from_date=$(get_release_date "$from_tag")
   local -r encoded_from_date=$(uri_encode "$from_date")
-  local -r to_tag=$2
+  local -r to_tag=$3
   local -r to_date=$(get_release_date "$to_tag")
   local -r encoded_to_date=$(uri_encode "$to_date")
-  echo "https://github.com/triplea-game/triplea/pulls?q=merged%3A$encoded_from_date..$encoded_to_date"
+  echo "https://github.com/triplea-game/triplea/pulls?q=base%3A$encoded_branch_name+merged%3A$encoded_from_date..$encoded_to_date"
 }
 
 format_unreleased_url() {
-  local -r from_tag=$1
+  local -r branch_name=$1
+  local -r encoded_branch_name=$(uri_encode "$branch_name")
+  local -r from_tag=$2
   local -r from_date=$(get_release_date "$from_tag")
   local -r encoded_from_date=$(uri_encode "$from_date")
-  echo "https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D$encoded_from_date"
+  echo "https://github.com/triplea-game/triplea/pulls?q=base%3A$encoded_branch_name+merged%3A%3E%3D$encoded_from_date"
 }
 
 uri_encode() {
