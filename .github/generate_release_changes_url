@@ -8,34 +8,82 @@
 readonly FALSE=1
 readonly TRUE=0
 
-main() {
-  check_usage "$@" || exit 1
+declare -A MODEL=( [branch_name]=master )
 
-  if [[ $# -eq 1 ]]; then
-    format_unreleased_url "$1"
+main() {
+  parse_args "$@" || exit 1
+
+  if [[ -z ${MODEL[to_tag]} ]]; then
+    format_unreleased_url
   else
-    format_released_url "$1" "$2"
+    format_released_url
   fi
 }
 
-check_usage() {
-  if [[ $# -eq 1 || $# -eq 2 ]]; then
-    return $TRUE
+parse_args() {
+  local -r getopt_long_options="branch-name:,from-tag:,to-tag:"
+  local getopt_result
+  getopt_result=$(getopt --options= --longoptions="$getopt_long_options" --name="$0" -- "$@")
+  if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
+    print_usage
+    return $FALSE
   fi
 
-  echo "usage: $0 <last_release> [<current_release>]"
+  eval set -- "$getopt_result"
+  while true; do
+    case "$1" in
+      --branch-name)
+        MODEL[branch_name]="$2"
+        shift 2
+        ;;
+      --from-tag)
+        MODEL[from_tag]="$2"
+        shift 2
+        ;;
+      --to-tag)
+        MODEL[to_tag]="$2"
+        shift 2
+        ;;
+      --)
+        shift
+        break
+        ;;
+      *)
+        echo "$0: programmer error: no case for option '$1'"
+        return $FALSE
+        ;;
+    esac
+  done
+
+  if [[ $# -ne 0 ]]; then
+    echo "$0: unexpected positional argument(s) '$@'"
+    print_usage
+    return $FALSE
+  fi
+
+  if [[ -z ${MODEL[from_tag]} ]]; then
+    echo "$0: missing from tag"
+    print_usage
+    return $FALSE
+  fi
+
+  return $TRUE
+}
+
+print_usage() {
+  echo "usage: $0 --from-tag=<from_tag> [--to-tag=<to_tag>] [--branch-name=<branch_name>]"
   echo
-  echo "  last_release:    The tag of the last release."
-  echo "  current_release: The tag of the current release."
+  echo "  from_tag:    The tag of the previous release."
+  echo "  to_tag:      The tag of the current release."
+  echo "  branch_name: The name of the release branch (default: master)."
   echo
-  echo "If <current_release> is specified, the generated URL will include all"
-  echo "PRs merged between the date of <last_release> and the date of"
-  echo "<current_release> (i.e. all merged PRs included in <current_release>)."
+  echo "If <to_tag> is specified, the generated URL will include all PRs"
+  echo "merged between the date of <from_tag> and the date of <to_tag>"
+  echo "(i.e. all merged PRs included in the release tagged <to_tag>)."
   echo
-  echo "If <current_release> is not specified, the generated URL will include"
-  echo "all PRs merged since the date of <last_release> (i.e. all merged PRs"
-  echo "that have not yet been released)."
-  return $FALSE
+  echo "If <to_tag> is not specified, the generated URL will include all PRs"
+  echo "merged since the date of <from_tag> (i.e. all merged PRs that have"
+  echo "not yet been released since the release tagged <from_tag>)."
 }
 
 get_release_date() {
@@ -49,20 +97,19 @@ get_release_date() {
 }
 
 format_released_url() {
-  local -r from_tag=$1
-  local -r from_date=$(get_release_date "$from_tag")
+  local -r encoded_branch_name=$(uri_encode "${MODEL[branch_name]}")
+  local -r from_date=$(get_release_date "${MODEL[from_tag]}")
   local -r encoded_from_date=$(uri_encode "$from_date")
-  local -r to_tag=$2
-  local -r to_date=$(get_release_date "$to_tag")
+  local -r to_date=$(get_release_date "${MODEL[to_tag]}")
   local -r encoded_to_date=$(uri_encode "$to_date")
-  echo "https://github.com/triplea-game/triplea/pulls?q=merged%3A$encoded_from_date..$encoded_to_date"
+  echo "https://github.com/triplea-game/triplea/pulls?q=base%3A$encoded_branch_name+merged%3A$encoded_from_date..$encoded_to_date"
 }
 
 format_unreleased_url() {
-  local -r from_tag=$1
-  local -r from_date=$(get_release_date "$from_tag")
+  local -r encoded_branch_name=$(uri_encode "${MODEL[branch_name]}")
+  local -r from_date=$(get_release_date "${MODEL[from_tag]}")
   local -r encoded_from_date=$(uri_encode "$from_date")
-  echo "https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D$encoded_from_date"
+  echo "https://github.com/triplea-game/triplea/pulls?q=base%3A$encoded_branch_name+merged%3A%3E%3D$encoded_from_date"
 }
 
 uri_encode() {
