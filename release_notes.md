@@ -6,7 +6,13 @@ permalink: /release_notes/
 
 ## [Unreleased](https://github.com/triplea-game/triplea/releases)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2018-09-27T03%3A53%3A14Z).
+### 1.10
+
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Amaster+merged%3A%3E%3D2018-09-27T03%3A53%3A14Z).
+
+### 1.9
+
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Arelease%2F1.9.0.0+merged%3A%3E%3D2018-11-17T00%3A36%3A40Z).
 
 ## [1.9.0.0.13066](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.13066) - November 18th 2018
 
@@ -14,6 +20,8 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * Use dynamic heap size for installers to fix Windows 32 bit installer (#4328)
 * Add check for sea units to enemySurfaceExclusionTerritories to fix surface warship objectives (#4351)
 * Update A&A forum poster for new forum (#4361)
+
+See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Arelease%2F1.9.0.0+merged%3A2018-09-27T03%3A53%3A14Z..2018-11-17T00%3A36%3A40Z).
 
 ## [1.9.0.0.12226](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.12226) - September 28th 2018
 
