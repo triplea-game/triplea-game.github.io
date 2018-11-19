@@ -8,6 +8,13 @@ permalink: /release_notes/
 
 See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A%3E%3D2018-09-27T03%3A53%3A14Z).
 
+## [1.9.0.0.13066](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.13066) - November 18th 2018
+
+* Fix determination of transported units during amphibious assaults (#4252)
+* Use dynamic heap size for installers to fix Windows 32 bit installer (#4328)
+* Add check for sea units to enemySurfaceExclusionTerritories to fix surface warship objectives (#4351)
+* Update A&A forum poster for new forum (#4361)
+
 ## [1.9.0.0.12226](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.12226) - September 28th 2018
 
 * Allow Option for Unit Overflow to Left Instead of Right: https://forums.triplea-game.org/topic/680/allow-option-for-unit-overflow-to-left-instead-of-right
