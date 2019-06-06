@@ -6,14 +6,14 @@ permalink: /maps-list/maps/
 {% assign testvar = "test" %}
 <span class="flex-container row-reverse"><span class="flex-right-align-item">Sort by: <a href="{{ '/maps-list/maps/categories/' | prepend: site.baseurl }}">Category</a></span></span>
 <div class="maps-col-wrapper">
-  {%- for map in site.maps %}
-  {% if map.mapCategory -%}
+  {% for map in site.maps %}
+  {% if map.mapCategory %}
   <div class="maps-col" data-map-name="{{ map.mapName | escape }}" data-map-name-slug="{{ map.slug }}">
     <div class="maps-col-content-wrapper">
       <h3 class="maps-col-item">{{ map.mapName | escape }}</h3>
       <p class="maps-col-item"><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
     </div>
   </div>
-  {%- endif -%}
-  {%- endfor %}
+  {% endif %}
+  {% endfor %}
 </div>
