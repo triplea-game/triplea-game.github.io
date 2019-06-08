@@ -57,7 +57,7 @@ rooms and the Admin are also moderating the bots. Admins have the right to take 
 if you are found in breach of these rules.
 
 If you feel an admin has abused players or violated the rules, please PM another admin or post 
-here. Do not post a thread for flamebait. Be professional and take a screenshot and let another 
+in forums. Do not post a thread for flamebait. Be professional and take a screenshot and let another 
 admin know what has happened.
 
 If an admin requests something such as, name changing, language control, etc, we ask that all 
