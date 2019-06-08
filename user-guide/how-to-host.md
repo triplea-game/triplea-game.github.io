@@ -52,7 +52,7 @@ Try temporarily disabling your Firewall. If everything is working fine with your
  you haven't setup your Firewall correctly. If it's still not working your Router isn't correctly 
  forwarding the traffic to your PC.
 
-[canyouseeme.org](http://canyouseeme.org) is a website that helps you checking if your configuration is 
+[canyouseeme.org](https://canyouseeme.org) is a website that helps you checking if your configuration is 
 working. Just enter the port you want to check (in our case 3300).
 
 If you still have any questions, feel free to ask!
