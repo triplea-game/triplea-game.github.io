@@ -68,12 +68,13 @@ different.
 ```
 @echo off
 SET PORT=3363
+SET BOT_NAME=Bot01_<YOUR_NAME>
 SET BOT_NUMBER=25
 
 SET LOBBY_HOST=45.79.144.53
 SET LOBBY_PORT=3304
 
-java -server -Xmx320m -Djava.awt.headless=true -classpath bin/triplea.jar games.strategy.engine.framework.headlessGameServer.HeadlessGameServer -Ptriplea.game.host.console=false -Ptriplea.game= -Ptriplea.server=true -Ptriplea.port=%PORT% -Ptriplea.lobby.host=%LOBBY_HOST% -Ptriplea.lobby.port=%LOBBY_PORT% -Ptriplea.name=Bot%BOT_NUMBER%_Pras1 -Ptriplea.lobby.game.hostedBy=Bot%BOT_NUMBER%_Pras1 -Ptriplea.lobby.game.supportEmail=prastle7@hotmail.com -Ptriplea.lobby.game.comments="automated_host" -Ptriplea.lobby.game.reconnection=172800
+java -server -Xmx320m -Djava.awt.headless=true -classpath bin/triplea.jar games.strategy.engine.framework.headlessGameServer.HeadlessGameServer -Ptriplea.port=%PORT% -Ptriplea.lobby.host=%LOBBY_HOST% -Ptriplea.lobby.port=%LOBBY_PORT% -Ptriplea.name=%BOT_NAME%
 pause
 ```
 
