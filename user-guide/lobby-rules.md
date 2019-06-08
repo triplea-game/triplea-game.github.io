@@ -86,7 +86,7 @@ The following usernames are explicit not allowed:
 - Names with a political or religious or ideological agenda
 - Names which impersonate another player or a mod and names which are made solely to harass, 
 troll or annoy another player or a mod.
-- Triplea is a wargame and the names of the protagonist of the different warscenarios hosted 
+- TripleA is a wargame and the names of the protagonist of the different warscenarios hosted 
 by the server are allowed. But names that diminish and trivialize or even gloriefies warcriminals 
 or warcrimes are not allowed.
 - Names that are found to be very offensive
