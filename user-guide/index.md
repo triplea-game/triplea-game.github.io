@@ -4,11 +4,13 @@ title: User Guide
 permalink: /user-guide/
 ---
 
-## Rules
+## Game Rules
+* [TripleA Game Rules Manual (PDF)](http://www.triplea-game.org/files/TripleA_RuleBook.pdf)
+
+## User Conduct Rules
 * [Lobby Rules](lobby-rules)
 * [Forum Rules](forum-rules)
 * [Bot (Automated Server) Rules](bot-rules)
-
 
 ## How-To
 * [How to Host and Firewall Configuration](how-to-host)
