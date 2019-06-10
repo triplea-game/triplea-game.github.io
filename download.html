@@ -69,61 +69,74 @@ permalink: /download/
 </div>
 
 <script>
-const additionalElements = document.getElementsByClassName("show-on-install");
+const versionInformation = {
+  win32: {
+    instructionId: 'windows-install'
+  },
+  win64: {
+    instructionId: 'windows-install'
+  },
+  mac: {
+    instructionId: 'mac-install'
+  },
+  linux: {
+    instructionId: 'linux-install'
+  }
+};
+
+const additionalElements = document.getElementsByClassName('show-on-install');
 function hideShowInstallationText(which) {
-  [].forEach.call(document.getElementsByClassName("installation-instructions"), function(current){
-    if(current !== which){
-      current.style.display = "none";
+  Array.from(document.getElementsByClassName('installation-instructions')).forEach(current => {
+    if (current !== which) {
+      current.style.display = 'none';
     }
   });
-  if(which){
-    which.style.display = "block";
-    [].forEach.call(additionalElements, current => current.style.display = "block");
+
+  if (which) {
+    which.style.display = 'block';
+    Array.from(additionalElements).forEach(current => current.style.display = 'block');
   } else {
-    [].forEach.call(additionalElements, current => current.style.display = "none");
+    Array.from(additionalElements).forEach(current => current.style.display = 'none');
   }
 }
 if (typeof String.prototype.endsWith !== 'function') {
-    String.prototype.endsWith = function(suffix) {
-      return this.indexOf(suffix, this.length - suffix.length) !== -1;
-    };
+  String.prototype.endsWith = function(suffix) {
+    return this.indexOf(suffix, this.length - suffix.length) !== -1;
+  };
 }
-function setLink(url, size){
-  var id = null;
-  if(url.endsWith("64bit.exe")){
-    id = "win64";
-  } else if(url.endsWith("32bit.exe")){
-    id = "win32";
-  } else if(url.endsWith("macos.dmg")){
-    id = "macos";
-  } else if(url.endsWith("unix.sh")){
-    id = "linux";
+function setLink(url, size) {
+  let id = null;
+  if (url.endsWith('64bit.exe')) {
+    id = 'win64';
+  } else if (url.endsWith('32bit.exe')) {
+    id = 'win32';
+  } else if (url.endsWith('macos.dmg')) {
+    id = 'macos';
+  } else if (url.endsWith('unix.sh')) {
+    id = 'linux';
   }
-  if(id !== null){
+  if (id !== null) {
     document.getElementById(id).href = url;
-    document.getElementById(id).target = "";
-    var readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
-    document.getElementById(id).addEventListener("mouseover", function(){
-      document.getElementById("dl-size-mb").innerHTML = readableSize;
-    });
+    document.getElementById(id).target = '';
+    let readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
+    document.getElementById(id).addEventListener('mouseover', () =>
+      document.getElementById('dl-size-mb').innerHTML = readableSize
+    );
     return readableSize;
   }
 }
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){
-  if(this.status == 200 && this.readyState == 4){
-    var release = JSON.parse(this.responseText);
-    var average = 0;
-    release['assets'].forEach(function(currentAsset){
-      var readableSize = setLink(currentAsset['browser_download_url'], currentAsset['size']);
-      if(readableSize){
-        average += readableSize;
-      }
-    });
-    document.getElementById("dl-size-mb").innerHTML = "~" + Math.round((average / 4) * 10) / 10;
-    document.getElementById("sourceLink").href = release['zipball_url'];
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = () => {
+  if (xhttp.status == 200 && xhttp.readyState == 4) {
+    let release = JSON.parse(xhttp.responseText);
+    let average = release['assets']
+      .map(currentAsset => setLink(currentAsset['browser_download_url'], currentAsset['size']))
+      .filter(link => !!link)
+      .reduce((a, b) => a + b, 0) / 4;
+    document.getElementById('dl-size-mb').innerHTML = '~' + Math.round(average * 10) / 10;
+    document.getElementById('sourceLink').href = release['zipball_url'];
   }
 };
-xhttp.open("GET", "https://api.github.com/repos/triplea-game/triplea/releases/latest", true);
+xhttp.open('GET', 'https://api.github.com/repos/triplea-game/triplea/releases/latest', true);
 xhttp.send();
 </script>
