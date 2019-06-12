@@ -99,6 +99,11 @@
   }
 }
 
+.scale-dl-container {
+  transform: translate(-50%, -50%) scale(0.5) translate(50%, 50%);
+  margin-bottom: -100px;
+}
+
 .dl-install4j-credit {
   text-align: right;
 }

@@ -82,6 +82,11 @@
   width: 74%;
 }
 
+.scale-dl-container {
+  transform: translateY(-50%) scale(0.5) translateY(50%);
+  margin-bottom: -300px;
+}
+
 .dl-install4j-credit {
   text-align: center;
 }
