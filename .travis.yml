@@ -1,7 +1,7 @@
 language: generic
 before_install:
   - rvm reinstall ruby-head --binary
-  - jdk_switcher use oraclejdk8
+  - jdk_switcher use openjdk11
   - ./.travis/install_from_source
 install: gem install jekyll
 before_script: rm ./google*.html
