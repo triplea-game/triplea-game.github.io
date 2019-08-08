@@ -4,12 +4,8 @@ jdk: openjdk11
 addons:
   apt:
     packages:
-      - ruby-full
-      - build-essential
-      - zlib1g-dev
       - ant
 before_install:
-  - rvm reinstall ruby-head --binary
   - ./.travis/install_from_source
 install: gem install jekyll
 before_script: rm ./google*.html
