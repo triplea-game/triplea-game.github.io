@@ -1,7 +1,11 @@
-language: generic
+dist: bionic
+language: java
+jdk: openjdk11
+addons:
+  apt:
+    packages:
+      - ant
 before_install:
-  - rvm reinstall ruby-head --binary
-  - jdk_switcher use oraclejdk8
   - ./.travis/install_from_source
 install: gem install jekyll
 before_script: rm ./google*.html
