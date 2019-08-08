@@ -1,4 +1,4 @@
-language: generic
+language: java
 before_install:
   - rvm reinstall ruby-head --binary
   - jdk_switcher use openjdk11
