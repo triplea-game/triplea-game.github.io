@@ -1,7 +1,9 @@
-language: generic
+language: java
+jdk: openjdk11
 addons:
   apt:
     packages:
+      - ruby-full
       - build-essential
       - zlib1g-dev
 before_install:
