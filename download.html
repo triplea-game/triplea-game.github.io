@@ -6,22 +6,24 @@ permalink: /download/
 <p class="dl-install4j-credit"><small>Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j Icon"></a></small></p>
 <p class="mobile-smaller-text">Download the TripleA installer (<span id="dl-size-mb">N/A</span>&nbsp;MB):</p>
 
-<a id="win64" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
-  <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
-  <p>TripleA&nbsp;for Windows <strong>(64&nbsp;bit)</strong></p>
-</a>
-<a id="win32" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
-  <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
-  <p>TripleA&nbsp;for Windows <strong>(32&nbsp;bit)</strong></p>
-</a>
-<a id="macos" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
-  <img src="../images/operating-systems/mac100.png" alt="Mac Icon">
-  <p>TripleA&nbsp;for Mac</p>
-</a>
-<a id="linux" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
-  <img src="../images/operating-systems/linux100.png" alt="Linux Icon">
-  <p>TripleA&nbsp;for Linux</p>
-</a>
+<div id="button-container">
+  <a id="win64" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
+    <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
+    <p>TripleA&nbsp;for Windows <strong>(64&nbsp;bit)</strong></p>
+  </a>
+  <a id="win32" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
+    <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
+    <p>TripleA&nbsp;for Windows <strong>(32&nbsp;bit)</strong></p>
+  </a>
+  <a id="macos" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
+    <img src="../images/operating-systems/mac100.png" alt="Mac Icon">
+    <p>TripleA&nbsp;for Mac</p>
+  </a>
+  <a id="linux" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
+    <img src="../images/operating-systems/linux100.png" alt="Linux Icon">
+    <p>TripleA&nbsp;for Linux</p>
+  </a>
+</div>
 
 <p class="show-on-install">New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a><br><br></p>
 
@@ -69,61 +71,96 @@ permalink: /download/
 </div>
 
 <script>
-const additionalElements = document.getElementsByClassName("show-on-install");
+const list = ['win32', 'win64', 'macos', 'linux'];
+
+const getPlatform = () => {
+  if (window.navigator.platform.match(/Win(?:32|64)|Windows/i)) {
+    return navigator.userAgent.match(/WOW64|Win64/) ? 'win64' : 'win32';
+  } else if (window.navigator.platform.includes('Macintosh')) {
+    return 'macos';
+  } else if (window.navigator.platform.includes('Linux')) {
+    return 'linux';
+  }
+  return null;
+};
+
+const platform = getPlatform();
+if (platform) {
+  const container = document.getElementById('button-container');
+  const elements = list.filter(e => e !== platform)
+    .map(e => document.getElementById(e));
+
+  const scaleContainer = document.createElement('div');
+  scaleContainer.classList.add('scale-dl-container');
+  container.appendChild(scaleContainer);
+  elements.forEach(e => scaleContainer.appendChild(e));
+
+  const desciption = document.createElement('p');
+  desciption.innerText = 'Download for other Platforms:';
+
+  container.insertBefore(desciption, scaleContainer);
+}
+</script>
+<script>
+const additionalElements = document.getElementsByClassName('show-on-install');
 function hideShowInstallationText(which) {
-  [].forEach.call(document.getElementsByClassName("installation-instructions"), function(current){
-    if(current !== which){
-      current.style.display = "none";
+  Array.from(document.getElementsByClassName('installation-instructions')).forEach(current => {
+    if (current !== which) {
+      current.style.display = 'none';
     }
   });
-  if(which){
-    which.style.display = "block";
-    [].forEach.call(additionalElements, current => current.style.display = "block");
+
+  if (which) {
+    which.style.display = 'block';
+    Array.from(additionalElements).forEach(current => current.style.display = 'block');
   } else {
-    [].forEach.call(additionalElements, current => current.style.display = "none");
+    Array.from(additionalElements).forEach(current => current.style.display = 'none');
   }
 }
 if (typeof String.prototype.endsWith !== 'function') {
-    String.prototype.endsWith = function(suffix) {
-      return this.indexOf(suffix, this.length - suffix.length) !== -1;
-    };
+  String.prototype.endsWith = function(suffix) {
+    return this.indexOf(suffix, this.length - suffix.length) !== -1;
+  };
 }
-function setLink(url, size){
-  var id = null;
-  if(url.endsWith("64bit.exe")){
-    id = "win64";
-  } else if(url.endsWith("32bit.exe")){
-    id = "win32";
-  } else if(url.endsWith("macos.dmg")){
-    id = "macos";
-  } else if(url.endsWith("unix.sh")){
-    id = "linux";
+function setLink(url, size) {
+  let id = null;
+  if (url.endsWith('64bit.exe')) {
+    id = 'win64';
+  } else if (url.endsWith('32bit.exe')) {
+    id = 'win32';
+  } else if (url.endsWith('macos.dmg')) {
+    id = 'macos';
+  } else if (url.endsWith('unix.sh')) {
+    id = 'linux';
   }
-  if(id !== null){
-    document.getElementById(id).href = url;
-    document.getElementById(id).target = "";
-    var readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
-    document.getElementById(id).addEventListener("mouseover", function(){
-      document.getElementById("dl-size-mb").innerHTML = readableSize;
-    });
+  if (id !== null) {
+    const element = document.getElementById(id);
+    element.href = url;
+    element.target = '';
+    let readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
+    element.addEventListener('mouseover', () =>
+      document.getElementById('dl-size-mb').innerHTML = readableSize
+    );
+    if (element.style.display !== 'none') {
+      document.getElementById('dl-size-mb').innerHTML = readableSize
+    }
     return readableSize;
   }
 }
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){
-  if(this.status == 200 && this.readyState == 4){
-    var release = JSON.parse(this.responseText);
-    var average = 0;
-    release['assets'].forEach(function(currentAsset){
-      var readableSize = setLink(currentAsset['browser_download_url'], currentAsset['size']);
-      if(readableSize){
-        average += readableSize;
-      }
-    });
-    document.getElementById("dl-size-mb").innerHTML = "~" + Math.round((average / 4) * 10) / 10;
-    document.getElementById("sourceLink").href = release['zipball_url'];
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = () => {
+  if (xhttp.status == 200 && xhttp.readyState == 4) {
+    let release = JSON.parse(xhttp.responseText);
+    let average = release['assets']
+      .map(currentAsset => setLink(currentAsset['browser_download_url'], currentAsset['size']))
+      .filter(link => !!link)
+      .reduce((a, b) => a + b, 0) / 4;
+    if (!document.querySelector('.scale-dl-container')) {
+      document.getElementById('dl-size-mb').innerHTML = '~' + Math.round(average * 10) / 10;
+    }
+    document.getElementById('sourceLink').href = release['zipball_url'];
   }
 };
-xhttp.open("GET", "https://api.github.com/repos/triplea-game/triplea/releases/latest", true);
+xhttp.open('GET', 'https://api.github.com/repos/triplea-game/triplea/releases/latest', true);
 xhttp.send();
 </script>
