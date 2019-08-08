@@ -5,7 +5,7 @@ permalink: /user-guide/
 ---
 
 ## Game Rules
-* [TripleA Game Rules Manual (PDF)](http://www.triplea-game.org/files/TripleA_RuleBook.pdf)
+* [TripleA Game Rules Manual (PDF)]({{ '/files/TripleA_RuleBook.pdf' | prepend: site.baseurl }})
 
 ## User Conduct Rules
 * [Lobby Rules](lobby-rules)
