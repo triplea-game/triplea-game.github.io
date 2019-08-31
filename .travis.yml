@@ -8,7 +8,6 @@ addons:
 before_install:
   - ./.travis/install_from_source
 install: gem install jekyll
-before_script: rm ./google*.html
 script: 
   - jekyll serve --detach --no-watch
   - java -jar ./.binary/vnu.jar --skip-non-html _site/
