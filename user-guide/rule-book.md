@@ -4,46 +4,41 @@ title: Rule Book
 permalink: /user-guide/rule-book
 ---
 
+# T r i p l e A R u l e B o o k -  __The World’s Foremost Open-Source Grand Strategy Game__
 
-Tr i p l e A R u l e B o o k
-The World’s Foremost Open-Source Grand Strategy Game
+## Table of Contents
 
-Rule Book and Manual version 1.0
-Created for TripleA version 1.5.0.0
-(January 2012)
+* [Overview](#overview)
+* [Game Setup](#game-setup)
+* [The Game Screen](#The-Game-Screen)
+* [The Map](#the-map)
+* [Capitals](#Capitals)
+* [The Units](#The-Units)
+* [Units Used in “Big World : 1942”](#Units-Used-in-“Big-World-:-1942”)
+* [Sequence of Play](#sequence-of-play)
+* [Technology Development](#technology-development) 
+* [Purchase](#purchase)
+* [Combat Movement](#combat-movement)
+* [Battle](#battle)
+* [Non-Combat Movement](#non-combat-movement)
+* [Placement](#placement)
+* [End-Turn](#end-turn)
+* [Winning the Game](#winning-the-game)
+* [The Undo Feature](#the-undo-feature)
+* [Low Luck vs. Dice](#low-luck-vs.-dice)
+* [The Battle Calculator](#the-battle-calculator)
+* [Menus & Tabs](#menus-and-tabs)
+* [Credits](#credits)
+* [Links](#links)
+* [Appendices & Additional Content](#appendices-and-additional-content)
+* [Example of Play: 1st Turn Walkthrough of Russians in “Big World : 1942”](#)
+* [Pulicat’s Tactical Handbook](#pulicats-tactical-handbook)
 
-1
 
-Table of Contents
-Overview ......................................................................................................................................................... 3
-Game Setup ..................................................................................................................................................... 4
-The Game Screen ............................................................................................................................................. 5
-The Map .......................................................................................................................................................... 6
-Capitals ............................................................................................................................................................ 7
-The Units ......................................................................................................................................................... 7
-Units Used in “Big World : 1942” ..................................................................................................................... 8
-Sequence of Play ............................................................................................................................................ 12
-Technology Development .............................................................................................................................. 12
-Purchase......................................................................................................................................................... 14
-Combat Movement ........................................................................................................................................ 14
-Battle.............................................................................................................................................................. 16
-Non-Combat Movement ................................................................................................................................ 18
-Placement ...................................................................................................................................................... 19
-End-Turn......................................................................................................................................................... 20
-Winning the Game ......................................................................................................................................... 20
-The Undo Feature .......................................................................................................................................... 21
-Low Luck vs. Dice ........................................................................................................................................... 21
-The Battle Calculator ...................................................................................................................................... 22
-Menus & Tabs ................................................................................................................................................ 23
-Credits ........................................................................................................................................................... 24
-Links .............................................................................................................................................................. 24
-Appendices & Additional Content ................................................................................................................... 25
-Example of Play: 1st Turn Walkthrough of Russians in “Big World : 1942” ................................................... 25
-Pulicat’s Tactical Handbook ........................................................................................................................... 36
+## Overview
 
-2
 
-TripleA is a turn-based strategy game and board game engine. Though TripleA comes with many games inside, it
+TripleA is a turn-based strategy game and board game engine. Though TripleA comes with many games inside, it
 is just an engine for playing games, and is not a game itself. TripleA started out as a World War II simulation, but
 has since expanded to include different conflicts, as well as variations and mods of popular games and maps (a
 ‘map’ is like a board, while a ‘game’ is a specific setup on a map/board).
@@ -58,7 +53,9 @@ Many of the game operations simply happen automatically, and illegal player acti
 amount of knowledge and initiative is expected of the player, especially to read any game notes for any maps.
 However, all of the critical and important game operations and knowledge are described in this manual.
 
-3
+
+## Game Setup
+
 
 The first thing that happens when TripleA is started is that the game setup window appears. There are a number
 of choices that the player must make at this time.
@@ -82,7 +79,7 @@ human or an AI.
 A few other options are also available at
 this time, but they can be ignored for now.
 
-4
+## The Game Screen
 
 Below is a screenshot taken while in-game, playing the “Big World : 1942” map.
 
@@ -96,6 +93,8 @@ In addition, you can change the Zoom Level of the map by either going to the “
 or by holding down the “ALT” key while scrolling your mouse wheel.
 
 5
+
+## The Map
 
 Each TripleA map is divided into a number of areas. Land areas are called territories. Sea areas are called sea
 zones. Short or narrow rivers and small islands generally play only a cosmetic role (if an area has no name when
@@ -128,7 +127,8 @@ The territories that a player starts the game with are considered to be “origi
 otherwise specified. If an ally ever recaptures such a territory, control of the territory (and its resources and
 capture-able units) will revert to the original owner. In this case, the income for the territory is not collected by
 the capturing player, and instead it will be collected by their ally, the original owner, at the end of their turn,
-6
+
+## Capitals
 
 provided that they still own it at that time. Of course, enemy players are not bound by such considerations and
 control whatever they capture.
@@ -158,6 +158,8 @@ Movement is the number of map territories or sea zones that the unit can move ea
 carried by a transport). A unit with a Movement of 1 can move to one adjacent area, and so forth.
 Cost is how many PUs must be spent to produce one of that unit.
 7
+
+## The Units
 
 Size indicates how much transport or carrier capacity is required to move a land or air unit by sea.
 Hit-Points indicates how many hits this unit must suffer before it dies. Almost all units in TripleA have only 1
@@ -218,6 +220,8 @@ to have a few artillery with every large stack of infantry, as it is a very cost
 firepower of your army.
 
 8
+
+## Units Used in "Big World: 1942"
 
 Armour
 
@@ -462,7 +466,7 @@ automatically capture any factories in the territory. Factories can be targeted 
 Bombing Raids.
 Notes: Factories are vital centers of production, allowing their owner to produce units in that location.
 
-11
+## Sequence of Play
 
 TripleA is played in a series of rounds, with each round
 composed of a series of player turns, and each player turn
@@ -555,13 +559,16 @@ War Bonds:
 At the end of your turn, roll 1 die and collect that much income.
 Mechanized Infantry:
 Each armour may transport a single infantry with it as it moves.
-13
 
-Improved Shipyards:
+## Technology Development
+
+Improved Shipyards:
 Radar:
 
 Naval units are cheaper to purchase.
 AA Guns now fire at +1 attack (2 instead of 1).
+
+## Purchase
 
 In the Purchase Phase, a player may spend PUs to purchase new units. These units may be placed on the map in
 the Unit Placement Phase at the end of the turn.
@@ -579,6 +586,8 @@ In some newer maps, you may also repair damaged factories and units during this 
 produces less units (1 unit fewer for each point of damage), and so they must be repaired by a certain amount in
 order to produce all the units you wish to purchase.
 
+## Combat Movement
+
 In the Combat Movement Phase, the current player may move any or all of his units to the full limit of their
 movement allowance, with certain exceptions.
 Certain units, such as AA Guns, may not move in this phase, as they can only move in the Non-CombatMovement Phase.
@@ -590,7 +599,7 @@ the “no suicide” rule. However, it is the player’s responsibility to ensur
 possibly land at the end of this turn.
 Land and sea units (except submarines if no enemy destroyer is present) must stop moving as soon as
 they enter an area occupied by an enemy or neutral unit, or a neutral territory. Most land units having a
-14
+
 
 movement allowance greater than one may move through an empty territory controlled by an opposing
 player without being required to stop, capturing that territory as they go. This is called “blitzing”. Neutral
@@ -655,6 +664,8 @@ CTRL-Right click somewhere not on a unit stack to de-select all units. Or hit ES
 Left click in the territory, but not on any unit, to bring up a menu allowing detailed selection of
 multiple units.
 
+## Battle
+
 In the Battle Phase, each territory or sea zone where both the player has units, and any enemy has units, will
 create a “battle” that must be resolved. A list of these territories and sea zones will appear on the right side of
 the screen. The current player may resolve these in any order he wishes, but there are some exceptions, such as
@@ -713,6 +724,7 @@ command. Each round represents 3-6 months of time, and all engagement and combat
 
 17
 
+
 Amphibious Combat
 Land units may unload from transports into a battle. Combat is resolved normally, with a few exceptions:
 If there is a combat in the sea zone from which the invasion came, that combat must be resolved before
@@ -727,6 +739,8 @@ not get to return fire. (In some maps, you may not have more bombardment rolls t
 of amphibious attackers, and in addition, the bombardment casualty will get to fire during the first
 combat round, before dying.)
 The invading amphibious units may not retreat.
+
+## Non-Combat Movement
 
 In the Non-Combat Movement Phase, the current player may move any or all of his units to the full limit of their
 remaining movement allowance, with certain exceptions.
@@ -747,6 +761,8 @@ Transport rules still apply, and units can be loaded and unloaded in either comb
 phases.
 
 18
+
+## Placement 
 
 In the Placement Phase, units that were bought during the purchase phase at the beginning of this turn may be
 placed on the map.
@@ -779,7 +795,7 @@ the game (in some maps, the units may be retained and placed during the player�
 Newly placed units are fully functional at the end of this phase, meaning that they can be used for defending if
 attacked during the next player’s turn.
 
-19
+## End-Turn
 
 In the End Turn Phase, TripleA will automatically do all of the following actions, with no input required by the
 user.
@@ -791,6 +807,9 @@ such as Egypt.)
 4. In addition, any other end-of-turn effects occur. If a map has anything extra, it will list it in the Game
 Notes.
 At the end of this phase, the next player may start their turn.
+
+
+## Winning the Game
 
 Normally “Victory” is determined by one player surrendering the game
 once they believe it is impossible for them to win. However, most maps,
@@ -816,6 +835,8 @@ play.
 Live games, played on the lobby, network, or on the same computer (hot-seat),
 are generally played faster. Play-By-Email (PBEM) and Play-By-Forum games
 allow for much more time to consider and reconsider all actions.
+
+## Low Luck vs. Dice
 
 TripleA is a dice game, and as such there is a significant amount of luck present in each battle (though it will tend
 to even out over a long game, or series of games).
@@ -862,7 +883,8 @@ expected outcome for any possible battle within the game, by simulating the batt
 you use the CTRL-B shortcut while your mouse is over a territory containing a battle, then the battle calculator will
 automatically load the units in the battle.
 
-22
+
+## Menus & Tabs
 
 When a game is running, several menu options are available at the upper left of the screen, as well as three or
 more tabs just below the minimap on the right side.
@@ -896,7 +918,7 @@ where it can otherwise be hard to determine exactly what is going on in a given 
 Calculator can also be accessed through this tab, but a player will rapidly learn that it is better to know the
 keyboard shortcut.
 
-23
+## Credits
 
 This manual and rulebook was created by:
 • Victor Finberg (VictorInThePacific)
@@ -942,8 +964,10 @@ Official Map Repository:
 
 https://sourceforge.net/projects/tripleamaps/
 
-Appendices & Additional Content are continued below…
+## Appendices & Additional Content
+
 24
+## Example of Play: 1st Turn Walkthrough of Russians in "Big World: 1942"
 
 Example of Play: First Turn Walkthrough of “Big World”
 First of all, we have installed TripleA on the desktop of a PC and started the game. The setup window appears.
