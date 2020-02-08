@@ -44,8 +44,3 @@ This will get a local version of the blog running on your machine, accessible on
 
 ** Tip:** Write any content in [Markdown](https://daringfireball.net/projects/markdown/) with the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) like the other pages. If you can, follow the instructions below to test your changes.
 
-
-## Image Storage and Git LFS
-
-Images and binary files should be tracked and checked in using 'git-lfs': https://git-lfs.github.com/
-
