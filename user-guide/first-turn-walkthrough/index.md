@@ -9,7 +9,7 @@ permalink: /user-guide/first-turn-walkthrough
 Example of Play: First Turn Walkthrough of “Big World”
 First of all, we have installed TripleA on the desktop of a PC and started the game. The setup window appears.
 
-![starting-example](./rule-book/images/starting-example.png)
+![starting-example](./first-turn-walkthrough/images/starting-example.png)
 
 In order to begin this walkthrough, we must make sure that we are playing the correct game.
 The “Game Name” in the upper left should read “Big World : 1942”.
@@ -46,7 +46,7 @@ We are given the option of spending resources on tech. Russia is both poor and u
 not to spend any money on technology. In the upper right of the screen, click “Done” to continue to the next
 phase.
 
-![tech-phase](./rule-book/images/tech-phase.png)
+![tech-phase](./first-turn-walkthrough/images/tech-phase.png)
 
 __Purchase Phase__
 A production window will appear. Here you can see the basic stats of each of the units you can purchase, and for
@@ -56,7 +56,7 @@ cheapest units. In order to counter-attack, you will need to rely on artillery a
 because it is subject to destruction on counter-attack. 10 infantry + 1 artillery is a reasonable first-turn production
 (other reasonable purchases are 7 infantry + 2 artillery + 1 tank, or 8 infantry + 1 fighter).
 
-![purchase-example](./rule-book/images/purchase-example.png)
+![purchase-example](./first-turn-walkthrough/images/purchase-example.png)
 
 If you click “Done” on the production window before you are really done, do
 not worry, as you can still change your purchase as long as you have not yet
@@ -68,7 +68,7 @@ Supposing you decide that you want to produce fewer units, because the
 front-line factories can only produce 9 units total. So let’s produce 7
 infantry, 2 artillery, and one armor instead (click “Change…” to do so).
 
-![change-production](./rule-book/images/change-production.png)
+![change-production](./first-turn-walkthrough/images/change-production.png)
 
 When finished, click “Done”.
 
@@ -90,7 +90,7 @@ On the Western Front (from the Russian perspective), we will crush the Germans w
 not to let Germany get close to your factories, so we must push them back. We will conquer 4 territories and try
 for one submarine.
 
-![russia-move-example](./rule-book/images/russia-example.png)
+![russia-move-example](./first-turn-walkthrough/images/russia-example.png)
 
 We will attack Southern Russia with all the adjacent infantry and artillery that can’t attack anywhere else. We
 have 7 infantry and 1 artillery (10 attack power) and 8 hitpoints VS. 13 defense power and 5 hitpoints (2 infantry,
@@ -102,7 +102,7 @@ Finland is separated from the German reserves in Eastern Europe.
 We will attack Novgorod with 3 infantry from Leningrad and we will attack Western Russia with 3 infantry + 1
 artillery from Moscow.
 
-![russia-example-move](./rule-book/images/russia-combat-move-example2.png)
+![russia-example-move](./first-turn-walkthrough/images/russia-combat-move-example2.png)
 
 
 At this point, we still have more forces to commit, and it looks like we can take out one submarine as well.
@@ -128,7 +128,7 @@ this example play-through, we will just go down the list. To start a
 battle, just click on the buttons on the right side (and to show
 where a battle is, click on the “Center” button).
 
-![minimap-example](./rule-book/images/minimap-example.png)
+![minimap-example](./first-turn-walkthrough/images/minimap-example.png)
 
 1st Battle: Finland
 
@@ -143,7 +143,7 @@ We roll a 5, meaning we
 miss the chance for the
 second hit.
 
-![battle-example](./rule-book/images/battle-example.png)
+![battle-example](./first-turn-walkthrough/images/battle-example.png)
 
 Now the Germans have
 their chance to roll. With
@@ -181,7 +181,7 @@ lose all of their units,
 including an expensive
 fighter.
 
-![second-battle-example](./rule-book/images/2nd-battle-example.png)
+![second-battle-example](./first-turn-walkthrough/images/2nd-battle-example.png)
 
 3rd Battle: Novgorod
 In Novgorod we win
@@ -211,7 +211,7 @@ The 2 other fighters land in Leningrad, and the bomber lands in Moscow. Defendin
 especially British fighters, is key to Russian survival. Russia must hold onto Leningrad for as long as possible, and
 fighters defend at 4, making them very good at this when backed up with sufficient infantry.
 
-![non-combat-move](./rule-book/images/non-combat-move.png)
+![non-combat-move](./first-turn-walkthrough/images/non-combat-move.png)
 
 In the middle, all the Russian infantry heads for the German front. The single artillery in Sverdlovsk, and the 2
 infantry in Omsk, will head to the east to provide some attack power in case the Japanese get greedy.
@@ -220,7 +220,7 @@ In the East, send all of your units to meet in Amurskaya. Continue to move them 
 the Japanese are. If the Japanese get too strong, or have enough aircraft in the area, you may be forced to move
 back to Buryatia in order not to lose your forces.
 
-![russia-far-east-move](./rule-book/images/russia-far-east-move.png)
+![russia-far-east-move](./first-turn-walkthrough/images/russia-far-east-move.png)
 
 When you are ready, end the phase by clicking “Done”. If you should forget to land a plane, you will be told. If
 this happens, you can force the plane to commit suicide or you can go back and continue making moves.
@@ -228,7 +228,7 @@ this happens, you can force the plane to commit suicide or you can go back and c
 
 __Unit Placement Phase__
 
-![unit-placement](./rule-book/images/unit-placement.png)
+![unit-placement](./first-turn-walkthrough/images/unit-placement.png)
 
 In order to place the units that you have purchased, you must ‘left click’ in any or each
 of your territories that contains a Factory or unit which has the ability to produce
