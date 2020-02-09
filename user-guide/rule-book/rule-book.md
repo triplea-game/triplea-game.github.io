@@ -8,7 +8,7 @@ permalink: /user-guide/rule-book
 
 __The World’s Foremost Open-Source Grand Strategy Game__
 
-![title-page-logo](./images/title-page-logo.png)
+![title-page-logo](./rule-book/images/title-page-logo.png)
 
 <br/><br/>
 
@@ -43,7 +43,7 @@ __The World’s Foremost Open-Source Grand Strategy Game__
 
 <br/><br/>
 
-## <a id="overview" /> ![overview](./images/overview.png)
+## <a id="overview" /> ![overview](./rule-book/images/overview.png)
 
 <br/><br/>
 TripleA is a turn-based strategy game and board game engine. Though TripleA comes with many games inside, it
@@ -63,16 +63,16 @@ Many of the game operations simply happen automatically, and illegal player acti
 amount of knowledge and initiative is expected of the player, especially to read any game notes for any maps.
 However, all of the critical and important game operations and knowledge are described in this manual.
 <br/><br/>
-![map-sample](./images/map-sample.png)
+![map-sample](./rule-book/images/map-sample.png)
 <br/><br/>
 
-## <a id="game-setup"/> ![game-setup](./images/game-setup.png)
+## <a id="game-setup"/> ![game-setup](./rule-book/images/game-setup.png)
 
 
 The first thing that happens when TripleA is started is that the game setup window appears. There are a number
 of choices that the player must make at this time.
 
-![home-screen-sample](./images/home-screen-sample.png)
+![home-screen-sample](./rule-book/images/home-screen-sample.png)
 
 
 * The game variant must be selected,
@@ -96,11 +96,11 @@ human or an AI.
 A few other options are also available at
 this time, but they can be ignored for now.
 
-## <a id="the-game-screen"/> ![the-game-screen](./images/the-game-screen.png)
+## <a id="the-game-screen"/> ![the-game-screen](./rule-book/images/the-game-screen.png)
 
-Below is a screenshot taken while in-game, playing the “Big World : 1942” map.
+Below is a screenshot taken while in-game, playing the “Big World : 1942” map.
 
-![big-world-screenshot](./images/big-world-screenshot.png)
+![big-world-screenshot](./rule-book/images/big-world-screenshot.png)
 
 Usually, the main screen cannot display the whole world at once, and instead only shows part of the map. The
 part that is displayed can be rapidly moved or changed in three ways:
@@ -114,9 +114,9 @@ In addition, you can change the Zoom Level of the map by either going to the “
 or by holding down the “ALT” key while scrolling your mouse wheel.
 
 
-## <a id="the-map"/> ![the-map](./images/the-map.png)
+## <a id="the-map"/> ![the-map](./rule-book/images/the-map.png)
 
-Each TripleA map is divided into a number of areas. Land areas are called territories. Sea areas are called sea
+Each TripleA map is divided into a number of areas. Land areas are called territories. Sea areas are called sea
 zones. Short or narrow rivers and small islands generally play only a cosmetic role (if an area has no name when
 you scroll your mouse over it, then it is just cosmetic and not an actual territory or sea zone). Air units fly over top
 of all this, but need to land at the end of every turn.
@@ -159,12 +159,12 @@ Provided that they still own it at that time. Of course, enemy players are not b
 control whatever they capture.
 
 
-## <a id="capitals"/> ![Capitals](./images/capitals.png)
+## <a id="capitals"/> ![Capitals](./rule-book/images/capitals.png)
 
 Each of the nations in TripleA has a capital territory. These territories are
 indicated on the map by a large roundel or flag associated with that nation. 
 
-![us-capital-example](./images/us-capital-example.png)
+![us-capital-example](./rule-book/images/us-capital-example.png)
 
 If an enemy player captures one of these territories, there are drastic consequences.
 
@@ -176,7 +176,7 @@ hands.
 hands. Of course, he has no resources to produce those units in any
 case.
 
-## <a id="the-units"/> ![the-units](./images/the-units.png)
+## <a id="the-units"/> ![the-units](./rule-book/images/the-units.png)
 
 As most games on TripleA are “grand strategy” games, a “unit” does not represent a single infantry or tank, but
 instead represents an entire army that is based around infantry or tanks. Therefore an “infantry” unit would
@@ -204,7 +204,7 @@ power of another unit when they are in the same territory (called giving and rec
 shoot at aircraft as they fly over, or being able to produce units.
 
 
-## <a id="units-used-in-big-world-1942" /> ![units-used-in-big-world-1942](./images/units-used-in-big-world-1942.png)
+## <a id="units-used-in-big-world-1942" /> ![units-used-in-big-world-1942](./rule-book/images/units-used-in-big-world-1942.png)
 
 The following units and stats are particular to the game “Big World : 1942”, and therefore if you try playing a
 different map, the units might differ slightly. For example, “Pact of Steel” has no “Cruisers” and the “Destroyers”
@@ -214,7 +214,7 @@ different stats.
 
 <a id="infantry"/>
 
-![1942-infantry](./images/1942-infantry.png)
+![1942-infantry](./rule-book/images/1942-infantry.png)
 
 
 __Special Abilities:__
@@ -226,7 +226,7 @@ __Notes:__ Infantry is generally slow and cheap with a high defense. Accordingly
 defend territories and to absorb casualties. Despite their lower attack and defense, they still have just as
 many hitpoints as more expensive units, so it is very good to keep more infantry than any other unit.
 
-<a id="artillery" /> ![1942-artillery](./images/1942-artillery.png)
+<a id="artillery" /> ![1942-artillery](./rule-book/images/1942-artillery.png)
 
 
 __Special Abilities:__
@@ -240,7 +240,7 @@ to have a few artillery with every large stack of infantry, as it is a very cost
 firepower of your army.
 
 
-<a id="tank"/> ![1942-tank](./images/1942-tank.png)
+<a id="tank"/> ![1942-tank](./rule-book/images/1942-tank.png)
 
 Special Abilities:
 Armour has the ability to “Blitz” through empty enemy territories. This means that while
@@ -251,7 +251,7 @@ territory.
 Notes: Armour is used for rapidly attacking an enemy, and being able to respond quickly to opportunities
 that are too far away for infantry to reach in time.
 
-<a id="fighter"/> ![1942-fighter](./images/1942-fighter.png)
+<a id="fighter"/> ![1942-fighter](./rule-book/images/1942-fighter.png)
 
 
 Special Abilities:
@@ -268,7 +268,7 @@ and naval targets. While all land units lose their movement when they participat
 continue moving after a battle is finished, giving them the ability to get out of harm’s way in case the
 enemy does a counter-attack.
 
-<a id="bomber"/> ![1942-bomber](./images/1942-bomber.png)
+<a id="bomber"/> ![1942-bomber](./rule-book/images/1942-bomber.png)
 
 
 Special Abilities:
@@ -279,19 +279,19 @@ sided die, and do that much damage to the enemy’s PU supply or to the individu
 Notes: The additional movement and attack, as well as the ability to raid enemy factories, make bombers
 a deadly but expensive unit.
 
-<a id="transport"/> ![1942-transport](./images/1942-transport.png)
+<a id="transport"/> ![1942-transport](./rule-book/images/1942-transport.png)
 
 
 Special Abilities:
 Transports have the ability to carry land units. They can carry 1 infantry unit plus 1 more land unit
 of any kind (e.g. 2 infantry units, or 1 infantry and 1 artillery / armour / AA Gun.
 
-In “Big World : 1942” and many other maps, Transports may be taken as casualties like any other
+In “Big World : 1942” and many other maps, Transports may be taken as casualties like any other
 unit. However, in some maps, Transports may not be taken as casualties until all combat ships
 are dead.
 Notes: Transports are used for moving land units over the sea zones.
 
-<a id="submarine"/> ![1942-submarine](./images/1942-submarine.png)
+<a id="submarine"/> ![1942-submarine](./rule-book/images/1942-submarine.png)
 
 
 Special Abilities:
@@ -305,7 +305,7 @@ Submarines may not attack air units, ever. Air units may attack Submarines thoug
 Notes: Submarines are stealth units, and one of the cheapest units at sea, and are very useful in
 attacking enemy sea units and for use as cannon fodder during sea battles.
 
-<a id="destroyer"/> ![1942-destroyer](./images/1942-destroyer.png)
+<a id="destroyer"/> ![1942-destroyer](./rule-book/images/1942-destroyer.png)
 
 
 Special Abilities:
@@ -313,14 +313,14 @@ Destroyers have the ability to cancel all of the abilities of enemy submarines.
 Notes: Destroyers are also one of the cheapest units at sea, and are better at defending since they can
 defend against air units. It is good to have destroyers whenever the enemy has submarines.
 
-<a id="cruiser"/> ![1942-cruiser](./images/1942-cruiser.png)
+<a id="cruiser"/> ![1942-cruiser](./rule-book/images/1942-cruiser.png)
 
 Special Abilities:
 Cruisers have no special abilities on “Big World : 1942”, however on other maps they often have
 the ability to bombard an enemy ground position.
 Notes: A middle-cost sea unit.
 
-<a id="carrier"/> ![1942-carrier](./images/1942-carrier.png)
+<a id="carrier"/> ![1942-carrier](./rule-book/images/1942-carrier.png)
 
 Special Abilities:
 Carriers have the ability to carry 2 friendly (owned or allied) fighters over the ocean. These
@@ -332,7 +332,7 @@ fighters, unless it is an allied fighter as cargo, it merely provided a landing 
 of the player’s turn. When the player’s turn starts, all owned fighters are considered to have launched
 from the carrier and are now in the air, so fighters and carriers move independently of each other.)
 
-<a id="battleship"/> ![1942-battleship](./images/1942-battleship.png)
+<a id="battleship"/> ![1942-battleship](./rule-book/images/1942-battleship.png)
 
 
 Special Abilities:
@@ -345,7 +345,7 @@ to cause an enemy casualty.
 Notes: Battleships are used both for their ability to absorb and repair hits, and to bombard enemy
 territories.
 
-<a id="aa-gun"/> ![1942-aa-gun](./images/1942-aa-gun.png)
+<a id="aa-gun"/> ![1942-aa-gun](./rule-book/images/1942-aa-gun.png)
 
 Special Abilities:
 AA Guns have a special ability that activates before a battle or strategic bombing raid begins, and
@@ -358,7 +358,7 @@ move phase. They may never be on the attacking side of a battle, only on the def
 Notes: Anti-Aircraft Guns are used to defend against Strategic Bombing Raids, and are also used to make
 an attacker think twice before they use overwhelming air power to attack your territories.
 
-<a id="factory"/> ![1942-factory](./images/1942-factory.png)
+<a id="factory"/> ![1942-factory](./rule-book/images/1942-factory.png)
 
 Special Abilities:
 Factories allow their owner to produce units in the territory the factory is located in (or in the Sea
@@ -371,13 +371,13 @@ Bombing Raids.
 Notes: Factories are vital centers of production, allowing their owner to produce units in that location.
 
 
-## <a id="sequence-of-play"/> ![sequence-of-play](./images/sequence-of-play.png)
+## <a id="sequence-of-play"/> ![sequence-of-play](./rule-book/images/sequence-of-play.png)
 
-TripleA is played in a series of rounds, with each round
+TripleA is played in a series of rounds, with each round
 composed of a series of player turns, and each player turn
 composed of a series of phases (also called steps).
 
-![sequence-of-play-banner](./images/sequence-of-play-banner.png)
+![sequence-of-play-banner](./rule-book/images/sequence-of-play-banner.png)
 
 __The sequence of turns for Big World: 1942 is:__
 
@@ -412,7 +412,7 @@ occur. Almost all phases require the user to press a “Done”
 button on the right side of the screen in order to progress to
 the next phase.
 
-## <a id="technology-development"/> ![technology-development](./images/technology-development.png)
+## <a id="technology-development"/> ![technology-development](./rule-book/images/technology-development.png)
 
 In the __Technology Development Phase__, a player may spend production units (PUs) to attempt to acquire new
 technologies. This involves purchasing die rolls, and generally for every 5 PUs spent, 1 additional die is purchased
@@ -478,7 +478,7 @@ Naval units are cheaper to purchase.
 * Radar:
 AA Guns now fire at +1 attack (2 instead of 1).
 
-## <a id="purchase"/> ![purchase](./images/purchase.png)
+## <a id="purchase"/> ![purchase](./rule-book/images/purchase.png)
 
 In the __Purchase Phase__, a player may spend PUs to purchase new units. These units may be placed on the map in
 the Unit Placement Phase at the end of the turn.
@@ -499,7 +499,7 @@ In some newer maps, you may also repair damaged factories and units during this 
 produces less units (1 unit fewer for each point of damage), and so they must be repaired by a certain amount in
 order to produce all the units you wish to purchase.
 
-## <a id="combat-movement"/> ![combat-move](./images/combat-move.png)
+## <a id="combat-movement"/> ![combat-move](./rule-book/images/combat-move.png)
 
 In the __Combat Movement Phase__, the current player may move any or all of his units to the full limit of their
 movement allowance, with certain exceptions.
@@ -559,7 +559,7 @@ transports, that unit may not unload until the next turn.
 
 __Carriers and Fighters__
 
-At the beginning of the turn, all of the current player’s owned fighters launch from any carrier they were on. They
+At the beginning of the turn, all of the current player’s owned fighters launch from any carrier they were on. They
 are considered to be in the air, not on board a carrier.
 This means that when you are moving the carrier, the air units do not move with it. Carriers cannot be used to
 give air units ‘extra’ movement.
@@ -583,7 +583,7 @@ then click again.
   * Left click in the territory, but not on any unit, to bring up a menu allowing detailed selection of
 multiple units.
 
-## <a id="battle"/> ![battle](./images/battle.png)
+## <a id="battle"/> ![battle](./rule-book/images/battle.png)
 
 In the __Battle Phase__, each territory or sea zone where both the player has units, and any enemy has units, will
 create a “battle” that must be resolved. A list of these territories and sea zones will appear on the right side of
@@ -601,7 +601,7 @@ at the end of any round. Both defending and attacking subs (stealth units) may r
 any round if no enemy destroyers are present (in some maps, submarines may retreat before the battle starts as
 well).
 
-Each combat round proceeds in a series of segments. Unless otherwise specified, all units of both attacker and
+Each combat round proceeds in a series of segments. Unless otherwise specified, all units of both attacker and
 defender get to fire once per battle round, even if the unit is selected to be a casualty. The segments of battle are
 as follows:
 1. First, attacking subs (stealth units) fire, and the defender allocates the casualties. If the defender has no
@@ -666,7 +666,7 @@ of amphibious attackers, and in addition, the bombardment casualty will get to f
 combat round, before dying.)
 * The invading amphibious units may not retreat.
 
-## <a id="non-combat-movement"/> ![non-combat-movement](./images/non-combat-movement.png)
+## <a id="non-combat-movement"/> ![non-combat-movement](./rule-book/images/non-combat-movement.png)
 
 In the __Non-Combat Movement Phase__, the current player may move any or all of his units to the full limit of their
 remaining movement allowance, with certain exceptions.
@@ -690,9 +690,9 @@ Transport rules still apply, and units can be loaded and unloaded in either comb
 phases.
 
 
-## <a id="placement"/> ![placement](./images/placement.png)
+## <a id="placement"/> ![placement](./rule-book/images/placement.png)
 
-In the __Placement Phase__, units that were bought during the purchase phase at the beginning of this turn may be
+In the __Placement Phase__, units that were bought during the purchase phase at the beginning of this turn may be
 placed on the map.
 
 Any newly purchased factories can be placed in any territory that was owned by the current player at the
@@ -731,9 +731,9 @@ the game (in some maps, the units may be retained and placed during the player�
 Newly placed units are fully functional at the end of this phase, meaning that they can be used for defending if
 attacked during the next player’s turn.
 
-## <a id="end-turn"/> ![end-turn](./images/end-turn.png)
+## <a id="end-turn"/> ![end-turn](./rule-book/images/end-turn.png)
 
-In the __End Turn Phase__, TripleA will automatically do all of the following actions, with no input required by the
+In the __End Turn Phase__, TripleA will automatically do all of the following actions, with no input required by the
 user.
 1. Activate any technologies that were successfully researched during the Tech Development phase.
 2. Count all of the income from owned territories and give that income to the current player.
@@ -746,7 +746,7 @@ Notes.
 At the end of this phase, the next player may start their turn.
 
 
-## <a id="winning-the-game"/> ![winning-the-game](./images/winning-the-game.png)
+## <a id="winning-the-game"/> ![winning-the-game](./rule-book/images/winning-the-game.png)
 
 Normally “Victory” is determined by one player surrendering the game
 once they believe it is impossible for them to win. However, most maps,
@@ -758,22 +758,22 @@ Depending on which victory condition is chosen during game setup, victory
 in “Big World” occurs when one side controls 14-17 victory territories (the
 default is 17).
 
-![vc-territory](./images/vc-territory.png)
+![vc-territory](./rule-book/images/vc-territory.png)
 
 The Victory Condition is normally tested at the end of every round.
 
-Victory City marker: ![vc-marker](./images/vc-marker.png)
+Victory City marker: ![vc-marker](./rule-book/images/vc-marker.png)
 
 
-## <a id="undo-feature"/> ![undo-feature](./images/undo.png)
+## <a id="undo-feature"/> ![undo-feature](./rule-book/images/undo.png)
 
 
-TripleA is a turn-based strategy game. Generally, this means that a player can
+TripleA is a turn-based strategy game. Generally, this means that a player can
 spend as much time as he wants on any aspect of his move, and can freely
 change anything he does during the turn without penalty, until he manually
 ends a phase.
 
-![undo-examples](./images/undo-example.png)
+![undo-examples](./rule-book/images/undo-example.png)
 
 There are no time limits, though human players will generally appreciate faster
 play.
@@ -782,7 +782,7 @@ Live games, played on the lobby, network, or on the same computer (hot-seat),
 are generally played faster. Play-By-Email (PBEM) and Play-By-Forum games
 allow for much more time to consider and reconsider all actions.
 
-## <a id="low-luck-vs-dice"/> ![low-luck-vs-dice](./images/low-luck-vs-dice.png)
+## <a id="low-luck-vs-dice"/> ![low-luck-vs-dice](./rule-book/images/low-luck-vs-dice.png)
 
 TripleA is a dice game, and as such there is a significant amount of luck present in each battle (though it will tend
 to even out over a long game, or series of games).
@@ -805,7 +805,7 @@ Germany will take the attack power of each of her units and add them together. T
 3).
 21
 
-This is then divided by 6, giving us 2 hits, and zero remainder.
+This is then divided by 6, giving us 2 hits, and zero remainder.
 Russia now selects 2 units to be allocated as casualties, and chooses her two infantry.
 
 Now it is Russia’s turn to fire. The total for her is 7 defense power (2x2 + 1x3).
@@ -817,7 +817,7 @@ Both sides now remove their casualties. Germany has 3 armour left, and Russia ha
 may now decide to retreat or keep fighting.
 
 
-## <a id="battle-calculator"/> ![battle-calculator](./images/battle-calculator.png)
+## <a id="battle-calculator"/> ![battle-calculator](./rule-book/images/battle-calculator.png)
 
 What is the expected outcome of this battle? How likely is it? These are questions that TripleA players, and
 wargamers in general, ask a lot, or at least they should.
@@ -844,7 +844,7 @@ you use the CTRL-B shortcut while your mouse is over a territory containing a ba
 automatically load the units in the battle.
 
 
-## <a id="menus-and-tabs"/> ![menus-and-tabs](./images/menus-and-tabs.png)
+## <a id="menus-and-tabs"/> ![menus-and-tabs](./rule-book/images/menus-and-tabs.png)
 
 When a game is running, several menu options are available at the upper left of the screen, as well as three or
 more tabs just below the minimap on the right side.
@@ -884,7 +884,7 @@ where it can otherwise be hard to determine exactly what is going on in a given 
 Calculator can also be accessed through this tab, but a player will rapidly learn that it is better to know the
 keyboard shortcut.
 
-## <a id="credits"/> ![credits](./images/credits.png)
+## <a id="credits"/> ![credits](./rule-book/images/credits.png)
 
 This manual and rulebook was created by:
 * Victor Finberg (VictorInThePacific)
@@ -939,10 +939,10 @@ https://sourceforge.net/projects/tripleamaps/
 
 ## Example of Play: 1st Turn Walkthrough of Russians in "Big World: 1942"
 
-Example of Play: First Turn Walkthrough of “Big World”
+Example of Play: First Turn Walkthrough of “Big World”
 First of all, we have installed TripleA on the desktop of a PC and started the game. The setup window appears.
 
-![starting-example](./images/starting-example.png)
+![starting-example](./rule-book/images/starting-example.png)
 
 In order to begin this walkthrough, we must make sure that we are playing the correct game.
 The “Game Name” in the upper left should read “Big World : 1942”.
@@ -979,7 +979,7 @@ We are given the option of spending resources on tech. Russia is both poor and u
 not to spend any money on technology. In the upper right of the screen, click “Done” to continue to the next
 phase.
 
-![tech-phase](./images/tech-phase.png)
+![tech-phase](./rule-book/images/tech-phase.png)
 
 __Purchase Phase__
 A production window will appear. Here you can see the basic stats of each of the units you can purchase, and for
@@ -989,7 +989,7 @@ cheapest units. In order to counter-attack, you will need to rely on artillery a
 because it is subject to destruction on counter-attack. 10 infantry + 1 artillery is a reasonable first-turn production
 (other reasonable purchases are 7 infantry + 2 artillery + 1 tank, or 8 infantry + 1 fighter).
 
-![purchase-example](./images/purchase-example.png)
+![purchase-example](./rule-book/images/purchase-example.png)
 
 If you click “Done” on the production window before you are really done, do
 not worry, as you can still change your purchase as long as you have not yet
@@ -1001,7 +1001,7 @@ Supposing you decide that you want to produce fewer units, because the
 front-line factories can only produce 9 units total. So let’s produce 7
 infantry, 2 artillery, and one armor instead (click “Change…” to do so).
 
-![change-production](./images/change-production.png)
+![change-production](./rule-book/images/change-production.png)
 
 When finished, click “Done”.
 
@@ -1023,7 +1023,7 @@ On the Western Front (from the Russian perspective), we will crush the Germans w
 not to let Germany get close to your factories, so we must push them back. We will conquer 4 territories and try
 for one submarine.
 
-![russia-move-example](./images/russia-example.png)
+![russia-move-example](./rule-book/images/russia-example.png)
 
 We will attack Southern Russia with all the adjacent infantry and artillery that can’t attack anywhere else. We
 have 7 infantry and 1 artillery (10 attack power) and 8 hitpoints VS. 13 defense power and 5 hitpoints (2 infantry,
@@ -1035,7 +1035,7 @@ Finland is separated from the German reserves in Eastern Europe.
 We will attack Novgorod with 3 infantry from Leningrad and we will attack Western Russia with 3 infantry + 1
 artillery from Moscow.
 
-![russia-example-move](./images/russia-combat-move-example2.png)
+![russia-example-move](./rule-book/images/russia-combat-move-example2.png)
 
 
 At this point, we still have more forces to commit, and it looks like we can take out one submarine as well.
@@ -1047,7 +1047,7 @@ casualties in this battle. (Generally speaking, the longer a battle goes on, the
 cause to the attacker. The attacker should aim to destroy the defender in as few rounds as possible.)
 29
 
-This leaves the entire Russian navy plus one fighter to take out one German submarine.
+This leaves the entire Russian navy plus one fighter to take out one German submarine.
 Destroying the submarine is important because it helps to protect the British navy.
 This is a really strong Russian offensive, and it may not be the best possible Russian Turn 1, but we will leave it to
 you to figure out a better strategy. We now end this phase by clicking “Done”.
@@ -1061,7 +1061,7 @@ this example play-through, we will just go down the list. To start a
 battle, just click on the buttons on the right side (and to show
 where a battle is, click on the “Center” button).
 
-![minimap-example](./images/minimap-example.png)
+![minimap-example](./rule-book/images/minimap-example.png)
 
 1st Battle: Finland
 
@@ -1076,7 +1076,7 @@ We roll a 5, meaning we
 miss the chance for the
 second hit.
 
-![battle-example](./images/battle-example.png)
+![battle-example](./rule-book/images/battle-example.png)
 
 Now the Germans have
 their chance to roll. With
@@ -1096,7 +1096,7 @@ choose to continue the
 attack.
 30
 
-On round 2 of the battle, we kill the remaining German infantry.
+On round 2 of the battle, we kill the remaining German infantry.
 The Germans get to shoot back though, but they miss their roll by getting a 4 when they needed a 1 or 2.
 The end result: the Russians lose 1 infantry, while the Germans lose 2 infantry. The Russians now conquer Finland
 (and Finland turns red to show this).
@@ -1114,7 +1114,7 @@ lose all of their units,
 including an expensive
 fighter.
 
-![second-battle-example](./images/2nd-battle-example.png)
+![second-battle-example](./rule-book/images/2nd-battle-example.png)
 
 3rd Battle: Novgorod
 In Novgorod we win
@@ -1144,7 +1144,7 @@ The 2 other fighters land in Leningrad, and the bomber lands in Moscow. Defendin
 especially British fighters, is key to Russian survival. Russia must hold onto Leningrad for as long as possible, and
 fighters defend at 4, making them very good at this when backed up with sufficient infantry.
 
-![non-combat-move](./images/non-combat-move.png)
+![non-combat-move](./rule-book/images/non-combat-move.png)
 
 In the middle, all the Russian infantry heads for the German front. The single artillery in Sverdlovsk, and the 2
 infantry in Omsk, will head to the east to provide some attack power in case the Japanese get greedy.
@@ -1153,15 +1153,15 @@ In the East, send all of your units to meet in Amurskaya. Continue to move them 
 the Japanese are. If the Japanese get too strong, or have enough aircraft in the area, you may be forced to move
 back to Buryatia in order not to lose your forces.
 
-![russia-far-east-move](./images/russia-far-east-move.png)
+![russia-far-east-move](./rule-book/images/russia-far-east-move.png)
 
-When you are ready, end the phase by clicking “Done”. If you should forget to land a plane, you will be told. If
+When you are ready, end the phase by clicking “Done”. If you should forget to land a plane, you will be told. If
 this happens, you can force the plane to commit suicide or you can go back and continue making moves.
 
 
 __Unit Placement Phase__
 
-![unit-placement](./images/unit-placement.png)
+![unit-placement](./rule-book/images/unit-placement.png)
 
 In order to place the units that you have purchased, you must ‘left click’ in any or each
 of your territories that contains a Factory or unit which has the ability to produce
