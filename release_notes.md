@@ -11,6 +11,8 @@ permalink: /release_notes/
 | Area  | Type  | Description  |
 |---|---|---|
 | Engine  | Feature | Automatic bug reporting, dialog to upload error logs appears when a game error occur  |
+| Engine  | Feature | New placements panel shows units that have been purchased |
+| Engine  | Feature | New units-to-move panel shows units that can be moved in current territory and how many units are left ot move |
 | Engine  | Fix     | Hotkey fixed so game post and players tab no longer use the same hotkey |
 | Engine  | Fix     | Hover over unit tooltip works consistently (#4853) |
 | Engine  | Fix     | Fix current player logic in battle simulator when history is open (#4828) |
@@ -26,8 +28,17 @@ permalink: /release_notes/
 | Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
 | Rules   | Fix     | Fix New Fighters On Old Carriers To Ignore Allied/Enemy Carriers (#4508) |
 | Rules   | Fix     | Fix Land Scramble Error by preventing a route to/from the same territory (#4494) |
-| Staging Screens  | Feature | Display Java version on main screen (#4415) |
+| Staging Screens | Feature | Display Java version on main screen (#4415) |
+| Staging Screens | Update | Split PBEM/PBF to two different screens |
+| Lobby   | Feature | Lobby technology upgraded, rewritten from scratch! |
 | Lobby   | Feature | Moderator toolbox 2.0 for viewing and managing users and managing moderators (#4899, #4872) |
+| Lobby   | Feature | Lobby account menu has a change name option |
+| Lobby   | Feature | New 'forgot password' option available when logging in |
+| Lobby   | Feature | Password security is automatically upgraded when logging in |
+| Lobby   | Update  | Bot hosts with no players will appear as 'available' instead of 'waiting for players' |
+| Lobby   | Update  | Slap messages are displayed to all |
+| Lobby   | Update  | New passwords must be at least 5 characters long |
+| Lobby   | Fix     | 'Ghost games' should no longer be a problem |
 | PBEM    | Update  | (PBEM) Allow posting from after purchase phase (#4770) |
 | Map XML | Feature | Add nested foreach for attachments (#4831) |
 | Map XML | Feature | Add new canal option canNotMoveThroughDuringCombatMove (#4816) |
@@ -39,6 +50,7 @@ permalink: /release_notes/
 | Map XML | Remove  | Remove deprecated costPu option as all maps have been updated (#4493) |
 | AI      | Fix     | Improve large map performance (#4764) |
 | AI      | Fix     | Fix battle results when checking for submerging (#4738) |
+| AI      | Update  | Various performance improvements |
 
 
 ### 1.10
