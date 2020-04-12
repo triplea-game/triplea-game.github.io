@@ -13,32 +13,32 @@ permalink: /release_notes/
 | Engine  | Feature | Automatic bug reporting, dialog to upload error logs appears when a game error occur  |
 | Engine  | Fix     | Hotkey fixed so game post and players tab no longer use the same hotkey |
 | Engine  | Fix     | Hover over unit tooltip works consistently (#4853) |
-| Engine  | Remove  | Drop game host mute ability (#4783) |
-| Rules   | Fix     | Don't allow transports to load after being in battle if LHTR (#4857) |
-| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
-| Map XML | Feature | Add nested foreach for attachments (#4831) |
-| Map XML | Update  | Divide isSub into Attributes (#4831) |
-| Map XML | Feature | Add new canal option canNotMoveThroughDuringCombatMove (#4816) |
-| Map XML | Feature | Add new player option giveUnitControlInAllTerritories (#4808) |
-| Map XML | Feature | Add XML variables and foreach (#4791) |
-| Map XML | Fix     | Allow whenHitPointsDamagedChangesInto to work for units with no HP left (#4720) |
-| Lobby   | Feature | Moderator toolbox 2.0 for viewing and managing users and managing moderators (#4899, #4872) |
 | Engine  | Fix     | Fix current player logic in battle simulator when history is open (#4828) |
 | Engine  | Fix     | Fix undo blitz battles (#4813) |
 | Engine  | Fix     | Fixed various memory leaks (#4806) |
-| Map XML | Feature | Add onlyRepairIfDisabled phase option (#4775) |
-| PBEM    | Update  | (PBEM) Allow posting from after purchase phase (#4770) |
-| AI      | Fix     | Improve large map performance (#4764) |
-| AI      | Fix     | Fix battle results when checking for submerging (#4738) |
 | Engine  | Fix     | Battle calc fixes and improvements (#4576) |
 | Engine  | Fix     | Ensure XXE security fix (#4516) |
 | Engine  | Fix     | Map download screen - Display map size downloaded so far when total map size is unknown (#4515) |
+| Engine  | Fix     | Auto Kill logic looking at attack value rather than defense (#4409) |
+| Engine  | Fix     | Improve route finding to consider friendly and requiresUnits (#4498) |
+| Engine  | Remove  | Drop game host mute ability (#4783) |
+| Rules   | Fix     | Don't allow transports to load after being in battle if LHTR (#4857) |
+| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
 | Rules   | Fix     | Fix New Fighters On Old Carriers To Ignore Allied/Enemy Carriers (#4508) |
 | Rules   | Fix     | Fix Land Scramble Error by preventing a route to/from the same territory (#4494) |
-| Engine  | Fix     | Auto Kill logic looking at attack value rather than defense (#4409) |
+| Staging Screens  | Feature | Display Java version on main screen (#4415) |
+| Lobby   | Feature | Moderator toolbox 2.0 for viewing and managing users and managing moderators (#4899, #4872) |
+| PBEM    | Update  | (PBEM) Allow posting from after purchase phase (#4770) |
+| Map XML | Feature | Add nested foreach for attachments (#4831) |
+| Map XML | Feature | Add new canal option canNotMoveThroughDuringCombatMove (#4816) |
+| Map XML | Feature | Add new player option giveUnitControlInAllTerritories (#4808) |
+| Map XML | Feature | Add XML variables and foreach (#4791) |
+| Map XML | Feature | Add onlyRepairIfDisabled phase option (#4775) |
+| Map XML | Fix     | Allow whenHitPointsDamagedChangesInto to work for units with no HP left (#4720) |
+| Map XML | Update  | Divide isSub into Attributes (#4831) |
 | Map XML | Remove  | Remove deprecated costPu option as all maps have been updated (#4493) |
-| Engine  | Feature | Display Java version on main screen (#4415) |
-| Engine  | Fix     | Improve route finding to consider friendly and requiresUnits (#4498) |
+| AI      | Fix     | Improve large map performance (#4764) |
+| AI      | Fix     | Fix battle results when checking for submerging (#4738) |
 
 
 ### 1.10
