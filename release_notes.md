@@ -13,6 +13,7 @@ permalink: /release_notes/
 | Engine  | Feature | Automatic bug reporting, dialog to upload error logs appears when a game error occur  |
 | Engine  | Feature | New placements panel shows units that have been purchased |
 | Engine  | Feature | New units-to-move panel shows units that can be moved in current territory and how many units are left ot move |
+| Engine  | Feature | Ctrl+Enter hotkey has been added to 'done' buttons |
 | Engine  | Fix     | Hotkey fixed so game post and players tab no longer use the same hotkey |
 | Engine  | Fix     | Hover over unit tooltip works consistently (#4853) |
 | Engine  | Fix     | Fix current player logic in battle simulator when history is open (#4828) |
@@ -35,6 +36,9 @@ permalink: /release_notes/
 | Lobby   | Feature | Lobby account menu has a change name option |
 | Lobby   | Feature | New 'forgot password' option available when logging in |
 | Lobby   | Feature | Password security is automatically upgraded when logging in |
+| Lobby   | Feature | When players are banned, a message is printed in the lobby |
+| Lobby   | Update  | Banned players receive a pop-up message telling them they were banned instead of just being disconnected |
+| Lobby   | Update  | Banned players are automatically removed from both the lobby and any lobby-connected games |
 | Lobby   | Update  | Bot hosts with no players will appear as 'available' instead of 'waiting for players' |
 | Lobby   | Update  | Slap messages are displayed to all |
 | Lobby   | Update  | New passwords must be at least 5 characters long |
