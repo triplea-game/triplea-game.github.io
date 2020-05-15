@@ -1,6 +1,6 @@
 # Site settings
-title: "TripleA: The World's Foremost Open Source Grand Strategy Game"
-description: TripleA is a free online turn based strategy game and board game engine, similar to such board games as Axis &amp; Allies or Risk. TripleA comes with multiple games and over 100 more maps can be downloaded from the user community. Supports single player vs AI, hot-seat, play by email and forum, and a hosted Online lobby for live play online.
+title: "TripleA: An Open Source Turn Based Grand Strategy Game"
+description: TripleA is a free open source turn based grand strategy game engine with play similar to Axis & Allies and Risk. Over a hundred different maps created by the community covering a wide variety of scenarios (such as WW1, WW2 and various science fiction and fantasy worlds) are available for download. TripleA supports single player vs AI, hot-seat, play by email and forum, direct online play, and a hosted lobby for live online play with other community members.
 markdown: kramdown
 sass:
   style: compressed
