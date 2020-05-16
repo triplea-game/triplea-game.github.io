@@ -13,7 +13,7 @@ Please start feature requests as issues. We may hesitate to accept pull requests
 
 You can edit any page individually by navigating to the page in github and using the github 'pencil icon': https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/
 
-For more involved changes, you'll want to preview those changes locally before creating a pull request. The TripleA website is run on Jekyll, hosted by Github Pages. Jekyll is an engine that serves markdown (md) files as HTML, once running it'll compile and host the website on your local compute (usually at http://localhost:4000).
+For more involved changes, you'll want to preview those changes locally before creating a pull request. The TripleA website is run on Jekyll, hosted by Github Pages. Jekyll is an engine that serves markdown (md) files as HTML, once running it'll compile and host the website on your local computer (usually at http://localhost:4000).
 
 For more detailed information, see:
 - https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll
@@ -55,4 +55,3 @@ You can then make changes to the files you cloned earlier and the local server s
 **3. Commit and submit pull request**
 
 After verifying changes to your locally cloned repository, you'll need a git client of some sort installed (there are many of these, [git for windows](https://gitforwindows.org/) is an example). Follow these steps to prepare a pull-request: https://github.com/PointCloudLibrary/pcl/wiki/A-step-by-step-guide-on-preparing-and-submitting-a-pull-request
-
