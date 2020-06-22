@@ -16,6 +16,24 @@ $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 
+table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+	border: 1px solid #c6c9cc;
+	border-radius: 5px;
+ 	padding: 10px 20px;
+	th {
+    text-align: center;
+  }
+  td {
+		border-color: #c6c9cc;
+		border-style: solid;
+		border-width: 1px 1px 1px 1px;
+  	padding: 5px 10px;
+	}
+}
+
 @import "fonts";
 @import "foundation";
 @import "base";
