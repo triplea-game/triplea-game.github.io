@@ -55,22 +55,12 @@ permalink: /release_notes/
 | AI      | Update  | Various performance improvements |
 
 
-### 1.10
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Amaster+merged%3A%3E%3D2018-09-27T03%3A53%3A14Z).
-
-### 1.9
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Arelease%2F1.9.0.0+merged%3A%3E%3D2018-11-17T00%3A36%3A40Z).
-
 ## [1.9.0.0.13066](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.13066) - November 18th 2018
 
 * Fix determination of transported units during amphibious assaults (#4252)
 * Use dynamic heap size for installers to fix Windows 32 bit installer (#4328)
 * Add check for sea units to enemySurfaceExclusionTerritories to fix surface warship objectives (#4351)
 * Update A&A forum poster for new forum (#4361)
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Arelease%2F1.9.0.0+merged%3A2018-09-27T03%3A53%3A14Z..2018-11-17T00%3A36%3A40Z).
 
 ## [1.9.0.0.12226](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.12226) - September 28th 2018
 
@@ -98,8 +88,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3A
 * Unit Tooltip Improvements & Poll: https://forums.triplea-game.org/topic/942/unit-tooltip-improvements-poll
 * Add Support for Land Transports Moving Through Canals: https://forums.triplea-game.org/topic/984/add-support-for-land-transports-moving-through-canals
 * Enhance Route Finding To Consider Canals: https://forums.triplea-game.org/topic/1007/enhance-route-finding-to-consider-canals
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2018-03-08T18%3A20%3A54Z..2018-09-27T03%3A53%3A14Z).
 
 ## [1.9.0.0.9687](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.9687) - March 12th 2018
 
@@ -146,8 +134,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * Chat message history navigation keys (#2654)
 * Prompt to download Tutorial map (#2650)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-25T20%3A11%3A09Z..2018-03-08T18%3A20%3A54Z).
-
 ## [1.9.0.0.7621](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7621) - November 25th 2017
 
 ### Added
@@ -167,8 +153,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * Hotmail PBEM (#2598)
 * Game crash when attacking neutral territories (#2596)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-02T18%3A11%3A00-04%3A00..2017-11-25T15%3A11%3A00-05%3A00).
-
 ## [1.9.0.0.7378](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7378) - November 5th 2017
 
 ### Added
@@ -176,8 +160,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 
 ### Changed
 * Only check non-transported units for requiresUnitToMove (#2560)
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-28T19%3A46%3A00-04%3A00..2017-11-02T18%3A11%3A00-04%3A00).
 
 ## [1.9.0.0.7342](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7342) - November 1st 2017
 
@@ -190,8 +172,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 ### Fixed
 * Slow battle calculator (#2544)
 * Map blend rendering when zoom < 100% (#2542)
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-11T12%3A16%3A00-04%3A00..2017-10-28T19%3A46%3A00-04%3A00).
 
 ## [1.9.0.0.7062](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7062) - October 11th 2017
 
@@ -226,7 +206,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * 'Old jar' functionality (#2284)
 
 And many more internal changes, bugfixes, etc.
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-01-21T12%3A42%3A00-05%3A00..2017-10-11T12%3A16%3A00-04%3A00).
 
 ## [1.9.0.0.3635](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.3635) - January 21st 2017
 
