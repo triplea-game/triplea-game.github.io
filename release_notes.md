@@ -8,12 +8,35 @@ permalink: /release_notes/
 
 ## 2.0
 
-| Area  | Type  | Description  |
-|---|---|---|
 | Engine  | Feature | Automatic bug reporting, dialog to upload error logs appears when a game error occur  |
 | Engine  | Feature | New placements panel shows units that have been purchased |
-| Engine  | Feature | New units-to-move panel shows units that can be moved in current territory and how many units are left ot move |
-| Engine  | Feature | Ctrl+Enter hotkey has been added to 'done' buttons |
+| Engine  | Feature | New units-to-move panel shows units that can be moved in current territory and how many units are left to move |
+| | | Use ',' and '.' to select next and previous unit, 'space' to skip units and 's' to sleep units |
+| Engine  | Feature | Ctrl+Enter hotkey has been added for the 'done' buttons |
+| Lobby   | Feature | Lobby account menu has a change name option |
+| Lobby   | Feature | New 'forgot password' option available when logging in |
+| Map XML | Feature | Add nested foreach to attachments (#4831) |
+| Map XML | Feature | Add XML variables and foreach (#4791) |
+| Map XML | Feature | Add new canal option canNotMoveThroughDuringCombatMove (#4816) |
+| Map XML | Feature | Add new player option giveUnitControlInAllTerritories (#4808) |
+| Map XML | Feature | Add onlyRepairIfDisabled phase option (#4775) |
+| Map XML | Feature | Add option 'canRetreatOnStalemate' to configure if zero power units vs zero power units gives attacker the option to retreat (#6500) |
+| Staging Screens | Update | Display Java version on main screen (#4415) |
+| Staging Screens | Update | Split PBEM/PBF to two different screens |
+| Lobby   | Update | Lobby rewritten from the ground-up, technology upgrade |
+| Lobby   | Update  | Empty Bot hosts will appear as 'available' instead of 'waiting for players' |
+| Lobby   | Update  | Improvements to banning and ban messaging |
+| Lobby   | Update  | Slap messages are displayed to all |
+| Lobby   | Update  | Account passwords now must be at least 5 characters long |
+| Map XML | Update  | Divide isSub into Attributes (#4831) |
+| AI      | Update  | Various performance improvements |
+| PBEM    | Update  | (PBEM) Allow posting from after purchase phase (#4770) |
+| AI      | Fix     | Improve large map performance (#4764) |
+| AI      | Fix     | Fix battle results when checking for submerging (#4738) |
+| Rules   | Fix     | Don't allow transports to load after being in battle if LHTR (#4857) |
+| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
+| Rules   | Fix     | Fix New Fighters On Old Carriers To Ignore Allied/Enemy Carriers (#4508) |
+| Rules   | Fix     | Fix Land Scramble Error by preventing a route to/from the same territory (#4494) |
 | Engine  | Fix     | Hotkey fixed so game post and players tab no longer use the same hotkey |
 | Engine  | Fix     | Hover over unit tooltip works consistently (#4853) |
 | Engine  | Fix     | Fix current player logic in battle simulator when history is open (#4828) |
@@ -24,44 +47,10 @@ permalink: /release_notes/
 | Engine  | Fix     | Map download screen - Display map size downloaded so far when total map size is unknown (#4515) |
 | Engine  | Fix     | Auto Kill logic looking at attack value rather than defense (#4409) |
 | Engine  | Fix     | Improve route finding to consider friendly and requiresUnits (#4498) |
-| Engine  | Remove  | Drop game host mute ability (#4783) |
-| Rules   | Fix     | Don't allow transports to load after being in battle if LHTR (#4857) |
-| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
-| Rules   | Fix     | Fix New Fighters On Old Carriers To Ignore Allied/Enemy Carriers (#4508) |
-| Rules   | Fix     | Fix Land Scramble Error by preventing a route to/from the same territory (#4494) |
-| Staging Screens | Feature | Display Java version on main screen (#4415) |
-| Staging Screens | Update | Split PBEM/PBF to two different screens |
-| Lobby   | Feature | Lobby rewritten from the ground-up, technology upgrade |
-| Lobby   | Feature | Lobby account menu has a change name option |
-| Lobby   | Feature | New 'forgot password' option available when logging in |
-| Lobby   | Update  | Banned players receive a pop-up message telling them they were banned instead of just being disconnected |
-| Lobby   | Update  | Banned players are automatically removed from both the lobby and any lobby-connected games |
-| Lobby   | Update  | Empty Bot hosts will appear as 'available' instead of 'waiting for players' |
-| Lobby   | Update  | Slap messages are displayed to all |
-| Lobby   | Update  | Passwords now must be at least 5 characters long |
 | Lobby   | Fix     | 'Ghost games' should no longer be a problem |
-| PBEM    | Update  | (PBEM) Allow posting from after purchase phase (#4770) |
-| Map XML | Feature | Add nested foreach to attachments (#4831) |
-| Map XML | Feature | Add XML variables and foreach (#4791) |
-| Map XML | Feature | Add new canal option canNotMoveThroughDuringCombatMove (#4816) |
-| Map XML | Feature | Add new player option giveUnitControlInAllTerritories (#4808) |
-| Map XML | Feature | Add onlyRepairIfDisabled phase option (#4775) |
-| Map XML | Feature | Add option 'canRetreatOnStalemate' to configure if zero power units vs zero power units gives attacker the option to retreat (#6500) |
 | Map XML | Fix     | Allow whenHitPointsDamagedChangesInto to work for units with no HP left (#4720) |
-| Map XML | Update  | Divide isSub into Attributes (#4831) |
+| Engine  | Remove  | Drop game host mute ability (#4783) |
 | Map XML | Remove  | Remove deprecated costPu option as all maps have been updated (#4493) |
-| AI      | Fix     | Improve large map performance (#4764) |
-| AI      | Fix     | Fix battle results when checking for submerging (#4738) |
-| AI      | Update  | Various performance improvements |
-
-
-### 1.10
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Amaster+merged%3A%3E%3D2018-09-27T03%3A53%3A14Z).
-
-### 1.9
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Arelease%2F1.9.0.0+merged%3A%3E%3D2018-11-17T00%3A36%3A40Z).
 
 ## [1.9.0.0.13066](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.13066) - November 18th 2018
 
@@ -69,8 +58,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3A
 * Use dynamic heap size for installers to fix Windows 32 bit installer (#4328)
 * Add check for sea units to enemySurfaceExclusionTerritories to fix surface warship objectives (#4351)
 * Update A&A forum poster for new forum (#4361)
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3Arelease%2F1.9.0.0+merged%3A2018-09-27T03%3A53%3A14Z..2018-11-17T00%3A36%3A40Z).
 
 ## [1.9.0.0.12226](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.12226) - September 28th 2018
 
@@ -98,8 +85,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=base%3A
 * Unit Tooltip Improvements & Poll: https://forums.triplea-game.org/topic/942/unit-tooltip-improvements-poll
 * Add Support for Land Transports Moving Through Canals: https://forums.triplea-game.org/topic/984/add-support-for-land-transports-moving-through-canals
 * Enhance Route Finding To Consider Canals: https://forums.triplea-game.org/topic/1007/enhance-route-finding-to-consider-canals
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2018-03-08T18%3A20%3A54Z..2018-09-27T03%3A53%3A14Z).
 
 ## [1.9.0.0.9687](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.9687) - March 12th 2018
 
@@ -146,8 +131,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * Chat message history navigation keys (#2654)
 * Prompt to download Tutorial map (#2650)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-25T20%3A11%3A09Z..2018-03-08T18%3A20%3A54Z).
-
 ## [1.9.0.0.7621](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7621) - November 25th 2017
 
 ### Added
@@ -167,8 +150,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * Hotmail PBEM (#2598)
 * Game crash when attacking neutral territories (#2596)
 
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-11-02T18%3A11%3A00-04%3A00..2017-11-25T15%3A11%3A00-05%3A00).
-
 ## [1.9.0.0.7378](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7378) - November 5th 2017
 
 ### Added
@@ -176,8 +157,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 
 ### Changed
 * Only check non-transported units for requiresUnitToMove (#2560)
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-28T19%3A46%3A00-04%3A00..2017-11-02T18%3A11%3A00-04%3A00).
 
 ## [1.9.0.0.7342](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7342) - November 1st 2017
 
@@ -190,8 +169,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 ### Fixed
 * Slow battle calculator (#2544)
 * Map blend rendering when zoom < 100% (#2542)
-
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-10-11T12%3A16%3A00-04%3A00..2017-10-28T19%3A46%3A00-04%3A00).
 
 ## [1.9.0.0.7062](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.7062) - October 11th 2017
 
@@ -226,7 +203,6 @@ See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%
 * 'Old jar' functionality (#2284)
 
 And many more internal changes, bugfixes, etc.
-See the [full list here](https://github.com/triplea-game/triplea/pulls?q=merged%3A2017-01-21T12%3A42%3A00-05%3A00..2017-10-11T12%3A16%3A00-04%3A00).
 
 ## [1.9.0.0.3635](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.3635) - January 21st 2017
 
