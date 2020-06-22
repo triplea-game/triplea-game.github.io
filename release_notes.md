@@ -15,6 +15,30 @@ permalink: /release_notes/
 | Engine  | Feature | New units-to-move panel shows units that can be moved in current territory and how many units are left to move |
 | | | Use ',' and '.' to select next and previous unit, 'space' to skip units and 's' to sleep units |
 | Engine  | Feature | Ctrl+Enter hotkey has been added for the 'done' buttons |
+| Lobby   | Feature | Lobby account menu has a change name option |
+| Lobby   | Feature | New 'forgot password' option available when logging in |
+| Map XML | Feature | Add nested foreach to attachments (#4831) |
+| Map XML | Feature | Add XML variables and foreach (#4791) |
+| Map XML | Feature | Add new canal option canNotMoveThroughDuringCombatMove (#4816) |
+| Map XML | Feature | Add new player option giveUnitControlInAllTerritories (#4808) |
+| Map XML | Feature | Add onlyRepairIfDisabled phase option (#4775) |
+| Map XML | Feature | Add option 'canRetreatOnStalemate' to configure if zero power units vs zero power units gives attacker the option to retreat (#6500) |
+| Staging Screens | Update | Display Java version on main screen (#4415) |
+| Staging Screens | Update | Split PBEM/PBF to two different screens |
+| Lobby   | Update | Lobby rewritten from the ground-up, technology upgrade |
+| Lobby   | Update  | Empty Bot hosts will appear as 'available' instead of 'waiting for players' |
+| Lobby   | Update  | Improvements to banning and ban messaging |
+| Lobby   | Update  | Slap messages are displayed to all |
+| Lobby   | Update  | Account passwords now must be at least 5 characters long |
+| Map XML | Update  | Divide isSub into Attributes (#4831) |
+| AI      | Update  | Various performance improvements |
+| PBEM    | Update  | (PBEM) Allow posting from after purchase phase (#4770) |
+| AI      | Fix     | Improve large map performance (#4764) |
+| AI      | Fix     | Fix battle results when checking for submerging (#4738) |
+| Rules   | Fix     | Don't allow transports to load after being in battle if LHTR (#4857) |
+| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
+| Rules   | Fix     | Fix New Fighters On Old Carriers To Ignore Allied/Enemy Carriers (#4508) |
+| Rules   | Fix     | Fix Land Scramble Error by preventing a route to/from the same territory (#4494) |
 | Engine  | Fix     | Hotkey fixed so game post and players tab no longer use the same hotkey |
 | Engine  | Fix     | Hover over unit tooltip works consistently (#4853) |
 | Engine  | Fix     | Fix current player logic in battle simulator when history is open (#4828) |
@@ -25,35 +49,10 @@ permalink: /release_notes/
 | Engine  | Fix     | Map download screen - Display map size downloaded so far when total map size is unknown (#4515) |
 | Engine  | Fix     | Auto Kill logic looking at attack value rather than defense (#4409) |
 | Engine  | Fix     | Improve route finding to consider friendly and requiresUnits (#4498) |
-| Engine  | Remove  | Drop game host mute ability (#4783) |
-| Rules   | Fix     | Don't allow transports to load after being in battle if LHTR (#4857) |
-| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
-| Rules   | Fix     | Fix New Fighters On Old Carriers To Ignore Allied/Enemy Carriers (#4508) |
-| Rules   | Fix     | Fix Land Scramble Error by preventing a route to/from the same territory (#4494) |
-| Staging Screens | Feature | Display Java version on main screen (#4415) |
-| Staging Screens | Update | Split PBEM/PBF to two different screens |
-| Lobby   | Update | Lobby rewritten from the ground-up, technology upgrade |
-| Lobby   | Feature | Lobby account menu has a change name option |
-| Lobby   | Feature | New 'forgot password' option available when logging in |
-| Lobby   | Update  | Empty Bot hosts will appear as 'available' instead of 'waiting for players' |
-| Lobby   | Update  | Improvements to banning and ban messaging |
-| Lobby   | Update  | Slap messages are displayed to all |
-| Lobby   | Update  | Account passwords now must be at least 5 characters long |
 | Lobby   | Fix     | 'Ghost games' should no longer be a problem |
-| PBEM    | Update  | (PBEM) Allow posting from after purchase phase (#4770) |
-| Map XML | Feature | Add nested foreach to attachments (#4831) |
-| Map XML | Feature | Add XML variables and foreach (#4791) |
-| Map XML | Feature | Add new canal option canNotMoveThroughDuringCombatMove (#4816) |
-| Map XML | Feature | Add new player option giveUnitControlInAllTerritories (#4808) |
-| Map XML | Feature | Add onlyRepairIfDisabled phase option (#4775) |
-| Map XML | Feature | Add option 'canRetreatOnStalemate' to configure if zero power units vs zero power units gives attacker the option to retreat (#6500) |
 | Map XML | Fix     | Allow whenHitPointsDamagedChangesInto to work for units with no HP left (#4720) |
-| Map XML | Update  | Divide isSub into Attributes (#4831) |
+| Engine  | Remove  | Drop game host mute ability (#4783) |
 | Map XML | Remove  | Remove deprecated costPu option as all maps have been updated (#4493) |
-| AI      | Fix     | Improve large map performance (#4764) |
-| AI      | Fix     | Fix battle results when checking for submerging (#4738) |
-| AI      | Update  | Various performance improvements |
-
 
 ## [1.9.0.0.13066](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.13066) - November 18th 2018
 
