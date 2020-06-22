@@ -8,8 +8,6 @@ permalink: /release_notes/
 
 ## 2.0
 
-| Area  | Type  | Description  |
-|---|---|---|
 | Engine  | Feature | Automatic bug reporting, dialog to upload error logs appears when a game error occur  |
 | Engine  | Feature | New placements panel shows units that have been purchased |
 | Engine  | Feature | New units-to-move panel shows units that can be moved in current territory and how many units are left to move |
