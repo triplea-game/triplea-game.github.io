@@ -21,6 +21,7 @@ if default game is missing or errors out (due to costPU for example)
 | Engine  | Feature | New units-to-move panel shows units that can be moved in current territory and how many units are left to move |
 | | | Use ',' and '.' to select next and previous unit, 'space' to skip units and 's' to sleep units |
 | Engine  | Feature | Ctrl+Enter hotkey has been added for the 'done' buttons |
+| Lobby   | Feature | Can right click players in lobby chat to see when they registered|
 | Lobby   | Feature | Lobby account menu has a change name option |
 | Lobby   | Feature | New 'forgot password' option available when logging in |
 | Map XML | Feature | Add nested foreach to attachments (#4831) |
@@ -31,7 +32,7 @@ if default game is missing or errors out (due to costPU for example)
 | Map XML | Feature | Add option 'canRetreatOnStalemate' to configure if zero power units vs zero power units gives attacker the option to retreat (#6500) |
 | Staging Screens | Update | Display Java version on main screen (#4415) |
 | Staging Screens | Update | Split PBEM/PBF to two different screens |
-| Lobby   | Update | Lobby rewritten from the ground-up, technology upgrade |
+| Lobby   | Update  | Lobby rewritten from the ground-up, technology upgrade |
 | Lobby   | Update  | Empty Bot hosts will appear as 'available' instead of 'waiting for players' |
 | Lobby   | Update  | Improvements to banning and ban messaging |
 | Lobby   | Update  | Slap messages are displayed to all |
