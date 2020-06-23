@@ -6,7 +6,16 @@ permalink: /release_notes/
 
 ## Pre-release
 
-## 2.0
+
+## 2.0.20183
+
+- Fixed: Map listing may not render if default game is blank
+- Fixed: Can encounter error if deprecated costPU is still present
+on a map, possible if maps are not updated
+- Fixed: Can encounter NPE in game selector initialization
+if default game is missing or errors out (due to costPU for example)
+
+## 2.0.20123
 
 | Engine  | Feature | Automatic bug reporting, dialog to upload error logs appears when a game error occur  |
 | Engine  | Feature | New placements panel shows units that have been purchased |
