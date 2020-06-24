@@ -6,7 +6,16 @@ permalink: /release_notes/
 
 ## Pre-release
 
-## [2.0.20183](https://github.com/triplea-game/triplea/releases/tag/2.0.20183)
+## [2.0.20234](https://github.com/triplea-game/triplea/releases/tag/2.0.20234) June 24, 2020
+
+|[#6802](https://github.com/triplea-game/triplea/pull/6802)|FIX|Make lobby player listing sort order be case insensitive|
+|[#6801](https://github.com/triplea-game/triplea/pull/6801)|FIX|Fix NPE possible when AI is evaluating naval bombardment|
+|[#6800](https://github.com/triplea-game/triplea/pull/6800)|FIX|Fix UnsupportedOperationException during battle phase possible when fighters are transported as cargo|
+|[#6793](https://github.com/triplea-game/triplea/pull/6793)|CHANGE|Improve bot logging of which maps are loaded|
+|[#6780](https://github.com/triplea-game/triplea/pull/6780)|FIX|Fix forum posting formatting regression reported in #6735|
+
+
+## [2.0.20183](https://github.com/triplea-game/triplea/releases/tag/2.0.20183) June 22, 2020
 
 - Fixed: Map listing may not render if default game is blank
 - Fixed: Can encounter error if deprecated costPU is still present
