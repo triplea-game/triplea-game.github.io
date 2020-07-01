@@ -4,36 +4,33 @@ title: How to Host / Firewall Configuration
 permalink: /user-guide/how-to-host
 ---
 
+# How to Host in Lobby
 
-In order to allow requests to reach your computer we need to configure 2 Components:
+You can use [whatismyip](https://whatismyipaddress.com) to determine your IP address.
 
-## Configuring your Local Firewall
+Launch TripleA and host a direct network game. Then use [canyouseeme.org](https://canyouseeme.org)
+to check that your IP address at port 3300 is reachable. If not, you'll need to be sure you
+have both firewall and port forwarding rules in place.
+
+## Configuring Firewall
 
 Your Firewall is what blocks unallowed requests from being processed and/or answered from your Computer.
 This is a good thing, but in this case we need to setup a special rule for it in order to allow
- TripleA to be accessed by other clients over the web.
+TripleA to be accessed by other clients over the web.
 
-
-On Windows it's often sufficient to just allow a single Application to communicate through the
-Firewall. You can add TripleA to the "Allowed Applications" in your Control Panel.
-
-
-On all operating systems you have the possibility to open single ports manually. 
-TripleA uses  port 3300 by default.
-
-DO NOT TURN OFF YOUR FIREWALL FOR A LONGER PERIOD OF TIME UNDER ANY CIRCUMSTANCES
+TripleA uses port 3300 (TCP) by default.
 
 ### Finding your Firewall-Settings
 
 **Windows**
 
-Open your Control Panel,  click on "Windows Firewall" > "Allow a program or feature through Windows Firewall"
+Open the Control Panel, click on "Windows Firewall" > "Allow a program or feature through Windows Firewall"
 
 More detailed instructions can be found at: <https://www.windowscentral.com/how-open-port-windows-firewall>
 
 **Linux**
 
-This will very by distrubtion. On Ubuntu and Debian based systems using `ufw`, the command is:
+This will vary by distrubtion. On Ubuntu and Debian based systems using `ufw`, the command is:
 ```
 ufw allow 3300
 ```
@@ -45,11 +42,11 @@ See: <https://support.apple.com/en-us/HT201642>
 
 ### Configure Port-Forwarding
 
-Assuming yor Computer is not connected directly to the internet, but connected to a router instead 
-which is most likely the case, we need to tell your Route it's supposed to route all TripleA-related 
-traffic to your computer.
-This is called "Port-Forwarding". You can find tons of guides for every router model out there in
-the Internet. It would be impossible to list all of those here!
+If you have a router (if you're not plugged directly into your modem), you'll need to set up
+port forwarding rules so requests are forwarded from your router to your computer. Each router
+can be slightly different, your best bet is to do an internet search for your brand of router
+and "how to set up port forwarding".
+
 Make sure your Router forwards Port 3300 to Port 3300 on your local machine.
 If you are asked for the Protocol select TCP.
 
@@ -59,13 +56,6 @@ If you are asked for the Protocol select TCP.
 * Try temporarily disabling your Firewall. If everything is working fine with your Firewall disabled,
  you haven't setup your Firewall correctly. If it's still not working your Router isn't correctly 
  forwarding the traffic to your PC.
-
-[canyouseeme.org](https://canyouseeme.org) is a website that helps you checking if your configuration is 
-working. Just enter the port you want to check (in our case 3300).
-
-[whatismyip](https://whatismyipaddress.com) can be used to double check your public facing IP address,
-it must be accessible from other computes.
-
 
 If you still have any questions, feel free to ask on the player help forum:
 <https://forums.triplea-game.org/category/10/player-help>

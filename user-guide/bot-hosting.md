@@ -4,7 +4,7 @@ title: How to Host a Bot
 permalink: /user-guide/bot-hosting
 ---
 
-## How to Host a Bot
+## How to Host a Lobby Bot
 
 You need to first be sure your computer can be reached from the public internet.
 See [how-to-host](/user-guide/how-to-host) for details.

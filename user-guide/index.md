@@ -16,6 +16,6 @@ permalink: /user-guide/
 * [Bot (Automated Server) Rules](bot-rules)
 
 ## How-To
-* [How to Host and Firewall Configuration](how-to-host)
-* [How to Host a Bot](bot-hosting)
+* [How to Host in Lobby](how-to-host)
+* [How to Host a Lobby Bot](bot-hosting)
 
