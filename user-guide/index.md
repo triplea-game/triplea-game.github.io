@@ -17,5 +17,5 @@ permalink: /user-guide/
 
 ## How-To
 * [How to Host and Firewall Configuration](how-to-host)
-
+* [How to Host a Bot](bot-hosting)
 
