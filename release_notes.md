@@ -6,6 +6,23 @@ permalink: /release_notes/
 
 ## Pre-release
 
+## [2.1.20365](https://github.com/triplea-game/triplea/releases/tag/2.1.20365) July 1, 2020
+
+|[#6984](https://github.com/triplea-game/triplea/pull/6984)|UPDATE|Error uploads will now recognize duplicates and give you a link to an existing error upload if there is one. Added 'map-name' as an error upload field|
+|[#6978](https://github.com/triplea-game/triplea/pull/6978)|FIX|Fix lobby chat to break on word boundaries|
+|[#6970](https://github.com/triplea-game/triplea/pull/6970)|FIX|TWW will no longer crash before Germany's non-combat phase.|
+|[#6943](https://github.com/triplea-game/triplea/pull/6943)|FIX|PlayerOwnerChange exception in Warcraft War Heroes is fixed|
+|[#6937](https://github.com/triplea-game/triplea/pull/6937)|FIX|Fix URI syntax error triggered in PBF when a forum username contains a space|
+|[#6897](https://github.com/triplea-game/triplea/pull/6897)|FIX|Trenches getting invalid first strike on defense in Domination 1914 fixed.|
+|[#6885](https://github.com/triplea-game/triplea/pull/6885)|FIX|Attacking a sub unit with a destroyer unit in a map with no air units will no longer throw an error.|
+|[#6879](https://github.com/triplea-game/triplea/pull/6879)|Fix|MARTI dice rolls where the first die has multiple digits are now parsed correctly|
+|[#6864](https://github.com/triplea-game/triplea/pull/6864)|Fix|Fix remember password feature for play-by-forum|
+|[#6851](https://github.com/triplea-game/triplea/pull/6851)|FIX|Potential error when AI is calculating transport movement|
+|[#6842](https://github.com/triplea-game/triplea/pull/6842)|CHANGE|Missing Unit Image error now indicates if image should be a damaged and/or disabled image|
+|[#6821](https://github.com/triplea-game/triplea/pull/6821)|FIX|White lines appearing on map at certain zoom levels & scroll offsets.|
+|[#6814](https://github.com/triplea-game/triplea/pull/6814)|Fix|Game crash when calculating a sea battle with units that can bombard|
+
+
 ## [2.0.20234](https://github.com/triplea-game/triplea/releases/tag/2.0.20234) June 24, 2020
 
 |[#6802](https://github.com/triplea-game/triplea/pull/6802)|FIX|Make lobby player listing sort order be case insensitive|
