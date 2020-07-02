@@ -15,12 +15,12 @@ permalink: /release_notes/
 |[#6937](https://github.com/triplea-game/triplea/pull/6937)|FIX|Fix URI syntax error triggered in PBF when a forum username contains a space|
 |[#6897](https://github.com/triplea-game/triplea/pull/6897)|FIX|Trenches getting invalid first strike on defense in Domination 1914 fixed.|
 |[#6885](https://github.com/triplea-game/triplea/pull/6885)|FIX|Attacking a sub unit with a destroyer unit in a map with no air units will no longer throw an error.|
-|[#6879](https://github.com/triplea-game/triplea/pull/6879)|Fix|MARTI dice rolls where the first die has multiple digits are now parsed correctly|
-|[#6864](https://github.com/triplea-game/triplea/pull/6864)|Fix|Fix remember password feature for play-by-forum|
+|[#6879](https://github.com/triplea-game/triplea/pull/6879)|FIX|MARTI dice rolls where the first die has multiple digits are now parsed correctly|
+|[#6864](https://github.com/triplea-game/triplea/pull/6864)|FIX|Fix remember password feature for play-by-forum|
 |[#6851](https://github.com/triplea-game/triplea/pull/6851)|FIX|Potential error when AI is calculating transport movement|
 |[#6842](https://github.com/triplea-game/triplea/pull/6842)|CHANGE|Missing Unit Image error now indicates if image should be a damaged and/or disabled image|
 |[#6821](https://github.com/triplea-game/triplea/pull/6821)|FIX|White lines appearing on map at certain zoom levels & scroll offsets.|
-|[#6814](https://github.com/triplea-game/triplea/pull/6814)|Fix|Game crash when calculating a sea battle with units that can bombard|
+|[#6814](https://github.com/triplea-game/triplea/pull/6814)|FIX|Game crash when calculating a sea battle with units that can bombard|
 
 
 ## [2.0.20234](https://github.com/triplea-game/triplea/releases/tag/2.0.20234) June 24, 2020
