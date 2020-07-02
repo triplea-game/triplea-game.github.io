@@ -19,7 +19,6 @@ permalink: /release_notes/
 |[#6864](https://github.com/triplea-game/triplea/pull/6864)|FIX|Fix remember password feature for play-by-forum|
 |[#6851](https://github.com/triplea-game/triplea/pull/6851)|FIX|Potential error when AI is calculating transport movement|
 |[#6842](https://github.com/triplea-game/triplea/pull/6842)|CHANGE|Missing Unit Image error now indicates if image should be a damaged and/or disabled image|
-|[#6821](https://github.com/triplea-game/triplea/pull/6821)|FIX|White lines appearing on map at certain zoom levels & scroll offsets.|
 |[#6814](https://github.com/triplea-game/triplea/pull/6814)|FIX|Game crash when calculating a sea battle with units that can bombard|
 
 
