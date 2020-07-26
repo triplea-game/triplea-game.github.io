@@ -50,11 +50,11 @@ please go to this thread. Banned players: Please keep personal feelings and atti
 posts. Be professional and clear, try to give any information possible. Unless you are the banned 
 user, banning admin, or another admin involved, we ask that you do not post unnecessarily.
 
-### Lobby and Bot Rules
+### Lobby, Bot and Private Host Rules
 
-Again the General Rules above apply to the Lobby as well to the bots. The bots are not private 
-rooms and the Admin are also moderating the bots. Admins have the right to take action upon you, 
-if you are found in breach of these rules.
+Again the General Rules above apply to the Lobby as well to the bots and private hosts.
+If you are using the website the Admins have the right to take action upon you.
+If you are found in breach of these rules the admins have the powers to remove you.
 
 If you feel an admin has abused players or violated the rules, please PM another admin or post 
 in forums. Do not post a thread for flamebait. Be professional and take a screenshot and let another 
@@ -104,3 +104,32 @@ If a user has been found to directly target a person in a server, they will be r
 Remember our Golden Rule is to treat others the same way you would want to be treated. TripleA 
 is one of the greatest Axis and Allies games and community. We want everyone to enjoy their
  time here, so please keep it clean and have fun!
+
+### The Current Active Admins and Moderators of TripleA Are:
+bayder
+Beck
+Bung (Retired)
+Cernel
+Dany
+champ73
+cjnatz33
+CrazyG
+Deltium
+epinikion
+Frostion
+guerrilla_J
+Hepps
+lalapalooza_reborn
+LaFayette
+Panther
+prastle
+redrum68
+RoiEx
+SilverBullet
+ubernaut
+Yamamot0 (retired)
+Veqryn(retired)
+warmonger2
+wirkey
+Zjelcop
+zlefin
