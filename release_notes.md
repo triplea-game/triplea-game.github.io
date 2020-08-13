@@ -6,6 +6,29 @@ permalink: /release_notes/
 
 ## Pre-release
 
+## 2.2
+
+|[#7292](https://github.com/triplea-game/triplea/pull/7292)|FIX|Fixed an issue where rarely a NonMonotonicSequenceException  could occur when planning moves|
+|[#7269](https://github.com/triplea-game/triplea/pull/7269)|FIX|Fix null error in AddUnits#buildUnitOwnerMap when loading a saved game|
+|[#7262](https://github.com/triplea-game/triplea/pull/7262)|FIX|Improve server launching to better handle startup errors, prevents a 'stuck' server state.|
+|[#7249](https://github.com/triplea-game/triplea/pull/7249)|FIX|Reduce memory usage when loading the 'Unit Help' menu|
+|[#7245](https://github.com/triplea-game/triplea/pull/7245)|UPDATE|Hidden map units are no longer counted in player stats|
+|[#7243](https://github.com/triplea-game/triplea/pull/7243)|FIX|Rare date parser error on game launch when checking for out-of-date maps|
+|[#7241](https://github.com/triplea-game/triplea/pull/7241)|UPDATE|About menu is replaced with a link to the game license.|
+|[#7227](https://github.com/triplea-game/triplea/pull/7227)|FIX|Disabling 'Air Attack Sub Restricted' in Map Options will correctly allow airplanes to hit subs.|
+|[#7217](https://github.com/triplea-game/triplea/pull/7217)|FIX|Missing unit error message for Warcraft War Heroes when a unit dies and is turned into XP should no longer occur.|
+|[#7158](https://github.com/triplea-game/triplea/pull/7158)|FIX|Missing unit image in Warcraft War Heroes for dead units shouldn't happen anymore|
+|[#7148](https://github.com/triplea-game/triplea/pull/7148)|UPDATE|Improve minimap rendering performance to be faster and use less memory|
+|[#7143](https://github.com/triplea-game/triplea/pull/7143)|UPDATE|Error report uploads will now automatically include map name and memory usage details|
+|[#7070](https://github.com/triplea-game/triplea/pull/7070)|FIX|Potential game crash during calculation of units that belong in the units-to-place panel|
+|[#7064](https://github.com/triplea-game/triplea/pull/7064)|UPDATE|Unit Missing error will now indicate which image is actually missing|
+|[#7060](https://github.com/triplea-game/triplea/pull/7060)|FIX|MISSING UNIT IMAGE error for kamikaze units will no longer show up on Big World|
+|[#7030](https://github.com/triplea-game/triplea/pull/7030)|FIX|Fixes combat window sizing with Windows 10 magnification|
+|[#7022](https://github.com/triplea-game/triplea/pull/7022)|FIX|Warcraft War Heroes no longer errors with "sortedTargetsToPickFrom" must have the same size as targetsToPickFrom list|
+|[#7018](https://github.com/triplea-game/triplea/pull/7018)|FIX|AI no longer crashes when determining if a territory with a submerged sub can be held.|
+|[#7007](https://github.com/triplea-game/triplea/pull/7007)|FIX|Submerged subs don't retreat when other units retreat|
+
+
 ## [2.1.20365](https://github.com/triplea-game/triplea/releases/tag/2.1.20365) July 1, 2020
 
 |[#6984](https://github.com/triplea-game/triplea/pull/6984)|UPDATE|Error uploads will now recognize duplicates and give you a link to an existing error upload if there is one. Added 'map-name' as an error upload field|
