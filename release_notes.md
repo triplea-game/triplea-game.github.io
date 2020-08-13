@@ -4,9 +4,8 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## Pre-release
 
-## 2.2
+## [2.2.20790](https://github.com/triplea-game/triplea/releases/tag/2.2.20790) Aug 12, 2020
 
 |[#7292](https://github.com/triplea-game/triplea/pull/7292)|FIX|Fixed an issue where rarely a NonMonotonicSequenceException  could occur when planning moves|
 |[#7269](https://github.com/triplea-game/triplea/pull/7269)|FIX|Fix null error in AddUnits#buildUnitOwnerMap when loading a saved game|
