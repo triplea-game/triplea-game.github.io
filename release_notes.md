@@ -16,7 +16,6 @@ permalink: /release_notes/
 |[#7241](https://github.com/triplea-game/triplea/pull/7241)|UPDATE|About menu is replaced with a link to the game license.|
 |[#7227](https://github.com/triplea-game/triplea/pull/7227)|FIX|Disabling 'Air Attack Sub Restricted' in Map Options will correctly allow airplanes to hit subs.|
 |[#7217](https://github.com/triplea-game/triplea/pull/7217)|FIX|Missing unit error message for Warcraft War Heroes when a unit dies and is turned into XP should no longer occur.|
-|[#7158](https://github.com/triplea-game/triplea/pull/7158)|FIX|Missing unit image in Warcraft War Heroes for dead units shouldn't happen anymore|
 |[#7148](https://github.com/triplea-game/triplea/pull/7148)|UPDATE|Improve minimap rendering performance to be faster and use less memory|
 |[#7143](https://github.com/triplea-game/triplea/pull/7143)|UPDATE|Error report uploads will now automatically include map name and memory usage details|
 |[#7070](https://github.com/triplea-game/triplea/pull/7070)|FIX|Potential game crash during calculation of units that belong in the units-to-place panel|
