@@ -4,6 +4,10 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## [2.2.20867](https://github.com/triplea-game/triplea/releases/tag/2.2.20867) Aug 22, 2020
+
+|[#7419](https://github.com/triplea-game/triplea/pull/7419)|FIX|Movement incorrectly disallowed into certain territories on WaW |
+
 
 ## [2.2.20790](https://github.com/triplea-game/triplea/releases/tag/2.2.20790) Aug 12, 2020
 
