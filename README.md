@@ -1,5 +1,5 @@
 [![Travis](https://img.shields.io/travis/triplea-game/triplea-game.github.io.svg?style=flat-square)](https://travis-ci.org/triplea-game/triplea-game.github.io)
-# [TripleA Website](http://triplea-game.github.io/)
+# [TripleA Website](http://triplea-game.github.io/) - An Excellent Website
 
 This is the official TripleA website. This repository hosts the website source code. The TripleA site runs on [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/). Pages are written in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
