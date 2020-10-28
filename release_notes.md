@@ -4,6 +4,33 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## [2.3.22161](https://github.com/triplea-game/triplea/releases/tag/2.3.22161) Oct 27, 2020
+
+|[#7631](https://github.com/triplea-game/triplea/pull/7631)|FEATURE|Build in support to be able to load (most) 1.8 maps. 1.8 "variant" maps will not work, though most others should now load without issue.|
+
+|[#7899](https://github.com/triplea-game/triplea/pull/7899)|UPDATE|Removed from "infrastructure" units the ability to be immune to targeted (AA-like) fire and made infrastructures targetable also beyond the first round of combat (in accordance to the fact that TripleA allows infrastructures to remain in combat beyond the first round).|
+|[#7876](https://github.com/triplea-game/triplea/pull/7876)|UPDATE|Loading saves from newer game engine versions will require you to upgrade your game engine version. This is to avoid subtle errors and other rule problems that could occur. |
+|[#7894](https://github.com/triplea-game/triplea/pull/7894)|NEW|Add option in 'test settings' for testing to force load any game, ignoring compatibility|
+|[#7823](https://github.com/triplea-game/triplea/pull/7823)|UPDATE|Battle UI step labels have been updated to be more specific|
+|[#7704](https://github.com/triplea-game/triplea/pull/7704)|UPDATE|Escape key now closes the 'select map' window|
+|[#7693](https://github.com/triplea-game/triplea/pull/7693)|UPDATE|Improve performance of the 'available maps' button and startup time for bot servers|
+|[#7637](https://github.com/triplea-game/triplea/pull/7637)|UPDATE|Generate an unlimited number of default player colors when player colors are not specified in map.properties. Use default color '#DEB887' for the 'impassable' player color if not specified in map.properties.|
+|[#7617](https://github.com/triplea-game/triplea/pull/7617)|UPDATE|Map XMLs can now be located anywhere in a map zip or map directory, for example they can now be in a sub-directory of the 'games' folder.|
+|[#7596](https://github.com/triplea-game/triplea/pull/7596)|UPDATE|Map XML parser re-written to allow for more flexible XML structure. The XML DTD is no longer checked or used.|
+|[#7585](https://github.com/triplea-game/triplea/pull/7585)|UPDATE|Improved map loading performance (about 3x times faster)|
+|[#7834](https://github.com/triplea-game/triplea/pull/7834)|FIX|Hard AI purchases factories/constructions again|
+|[#7767](https://github.com/triplea-game/triplea/pull/7767)|FIX|Non-amphibious units selected for AI casualties after similar amphibious units.|
+|[#7765](https://github.com/triplea-game/triplea/pull/7765)|FIX|Air Transported units in no longer cause battle errors in Warcraft: War Heroes|
+|[#7723](https://github.com/triplea-game/triplea/pull/7723)|FIX|Defending subs can now submerge if "Submarines Defending May Submerge Or Retreat" is true even if there are no other retreat territories.|--
+|[#7611](https://github.com/triplea-game/triplea/pull/7611)|FIX|Fix errors on game start when the last played map is deleted on disk.|
+|[#7602](https://github.com/triplea-game/triplea/pull/7602)|FIX|Disable sound options instead of showing an error message if there is no sound on the installed system.|
+|[#7598](https://github.com/triplea-game/triplea/pull/7598)|FIX|Fix rare ConcurrentModificationException game crash when loading save games|
+|[#7528](https://github.com/triplea-game/triplea/pull/7528)|REMOVE|Remove XML 'color' property option|
+|[#7518](https://github.com/triplea-game/triplea/pull/7518)|REMOVE|Remove unused and unsupported game XML tag 'removeConnection'|
+|[#7500](https://github.com/triplea-game/triplea/pull/7500)|REMOVE|Remove feature to define maps as grid-based, remove unused {map:grid} XML element|
+|[#7437](https://github.com/triplea-game/triplea/pull/7437)|REMOVE|Removed GPG signing of installer files (GPG signatures will no longer appear in github releases)|
+
+
 ## [2.2.20868](https://github.com/triplea-game/triplea/releases/tag/2.2.20868) Aug 22, 2020
 
 |[#7419](https://github.com/triplea-game/triplea/pull/7419)|FIX|Movement incorrectly disallowed into certain territories on WaW |
