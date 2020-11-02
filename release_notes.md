@@ -4,7 +4,7 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## [2.5.22285]((https://github.com/triplea-game/triplea/releases/tag/2.5.22285) Nov 1, 2020
+## [2.5.22285](https://github.com/triplea-game/triplea/releases/tag/2.5.22285) Nov 1, 2020
 
 |[#8057](https://github.com/triplea-game/triplea/pull/8057)|FIX|Increase window size to prevent chat message panel from being squished and rendering too small|
 |[#8049](https://github.com/triplea-game/triplea/pull/8049)|FIX|Avoid game crash during game selection when maps are missing required XML data|
