@@ -4,6 +4,22 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## [2.5.22285]((https://github.com/triplea-game/triplea/releases/tag/2.5.22285) Nov 1, 2020
+
+|[#8057](https://github.com/triplea-game/triplea/pull/8057)|FIX|Increase window size to prevent chat message panel from being squished and rendering too small|
+|[#8049](https://github.com/triplea-game/triplea/pull/8049)|FIX|Avoid game crash during game selection when maps are missing required XML data|
+|[#8048](https://github.com/triplea-game/triplea/pull/8048)|FIX|Fix potential freeze when starting large save games in lobby.|
+|[#8031](https://github.com/triplea-game/triplea/pull/8031)|FIX|Map parsing errors will be more gracefully handled, will no longer crash the game and will print the name of the map that generated the error.|
+|[#8023](https://github.com/triplea-game/triplea/pull/8023)|FIX|World War 2 Global will correctly switch unit ownership of units placed in India from UK_Pacific to British.|
+
+
+## [2.4.22192](https://github.com/triplea-game/triplea/releases/tag/2.4.22192) Oct 29, 2020
+
+|[#8002](https://github.com/triplea-game/triplea/pull/8002)|FIX|Fix error during AI games or battle calculator for maps that have "Submarines Defending May Submerge Or Retreat" set to true and "Submersible Subs" set to false (EG: world_war_ii_classic and classic_variations).|
+|[#8000](https://github.com/triplea-game/triplea/pull/8000)|FIX|Default Order of Loss will now take into account support from all units in the battle.|
+|[#7979](https://github.com/triplea-game/triplea/pull/7979)|FIX|Prevent unlikely infinite battle calculations, battle calculations now limited to 10,000 rounds|
+|[#7948](https://github.com/triplea-game/triplea/pull/7948)|CHANGE|A battle that only contains units that can not hit each other because of canNotTarget and canNotBeTargetedBy will result in a stalemate.|
+
 ## [2.3.22161](https://github.com/triplea-game/triplea/releases/tag/2.3.22161) Oct 27, 2020
 
 |[#7631](https://github.com/triplea-game/triplea/pull/7631)|FEATURE|Build in support to be able to load (most) 1.8 maps. 1.8 "variant" maps will not work, though most others should now load without issue.|
@@ -21,7 +37,7 @@ permalink: /release_notes/
 |[#7834](https://github.com/triplea-game/triplea/pull/7834)|FIX|Hard AI purchases factories/constructions again|
 |[#7767](https://github.com/triplea-game/triplea/pull/7767)|FIX|Non-amphibious units selected for AI casualties after similar amphibious units.|
 |[#7765](https://github.com/triplea-game/triplea/pull/7765)|FIX|Air Transported units in no longer cause battle errors in Warcraft: War Heroes|
-|[#7723](https://github.com/triplea-game/triplea/pull/7723)|FIX|Defending subs can now submerge if "Submarines Defending May Submerge Or Retreat" is true even if there are no other retreat territories.|--
+|[#7723](https://github.com/triplea-game/triplea/pull/7723)|FIX|Defending subs can now submerge if "Submarines Defending May Submerge Or Retreat" is true even if there are no other retreat territories.|-
 |[#7611](https://github.com/triplea-game/triplea/pull/7611)|FIX|Fix errors on game start when the last played map is deleted on disk.|
 |[#7602](https://github.com/triplea-game/triplea/pull/7602)|FIX|Disable sound options instead of showing an error message if there is no sound on the installed system.|
 |[#7598](https://github.com/triplea-game/triplea/pull/7598)|FIX|Fix rare ConcurrentModificationException game crash when loading save games|
