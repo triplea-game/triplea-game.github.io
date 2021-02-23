@@ -23,7 +23,6 @@ permalink: /release_notes/
 ## [2.3.22161](https://github.com/triplea-game/triplea/releases/tag/2.3.22161) Oct 27, 2020
 
 |[#7631](https://github.com/triplea-game/triplea/pull/7631)|FEATURE|Build in support to be able to load (most) 1.8 maps. 1.8 "variant" maps will not work, though most others should now load without issue.|
-
 |[#7899](https://github.com/triplea-game/triplea/pull/7899)|UPDATE|Removed from "infrastructure" units the ability to be immune to targeted (AA-like) fire and made infrastructures targetable also beyond the first round of combat (in accordance to the fact that TripleA allows infrastructures to remain in combat beyond the first round).|
 |[#7876](https://github.com/triplea-game/triplea/pull/7876)|UPDATE|Loading saves from newer game engine versions will require you to upgrade your game engine version. This is to avoid subtle errors and other rule problems that could occur. |
 |[#7894](https://github.com/triplea-game/triplea/pull/7894)|NEW|Add option in 'test settings' for testing to force load any game, ignoring compatibility|
