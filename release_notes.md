@@ -36,7 +36,7 @@ permalink: /release_notes/
 |[#7834](https://github.com/triplea-game/triplea/pull/7834)|FIX|Hard AI purchases factories/constructions again|
 |[#7767](https://github.com/triplea-game/triplea/pull/7767)|FIX|Non-amphibious units selected for AI casualties after similar amphibious units.|
 |[#7765](https://github.com/triplea-game/triplea/pull/7765)|FIX|Air Transported units in no longer cause battle errors in Warcraft: War Heroes|
-|[#7723](https://github.com/triplea-game/triplea/pull/7723)|FIX|Defending subs can now submerge if "Submarines Defending May Submerge Or Retreat" is true even if there are no other retreat territories.|-
+|[#7723](https://github.com/triplea-game/triplea/pull/7723)|FIX|Defending subs can now submerge if "Submarines Defending May Submerge Or Retreat" is true even if there are no other retreat territories.|
 |[#7611](https://github.com/triplea-game/triplea/pull/7611)|FIX|Fix errors on game start when the last played map is deleted on disk.|
 |[#7602](https://github.com/triplea-game/triplea/pull/7602)|FIX|Disable sound options instead of showing an error message if there is no sound on the installed system.|
 |[#7598](https://github.com/triplea-game/triplea/pull/7598)|FIX|Fix rare ConcurrentModificationException game crash when loading save games|
