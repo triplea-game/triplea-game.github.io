@@ -16,11 +16,11 @@ __The World’s Foremost Open-Source Grand Strategy Game__
 
 * [Overview](#overview)
 * [Game Setup](#game-setup)
-* [The Game Screen](#The-Game-Screen)
+* [The Game Screen](#the-game-screen)
 * [The Map](#the-map)
-* [Capitals](#Capitals)
-* [The Units](#The-Units)
-* [Units Used in “Big World : 1942”](#Units-Used-in-“Big-World-:-1942”)
+* [Capitals](#capitals)
+* [The Units](#the-units)
+* [Units Used in “Big World : 1942”](#units-used-in-big-world-1942)
 * [Sequence of Play](#sequence-of-play)
 * [Technology Development](#technology-development) 
 * [Purchase](#purchase)
@@ -31,11 +31,9 @@ __The World’s Foremost Open-Source Grand Strategy Game__
 * [End-Turn](#end-turn)
 * [Winning the Game](#winning-the-game)
 * [The Undo Feature](#the-undo-feature)
-* [Low Luck vs. Dice](#low-luck-vs.-dice)
+* [Low Luck vs. Dice](#low-luck-vs-dice)
 * [The Battle Calculator](#the-battle-calculator)
 * [Menus & Tabs](#menus-and-tabs)
-* [Credits](#credits)
-* [Links](#links)
 
 <br/><br/>
 
@@ -155,7 +153,7 @@ Provided that they still own it at that time. Of course, enemy players are not b
 control whatever they capture.
 
 
-## <a id="capitals"/> ![Capitals](./rule-book/images/capitals.png)
+## <a id="capitals"/> ![capitals](./rule-book/images/capitals.png)
 
 Each of the nations in TripleA has a capital territory. These territories are
 indicated on the map by a large roundel or flag associated with that nation. 
@@ -761,7 +759,7 @@ The Victory Condition is normally tested at the end of every round.
 Victory City marker: ![vc-marker](./rule-book/images/vc-marker.png)
 
 
-## <a id="undo-feature"/> ![undo-feature](./rule-book/images/undo.png)
+## <a id="the-undo-feature"/> ![undo-feature](./rule-book/images/undo.png)
 
 
 TripleA is a turn-based strategy game. Generally, this means that a player can
@@ -813,7 +811,7 @@ Both sides now remove their casualties. Germany has 3 armour left, and Russia ha
 may now decide to retreat or keep fighting.
 
 
-## <a id="battle-calculator"/> ![battle-calculator](./rule-book/images/battle-calculator.png)
+## <a id="the-battle-calculator"/> ![battle-calculator](./rule-book/images/battle-calculator.png)
 
 What is the expected outcome of this battle? How likely is it? These are questions that TripleA players, and
 wargamers in general, ask a lot, or at least they should.
@@ -879,55 +877,3 @@ the lower left of the main map widow at all times.) This can be very useful, esp
 where it can otherwise be hard to determine exactly what is going on in a given map territory. The Battle
 Calculator can also be accessed through this tab, but a player will rapidly learn that it is better to know the
 keyboard shortcut.
-
-## <a id="credits"/> ![credits](./rule-book/images/credits.png)
-
-This manual and rulebook was created by:
-* Victor Finberg (VictorInThePacific)
-* Mark Christopher Duncan (Veqryn)
-The art in this document was created by:
-* Hepster
-
-TripleA the game engine was originally created by Sean G Bridges, and was maintained by him until 2009 (TripleA
-version 1.2.5.5).
-
-After 2009, the main developer has been Mark Christopher Duncan (Veqryn).
-
-While many different things have inspired the creation of TripleA, and indeed as an open-source project we have
-many different contributors, one of the main inspirations has been Larry Harris, the creator of “Axis & Allies” (fully
-owned by Hasbro ®).
-
-## Links
-
-TripleA Downloads:
-Place to Report Bugs:
-
-https://sourceforge.net/projects/triplea/files/
-http://sourceforge.net/tracker/?group_id=44492
-
-TripleA Development Site:
-TripleA Dev Forum:
-TripleA Guides, Installing help:
-TripleA Donation Page:
-
-http://triplea.sourceforge.net/mywiki
-http://triplea.sourceforge.net/mywiki/Forum
-http://triplea.sourceforge.net/mywiki/Guides
-http://triplea.sourceforge.net/mywiki/Sponsors
-
-TripleA War Club:
-War Club Forum:
-
-http://tripleawarclub.org/
-http://www.tripleawarclub.org/modules/newbb/
-
-Axis And Allies .org:
-AxisAndAllies.org Forum:
-
-http://www.axisandallies.org/
-http://www.axisandallies.org/forums/
-
-Official Map Repository:
-
-https://sourceforge.net/projects/tripleamaps/
-
