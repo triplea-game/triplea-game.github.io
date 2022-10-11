@@ -34,8 +34,6 @@ __The World’s Foremost Open-Source Grand Strategy Game__
 * [Low Luck vs. Dice](#low-luck-vs-dice)
 * [The Battle Calculator](#the-battle-calculator)
 * [Menus & Tabs](#menus-and-tabs)
-* [Credits](#credits)
-* [Links](#links)
 
 <br/><br/>
 
@@ -879,39 +877,3 @@ the lower left of the main map widow at all times.) This can be very useful, esp
 where it can otherwise be hard to determine exactly what is going on in a given map territory. The Battle
 Calculator can also be accessed through this tab, but a player will rapidly learn that it is better to know the
 keyboard shortcut.
-
-## <a id="credits"/> ![credits](./rule-book/images/credits.png)
-
-This manual and rulebook was created by:
-* Victor Finberg (VictorInThePacific)
-* Mark Christopher Duncan (Veqryn)
-The art in this document was created by:
-* Hepster
-
-TripleA the game engine was originally created by Sean G Bridges, and was maintained by him until 2009 (TripleA
-version 1.2.5.5).
-
-After 2009, the main developer has been Mark Christopher Duncan (Veqryn).
-
-While many different things have inspired the creation of TripleA, and indeed as an open-source project we have
-many different contributors, one of the main inspirations has been Larry Harris, the creator of “Axis & Allies” (fully
-owned by Hasbro ®).
-
-## Links
-
-[TripleA Downloads](https://sourceforge.net/projects/triplea/files/)
-[Place to Report Bugs](http://sourceforge.net/tracker/?group_id=44492)
-
-[TripleA Development Site](http://triplea.sourceforge.net/mywiki)
-[TripleA Dev Forum](http://triplea.sourceforge.net/mywiki/Forum)
-[TripleA Guides, Installing help](http://triplea.sourceforge.net/mywiki/Guides)
-[TripleA Donation Page](http://triplea.sourceforge.net/mywiki/Sponsors)
-
-[TripleA War Club](http://tripleawarclub.org/)
-[War Club Forum](http://www.tripleawarclub.org/modules/newbb/)
-
-[Axis And Allies.org](http://www.axisandallies.org/)
-[AxisAndAllies.org Forum](http://www.axisandallies.org/forums/)
-
-[Official Map Repository](https://sourceforge.net/projects/tripleamaps/)
-
