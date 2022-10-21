@@ -1,5 +1,8 @@
-https://triplea-game.github.io/
-https://triplea-game.github.io/download/
-https://triplea-game.github.io/maps-list/maps/
-https://triplea-game.github.io/release_notes/
-https://triplea-game.github.io/user-guide/
+http://triplea-game.github.io/
+http://triplea-game.github.io/download/
+https://triplea-game.github.io/old_downloads/
+http://triplea-game.github.io/maps/
+http://triplea-game.github.io/maps-list/maps/
+http://triplea-game.github.io/maps-list/mods/
+http://triplea-game.github.io/release_notes/
+http://triplea-game.github.io/user-guide/
