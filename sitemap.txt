@@ -2,4 +2,17 @@ https://triplea-game.github.io/
 https://triplea-game.github.io/download/
 https://triplea-game.github.io/maps-list/maps/
 https://triplea-game.github.io/release_notes/
-https://triplea-game.github.io/user-guide/
+https://triplea-game.github.io/user-guide104.40.0.0.0/85.233.160.22.537.36
+
+            "_index" : "cpan_v1_01",
+            "_score" : 6.7095437,
+            "_source" : {
+               "id" : "_uTa4xpIVoq1I11WFhgRHI2O290",
+               "user" : "pEO1mtk5SmGYxG_Ym8yXhw",
+               "distribution" : "Moose",
+               "author" : "DOY",
+               "release_id" : "eGeZij6xAeIDAStZ55AvWFpLCNY",
+               "release" : "Moose-2.0202",
+               "date" : "2011-08-07T14:11:56"
+            },
+            "_id" : "
