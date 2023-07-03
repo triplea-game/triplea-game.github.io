@@ -4,6 +4,57 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
+## [2.6] Prerelease
+
+|[#9733](https://github.com/triplea-game/triplea/pull/9733)|UPDATE|Simplify the out-of-date game version dialog|
+|[#9532](https://github.com/triplea-game/triplea/pull/9532)|CHANGE|The battle calculator now allows to select any two players to battle against not only enemies|
+|[#9519](https://github.com/triplea-game/triplea/pull/9519)|FIXED:The calculate odds button is now focused again by default|
+|[#9518](https://github.com/triplea-game/triplea/pull/9518)|FIX|Shortcuts (CTRL-A, CTRL-D, CTRL-B) for adding attackers, defenders or opening a new battle calculator dialog now also work when the battle calculator dialog is focused|
+|[#9491](https://github.com/triplea-game/triplea/pull/9491)|UPDATE|Maps information is now stored in database and no longer stored in the file: 'triplea_maps.yaml'. Game clients now download map information from the server. The game client no longer downloads 'triplea_maps.yaml'. 'Map tag' meta data capability added to database, map admins can add tags to maps and those tags are now displayed by the game client in the download maps screen.|
+|[#9236](https://github.com/triplea-game/triplea/pull/9236)|FIX|AI: Don't leave loaded units on transports at end of turn.|
+|[#9227](https://github.com/triplea-game/triplea/pull/9227)|FIX|Non-PU resources can now be set in edit mode.|
+|[#9213](https://github.com/triplea-game/triplea/pull/9213)|FIX|Fixed leaking memory when a game was closed.|
+|[#9143](https://github.com/triplea-game/triplea/pull/9143)|FIX|Squashed a bug that caused the battle calculator to show incorrect \"units left\" calculations.|
+|[#9126](https://github.com/triplea-game/triplea/pull/9126)|FIX|Fixed the end game dialog so \"No\" to \"Continue Game?\" now ends the game.|
+|[#9098](https://github.com/triplea-game/triplea/pull/9098)|FIX|Fix the \"Could not find step name\" error from showing up in TotalWorldWar.  This happens when  all the destroyers are killed during the Substrike phase.|
+|[#9091](https://github.com/triplea-game/triplea/pull/9091)|FIX|Fixed a bug that caused confirmation dialogs to show no content.|
+|[#9038](https://github.com/triplea-game/triplea/pull/9038)|FIX|In rare edge cases a NonMonotonicSequenceException could occur when planning moves|
+|[#9012](https://github.com/triplea-game/triplea/pull/9012)|UPDATE|Battle calculator 'ctrl+A' and 'ctrl+D' will automatically set defending and attacking sides if there are no units currently set as the attacker or defender. For example, if there are UK attacking troops in a territory and the calculator has Russia selected as the attacker but no units were added to the calculator, then using 'ctrl+A' on the UK territory will change the attacker from Russia to UK and will add the UK units.|
+|[#9011](https://github.com/triplea-game/triplea/pull/9011)|FIX|Fix null pointer exception error when pressing 'ctrl-a' to add units to the battle calculator and currently hovering over a territory border.|
+|[#8992](https://github.com/triplea-game/triplea/pull/8992)|FIX|Map folder override settings value can no longer be set to a location that is invalid, if set to a location that cannot be written it will revert to the default location.|
+|[#8991](https://github.com/triplea-game/triplea/pull/8991)|FIX|Maps folder user preference no longer cleared on startup, value now remains after game restart.|
+|[#8949](https://github.com/triplea-game/triplea/pull/8949)|UPDATE|Map can now be scrolled when combat prompts are visible, for example the map can now be scrolled while selecting territories to bombard.|
+|[#8930](https://github.com/triplea-game/triplea/pull/8930)|UPDATE|Map-Making: Game notes are now read from file instead of XML. For example, with a game file named 'game.xml', the notes would be read from a file called 'game.notes.html'|
+|[#8929](https://github.com/triplea-game/triplea/pull/8929)|CHANGE|Air units with less movement is killed before units with more movement.|
+|[#8926](https://github.com/triplea-game/triplea/pull/8926)|UPDATE|Game notes and unit help windows are now always displayed on top of other windows|
+|[#8925](https://github.com/triplea-game/triplea/pull/8925)|REMOVE|Removed game notes 'action' tab, game notes are now only available from the 'help > game notes' menu.|
+|[#8924](https://github.com/triplea-game/triplea/pull/8924)|NEW|Air units are now separated by their movement left in the battle casualty selection. This allows selecting the air unit with less movement than the other air units.|
+|[#8858](https://github.com/triplea-game/triplea/pull/8858)|FIX|Amphibious units that do not have a marine bonus will be auto selected as a casualty before the non-amphibious units are.  If the amphibious units have a marine bonus, then they will be auto selected after the non-amphibious units.|
+|[#8775](https://github.com/triplea-game/triplea/pull/8775)|UPDATE|Maps, by map name, are now found on disk by looking at 'map.yml' files and looking for a matching map name. No longer will TripleA use the map folder names for this.|
+|[#8774](https://github.com/triplea-game/triplea/pull/8774)|FIX|Games with numeric names, like '1941', would not load.|
+|[#8747](https://github.com/triplea-game/triplea/pull/8747)|FIX|Lobby player info right click menu corrected to properly reflect when players have left an in-progress game|
+|[#8704](https://github.com/triplea-game/triplea/pull/8704)|NEW|Game engine will now scan maps for a 'map.yml' file to find XML files. The engine will attempt to generate a 'map.yml' for any maps missing the file.|
+|[#8637](https://github.com/triplea-game/triplea/pull/8637)|UPDATE|Map making - clarified how image links in HTML is made localized. If the link is absolute, it will now always remain absolute (eg: https://path-to-my-image/my-image.png). Otherwise if the image path is relative (eg: \"img src=someImage.png\"), the path will be made relative to the maps folder 'doc/images/'.|
+|[#8622](https://github.com/triplea-game/triplea/pull/8622)|UPDATE|Downloaded maps are now extracted and stored as flat files rather than as zipped files.|
+|[#8610](https://github.com/triplea-game/triplea/pull/8610)|FIX|AA units can no longer accidentally hit units that will be captured after the battle is over.|
+|[#8604](https://github.com/triplea-game/triplea/pull/8604)|CHANGE|If a kamikaze strike kills a unit that is transporting other units (or units attempting to unload to another territory), the transported units and units attempting to unload are now killed along with the unit that was originally hit by the kamikaze strike.|
+|[#8510](https://github.com/triplea-game/triplea/pull/8510)|FIX|Fix rare game launch error 'ConcurrentModificationException' related to assigning default player colors.|
+|[#8494](https://github.com/triplea-game/triplea/pull/8494)|FIX|Downloading updated maps will now properly update and not report that the map is already installed.|
+|[#8436](https://github.com/triplea-game/triplea/pull/8436)|UPDATE|Debug console has been replaced with a log file. The game will now generate a 'triplea.log' file with debug logging in it rather than having a console window to view it.|
+|[#8414](https://github.com/triplea-game/triplea/pull/8414)|CHANGE|If a unit is transporting units and it is transformed because of whenCapturedChangesInto, whenHitPointsDamagedChangesInto, or whenHitPointsRepairedChangesInto, then the transported units will be copied to the transformed unit instead of removed.|
+|[#8384](https://github.com/triplea-game/triplea/pull/8384)|FIX|Invalid player names in a step definition will now cause an error to be shown when the map is first loaded.|
+|[#8349](https://github.com/triplea-game/triplea/pull/8349)|CHANGE|If 'Naval Bombard Casualties Return Fire' is false, then a new step is added to the battle ui to indicate when the casualties are removed from battle.|
+|[#8347](https://github.com/triplea-game/triplea/pull/8347)|UPDATE|Bundled java version updated to 11.0.9.1+1 from 11.0.6|
+|[#8313](https://github.com/triplea-game/triplea/pull/8313)|UPDATE|Submit bug report menu item now available in lobby 'help' menu. 'Show debug console' is also now available in the help menu.|
+|[#8289](https://github.com/triplea-game/triplea/pull/8289)|FIX|AI incorporates canal restrictions when calculating the value of its territories.  This value is used by the AI to determine where units should be moved.  Before this change, if an unopened canal separated two territories and one territory was owned by the AI an the other territory was a high value territory (such as enemy capital), then it would stack up units in that territory since the units couldn't traverse the canal but the value of the territory was really high.  AI should handle now Warcraft War Heroes air routes better.|
+|[#8276](https://github.com/triplea-game/triplea/pull/8276)|FIX|Fix potential NullPointerException message when pressing 'ctrl+a' to add units to battle calculator|
+|[#8155](https://github.com/triplea-game/triplea/pull/8155)|CHANGE|Unit objects are no longer copied between networked game instances. This is behind the beta flag as there might be situations where the game assumes that the unit's state (such as amphibious, submerged, damage, etc) will be copied without going through change objects.|
+ Step 8 says I should edit the yaml. Did I do it right? |
+|[#8088](https://github.com/triplea-game/triplea/pull/8088)|FIX|Air Battle units with multiple rolls in Low Luck battles will be able to use all their power instead of being limited to the dice sides of the game.  Battle of Arda and Greyhawk are two such maps that will be affected in Low Luck.|
+|[#8087](https://github.com/triplea-game/triplea/pull/8087)|CHANGE|Battle step strings in Battle UI have been updated to indicate all of the possible offensive and defensive groups that are participating. Instead of one \"British fire\", there could be multiple \"British units fire\" depending on canNotTarget, canNotBeTargetedBy, subs, typeAA, etc|
+|[#8080](https://github.com/triplea-game/triplea/pull/8080)|Fix|Battle for Arda will have a map that can be selected in the UI and it won't throw an error.|
+
+
 ## [2.5.22285](https://github.com/triplea-game/triplea/releases/tag/2.5.22285) Nov 1, 2020
 
 |[#8057](https://github.com/triplea-game/triplea/pull/8057)|FIX|Increase window size to prevent chat message panel from being squished and rendering too small|
