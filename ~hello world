@@ -1,0 +1,18 @@
+3f704500579                            Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 172.17.0.1                               0.0%     2    0.1   0.1   0.1   0.2   0.0
+  2.|-- 10.206.5.139                             0.0%     2    0.4   0.4   0.4   0.5   0.0
+  3.|-- 10.206.35.7                              0.0%     2    0.5   0.5   0.4   0.5   0.0
+  4.|-- 10.206.32.2                              0.0%     2    5.king fields required using required
+Constraining the length of data:
+minlength, maxlength: for text data
+min and max for max value of num type
+Restricting the type of data using type:
+<input type="email" name="multiple>
+Specifying data patterns using pattern:
+specifies a regex pattern that the entered form data needs to match   9.3   5.9  12.7   4.8
+  5.|-- lo0-0.gw1.cjj1.us.linode.com             0.0%     2    0.7   0.9   0.7   1.1   0.0
+  6.|-- ae0-100.gw2.cjj1.us.linode.com           0.0%     2    1.6   3.8   1.6   6.0   3.0
+  7.|-- ipv4.de-cix.nyc.us.as15169.google.com    0.0%     2    3.7   3.1   2.5   3.7   0.0
+  8.|-- 108.170.248.1                            0.0%     2    3.2   3.4   3.2   3.5   0.0
+  9.|-- 142.251.60.237                           0.0%     2    2.8   2.8   2.8   2.8   0.0
+ 10.|-- 180.136.102.34.bc.googleusercontent.com  0.0%     2    2.4   2.4   2.4   2.4   0.
