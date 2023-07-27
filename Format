@@ -1,0 +1,340 @@
+Applications and Real-Time Area (ART)
+ART Area Directors (ADs)
+Murray Kucherawy 
+Francesca Palombini 
+ART active WGs (37)
+
+Group	Responsible AD	Name	Chairs
+asap
+Murray Kucherawy	Automatic SIP trunking And Peering	Jean Mahoney, Gonzalo Salgueiro
+asdf
+Francesca Palombini 	A Semantic Definition Format for Data and Interactions of Things	Michael Richardson, Niklas Widell
+avtcore
+Murray Kucherawy	Audio/Video Transport Core Maintenance	Dr. Bernard D. Aboba, Jonathan Lennox
+calext
+Francesca Palombini 	Calendaring Extensions	Bron Gondwana, Daniel Migault
+cbor
+Francesca Palombini 	Concise Binary Object Representation Maintenance and Extensions	Christian Amsüss, Barry Leiba
+cdni
+Francesca Palombini 	Content Delivery Networks Interconnection	Kevin J. Ma, Sanjay Mishra
+cellar
+Murray Kucherawy	Codec Encoding for LossLess Archiving and Realtime transmission	Spencer Dawkins, Michael Richardson
+core
+Francesca Palombini 	Constrained RESTful Environments	Carsten Bormann, Jaime Jimenez, Marco Tiloca
+dispatch
+Francesca Palombini 	Dispatch	Jim Fenton, Shuping Peng
+dkim
+Murray Kucherawy	Domain Keys Identified Mail	Laura A, Tim Wicinski
+dmarc
+Murray Kucherawy	Domain-based Message Authentication, Reporting & Conformance	Seth Blank, Barry Leiba
+ecrit
+Murray Kucherawy	Emergency Context Resolution with Internet Technologies	Randall Gellens, Allison Mankin, Roger Marshall
+emailcore
+Murray Kucherawy	Revision of core Email specifications	Todd Herr, Alexey Melnikov
+extra
+Murray Kucherawy	Email mailstore and eXtensions To Revise or Amend	Bron Gondwana, Jiankang Yao
+httpapi
+Francesca Palombini 	Building Blocks for HTTP APIs	Darrel Miller, Rich Salz
+httpbis
+Francesca Palombini 	HTTP	Mark Nottingham, Tommy Pauly
+jmap
+Murray Kucherawy	JSON Mail Access Protocol	Jim Fenton, Bron Gondwana
+jsonpath
+Francesca Palombini 	JSON Path	Tim Bray, James Gruessing
+mediaman
+Murray Kucherawy	Media Type Maintenance	Harald T. Alvestrand
+mimi
+Murray Kucherawy	More Instant Messaging Interoperability	Alissa Cooper, Tim Geoghegan
+mlcodec
+Murray Kucherawy	Machine Learning for Audio Coding	Gregory Maxwell, Mo Zanaty
+mmusic
+Murray Kucherawy	Multiparty Multimedia Session Control	Flemming Andreasen, Bo Burman
+moq
+Murray Kucherawy	Media Over QUIC	Alan Frindell, Ted Hardie
+regext
+Murray Kucherawy	Registration Protocols Extensions	James Galvin, Antoin Verschuren
+rtcweb
+Murray Kucherawy	Real-Time Communication in WEB-browsers	Ted Hardie, Sean Turner
+rum
+Murray Kucherawy	Relay User Machine	Paul Kyzivat, Brian Rosen
+satp
+Paul Wouters 	Secure Asset Transfer Protocol	Claire, Wes Hardaker (Assigned AD: Paul Wouters)
+scim
+Roman Danyliw 	System for Cross-domain Identity Management	Nancy Cam-Winget, Aaron Parecki (Assigned AD: Roman Danyliw)
+sedate
+Francesca Palombini 	Serialising Extended Data About Times and Events	Bron Gondwana, Mark McFadden
+sframe
+Murray Kucherawy	Secure Media Frames	Bobo Bose-Kolanu, Martin Thomson
+sipcore
+Murray Kucherawy	Session Initiation Protocol Core	Jean Mahoney, Brian Rosen
+stir
+Murray Kucherawy	Secure Telephone Identity Revisited	Ben Campbell, Russ Housley, Robert Sparks
+tigress
+Roman Danyliw 	Transfer dIGital cREdentialS Securely	Prachi Jain, Leif Johansson (Assigned AD: Roman Danyliw)
+uta
+Francesca Palombini 	Using TLS in Applications	Valery Smyslov, Orie Steele
+uuidrev
+Murray Kucherawy	Revise Universally Unique Identifier Definitions	Jim Fenton, Michael Richardson
+webtrans
+Francesca Palombini 	WebTransport	Dr. Bernard D. Aboba, David Schinazi
+wish
+Murray Kucherawy	WebRTC Ingest Signaling over HTTPS	Nils Ohlmeier, Sean Turner
+General Area (GEN)
+GEN Area Director (AD)
+Lars Eggert 
+GEN active WGs (3)
+Group	Responsible AD	Name	Chairs
+elegy
+Lars Eggert	NomCom Eligibility Update	Barry Leiba, Michael Richardson
+gendispatch
+Lars Eggert	General Area Dispatch	Shuping Peng, Martin Vigoureux
+shmoo
+Lars Eggert	Stay Home Meet Occasionally Online	Mallory Knodel, Suresh Krishnan
+Internet Area (INT)
+INT Area Directors (ADs)
+Erik Kline 
+Éric Vyncke 
+INT active WGs (17)
+
+Group	Responsible AD	Name	Chairs
+6lo
+Erik Kline 	IPv6 over Networks of Resource-constrained Nodes	Shwetha Bhandari, Carles Gomez
+6man
+Erik Kline 	IPv6 Maintenance	Bob Hinden, Jen Linkova, Ole Trøan
+add
+Éric Vyncke	Adaptive DNS Discovery	Glenn Deen, David C Lawrence
+bpf
+Erik Kline 	BPF/eBPF	Suresh Krishnan, David Vernet
+dhc
+Éric Vyncke	Dynamic Host Configuration	Bernie Volz, Timothy Winters
+dmm
+Erik Kline 	Distributed Mobility Management	Sri Gundavelli, Satoru Matsushima
+dnssd
+Éric Vyncke	Extensions for Scalable DNS Service Discovery	Chris Box, David Schinazi
+dprive
+Éric Vyncke	DNS PRIVate Exchange	Brian Haberman, Tim Wicinski
+drip
+Éric Vyncke	Drone Remote ID Protocol	Mohamed Boucadair, Daniel Migault
+intarea
+Éric Vyncke	Internet Area Working Group	Wassim Haddad, Juan-Carlos Zúñiga
+lpwan
+Éric Vyncke	IPv6 over Low Power Wide-Area Networks	Alexander Pelov, Pascal Thubert
+lwig
+Erik Kline 	Light-Weight Implementation Guidance	Zhen Cao, Mohit Sethi
+madinas
+Éric Vyncke	MAC Address Device Identification for Network and Application Services	Carlos J. Bernardos, Juan-Carlos Zúñiga
+ntp
+Erik Kline 	Network Time Protocols	Karen O'Donoghue, Dieter Sibold
+schc
+Éric Vyncke	Static Context Header Compression	Alexander Pelov, Pascal Thubert
+snac
+Éric Vyncke	Stub Network Auto Configuration for IPv6	Marc Blanchet, Darren Dukes, Kiran Makhijani
+tictoc
+Erik Kline 	Timing over IP Connection and Transfer of Clock	Karen O'Donoghue, Yaakov (J) Stein
+Operations and Management Area (OPS)
+OPS Area Directors (ADs)
+Warren "Ace" Kumari 
+Robert Wilton 
+OPS active WGs (15)
+
+Group	Responsible AD	Name	Chairs
+anima
+Robert Wilton 	Autonomic Networking Integrated Model and Approach	Toerless Eckert, Sheng Jiang
+bmwg
+Warren "Ace" Kumari 	Benchmarking Methodology	Sarah Banks, Giuseppe Fioccola
+dime
+Robert Wilton 	Diameter Maintenance and Extensions	Jouni Korhonen, Lionel Morand
+dnsop
+Warren "Ace" Kumari 	Domain Name System Operations	Benno Overeinder, Tim Wicinski, Suzanne Woolf
+grow
+Warren "Ace" Kumari 	Global Routing Operations	Chris Morrow, Job Snijders
+iotops
+Warren "Ace" Kumari 	IOT Operations	Henk Birkholz, Alexey Melnikov
+ivy
+Robert Wilton 	Network Inventory YANG	Daniele Ceccarelli, Qiufang Ma
+mboned
+Warren "Ace" Kumari 	MBONE Deployment	Lenny Giuliano, Greg Shepherd
+mops
+Éric Vyncke	Media OPerationS	Leslie Daigle, Kyle Rose (Assigned AD: Éric Vyncke)
+netconf
+Robert Wilton 	Network Configuration	Mahesh Jethanandani, Kent Watsen
+netmod
+Robert Wilton 	Network Modeling	Lou Berger, Kent Watsen
+opsawg
+Robert Wilton 	Operations and Management Area Working Group	Henk Birkholz, Joe Clarke, Tianran Zhou
+opsec
+Warren "Ace" Kumari 	Operational Security Capabilities for IP Network Infrastructure	Ron Bonica, Jen Linkova
+sidrops
+Warren "Ace" Kumari 	SIDR Operations	Russ Housley, Chris Morrow, Keyur Patel
+v6ops
+Warren "Ace" Kumari 	IPv6 Operations	Ron Bonica, XiPeng Xiao
+Routing Area (RTG)
+RTG Area Directors (ADs)
+Andrew Alston 
+Jim Guichard 
+John Scudder 
+RTG active WGs (25)
+
+Group	Responsible AD	Name	Chairs
+babel
+Andrew Alston 	Babel routing protocol	Donald E. Eastlake 3rd, Russ White
+bess
+Andrew Alston 	BGP Enabled ServiceS	Matthew Bocci, Stephane Litkowski
+bfd
+John Scudder 	Bidirectional Forwarding Detection	Jeffrey Haas, Reshad Rahman
+bier
+Andrew Alston 	Bit Indexed Explicit Replication	Tony Przygienda, Greg Shepherd
+cats
+Jim Guichard 	Computing-Aware Traffic Steering	Adrian Farrel, Peng Liu
+ccamp
+John Scudder 	Common Control and Measurement Plane	Daniele Ceccarelli, Luis M. Contreras, Fatai Zhang
+detnet
+John Scudder 	Deterministic Networking	Lou Berger, János Farkas
+idr
+Andrew Alston 	Inter-Domain Routing	Jeffrey Haas, Susan Hares, Keyur Patel
+lisp
+Jim Guichard 	Locator/ID Separation Protocol	Luigi Iannone, Padma Pillay-Esnault
+lsr
+John Scudder 	Link State Routing	Christian Hopps, Acee Lindem
+lsvr
+Jim Guichard 	Link State Vector Routing	Ketan Talaulikar, Gunter Van de Velde
+manet
+Jim Guichard 	Mobile Ad-hoc Networks	Donald E. Eastlake 3rd, Don Fedyk, Ronald in 't Velt
+mpls
+Andrew Alston 	Multiprotocol Label Switching	Loa Andersson, Nicolai Leymann, Tarek Saad
+nvo3
+Andrew Alston 	Network Virtualization Overlays	Sam Aldrin, Matthew Bocci
+pals
+Andrew Alston 	Pseudowire And LDP-enabled Services	Stewart Bryant, Andrew G. Malis
+pce
+John Scudder 	Path Computation Element	Dhruv Dhody, Julien Meuric
+pim
+Jim Guichard 	Protocols for IP Multicast	Mike McBride, Stig Venaas
+raw
+John Scudder 	Reliable and Available Wireless	Eve Schooler, Rick Taylor
+rift
+Jim Guichard 	Routing In Fat Trees	Jeff Tantsura, Zhaohui (Jeffrey) Zhang
+roll
+John Scudder 	Routing Over Low power and Lossy networks	Dominique Barthel, Ines Robles
+rtgwg
+Jim Guichard 	Routing Area Working Group	Yingzhen Qu, Jeff Tantsura
+savnet
+Jim Guichard 	Source Address Validation in Intra-domain and Inter-domain Networks	Joel M. Halpern, Aijun Wang
+spring
+Jim Guichard 	Source Packet Routing in Networking	Bruno Decraene, Joel M. Halpern, Alvaro Retana
+teas
+John Scudder 	Traffic Engineering Architecture and Signaling	Vishnu Pavan Beeram, Lou Berger, Oscar Gonzalez de Dios
+tvr
+Andrew Alston 	Time-Variant Routing	Edward J. Birrane, Tony Li
+Security Area (SEC)
+SEC Area Directors (ADs)
+Roman Danyliw 
+Paul Wouters 
+SEC active WGs (25)
+
+Group	Responsible AD	Name	Chairs
+ace
+Paul Wouters 	Authentication and Authorization for Constrained Environments	Daniel Migault, Loganaden Velvindron
+acme
+Roman Danyliw 	Automated Certificate Management Environment	Deb Cooley, Deb Cooley, Yoav Nir
+cose
+Paul Wouters 	CBOR Object Signing and Encryption	Michael B. Jones, Matthew A. Miller, Ivaylo Petrov
+dance
+Paul Wouters 	DANE Authentication for Network Clients Everywhere	Wes Hardaker, Joey Salazar
+emu
+Paul Wouters 	EAP Method Update	Joseph A. Salowey, Peter E. Yee
+gnap
+Roman Danyliw 	Grant Negotiation and Authorization Protocol	Leif Johansson, Yaron Sheffer
+ipsecme
+Roman Danyliw 	IP Security Maintenance and Extensions	Tero Kivinen, Yoav Nir
+jose
+Roman Danyliw 	Javascript Object Signing and Encryption	John Bradley, John Preuß Mattsson, Karen O'Donoghue
+kitten
+Paul Wouters 	Common Authentication Technology Next Generation	Benjamin Kaduk, Alexey Melnikov
+lake
+Paul Wouters 	Lightweight Authenticated Key Exchange	Stephen Farrell, Mališa Vučinić
+lamps
+Roman Danyliw 	Limited Additional Mechanisms for PKIX and SMIME	Tim Hollebeek, Russ Housley
+mls
+Paul Wouters 	Messaging Layer Security	Nick Sullivan, Sean Turner
+oauth
+Roman Danyliw 	Web Authorization Protocol	Rifaat Shekh-Yusef, Hannes Tschofenig
+ohai
+Francesca Palombini 	Oblivious HTTP Application Intermediation	Richard Barnes, Shivan Kaul Sahib (Assigned AD: Francesca Palombini)
+openpgp
+Roman Danyliw 	Open Specification for Pretty Good Privacy	Stephen Farrell, Daniel Kahn Gillmor
+ppm
+Roman Danyliw 	Privacy Preserving Measurement	Benjamin M. Schwartz, Samuel Weiler
+pquip
+Roman Danyliw 	Post-Quantum Use In Protocols	Sofia Celi, Paul E. Hoffman
+privacypass
+Paul Wouters 	Privacy Pass	Joseph A. Salowey, Benjamin M. Schwartz
+radext
+Paul Wouters 	RADIUS EXTensions	Margaret Cullen, Valery Smyslov
+rats
+Roman Danyliw 	Remote ATtestation ProcedureS	Nancy Cam-Winget, Kathleen Moriarty, Ned Smith
+scitt
+Roman Danyliw 	Supply Chain Integrity, Transparency, and Trust	Jon Geater, Hannes Tschofenig
+secdispatch
+Roman Danyliw 	Security Dispatch	Kathleen Moriarty, Rifaat Shekh-Yusef
+suit
+Roman Danyliw 	Software Updates for Internet of Things	Russ Housley, Dave Thaler, David Waltermire
+teep
+Paul Wouters 	Trusted Execution Environment Provisioning	Nancy Cam-Winget, Tirumaleswar Reddy.K
+tls
+Paul Wouters 	Transport Layer Security	Joseph A. Salowey, Sean Turner, Christopher A. Wood
+Transport Area (TSV)
+TSV Area Directors (ADs)
+Martin Duke 
+Zaheduzzaman Sarker 
+TSV active WGs (10)
+
+Group	Responsible AD	Name	Chairs
+alto
+Martin Duke 	Application-Layer Traffic Optimization	Mohamed Boucadair, Qin Wu
+ccwg
+Zaheduzzaman Sarker 	Congestion Control Working Group	Reese Enghardt, Eric Kinnear
+<h1>Looking at lists</h1>
+
+<p>Turn the following list of my favorite vegetables into an unordered list.</p>
+
+  Cucumber
+  Broccoli
+  Asparagus
+  Pepper
+
+<p>Turn the following directions into an ordered list.</p>
+
+  First knock on the door
+  When prompted, say the magic word
+  Wait for at least 5 seconds
+  Turn the handle and push
+Zaheduzzaman Sarker 	Delay/Disruption Tolerant Networking	Edward J. Birrane, Rick Taylor
+h2 {
+  color: purple;
+}
+
+p {
+  color: gray;
+}
+Martin Duke 	IP Performance Measurement	Marcus Ihlar, Tommy Pauly
+masque
+Martin Duke 	Multiplexed Application Substrate over QUIC Encryption	Eric Kinnear, Christopher A. Basic HTML Animals This is the first paragraph in our page. It introduces our animals. The Llama Our Llama is a big fan of list items. When she spies a patch of them on a web page, she will eat them like sweets, licking her lips as she goes. The Anaconda The crafty anaconda likes to slither around the page, travelling rapidly by way of anchors to sneak up on his prey.
+nfsv4
+Zaheduzzaman Sarker 	Network File System Version 4	Christopher Inacio, David Noveck, Brian Pawlowski
+quic
+Zaheduzzaman Sarker 	QUIC	Matt Joras, Lucas Pardue
+taps
+Zaheduzzaman Sarker 	Transport Services	Reese Enghardt, Aaron Falk
+tcpm
+Martin Duke 	TCP Maintenance and Minor Extensions	Yoshifumi Nishida, Ian Swett, Michael Tüxen
+tsvwg
+Martin Duke 	Transport Area Working Group	Gorry Fairhurst, Marten Seemann
+Applications and Real-Time Area (ART)
+General Area (GEN)
+Internet Area (INT)
+Operations and Management Area (OPS)
+Routing Area (RTG)
+Security Area (SEC)
+Transport Area (TSV)
+IETF IESG IAB IRTF IETF LLC IETF Trust RFC Editor IANA Privacy Statement
