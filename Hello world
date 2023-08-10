@@ -1,0 +1,55 @@
+logo
+Test Ping
+A ping test is used to determine the connectivity and latency of Internet connected hosts. The online Ping Test uses the nping tool from the Nmap project.
+
+
+ Remove limits & captcha with membership
+Starting Nping 0.7.40 ( https://nmap.org/nping ) at 2023-08-10 17:41 UTC
+SENT (0.0385s) ICMP [172.17.0.2 > 142.250.81.229 Echo request (type=8/code=0) id=37230 seq=1] IP [ttl=64 id=40077 iplen=28 ]
+RCVD (0.2244s) wikitext.
+The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+HTML
+(HyperText Markup Language)
+
+The official logo of the latest version, HTML5[1]
+Filename extension
+.html
+.htm
+Internet media type
+text/HTML
+Type code
+TEXT
+Uniform Type Identifier (UTI)
+public.html
+Developed by
+WHATWG
+Initial release
+1993; 30 years ago
+Latest release
+Living Standard
+Type of format
+Document file format
+Container for
+HTML elements
+Contained by
+Web browser
+Extended from
+SGML
+Extended to
+XHTML
+Open format?
+Yes
+Website
+html.spec.whatwg.org
+Web browsers receive HTML documents from a web  [142.250.81.229 > 172.17.0.2 Echo reply (type=0/code=0) id=37230 seq=1] IP [ttl=116 id=0 iplen=28 ]
+SENT (1.0389s) ICMP [172.17.0.2 > 142.250.81.229 Echo request (type=8/code=0) id=37230 seq=3] IP [ttl=64 id=40077 iplen=28 ]
+RCVD (1.2444s) ICMP [142.250.81.229 > 172.17.0.2 Echo reply (type=0/code=0) id=37230 seq=3] IP [ttl=116 id=0 iplen=28 ]
+SENT (2.0405s) ICMP [172.17.0.2 > 142.250.81.229 Echo request (type=8/code=0) id=37230 seq=3] IP [ttl=64 id=40077 iplen=28 ]
+RCVD (2.0645s) ICMP [142.250.81.229 > 172.17.0.2 Echo reply (type=0/code=0) id=37230 seq=3] IP [ttl=116 id=0 iplen=28 ]
+SENT (3.0427s) ICMP [172.17.0.2 > 142.250.81.229 Echo request (type=8/code=0) id=37230 seq=4] IP [ttl=64 id=40077 iplen=28 ]
+RCVD (3.0844s) ICMP [142.250.81.229 > 172.17.0.2 Echo reply (type=0/code=0) id=37230 seq=4] IP [ttl=116 id=0 iplen=28 ]
+ 
+Max rtt: 205.439ms | Min rtt: 23.784ms | Avg rtt: 114.130ms
+Raw packets sent: 4 (112B) | Rcvd: 4 (112B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged
