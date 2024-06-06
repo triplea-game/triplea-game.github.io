@@ -11,7 +11,6 @@ permalink: /release_notes/
 - lot faster than 2.5 - improved Computer player speed & AI turn processing
 - Status bar has a Territories units listed
 - map zoom to 200%
-- unit cycling
 - Improved purchase panel, keeps your old purchases when you over buy.
 - xml has a new function isAI - great for making the AI appear better
 - Battle panel has a no retreat symbol for units that cannot retreat from battle
