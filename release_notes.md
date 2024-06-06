@@ -6,6 +6,30 @@ permalink: /release_notes/
 
 ## [2.6] Prerelease
 
+
+2.6 has hundreds of minor improvements, some are:
+- lot faster than 2.5 - improved Computer player speed & AI turn processing
+- Status bar has a Territories units listed
+- map zoom to 200%
+- unit cycling
+- Improved purchase panel, keeps your old purchases when you over buy.
+- xml has a new function isAI - great for making the AI appear better
+- Battle panel has a no retreat symbol for units that cannot retreat from battle
+- Notes tab - removed from the right hand pane - only use Menu Help> Game Notes
+- Players tab has alliances are in bold
+
+Bid system updates
+
+- buy units upto the maxBuiltPerPlayer limit
+- place infinite or stacking/placementLimit units per territory or sea zone
+- place land units in any territory you own (no 'factory' required)
+- place ship units in any friendly sea zone with ship(s) of the same owner already in it
+- Construction/immobile units placed obeys upgrade rules and canOnlyBePlacedInTerritoryValuedAtX
+- Units can only be placed if territoryEffect unitsNotAllowed allows them
+
+
+A more detailed (partial) change list:
+
 |[#9733](https://github.com/triplea-game/triplea/pull/9733)|UPDATE|Simplify the out-of-date game version dialog|
 |[#9532](https://github.com/triplea-game/triplea/pull/9532)|CHANGE|The battle calculator now allows to select any two players to battle against not only enemies|
 |[#9519](https://github.com/triplea-game/triplea/pull/9519)|FIXED:The calculate odds button is now focused again by default|
