@@ -13,14 +13,18 @@ Pages are written in [markdown](https://github.com/adam-p/markdown-here/wiki/Mar
 
 ## How-To-Contribute 
 
-
 We may hesitate to accept pull requests without prior discussion, but it is very easy
 to start a [discussion thread](https://github.com/triplea-game/triplea-game.github.io/discussions)
 first so that we can help you fit your idea into the project.
 
 If there is no response from the discussion thread, try posting in the [forums](https://forums.triplea-game.org/)
 
+Write permissions are granted to those who have a small track record of solid updates and who would like
+to do more than just a few changes here and there.
 
+## Merge Policy
+
+For those with write privileges, merge policy is - "Ship, show, ask": <https://martinfowler.com/articles/ship-show-ask.html>
 
 ## Making Website Change
 
