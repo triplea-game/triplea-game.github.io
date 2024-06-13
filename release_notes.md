@@ -10,7 +10,9 @@ permalink: /release_notes/
 2.6 has hundreds of minor improvements, some are:
 - lot faster than 2.5 - improved Computer player speed & AI turn processing
 - Status bar has a Territories units listed
+- Show map Zoom on status bar View> Show Zoom Percentage (appears bottom right)
 - map zoom to 200%
+- Potential enemy scramble warning
 - Improved purchase panel, keeps your old purchases when you over buy.
 - xml has a new function isAI - great for making the AI appear better
 - Battle panel has a no retreat symbol for units that cannot retreat from battle
@@ -31,7 +33,7 @@ A more detailed (partial) change list:
 
 |[#9733](https://github.com/triplea-game/triplea/pull/9733)|UPDATE|Simplify the out-of-date game version dialog|
 |[#9532](https://github.com/triplea-game/triplea/pull/9532)|CHANGE|The battle calculator now allows to select any two players to battle against not only enemies|
-|[#9519](https://github.com/triplea-game/triplea/pull/9519)|FIXED:The calculate odds button is now focused again by default|
+|[#9519](https://github.com/triplea-game/triplea/pull/9519)|FIXED|The calculate odds button is now focused again by default|
 |[#9518](https://github.com/triplea-game/triplea/pull/9518)|FIX|Shortcuts (CTRL-A, CTRL-D, CTRL-B) for adding attackers, defenders or opening a new battle calculator dialog now also work when the battle calculator dialog is focused|
 |[#9491](https://github.com/triplea-game/triplea/pull/9491)|UPDATE|Maps information is now stored in database and no longer stored in the file: 'triplea_maps.yaml'. Game clients now download map information from the server. The game client no longer downloads 'triplea_maps.yaml'. 'Map tag' meta data capability added to database, map admins can add tags to maps and those tags are now displayed by the game client in the download maps screen.|
 |[#9236](https://github.com/triplea-game/triplea/pull/9236)|FIX|AI: Don't leave loaded units on transports at end of turn.|
