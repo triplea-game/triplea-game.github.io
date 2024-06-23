@@ -217,6 +217,9 @@ html, body {
     color: $brand-color;
     text-decoration: none;
   }
+  li {
+    line-height: 1.5;
+  }
   .footer-col {
     float: left;
     width: 25%;
