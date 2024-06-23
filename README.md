@@ -61,6 +61,7 @@ On Ubuntu, run:
 ```bash
 sudo apt install ruby ruby-dev make gcc
 sudo gem install jekyll bundler
+sudo gem install jekyll-seo-tag
 ```
 
 **2. Run a local version of the website.** Using Git, clone the latest version of this repository

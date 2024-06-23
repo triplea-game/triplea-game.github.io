@@ -20,3 +20,7 @@ defaults:
 exclude:
   - README.md
   - CNAME
+
+plugins:
+  - jekyll-seo-tag
+
