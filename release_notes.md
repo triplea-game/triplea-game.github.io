@@ -4,8 +4,24 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## [2.6] Prerelease
+## [2.7]
 
+Bot updates:
+- Bot autosave files are now available from "Select Game" button, at the bottom
+  of the game list.
+- Bots no longer overwrite autosaves of other instances
+- Bots will now shut down more cleanly when they fail to connect to lobby
+- Bots will now restart between games
+- Installed Maps are now refreshed daily
+- Bots can now be run with docker
+
+Simplified Map Extraction:
+- When zip files are found in the 'downloadedMaps' folder, their processing is simpler.
+  The target map folder is now first deleted, then the zip file is simply extracted
+  into that folder.
+
+
+## [2.6] 
 
 2.6 has hundreds of minor improvements, some are:
 - lot faster than 2.5 - improved Computer player speed & AI turn processing
