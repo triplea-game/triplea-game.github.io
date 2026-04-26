@@ -3,8 +3,10 @@ layout: page
 title: Download
 permalink: /download/
 ---
-<p class="dl-install4j-credit"><small>Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j Icon"></a></small></p>
-<p class="mobile-smaller-text">Download the TripleA installer<span id="dl-size-container" style="display:none"> (<span id="dl-size-mb"></span>&nbsp;MB)</span>:</p>
+<p>TripleA is a free, open-source strategy game engine. Select your platform to download.</p>
+
+<h2>Choose your platform:</h2>
+<p id="dl-size-container" style="display:none"><small>Installer size: <span id="dl-size-mb"></span>&nbsp;MB</small></p>
 
 <div id="button-container">
   <a id="win64" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
@@ -21,9 +23,10 @@ permalink: /download/
   </a>
 </div>
 
-<p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a><br><br></p>
+<p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a></p>
 
 <div id="windows-install" class="installation-instructions">
+  <button onclick="hideShowInstallationText()" style="float:right;cursor:pointer">&#x2715; Close</button>
   <h2>Windows Installation</h2>
   <p>Run the installer once the download completes.</p>
   <p><strong>Important:</strong> If Windows Defender blocks installation, you will need to
@@ -33,6 +36,7 @@ permalink: /download/
 </div>
 
 <div id="mac-install" class="installation-instructions">
+  <button onclick="hideShowInstallationText()" style="float:right;cursor:pointer">&#x2715; Close</button>
   <h2>macOS Installation</h2>
   <p>The installer is a standard Mac DMG installation file.</p>
   <p>Once the DMG installer has finished downloading, double click it to start the installation.</p>
@@ -46,6 +50,7 @@ permalink: /download/
 </div>
 
 <div id="linux-install" class="installation-instructions">
+  <button onclick="hideShowInstallationText()" style="float:right;cursor:pointer">&#x2715; Close</button>
   <h2>Linux Installation</h2>
   <p>Once the installer finishes downloading, make it executable (chmod +x ./TripleA_*unix.sh)</p>
   <p>Now run the installer: <code>./TripleA_*unix.sh</code></p>
@@ -55,13 +60,12 @@ permalink: /download/
   <p><a href="https://openjdk.org/install/">OpenJDK</a> is recommended.</p>
 </div>
 
-<p><a class="show-on-install" onclick="hideShowInstallationText()">Hide<br><br></a></p>
-
 <div>
-  <h2>Additional Links</h2>
+  <h2>Other Downloads</h2>
   <p><a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes and Older Downloads</a></p>
-  <p><a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Download Latest Source Code</a></p>
   <p><a href="https://github.com/triplea-game/triplea/releases/">Download Pre-Release</a></p>
+  <p><a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Download Latest Source Code</a></p>
+  <p class="dl-install4j-credit"><small>Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j Icon"></a></small></p>
 </div>
 
 <script>
@@ -96,20 +100,13 @@ if (platform) {
 }
 </script>
 <script>
-const additionalElements = document.getElementsByClassName('show-on-install');
 function hideShowInstallationText(which) {
   Array.from(document.getElementsByClassName('installation-instructions')).forEach(current => {
-    if (current !== which) {
-      current.style.display = 'none';
-    }
+    current.style.display = current === which ? 'block' : 'none';
   });
 
   if (which) {
-    which.style.display = 'block';
     which.scrollIntoView({ behavior: 'smooth' });
-    Array.from(additionalElements).forEach(current => current.style.display = 'block');
-  } else {
-    Array.from(additionalElements).forEach(current => current.style.display = 'none');
   }
 }
 function setLink(url, size) {
@@ -131,7 +128,7 @@ function setLink(url, size) {
     );
     if (element.style.display !== 'none') {
       document.getElementById('dl-size-mb').innerHTML = readableSize;
-      document.getElementById('dl-size-container').style.display = 'inline';
+      document.getElementById('dl-size-container').style.display = 'block';
     }
     return readableSize;
   }
@@ -146,7 +143,7 @@ xhttp.onreadystatechange = () => {
       .reduce((a, b) => a + b, 0) / 3;
     if (!document.querySelector('.scale-dl-container')) {
       document.getElementById('dl-size-mb').innerHTML = '~' + Math.round(average * 10) / 10;
-      document.getElementById('dl-size-container').style.display = 'inline';
+      document.getElementById('dl-size-container').style.display = 'block';
     }
     document.getElementById('sourceLink').href = release['zipball_url'];
   }
