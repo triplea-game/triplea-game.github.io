@@ -1,0 +1,30 @@
+# --- Inherited from .gitignore ---
+_site/
+vendor/
+.bundle/
+.jekyll-cache/
+.venv/
+
+# --- IDE / tooling metadata ---
+.idea/
+.pytest_cache/
+
+# --- Legacy CI (superseded by .github/workflows/) ---
+.travis/
+
+# --- Copilot-only: binary/asset files tracked by git but useless for code context ---
+images/
+maps/
+css/fonts/
+
+# Image-heavy subdirs of user-guide (63 PNGs); top-level .md files are kept
+user-guide/rule-book/
+user-guide/tactical-handbook/
+
+# --- Repetitive data files with no coding utility ---
+# 64 structurally identical Jekyll map stubs (frontmatter + blurb); not template code
+_maps/
+# Historical changelog; no coding context value
+release_notes.md
+# Dependency lock file; not useful for coding assistance
+Gemfile.lock
