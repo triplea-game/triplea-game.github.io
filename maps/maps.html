@@ -3,19 +3,24 @@ layout: maplist
 title: All Maps
 permalink: /maps-list/maps/
 ---
-{% assign testvar = "test" %}
-<div class="maps-col-wrapper">
-  {% for map in site.maps %}
-  <div class="maps-col" data-map-name="{{ map.mapName | escape }}" data-map-name-slug="{{ map.slug }}">
-    <div class="maps-col-content-wrapper">
-      <div>
-        <h3 class="maps-col-item">{{ map.mapName | escape }}</h3>
-        <p class="maps-col-item"><a class="maps-col-button button" href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/">View</a></p>
-      </div>
-      <div>
-        <img src="{{ map.img }}"/>
-      </div>
+<div class="maps-atmosphere">
+  <div class="maps-col-wrapper">
+    {% for map in site.maps %}
+    <div class="maps-col" data-map-name="{{ map.mapName | escape }}" data-map-name-slug="{{ map.slug }}">
+      <a href="{{ '/map/' | prepend: site.baseurl | append: map.slug }}/" class="map-card-link">
+        <div class="map-card-image">
+          <img
+            src="{{ map.img }}"
+            alt="{{ map.mapName | escape }}"
+            onerror="this.onerror=null;this.src='{{ '/images/missing_map.png' | prepend: site.baseurl }}';"
+          />
+        </div>
+        <div class="map-card-footer">
+          <h3 class="map-card-name">{{ map.mapName | escape }}</h3>
+          <span class="map-card-cta">View Map &rarr;</span>
+        </div>
+      </a>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
