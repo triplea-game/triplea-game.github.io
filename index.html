@@ -38,21 +38,24 @@ layout: default
     border-radius: 4px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.18);
   }
-  .os-download {
-    display: flex;
+  .button-download {
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.5em;
-    flex-wrap: wrap;
+    gap: 0.4em;
+    padding: 0.65em 1.6em 0.55em;
+    line-height: 1.3;
   }
-  .os-icons {
+  .button-download .os-icons {
     display: flex;
     gap: 0.5em;
     align-items: center;
   }
-  .os-icons img {
-    width: 32px;
-    height: 32px;
-    opacity: 0.6;
+  .button-download .os-icons img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.85;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.3));
   }
   .os-note {
     font-size: 0.85em;
@@ -62,18 +65,8 @@ layout: default
   @media (max-width: 768px) {
     .hero { flex-direction: column; gap: 2em; padding: 3em 6%; }
     .hero-text { text-align: center; }
-    .os-download { justify-content: center; }
   }
 </style>
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "url": "http://triplea-game.github.io",
-    "logo": "http://triplea-game.github.io/images/icon_menu.png"
-  }
-</script>
 
 <div class="hero">
   <div class="hero-text">
@@ -82,19 +75,21 @@ layout: default
       Free to play, community-run. Based on Axis &amp; Allies with 100+ maps,
       a live multiplayer lobby, AI opponents, and play-by-email support.
     </p>
-    <div class="os-download">
-      <a href="{{ '/download/' | prepend: site.baseurl }}" class="button">Download TripleA</a>
-      <div class="os-icons">
-        <img src="{{ '/images/operating-systems/windows100.png' | prepend: site.baseurl }}" alt="Windows">
-        <img src="{{ '/images/operating-systems/mac100.png' | prepend: site.baseurl }}" alt="macOS">
-        <img src="{{ '/images/operating-systems/linux100.png' | prepend: site.baseurl }}" alt="Linux">
-      </div>
+    <div>
+      <a href="{{ '/download/' | prepend: site.baseurl }}" class="button button-download">
+        <span>Download TripleA</span>
+        <span class="os-icons">
+          <img src="{{ '/images/operating-systems/windows100.png' | prepend: site.baseurl }}" alt="Windows">
+          <img src="{{ '/images/operating-systems/mac100.png' | prepend: site.baseurl }}" alt="macOS">
+          <img src="{{ '/images/operating-systems/linux100.png' | prepend: site.baseurl }}" alt="Linux">
+        </span>
+      </a>
     </div>
     <p class="os-note">
       Free forever &nbsp;·&nbsp; <a href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Browse maps</a>
     </p>
   </div>
   <div class="hero-image">
-    <img src="./images/triplea_promo.png" alt="Screenshot of a TripleA match in progress">
+    <img src="{{ '/images/triplea_promo.png' | prepend: site.baseurl }}" alt="Screenshot of a TripleA match in progress">
   </div>
 </div>
