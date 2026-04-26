@@ -28,3 +28,4 @@ _maps/
 release_notes.md
 # Dependency lock file; not useful for coding assistance
 Gemfile.lock
+.docs/
