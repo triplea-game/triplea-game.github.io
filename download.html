@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: default
 title: Download
 permalink: /download/
 ---
 <style>
   .hero-wrap { text-align: center; padding: 2.5rem 1rem 3rem; }
+  .hero-product-name { font-size: 2rem; font-weight: 700; letter-spacing: 0.04em; color: #333; margin-bottom: 0.4rem; }
   .hero-tagline { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 2.5rem; }
   .hero-btn {
     display: inline-flex; flex-direction: column; align-items: center;
@@ -28,14 +29,16 @@ permalink: /download/
   .install-panel .close-x { position: absolute; top: 0.7rem; right: 0.8rem; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: #bbb; line-height: 1; }
   .install-panel .close-x:hover { color: #555; }
   .install-panel code { display: block; background: #eee; padding: 0.5rem 0.75rem; border-radius: 3px; font-size: 0.88rem; margin: 0.5rem 0; }
-  .footer-links {
+  .footer-note {
     max-width: 560px; margin: 0 auto;
-    border-top: 1px solid #e8e8e8; padding-top: 1.5rem; margin-top: 1rem; font-size: 0.9rem;
+    border-top: 1px solid #e8e8e8; padding-top: 1.2rem; margin-top: 1rem;
+    font-size: 0.85rem; color: #999; text-align: center;
   }
-  .footer-links h3 { font-size: 1rem; margin-bottom: 0.6rem; color: #555; }
-  .footer-links a { display: block; margin-bottom: 0.3rem; }
+  .footer-note a { color: #888; text-decoration: none; border-bottom: 1px dotted #bbb; transition: color 0.15s; }
+  .footer-note a:hover { color: #c0392b; }
 </style>
 <div class="hero-wrap">
+  <p class="hero-product-name">TripleA</p>
   <p class="hero-tagline">Free &bull; Open Source &bull; Strategy Game Engine</p>
   <a id="primary-btn" class="hero-btn" href="https://github.com/triplea-game/triplea/releases/latest">
     <img id="primary-icon" src="../images/operating-systems/linux100.png" alt="Platform icon">
@@ -64,10 +67,9 @@ permalink: /download/
   <code>chmod +x ./TripleA_*unix.sh &amp;&amp; ./TripleA_*unix.sh</code>
   <p>Requires Java 8+. <a href="https://openjdk.org/install/">OpenJDK</a> recommended.</p>
 </div>
-<div class="footer-links">
-  <h3>Other Downloads</h3>
-  <a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes &amp; Older Downloads</a>
-  <p style="margin-top:1rem"><small>Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j"></a></small></p>
+<div class="footer-note">
+  Looking for an older version? <a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes &amp; Older Downloads</a>
+  &nbsp;&bull;&nbsp; Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j" style="vertical-align:middle"></a>
 </div>
 <script>
 const platforms = {
