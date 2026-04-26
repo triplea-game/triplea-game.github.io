@@ -4,16 +4,12 @@ title: Download
 permalink: /download/
 ---
 <p class="dl-install4j-credit"><small>Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j Icon"></a></small></p>
-<p class="mobile-smaller-text">Download the TripleA installer (<span id="dl-size-mb">N/A</span>&nbsp;MB):</p>
+<p class="mobile-smaller-text">Download the TripleA installer<span id="dl-size-container" style="display:none"> (<span id="dl-size-mb"></span>&nbsp;MB)</span>:</p>
 
 <div id="button-container">
   <a id="win64" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
     <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
     <p>TripleA&nbsp;for Windows <strong>(64&nbsp;bit)</strong></p>
-  </a>
-  <a id="win32" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
-    <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
-    <p>TripleA&nbsp;for Windows <strong>(32&nbsp;bit)</strong></p>
   </a>
   <a id="macos" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
     <img src="../images/operating-systems/mac100.png" alt="Mac Icon">
@@ -25,30 +21,28 @@ permalink: /download/
   </a>
 </div>
 
-<p class="show-on-install">New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a><br><br></p>
+<p>New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a><br><br></p>
 
 <div id="windows-install" class="installation-instructions">
   <h2>Windows Installation</h2>
   <p>Run the installer once the download completes.</p>
-  <p>**Important** If windows defender blocks installation, you will need to
-          <strong><a href="https://support.ikeymonitor.com/hc/en-us/articles/360028489651-Bypass-Windows-Defender-on-Windows-10">bypass windows defender.</a></p>
+  <p><strong>Important:</strong> If Windows Defender blocks installation, you will need to
+          <a href="https://support.ikeymonitor.com/hc/en-us/articles/360028489651-Bypass-Windows-Defender-on-Windows-10">bypass Windows Defender.</a></p>
   <p>Follow the on-screen prompts to finish the installation.</p>
   <p>When the installation is complete, you will be able to launch TripleA from the start menu.</p>
 </div>
 
 <div id="mac-install" class="installation-instructions">
-  <h2>Mac OS X Installation</h2>
-  <p> The installer is a standard Mac DMG installation file.</p>
+  <h2>macOS Installation</h2>
+  <p>The installer is a standard Mac DMG installation file.</p>
   <p>Once the DMG installer has finished downloading, double click it to start the installation.</p>
   <p>Within the installation window, simply drag the TripleA.app icon to the Applications folder.</p>
   <p>Double click TripleA.app to run the game.</p>
-  <p>If you do not have Java already installed, Mac OS X will prompt you to download it.</p>
+  <p>If you do not have Java already installed, macOS will prompt you to download it.</p>
   <p>For detailed help of how to install from a DMG, please see this <a href="https://www.howtogeek.com/177619/how-to-install-applications-on-a-mac-everything-you-need-to-know/">how-to article</a>.</p>
   <br>
   <p>If you get a "TripleA is damaged and cannot be opened" warning, follow these steps:</p>
-  <p>Apple menu > System Preferences > Security &amp; Privacy > General tab under the header "Allow applications downloaded from:"</p>
-  <p>Change "Allow Applications Downloaded From:" to "Anywhere"</p>
-  <p>This setting will reset to "Mac App Store and identified developers" every 30 days, you may need to repeat this step.</p>
+  <p>Apple menu &gt; System Settings &gt; Privacy &amp; Security, then scroll down to the security section and allow TripleA to run.</p>
 </div>
 
 <div id="linux-install" class="installation-instructions">
@@ -57,8 +51,8 @@ permalink: /download/
   <p>Now run the installer: <code>./TripleA_*unix.sh</code></p>
   <p>Follow the installation prompts to complete the installation</p>
   <br>
-  <p>TripleA requires Java 8 or later to be installed</p>
-  <p><a href="https://java.com/en/download/help/linux_install.xml">Oracle JREs</a> are recommended, sounds may not work with OpenJRE.</p>
+  <p>TripleA requires Java 8 or later to be installed.</p>
+  <p><a href="https://openjdk.org/install/">OpenJDK</a> is recommended.</p>
 </div>
 
 <p><a class="show-on-install" onclick="hideShowInstallationText()">Hide<br><br></a></p>
@@ -71,11 +65,11 @@ permalink: /download/
 </div>
 
 <script>
-const list = ['win32', 'win64', 'macos', 'linux'];
+const list = ['win64', 'macos', 'linux'];
 
 const getPlatform = () => {
   if (window.navigator.platform.match(/Win(?:32|64)|Windows/i)) {
-    return navigator.userAgent.match(/WOW64|Win64/) ? 'win64' : 'win32';
+    return 'win64';
   } else if (window.navigator.platform.includes('Macintosh')) {
     return 'macos';
   } else if (window.navigator.platform.includes('Linux')) {
@@ -95,10 +89,10 @@ if (platform) {
   container.appendChild(scaleContainer);
   elements.forEach(e => scaleContainer.appendChild(e));
 
-  const desciption = document.createElement('p');
-  desciption.innerText = 'Download for other Platforms:';
+  const description = document.createElement('p');
+  description.innerText = 'Download for other Platforms:';
 
-  container.insertBefore(desciption, scaleContainer);
+  container.insertBefore(description, scaleContainer);
 }
 </script>
 <script>
@@ -112,22 +106,16 @@ function hideShowInstallationText(which) {
 
   if (which) {
     which.style.display = 'block';
+    which.scrollIntoView({ behavior: 'smooth' });
     Array.from(additionalElements).forEach(current => current.style.display = 'block');
   } else {
     Array.from(additionalElements).forEach(current => current.style.display = 'none');
   }
 }
-if (typeof String.prototype.endsWith !== 'function') {
-  String.prototype.endsWith = function(suffix) {
-    return this.indexOf(suffix, this.length - suffix.length) !== -1;
-  };
-}
 function setLink(url, size) {
   let id = null;
   if (url.endsWith('64bit.exe')) {
     id = 'win64';
-  } else if (url.endsWith('32bit.exe')) {
-    id = 'win32';
   } else if (url.endsWith('macos.dmg')) {
     id = 'macos';
   } else if (url.endsWith('unix.sh')) {
@@ -142,7 +130,8 @@ function setLink(url, size) {
       document.getElementById('dl-size-mb').innerHTML = readableSize
     );
     if (element.style.display !== 'none') {
-      document.getElementById('dl-size-mb').innerHTML = readableSize
+      document.getElementById('dl-size-mb').innerHTML = readableSize;
+      document.getElementById('dl-size-container').style.display = 'inline';
     }
     return readableSize;
   }
@@ -154,9 +143,10 @@ xhttp.onreadystatechange = () => {
     let average = release['assets']
       .map(currentAsset => setLink(currentAsset['browser_download_url'], currentAsset['size']))
       .filter(link => !!link)
-      .reduce((a, b) => a + b, 0) / 4;
+      .reduce((a, b) => a + b, 0) / 3;
     if (!document.querySelector('.scale-dl-container')) {
       document.getElementById('dl-size-mb').innerHTML = '~' + Math.round(average * 10) / 10;
+      document.getElementById('dl-size-container').style.display = 'inline';
     }
     document.getElementById('sourceLink').href = release['zipball_url'];
   }
