@@ -1,4 +1,4 @@
-# --- Inherited from .gitignore ---
+# --- From .gitignore ---
 _site/
 vendor/
 .bundle/
