@@ -121,7 +121,8 @@ xhr.onreadystatechange = () => {
     if (el) el.href = url;
     if (key === detected) {
       document.getElementById('primary-btn').href = url;
-      document.getElementById('primary-size').textContent = (version ? version + ' · ' : '') + mb + ' MB';
+      document.getElementById('primary-size').textContent = mb + ' MB'
+        + (version ? ' · v' + version : '');
     }
   });
 };
