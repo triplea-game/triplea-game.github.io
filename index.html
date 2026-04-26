@@ -1,6 +1,71 @@
 ---
 layout: default
 ---
+<style>
+  /* Break out of the global 10% margin for this page */
+  #page-content { margin: 0; padding: 0; line-height: normal; }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    padding: 4em 8%;
+    background: #eee;
+  }
+  .hero-text {
+    flex: 1;
+    text-align: left;
+  }
+  .hero-text h2 {
+    font-size: 2.6em;
+    line-height: 1.2;
+    margin: 0 0 0.5em;
+    font-family: "Alternate Gothic", Helvetica, Arial, sans-serif;
+    color: #222;
+  }
+  .hero-text p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 2em;
+    line-height: 1.6;
+  }
+  .hero-image {
+    flex: 1.4;
+  }
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+  }
+  .os-download {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+  }
+  .os-icons {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+  }
+  .os-icons img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.6;
+  }
+  .os-note {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 0.75em;
+  }
+  @media (max-width: 768px) {
+    .hero { flex-direction: column; gap: 2em; padding: 3em 6%; }
+    .hero-text { text-align: center; }
+    .os-download { justify-content: center; }
+  }
+</style>
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -9,12 +74,27 @@ layout: default
     "logo": "http://triplea-game.github.io/images/icon_menu.png"
   }
 </script>
-  <div id="headline">
+
+<div class="hero">
+  <div class="hero-text">
     <h2>The World's Foremost Open Source Grand Strategy Game</h2>
-      <p>Community built maps, Axis and Allies game rules:</p>
-    <br>
-    <span class="download"><a href="{{ '/download/' | prepend: site.baseurl }}" class="button">Download TripleA</a></span>
-      <p>100% open source, community run, free to play game</p>
-      <p>Live lobby play, play by email, play versus AI</p>
-    <a href="{{ '/maps-list/maps/' | prepend: site.baseurl }}"><img src="./images/triplea_promo.png" alt="Screenshot of TripleA" width="1059" height="798"></a>
- </div>
+    <p>
+      Free to play, community-run. Based on Axis &amp; Allies with 100+ maps,
+      a live multiplayer lobby, AI opponents, and play-by-email support.
+    </p>
+    <div class="os-download">
+      <a href="{{ '/download/' | prepend: site.baseurl }}" class="button">Download TripleA</a>
+      <div class="os-icons">
+        <img src="{{ '/images/operating-systems/windows100.png' | prepend: site.baseurl }}" alt="Windows">
+        <img src="{{ '/images/operating-systems/mac100.png' | prepend: site.baseurl }}" alt="macOS">
+        <img src="{{ '/images/operating-systems/linux100.png' | prepend: site.baseurl }}" alt="Linux">
+      </div>
+    </div>
+    <p class="os-note">
+      Free forever &nbsp;·&nbsp; <a href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Browse maps</a>
+    </p>
+  </div>
+  <div class="hero-image">
+    <img src="./images/triplea_promo.png" alt="Screenshot of a TripleA match in progress">
+  </div>
+</div>
