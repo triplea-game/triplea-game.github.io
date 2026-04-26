@@ -25,7 +25,7 @@ A player may attack for any one or combination of the following reasons:
 **Taking production.** Each territory captured has a production value which contributes to your income at the end of
 that turn. If this is the sole objective of an attack you’re considering, then only a simple risk-benefit analysis is needed
 to determine whether the territory is worth the potential casualties you’ll suffer in battle.
- 
+
 **Destroying enemy units.** Often, a player does not care about the worthless production value of a territory at all and
 seeks only to annihilate an army located on that territory, to cripple and weaken the enemy. In this case, whether or
 not the attacker successfully captures the territory is irrelevant, as long as the enemy army is destroyed or nearly
@@ -34,7 +34,7 @@ dealt more damage to the enemy than what he suffers himself.
 
 ![fig1](images/fig1.png)
 
-_Fig. 1. The Japanese player decides to attack Persia with the entirety of his Indian army. 
+_Fig. 1. The Japanese player decides to attack Persia with the entirety of his Indian army.
 He has no interest in Persia itself—he only wants to destroy the British tanks there. In this battle,
 the Japanese player can be very certain of a favorable kill-to-casualty ratio. The British have only 1
 infantry with the army so any casualties taken after the first one will eat directly into their stack
@@ -60,9 +60,9 @@ A player who gains control over an area gains the initiative and the ability to 
 
 ![fig3](images/fig3.png)
 
-_Fig. 3. Germany has just captured Anglo-Egypt. Germany has seized the initiative by gaining two great types of area control: 
-1) Control of the Suez Canal, which allows the Japanese fleet off the coast of India to join the German fleet in the 
-2) Mediterranean. 2) Access to the lightlydefended interior of Africa, which Germany can quickly capture with its tanks 
+_Fig. 3. Germany has just captured Anglo-Egypt. Germany has seized the initiative by gaining two great types of area control:
+1) Control of the Suez Canal, which allows the Japanese fleet off the coast of India to join the German fleet in the
+2) Mediterranean. 2) Access to the lightlydefended interior of Africa, which Germany can quickly capture with its tanks
 3) and infantry at no cost._
 
 **Area denial.** Taking control of an area means the enemy correspondingly loses control there and is forced on the
@@ -319,7 +319,7 @@ them with ship escorts that can deter air or submarine raids. Nobody wants to tu
 **Fleet-in-being.** A fleet-in-being is a fleet that stays in port, preserving its strength and integrity by avoiding direct battle,
 instead relying on its very existence to project influence over the seas. A fleet that engages in a large battle runs the risk of
 suffering crushing defeat which will permanently grant the opponent the upper hand. A fleet-in-being, on the other hand, by
-preserving its existence, can serve as a form of deterrent to influence enemy actions and forces the opponent to act with 
+preserving its existence, can serve as a form of deterrent to influence enemy actions and forces the opponent to act with
 caution. Fleets-in-being are usually used by the weaker side who cannot afford to replace their expensive naval losses should
 they risk battle. The German Kaiserliche Marine during WWI was a historical example of a fleet-in-being in practice, since the
 German naval command was unwilling to risk their fleet in major battle and thus avoided defeat by the British Royal Navy. In
@@ -336,5 +336,3 @@ Alternatively, the fleet-in-being concept can also be applied on land as armies-
 preserve their threat-posing capability in order to maneuver the enemy.
 
 **Thank you for Reading, and for playing TripleA**
-
-

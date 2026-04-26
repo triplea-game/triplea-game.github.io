@@ -27,5 +27,3 @@ build: ## Build the static site into _site/
 
 clean: ## Remove the generated _site/ directory
 	rm -rf _site/
-
-

@@ -54,9 +54,8 @@ If you are asked for the Protocol select TCP.
 ### Troubleshooting
 
 * Try temporarily disabling your Firewall. If everything is working fine with your Firewall disabled,
- you haven't setup your Firewall correctly. If it's still not working your Router isn't correctly 
+ you haven't setup your Firewall correctly. If it's still not working your Router isn't correctly
  forwarding the traffic to your PC.
 
 If you still have any questions, feel free to ask on the player help forum:
 <https://forums.triplea-game.org/category/10/player-help>
-

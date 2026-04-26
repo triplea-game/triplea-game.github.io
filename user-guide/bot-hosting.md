@@ -15,5 +15,3 @@ To install and run a bot:
 - Extract the Zip file.
 - The extracted zip file contains a `.bat` (for windows) and a `.sh` (for Mac and Linux) file that has properties for you to customize
 - Once done configuring properties, run the `.bat` or `.sh` file and you should see your bot connected to the lobby
-
-

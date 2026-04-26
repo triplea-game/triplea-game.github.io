@@ -2,4 +2,3 @@ plugins:
   # https://docs.codeclimate.com/docs/markdownlint
   markdownlint:
     enabled: true
-

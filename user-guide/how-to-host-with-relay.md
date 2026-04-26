@@ -6,7 +6,7 @@ permalink: /user-guide/how-to-host-with-relay
 
 
 Disclaimer: This post uses [ngrok](https://ngrok.io) as its relay service,
-simply because I have used it in the past and it's free for personal use. 
+simply because I have used it in the past and it's free for personal use.
 If you know how to use the service of your choice you should be able to use
 it, as long as it supports raw tcp sockets.
 
