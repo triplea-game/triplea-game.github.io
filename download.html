@@ -1,166 +1,133 @@
 ---
-layout: page
+layout: default
 title: Download
 permalink: /download/
 ---
-<p class="dl-install4j-credit"><small>Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j Icon"></a></small></p>
-<p class="mobile-smaller-text">Download the TripleA installer (<span id="dl-size-mb">N/A</span>&nbsp;MB):</p>
-
-<div id="button-container">
-  <a id="win64" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
-    <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
-    <p>TripleA&nbsp;for Windows <strong>(64&nbsp;bit)</strong></p>
-  </a>
-  <a id="win32" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('windows-install'))">
-    <img src="../images/operating-systems/windows100.png" alt="Windows Icon">
-    <p>TripleA&nbsp;for Windows <strong>(32&nbsp;bit)</strong></p>
-  </a>
-  <a id="macos" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('mac-install'))">
-    <img src="../images/operating-systems/mac100.png" alt="Mac Icon">
-    <p>TripleA&nbsp;for Mac</p>
-  </a>
-  <a id="linux" href="https://github.com/triplea-game/triplea/releases/latest" target="_blank" class="button dl-links" onclick="hideShowInstallationText(document.getElementById('linux-install'))">
-    <img src="../images/operating-systems/linux100.png" alt="Linux Icon">
-    <p>TripleA&nbsp;for Linux</p>
-  </a>
-</div>
-
-<p class="show-on-install">New to TripleA? Check out the <a href="../files/TripleA_RuleBook.pdf">Rulebook</a><br><br></p>
-
-<div id="windows-install" class="installation-instructions">
-  <h2>Windows Installation</h2>
-  <p>Run the installer once the download completes.</p>
-  <p>**Important** If windows defender blocks installation, you will need to
-          <strong><a href="https://support.ikeymonitor.com/hc/en-us/articles/360028489651-Bypass-Windows-Defender-on-Windows-10">bypass windows defender.</a></p>
-  <p>Follow the on-screen prompts to finish the installation.</p>
-  <p>When the installation is complete, you will be able to launch TripleA from the start menu.</p>
-</div>
-
-<div id="mac-install" class="installation-instructions">
-  <h2>Mac OS X Installation</h2>
-  <p> The installer is a standard Mac DMG installation file.</p>
-  <p>Once the DMG installer has finished downloading, double click it to start the installation.</p>
-  <p>Within the installation window, simply drag the TripleA.app icon to the Applications folder.</p>
-  <p>Double click TripleA.app to run the game.</p>
-  <p>If you do not have Java already installed, Mac OS X will prompt you to download it.</p>
-  <p>For detailed help of how to install from a DMG, please see this <a href="https://www.howtogeek.com/177619/how-to-install-applications-on-a-mac-everything-you-need-to-know/">how-to article</a>.</p>
-  <br>
-  <p>If you get a "TripleA is damaged and cannot be opened" warning, follow these steps:</p>
-  <p>Apple menu > System Preferences > Security &amp; Privacy > General tab under the header "Allow applications downloaded from:"</p>
-  <p>Change "Allow Applications Downloaded From:" to "Anywhere"</p>
-  <p>This setting will reset to "Mac App Store and identified developers" every 30 days, you may need to repeat this step.</p>
-</div>
-
-<div id="linux-install" class="installation-instructions">
-  <h2>Linux Installation</h2>
-  <p>Once the installer finishes downloading, make it executable (chmod +x ./TripleA_*unix.sh)</p>
-  <p>Now run the installer: <code>./TripleA_*unix.sh</code></p>
-  <p>Follow the installation prompts to complete the installation</p>
-  <br>
-  <p>TripleA requires Java 8 or later to be installed</p>
-  <p><a href="https://java.com/en/download/help/linux_install.xml">Oracle JREs</a> are recommended, sounds may not work with OpenJRE.</p>
-</div>
-
-<p><a class="show-on-install" onclick="hideShowInstallationText()">Hide<br><br></a></p>
-
-<div>
-  <h2>Additional Links</h2>
-  <p><a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes and Older Downloads</a></p>
-  <p><a id="sourceLink" href="https://github.com/triplea-game/triplea/releases/latest">Download Latest Source Code</a></p>
-  <p><a href="https://github.com/triplea-game/triplea/releases/">Download Pre-Release</a></p>
-</div>
-
-<script>
-const list = ['win32', 'win64', 'macos', 'linux'];
-
-const getPlatform = () => {
-  if (window.navigator.platform.match(/Win(?:32|64)|Windows/i)) {
-    return navigator.userAgent.match(/WOW64|Win64/) ? 'win64' : 'win32';
-  } else if (window.navigator.platform.includes('Macintosh')) {
-    return 'macos';
-  } else if (window.navigator.platform.includes('Linux')) {
-    return 'linux';
+<style>
+  .hero-wrap { text-align: center; padding: 2.5rem 1rem 3rem; }
+  .hero-product-name { font-size: 2rem; font-weight: 700; letter-spacing: 0.04em; color: #333; margin-bottom: 0.4rem; }
+  .hero-tagline { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 2.5rem; }
+  .hero-btn {
+    display: inline-flex; flex-direction: column; align-items: center;
+    background: #c0392b; color: #fff; border-radius: 10px; padding: 2rem 3.5rem;
+    text-decoration: none; transition: background 0.18s, transform 0.15s, box-shadow 0.18s;
+    box-shadow: 0 4px 18px rgba(192,57,43,0.35); min-width: 260px;
   }
-  return null;
-};
-
-const platform = getPlatform();
-if (platform) {
-  const container = document.getElementById('button-container');
-  const elements = list.filter(e => e !== platform)
-    .map(e => document.getElementById(e));
-
-  const scaleContainer = document.createElement('div');
-  scaleContainer.classList.add('scale-dl-container');
-  container.appendChild(scaleContainer);
-  elements.forEach(e => scaleContainer.appendChild(e));
-
-  const desciption = document.createElement('p');
-  desciption.innerText = 'Download for other Platforms:';
-
-  container.insertBefore(desciption, scaleContainer);
-}
-</script>
+  .hero-btn:hover { background: #a93226; transform: translateY(-3px); box-shadow: 0 8px 28px rgba(192,57,43,0.4); color: #fff; text-decoration: none; }
+  .hero-btn img { width: 72px; filter: brightness(0) invert(1); margin-bottom: 1rem; }
+  .hero-btn-label { font-size: 1.3rem; font-weight: 700; line-height: 1.2; }
+  .hero-btn-size { font-size: 0.82rem; opacity: 0.75; margin-top: 0.4rem; }
+  .hero-other { margin-top: 1.4rem; font-size: 0.88rem; color: #aaa; }
+  .hero-other a { color: #666; text-decoration: none; border-bottom: 1px dotted #bbb; margin: 0 0.4rem; transition: color 0.15s; }
+  .hero-other a:hover { color: #c0392b; }
+  .install-panel {
+    display: none; max-width: 560px; margin: 0 auto 2rem;
+    background: #fafafa; border-left: 4px solid #c0392b; border-radius: 4px;
+    padding: 1.5rem 2rem; position: relative; text-align: left;
+  }
+  .install-panel h3 { margin: 0 0 0.8rem; font-size: 1.1rem; }
+  .install-panel .close-x { position: absolute; top: 0.7rem; right: 0.8rem; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: #bbb; line-height: 1; }
+  .install-panel .close-x:hover { color: #555; }
+  .install-panel code { display: block; background: #eee; padding: 0.5rem 0.75rem; border-radius: 3px; font-size: 0.88rem; margin: 0.5rem 0; }
+  .footer-note {
+    max-width: 560px; margin: 0 auto;
+    border-top: 1px solid #e8e8e8; padding-top: 1.2rem; margin-top: 1rem;
+    font-size: 0.85rem; color: #999; text-align: center;
+  }
+  .footer-note a { color: #888; text-decoration: none; border-bottom: 1px dotted #bbb; transition: color 0.15s; }
+  .footer-note a:hover { color: #c0392b; }
+</style>
+<div class="hero-wrap">
+  <p class="hero-product-name">TripleA</p>
+  <p class="hero-tagline">Free &bull; Open Source &bull; Strategy Game Engine</p>
+  <a id="primary-btn" class="hero-btn" href="https://github.com/triplea-game/triplea/releases/latest">
+    <img id="primary-icon" src="../images/operating-systems/linux100.png" alt="Platform icon">
+    <span class="hero-btn-label" id="primary-label">Download TripleA</span>
+    <span class="hero-btn-size" id="primary-size">…</span>
+  </a>
+  <div class="hero-other" id="other-links"></div>
+</div>
+<div id="windows-install" class="install-panel">
+  <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
+  <h3>Windows Installation</h3>
+  <p>Run the installer once the download completes.</p>
+  <p><strong>Heads up:</strong> If Windows Defender blocks it, <a href="https://support.ikeymonitor.com/hc/en-us/articles/360028489651-Bypass-Windows-Defender-on-Windows-10">bypass Windows Defender</a>.</p>
+  <p>Follow the on-screen prompts. Launch TripleA from the Start menu when done.</p>
+</div>
+<div id="mac-install" class="install-panel">
+  <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
+  <h3>macOS Installation</h3>
+  <p>Double-click the downloaded DMG, then drag <strong>TripleA.app</strong> to your Applications folder.</p>
+  <p>If you see "TripleA is damaged": Apple menu &rarr; System Settings &rarr; Privacy &amp; Security &rarr; allow TripleA.</p>
+</div>
+<div id="linux-install" class="install-panel">
+  <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
+  <h3>Linux Installation</h3>
+  <p>Make the installer executable and run it:</p>
+  <code>chmod +x ./TripleA_*unix.sh &amp;&amp; ./TripleA_*unix.sh</code>
+  <p>Requires Java 8+. <a href="https://openjdk.org/install/">OpenJDK</a> recommended.</p>
+</div>
+<div class="footer-note">
+  Looking for an older version? <a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes &amp; Older Downloads</a>
+  &nbsp;&bull;&nbsp; Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j" style="vertical-align:middle"></a>
+</div>
 <script>
-const additionalElements = document.getElementsByClassName('show-on-install');
-function hideShowInstallationText(which) {
-  Array.from(document.getElementsByClassName('installation-instructions')).forEach(current => {
-    if (current !== which) {
-      current.style.display = 'none';
+const platforms = {
+  win64: { label: 'Download for Windows (64-bit)', icon: '../images/operating-systems/windows100.png', installId: 'windows-install', name: 'Windows', suffix: '64bit.exe' },
+  macos: { label: 'Download for Mac',              icon: '../images/operating-systems/mac100.png',     installId: 'mac-install',     name: 'macOS',   suffix: 'macos.dmg' },
+  linux: { label: 'Download for Linux',            icon: '../images/operating-systems/linux100.png',   installId: 'linux-install',   name: 'Linux',   suffix: 'unix.sh'   },
+};
+const detect = () => {
+  const ua = navigator.userAgent;
+  if (/Windows/i.test(ua)) return 'win64';
+  if (/Mac OS X/i.test(ua)) return 'macos';
+  return 'linux';
+};
+const detected = detect();
+const cfg = platforms[detected];
+document.getElementById('primary-icon').src = cfg.icon;
+document.getElementById('primary-icon').alt = cfg.name + ' icon';
+document.getElementById('primary-label').textContent = cfg.label;
+document.getElementById('primary-btn').addEventListener('click', () => revealPanel(cfg.installId));
+const othersDiv = document.getElementById('other-links');
+const otherEntries = Object.entries(platforms).filter(([k]) => k !== detected);
+if (otherEntries.length) {
+  othersDiv.innerHTML = 'Other platforms: ' +
+    otherEntries.map(([k, c]) =>
+      `<a id="${k}" href="https://github.com/triplea-game/triplea/releases/latest" onclick="revealPanel('${c.installId}')">${c.name}</a>`
+    ).join(' &bull; ');
+}
+function revealPanel(id) {
+  document.querySelectorAll('.install-panel').forEach(p => p.style.display = 'none');
+  const panel = document.getElementById(id);
+  panel.style.display = 'block';
+  setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+}
+function closePanel() { document.querySelectorAll('.install-panel').forEach(p => p.style.display = 'none'); }
+const xhr = new XMLHttpRequest();
+xhr.onreadystatechange = () => {
+  if (xhr.readyState !== 4) return;
+  if (xhr.status !== 200) {
+    document.getElementById('primary-size').textContent = '';
+    return;
+  }
+  const release = JSON.parse(xhr.responseText);
+  const version = release.tag_name || '';
+  release.assets.forEach(asset => {
+    const url = asset.browser_download_url;
+    const mb  = Math.round(10 * asset.size / (1024 * 1024)) / 10;
+    const entry = Object.entries(platforms).find(([, c]) => url.endsWith(c.suffix));
+    if (!entry) return;
+    const [key] = entry;
+    const el = document.getElementById(key);
+    if (el) el.href = url;
+    if (key === detected) {
+      document.getElementById('primary-btn').href = url;
+      document.getElementById('primary-size').textContent = mb + ' MB'
+        + (version ? ' · v' + version : '');
     }
   });
-
-  if (which) {
-    which.style.display = 'block';
-    Array.from(additionalElements).forEach(current => current.style.display = 'block');
-  } else {
-    Array.from(additionalElements).forEach(current => current.style.display = 'none');
-  }
-}
-if (typeof String.prototype.endsWith !== 'function') {
-  String.prototype.endsWith = function(suffix) {
-    return this.indexOf(suffix, this.length - suffix.length) !== -1;
-  };
-}
-function setLink(url, size) {
-  let id = null;
-  if (url.endsWith('64bit.exe')) {
-    id = 'win64';
-  } else if (url.endsWith('32bit.exe')) {
-    id = 'win32';
-  } else if (url.endsWith('macos.dmg')) {
-    id = 'macos';
-  } else if (url.endsWith('unix.sh')) {
-    id = 'linux';
-  }
-  if (id !== null) {
-    const element = document.getElementById(id);
-    element.href = url;
-    element.target = '';
-    let readableSize = Math.round(10 * size / (1024 * 1024)) / 10;
-    element.addEventListener('mouseover', () =>
-      document.getElementById('dl-size-mb').innerHTML = readableSize
-    );
-    if (element.style.display !== 'none') {
-      document.getElementById('dl-size-mb').innerHTML = readableSize
-    }
-    return readableSize;
-  }
-}
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = () => {
-  if (xhttp.status == 200 && xhttp.readyState == 4) {
-    let release = JSON.parse(xhttp.responseText);
-    let average = release['assets']
-      .map(currentAsset => setLink(currentAsset['browser_download_url'], currentAsset['size']))
-      .filter(link => !!link)
-      .reduce((a, b) => a + b, 0) / 4;
-    if (!document.querySelector('.scale-dl-container')) {
-      document.getElementById('dl-size-mb').innerHTML = '~' + Math.round(average * 10) / 10;
-    }
-    document.getElementById('sourceLink').href = release['zipball_url'];
-  }
 };
-xhttp.open('GET', 'https://api.github.com/repos/triplea-game/triplea/releases/latest', true);
-xhttp.send();
+xhr.open('GET', 'https://api.github.com/repos/triplea-game/triplea/releases/latest', true);
+xhr.send();
 </script>

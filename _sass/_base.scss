@@ -92,16 +92,45 @@
   font-family: $secondary-font-family;
   padding-bottom: 0.5em;
 }
+#button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
 .dl-links {
-  min-width: 18%;
+  min-width: 150px;
+  text-align: center;
   p {
     margin-top: 10px;
   }
 }
 
+.dl-others {
+  > p {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9em;
+    color: $grey-color-dark;
+  }
+}
+
 .scale-dl-container {
-  transform: translate(-50%, -50%) scale(0.5) translate(50%, 50%);
-  margin-bottom: -100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  .button {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem 0.9rem;
+    min-width: 0;
+  }
+
+  img {
+    height: 56px;
+    width: 56px;
+  }
 }
 
 .dl-install4j-credit {
@@ -110,6 +139,11 @@
 
 .installation-instructions {
   display: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
 }
 
 body {
