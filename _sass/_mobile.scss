@@ -77,14 +77,20 @@
   }
 }
 
+#button-container {
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .dl-links {
-  min-width: 74%;
-  width: 74%;
+  width: 100%;
+  min-width: 0;
 }
 
 .scale-dl-container {
-  transform: translateY(-50%) scale(0.5) translateY(50%);
-  margin-bottom: -300px;
+  .button {
+    flex: 1 1 auto;
+  }
 }
 
 .dl-install4j-credit {

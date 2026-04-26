@@ -85,18 +85,30 @@ const getPlatform = () => {
 const platform = getPlatform();
 if (platform) {
   const container = document.getElementById('button-container');
-  const elements = list.filter(e => e !== platform)
-    .map(e => document.getElementById(e));
+  const primaryButton = document.getElementById(platform);
+
+  // Wrap the primary platform button
+  const primaryWrapper = document.createElement('div');
+  primaryWrapper.classList.add('dl-primary');
+  container.insertBefore(primaryWrapper, primaryButton);
+  primaryWrapper.appendChild(primaryButton);
+
+  // Build the secondary "other platforms" section
+  const othersSection = document.createElement('div');
+  othersSection.classList.add('dl-others');
+
+  const description = document.createElement('p');
+  description.innerText = 'Download for other platforms:';
+  othersSection.appendChild(description);
 
   const scaleContainer = document.createElement('div');
   scaleContainer.classList.add('scale-dl-container');
-  container.appendChild(scaleContainer);
-  elements.forEach(e => scaleContainer.appendChild(e));
+  list.filter(e => e !== platform)
+    .map(e => document.getElementById(e))
+    .forEach(e => scaleContainer.appendChild(e));
+  othersSection.appendChild(scaleContainer);
 
-  const description = document.createElement('p');
-  description.innerText = 'Download for other Platforms:';
-
-  container.insertBefore(description, scaleContainer);
+  container.appendChild(othersSection);
 }
 </script>
 <script>
