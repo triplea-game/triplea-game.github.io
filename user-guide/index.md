@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: page
 title: User Guide
 permalink: /user-guide/
 ---
 
-## Player Help &amp; How-To
+## Player Help & How-To
 * [FAQ](faq)
 * [How to Host in Lobby](how-to-host)
 * [How to Host in Lobby with Relay Service](how-to-host-with-relay)
@@ -21,6 +21,6 @@ permalink: /user-guide/
 
 ## TripleA On YouTube
 
-- [How to play online](http://youtu.be/pIE3rpDD6PM)
-- [How to async, play by email, and play by forum](http://youtu.be/c9cfHsoWQoI)
-- [Advanced features](http://youtu.be/FtaSoypRveg)
+- [How to play online](https://youtu.be/pIE3rpDD6PM)
+- [How to async, play by email, and play by forum](https://youtu.be/c9cfHsoWQoI)
+- [Advanced features](https://youtu.be/FtaSoypRveg)

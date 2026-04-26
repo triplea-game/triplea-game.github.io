@@ -41,7 +41,7 @@ permalink: /download/
   <p class="hero-product-name">TripleA</p>
   <p class="hero-tagline">Free &bull; Open Source &bull; Strategy Game Engine</p>
   <a id="primary-btn" class="hero-btn" href="https://github.com/triplea-game/triplea/releases/latest">
-    <img id="primary-icon" src="../images/operating-systems/linux100.png" alt="Platform icon">
+    <img id="primary-icon" src="{{ '/images/operating-systems/linux100.png' | prepend: site.baseurl }}" alt="Platform icon">
     <span class="hero-btn-label" id="primary-label">Download TripleA</span>
     <span class="hero-btn-size" id="primary-size">…</span>
   </a>
@@ -51,7 +51,7 @@ permalink: /download/
   <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
   <h3>Windows Installation</h3>
   <p>Run the installer once the download completes.</p>
-  <p><strong>Heads up:</strong> If Windows Defender blocks it, <a href="https://support.ikeymonitor.com/hc/en-us/articles/360028489651-Bypass-Windows-Defender-on-Windows-10">bypass Windows Defender</a>.</p>
+  <p><strong>Heads up:</strong> If Windows Defender blocks it, click <strong>More info</strong> then <strong>Run anyway</strong> in the SmartScreen prompt.</p>
   <p>Follow the on-screen prompts. Launch TripleA from the Start menu when done.</p>
 </div>
 <div id="mac-install" class="install-panel">
@@ -69,13 +69,13 @@ permalink: /download/
 </div>
 <div class="footer-note">
   Looking for an older version? <a href="{{ '/release_notes/' | prepend: site.baseurl }}">Release Notes &amp; Older Downloads</a>
-  &nbsp;&bull;&nbsp; Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="../images/install4j_small.png" title="multi-platform installer builder" alt="Install4j" style="vertical-align:middle"></a>
+  &nbsp;&bull;&nbsp; Installer powered by <a href="https://www.ej-technologies.com/products/install4j/overview.html"><img src="{{ '/images/install4j_small.png' | prepend: site.baseurl }}" title="multi-platform installer builder" alt="Install4j" style="vertical-align:middle"></a>
 </div>
 <script>
 const platforms = {
-  win64: { label: 'Download for Windows (64-bit)', icon: '../images/operating-systems/windows100.png', installId: 'windows-install', name: 'Windows', suffix: '64bit.exe' },
-  macos: { label: 'Download for Mac',              icon: '../images/operating-systems/mac100.png',     installId: 'mac-install',     name: 'macOS',   suffix: 'macos.dmg' },
-  linux: { label: 'Download for Linux',            icon: '../images/operating-systems/linux100.png',   installId: 'linux-install',   name: 'Linux',   suffix: 'unix.sh'   },
+  win64: { label: 'Download for Windows (64-bit)', icon: '{{ "/images/operating-systems/windows100.png" | prepend: site.baseurl }}', installId: 'windows-install', name: 'Windows', suffix: '64bit.exe' },
+  macos: { label: 'Download for Mac',              icon: '{{ "/images/operating-systems/mac100.png" | prepend: site.baseurl }}',     installId: 'mac-install',     name: 'macOS',   suffix: 'macos.dmg' },
+  linux: { label: 'Download for Linux',            icon: '{{ "/images/operating-systems/linux100.png" | prepend: site.baseurl }}',   installId: 'linux-install',   name: 'Linux',   suffix: 'unix.sh'   },
 };
 const detect = () => {
   const ua = navigator.userAgent;

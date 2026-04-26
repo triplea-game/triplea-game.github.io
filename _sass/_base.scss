@@ -31,6 +31,11 @@
       margin: 50px 0 50px 0;
       padding: 0 10px 0 10px;
     }
+    &.menu-items.active > a {
+      color: $brand-color;
+      border-bottom: 2px solid $brand-color;
+      padding-bottom: 2px;
+    }
     &.dl {
       float: right;
     }
