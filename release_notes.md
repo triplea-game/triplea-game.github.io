@@ -21,7 +21,7 @@ Simplified Map Extraction:
   into that folder.
 
 
-## [2.6] 
+## [2.6]
 
 2.6 has hundreds of minor improvements, some are:
 - lot faster than 2.5 - improved Computer player speed & AI turn processing
@@ -226,7 +226,7 @@ if default game is missing or errors out (due to costPU for example)
 | AI      | Fix     | Improve large map performance (#4764) |
 | AI      | Fix     | Fix battle results when checking for submerging (#4738) |
 | Rules   | Fix     | Don't allow transports to load after being in battle if LHTR (#4857) |
-| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) | 
+| Rules   | Fix     | Allow attacker to withdraw before defender submerges for revised rules (#4820) |
 | Rules   | Fix     | Fix New Fighters On Old Carriers To Ignore Allied/Enemy Carriers (#4508) |
 | Rules   | Fix     | Fix Land Scramble Error by preventing a route to/from the same territory (#4494) |
 | Engine  | Fix     | Hotkey fixed so game post and players tab no longer use the same hotkey |

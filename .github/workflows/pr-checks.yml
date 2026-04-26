@@ -1,0 +1,52 @@
+name: PR Checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  pre-commit:
+    name: Lint & Secret Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history lets gitleaks scan all commits in the push/PR, not just the tip
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install pre-commit
+        run: uv tool install pre-commit
+
+      - uses: pre-commit/action@v3.0.1
+
+  jekyll-build:
+    name: Jekyll Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          # Installs the exact gem versions from Gemfile.lock and caches them
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Check for build output
+        run: |
+          if [ ! -d "_site" ] || [ -z "$(ls -A _site)" ]; then
+            echo "Jekyll build produced no output in _site/" >&2
+            exit 1
+          fi
+          echo "Build OK — $(find _site -type f | wc -l) files generated"

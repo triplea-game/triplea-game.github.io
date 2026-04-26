@@ -22,7 +22,7 @@ __The World’s Foremost Open-Source Grand Strategy Game__
 * [The Units](#the-units)
 * [Units Used in “Big World : 1942”](#units-used-in-big-world-1942)
 * [Sequence of Play](#sequence-of-play)
-* [Technology Development](#technology-development) 
+* [Technology Development](#technology-development)
 * [Purchase](#purchase)
 * [Combat Movement](#combat-movement)
 * [Battle](#battle)
@@ -156,7 +156,7 @@ control whatever they capture.
 ## <a id="capitals"/> ![capitals](./rule-book/images/capitals.png)
 
 Each of the nations in TripleA has a capital territory. These territories are
-indicated on the map by a large roundel or flag associated with that nation. 
+indicated on the map by a large roundel or flag associated with that nation.
 
 ![us-capital-example](./rule-book/images/us-capital-example.png)
 

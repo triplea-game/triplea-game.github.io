@@ -1,7 +1,41 @@
-.binary/
+# Jekyll build output
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-.idea
+
+# Ruby / Bundler
+vendor/
+.bundle/
+*.gem
+*.rbc
+
+# uv / Python
+.venv/
+__pycache__/
+*.py[cod]
+.python-version
+uv.lock
+
+# pre-commit
+.pre-commit-cache/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux editor artifacts
 *.swp
+*.swo
+*~
+
+# Misc
+.binary/
