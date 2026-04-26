@@ -4,7 +4,27 @@ title: Release Notes
 permalink: /release_notes/
 ---
 
-## [2.7]
+<a href="{{ '/download/' | prepend: site.baseurl }}" class="button">Download Latest Version</a>
+
+## Versions
+
+- [2.7 — Unreleased](#v27)
+- [2.6 — Unreleased](#v26)
+- [2.5.22285 — Nov 1, 2020](#v25)
+- [2.4.22192 — Oct 29, 2020](#v24)
+- [2.3.22161 — Oct 27, 2020](#v23)
+- [2.2.20868 — Aug 22, 2020](#v22b)
+- [2.2.20790 — Aug 12, 2020](#v22a)
+- [2.1.20365 — July 1, 2020](#v21)
+- [2.0.20234 — June 24, 2020](#v20c)
+- [2.0.20183 — June 22, 2020](#v20b)
+- [2.0.20123](#v20a)
+- [1.x and older](#v1x)
+
+---
+
+<a id="v27"></a>
+## [2.7] — Unreleased
 
 Bot updates:
 - Bot autosave files are now available from "Select Game" button, at the bottom
@@ -21,7 +41,8 @@ Simplified Map Extraction:
   into that folder.
 
 
-## [2.6]
+<a id="v26"></a>
+## [2.6] — Unreleased
 
 2.6 has hundreds of minor improvements, some are:
 - lot faster than 2.5 - improved Computer player speed & AI turn processing
@@ -95,6 +116,7 @@ A more detailed (partial) change list:
 |[#8080](https://github.com/triplea-game/triplea/pull/8080)|Fix|Battle for Arda will have a map that can be selected in the UI and it won't throw an error.|
 
 
+<a id="v25"></a>
 ## [2.5.22285](https://github.com/triplea-game/triplea/releases/tag/2.5.22285) Nov 1, 2020
 
 |[#8057](https://github.com/triplea-game/triplea/pull/8057)|FIX|Increase window size to prevent chat message panel from being squished and rendering too small|
@@ -104,6 +126,7 @@ A more detailed (partial) change list:
 |[#8023](https://github.com/triplea-game/triplea/pull/8023)|FIX|World War 2 Global will correctly switch unit ownership of units placed in India from UK_Pacific to British.|
 
 
+<a id="v24"></a>
 ## [2.4.22192](https://github.com/triplea-game/triplea/releases/tag/2.4.22192) Oct 29, 2020
 
 |[#8002](https://github.com/triplea-game/triplea/pull/8002)|FIX|Fix error during AI games or battle calculator for maps that have "Submarines Defending May Submerge Or Retreat" set to true and "Submersible Subs" set to false (EG: world_war_ii_classic and classic_variations).|
@@ -111,6 +134,7 @@ A more detailed (partial) change list:
 |[#7979](https://github.com/triplea-game/triplea/pull/7979)|FIX|Prevent unlikely infinite battle calculations, battle calculations now limited to 10,000 rounds|
 |[#7948](https://github.com/triplea-game/triplea/pull/7948)|CHANGE|A battle that only contains units that can not hit each other because of canNotTarget and canNotBeTargetedBy will result in a stalemate.|
 
+<a id="v23"></a>
 ## [2.3.22161](https://github.com/triplea-game/triplea/releases/tag/2.3.22161) Oct 27, 2020
 
 |[#7631](https://github.com/triplea-game/triplea/pull/7631)|FEATURE|Build in support to be able to load (most) 1.8 maps. 1.8 "variant" maps will not work, though most others should now load without issue.|
@@ -137,11 +161,13 @@ A more detailed (partial) change list:
 |[#7437](https://github.com/triplea-game/triplea/pull/7437)|REMOVE|Removed GPG signing of installer files (GPG signatures will no longer appear in github releases)|
 
 
+<a id="v22b"></a>
 ## [2.2.20868](https://github.com/triplea-game/triplea/releases/tag/2.2.20868) Aug 22, 2020
 
 |[#7419](https://github.com/triplea-game/triplea/pull/7419)|FIX|Movement incorrectly disallowed into certain territories on WaW |
 
 
+<a id="v22a"></a>
 ## [2.2.20790](https://github.com/triplea-game/triplea/releases/tag/2.2.20790) Aug 12, 2020
 
 |[#7292](https://github.com/triplea-game/triplea/pull/7292)|FIX|Fixed an issue where rarely a NonMonotonicSequenceException  could occur when planning moves|
@@ -164,6 +190,7 @@ A more detailed (partial) change list:
 |[#7007](https://github.com/triplea-game/triplea/pull/7007)|FIX|Submerged subs don't retreat when other units retreat|
 
 
+<a id="v21"></a>
 ## [2.1.20365](https://github.com/triplea-game/triplea/releases/tag/2.1.20365) July 1, 2020
 
 |[#6984](https://github.com/triplea-game/triplea/pull/6984)|UPDATE|Error uploads will now recognize duplicates and give you a link to an existing error upload if there is one. Added 'map-name' as an error upload field|
@@ -180,6 +207,7 @@ A more detailed (partial) change list:
 |[#6814](https://github.com/triplea-game/triplea/pull/6814)|FIX|Game crash when calculating a sea battle with units that can bombard|
 
 
+<a id="v20c"></a>
 ## [2.0.20234](https://github.com/triplea-game/triplea/releases/tag/2.0.20234) June 24, 2020
 
 |[#6802](https://github.com/triplea-game/triplea/pull/6802)|FIX|Make lobby player listing sort order be case insensitive|
@@ -189,6 +217,7 @@ A more detailed (partial) change list:
 |[#6780](https://github.com/triplea-game/triplea/pull/6780)|FIX|Fix forum posting formatting regression reported in #6735|
 
 
+<a id="v20b"></a>
 ## [2.0.20183](https://github.com/triplea-game/triplea/releases/tag/2.0.20183) June 22, 2020
 
 - Fixed: Map listing may not render if default game is blank
@@ -197,6 +226,7 @@ on a map, possible if maps are not updated
 - Fixed: Can encounter NPE in game selector initialization
 if default game is missing or errors out (due to costPU for example)
 
+<a id="v20a"></a>
 ## [2.0.20123](https://github.com/triplea-game/triplea/releases/tag/2.0.20123)
 
 | Engine  | Feature | Automatic bug reporting, dialog to upload error logs appears when a game error occur  |
@@ -244,6 +274,7 @@ if default game is missing or errors out (due to costPU for example)
 | Engine  | Remove  | Drop game host mute ability (#4783) |
 | Map XML | Remove  | Remove deprecated costPu option as all maps have been updated (#4493) |
 
+<a id="v1x"></a>
 ## [1.9.0.0.13066](https://github.com/triplea-game/triplea/releases/tag/1.9.0.0.13066) - November 18th 2018
 
 * Fix determination of transported units during amphibious assaults (#4252)
