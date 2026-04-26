@@ -17,7 +17,7 @@ permalink: /download/
   .hero-btn-label { font-size: 1.3rem; font-weight: 700; line-height: 1.2; }
   .hero-btn-size { font-size: 0.82rem; opacity: 0.75; margin-top: 0.4rem; }
   .hero-other { margin-top: 1.4rem; font-size: 0.88rem; color: #aaa; }
-  .hero-other a { color: #999; text-decoration: none; border-bottom: 1px dotted #ccc; margin: 0 0.4rem; transition: color 0.15s; }
+  .hero-other a { color: #666; text-decoration: none; border-bottom: 1px dotted #bbb; margin: 0 0.4rem; transition: color 0.15s; }
   .hero-other a:hover { color: #c0392b; }
   .install-panel {
     display: none; max-width: 560px; margin: 0 auto 2rem;
@@ -40,25 +40,25 @@ permalink: /download/
   <a id="primary-btn" class="hero-btn" href="https://github.com/triplea-game/triplea/releases/latest">
     <img id="primary-icon" src="../images/operating-systems/linux100.png" alt="Platform icon">
     <span class="hero-btn-label" id="primary-label">Download TripleA</span>
-    <span class="hero-btn-size" id="primary-size"></span>
+    <span class="hero-btn-size" id="primary-size">…</span>
   </a>
   <div class="hero-other" id="other-links"></div>
 </div>
 <div id="windows-install" class="install-panel">
-  <button class="close-x" onclick="closePanel()">&#x2715;</button>
+  <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
   <h3>Windows Installation</h3>
   <p>Run the installer once the download completes.</p>
   <p><strong>Heads up:</strong> If Windows Defender blocks it, <a href="https://support.ikeymonitor.com/hc/en-us/articles/360028489651-Bypass-Windows-Defender-on-Windows-10">bypass Windows Defender</a>.</p>
   <p>Follow the on-screen prompts. Launch TripleA from the Start menu when done.</p>
 </div>
 <div id="mac-install" class="install-panel">
-  <button class="close-x" onclick="closePanel()">&#x2715;</button>
+  <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
   <h3>macOS Installation</h3>
   <p>Double-click the downloaded DMG, then drag <strong>TripleA.app</strong> to your Applications folder.</p>
   <p>If you see "TripleA is damaged": Apple menu &rarr; System Settings &rarr; Privacy &amp; Security &rarr; allow TripleA.</p>
 </div>
 <div id="linux-install" class="install-panel">
-  <button class="close-x" onclick="closePanel()">&#x2715;</button>
+  <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
   <h3>Linux Installation</h3>
   <p>Make the installer executable and run it:</p>
   <code>chmod +x ./TripleA_*unix.sh &amp;&amp; ./TripleA_*unix.sh</code>
@@ -76,8 +76,9 @@ const platforms = {
   linux: { label: 'Download for Linux',            icon: '../images/operating-systems/linux100.png',   installId: 'linux-install',   name: 'Linux',   suffix: 'unix.sh'   },
 };
 const detect = () => {
-  if (navigator.platform.match(/Win/i)) return 'win64';
-  if (navigator.platform.match(/Mac/i)) return 'macos';
+  const ua = navigator.userAgent;
+  if (/Windows/i.test(ua)) return 'win64';
+  if (/Mac OS X/i.test(ua)) return 'macos';
   return 'linux';
 };
 const detected = detect();
@@ -103,9 +104,13 @@ function revealPanel(id) {
 function closePanel() { document.querySelectorAll('.install-panel').forEach(p => p.style.display = 'none'); }
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () => {
-  if (xhr.readyState !== 4 || xhr.status !== 200) return;
+  if (xhr.readyState !== 4) return;
+  if (xhr.status !== 200) {
+    document.getElementById('primary-size').textContent = '';
+    return;
+  }
   const release = JSON.parse(xhr.responseText);
-  document.getElementById('sourceLink').href = release.zipball_url;
+  const version = release.tag_name || '';
   release.assets.forEach(asset => {
     const url = asset.browser_download_url;
     const mb  = Math.round(10 * asset.size / (1024 * 1024)) / 10;
@@ -116,7 +121,7 @@ xhr.onreadystatechange = () => {
     if (el) el.href = url;
     if (key === detected) {
       document.getElementById('primary-btn').href = url;
-      document.getElementById('primary-size').textContent = mb + ' MB';
+      document.getElementById('primary-size').textContent = (version ? version + ' · ' : '') + mb + ' MB';
     }
   });
 };
