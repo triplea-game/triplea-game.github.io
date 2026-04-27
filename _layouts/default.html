@@ -11,5 +11,15 @@
       </div>
       {% include footer.html %}
     </div>
+    <script>
+      var toggle = document.querySelector('.site-nav__toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          var menu = document.getElementById('site-nav__menu');
+          var isOpen = menu.classList.toggle('is-open');
+          this.setAttribute('aria-expanded', isOpen);
+        });
+      }
+    </script>
   </body>
 </html>

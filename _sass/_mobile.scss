@@ -18,61 +18,31 @@
 }
 
 .site-nav {
-  > ul {
-    padding: 0;
+  flex-wrap: wrap;
+
+  .site-nav__brand img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .site-nav__toggle {
+    display: flex;
+  }
+
+  .site-nav__menu {
+    display: none;
     width: 100%;
-    list-style-type: none;
-    font-family: $secondary-font-family;
-    > li {
-      margin: 0;
-      display: inline-block;
+    flex-direction: column;
+    padding: 0.5em 0;
+
+    &.is-open {
+      display: flex;
+    }
+
+    .menu-items {
       width: 100%;
       text-align: center;
-      padding: 0;
-      > h1 {
-        margin: 40px 0 40px 0;
-        font-size: 30px;
-        a {
-          color: lighten($text-color, 10%);
-          font-weight: bold;
-        }
-        a:hover {
-          text-decoration: none;
-          color: #b8242b;
-        }
-      }
-      > img {
-        display: block;
-        height: 100px;
-        width: 100px;
-        margin: 0;
-      }
-      &.menu-items {
-        margin: 0;
-        padding: 10px 0px 10px 0px;
-      }
-      &.dl {
-        margin: 0;
-        float: left;
-      }
-      > a {
-        color: lighten($text-color, 10%);
-        font-weight: bold;
-        &:hover {
-          color: $brand-color;
-          text-decoration: none;
-        }
-      }
-      &.dl a {
-        padding-top: 1.0rem;
-        padding-bottom: 1.0625rem;
-        margin: 0;
-        font-weight: normal;
-        color: $background-color;
-        :hover {
-          color: $background-color;
-        }
-      }
+      padding: 10px 0;
     }
   }
 }
@@ -130,6 +100,4 @@
   }
 }
 
-#body {
-   padding-bottom: 525px !important;
-}
+/* padding-bottom no longer needed; footer is in normal document flow */

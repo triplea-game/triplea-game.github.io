@@ -1,12 +1,21 @@
 <header class="site-header">
   <nav class="site-nav">
-    <ul>
-      <li><a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ '/images/icon_menu.png' | prepend: site.baseurl }}" alt="TripleA Icon"></a></li>
-      <li><h1><a href="{{ '/' | prepend: site.baseurl }}">TripleA</a></h1></li>
+    <div class="site-nav__brand">
+      <a href="{{ '/' | prepend: site.baseurl }}">
+        <img src="{{ '/images/icon_menu.png' | prepend: site.baseurl }}" alt="TripleA Icon">
+      </a>
+      <h1><a href="{{ '/' | prepend: site.baseurl }}">TripleA</a></h1>
+    </div>
+    <button class="site-nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav__menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="site-nav__menu" class="site-nav__menu">
       <li class="menu-items{% if page.url contains '/download/' %} active{% endif %}"><a href="{{ '/download/' | prepend: site.baseurl }}">Download</a></li>
       <li class="menu-items{% if page.url contains '/maps' %} active{% endif %}"><a href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Maps</a></li>
       <li class="menu-items{% if page.url contains '/user-guide/' %} active{% endif %}"><a href="{{ '/user-guide/' | prepend: site.baseurl }}">User Guide</a></li>
-      <li class="menu-items"><a href="https://forums.triplea-game.org">Forums</a></li>
+      <li class="menu-items"><a href="https://forums.triplea-game.org" target="_blank" rel="noopener">Forums ↗</a></li>
     </ul>
   </nav>
 </header>
