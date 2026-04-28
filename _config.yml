@@ -13,6 +13,10 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /images/triplea_promo.png
+  - scope:
+      path: ""
       type: maps
     values:
       layout: map
@@ -20,6 +24,7 @@ defaults:
 exclude:
   - README.md
   - CNAME
+
 
 plugins:
   - jekyll-seo-tag
