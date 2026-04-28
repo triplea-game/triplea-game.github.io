@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://triplea-game.org/" },
+    { "@type": "ListItem", "position": 2, "name": "Maps",  "item": "https://triplea-game.org/maps-list/maps/" },
+    { "@type": "ListItem", "position": 3, "name": "{{ page.mapName | escape }}", "item": "https://triplea-game.org{{ page.url }}" }
+  ]
+}
+</script>
 <h2>{{ page.mapName | escape }}</h2>
 {% if page.mapType == "MAP_SKIN" %}<h4>Type: Map Skin</h4>{% endif %}
 <img src="{% if page.img %}{{ page.img }}{% else %}{{ '/images/missing_map.png' | prepend: site.baseurl }}{% endif %}" alt="Map Thumbnail">
