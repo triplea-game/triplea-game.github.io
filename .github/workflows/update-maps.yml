@@ -17,13 +17,14 @@ jobs:
         with:
           ref: ${{ github.event.repository.default_branch }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run tests
+        run: cd cicd && make test
 
       - name: Sync map pages from server listing
-        run: python3 .build/update-maps/sync_maps.py --maps-dir _maps
+        run: uv run cicd/update-maps/sync_maps.py --maps-dir _maps
 
       - name: Commit and push if maps changed
         run: |

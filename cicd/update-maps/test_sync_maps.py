@@ -1,3 +1,6 @@
+# /// script
+# dependencies = ["pytest"]
+# ///
 """
 Black-box tests for sync_maps.py.
 
@@ -7,7 +10,7 @@ file outputs rather than internal state.
 import os
 import tempfile
 import pytest
-from sync_maps import generate_slug, build_front_matter, sync_maps, render_front_matter
+from sync_maps import generate_slug, build_front_matter, sync_maps, render_front_matter, fetch_maps, MAPS_LISTING_URL
 
 
 # ---------------------------------------------------------------------------
@@ -57,29 +60,17 @@ def parse_map_file(path):
 # ---------------------------------------------------------------------------
 
 class TestGenerateSlug:
-    def test_spaces_become_dashes(self):
-        assert generate_slug("Big World") == "big-world"
-
-    def test_underscores_become_dashes(self):
-        assert generate_slug("big_world") == "big-world"
-
-    def test_mixed_case_lowercased(self):
-        assert generate_slug("BigWorld") == "bigworld"
-
-    def test_special_characters_stripped(self):
-        assert generate_slug("270BC: Wars!") == "270bc-wars"
-
-    def test_numbers_preserved(self):
-        assert generate_slug("1914-cow-empires") == "1914-cow-empires"
-
-    def test_multiple_dashes_kept(self):
-        # Consecutive dashes from e.g. "A & B" should not crash
-        slug = generate_slug("A & B")
-        assert slug == "a--b"
-
-    def test_all_special_chars_stripped(self):
-        result = generate_slug("Hello (World)")
-        assert result == "hello-world"
+    @pytest.mark.parametrize("name,expected", [
+        ("Big World",          "big-world"),
+        ("big_world",          "big-world"),
+        ("BigWorld",           "bigworld"),
+        ("270BC: Wars!",       "270bc-wars"),
+        ("1914-cow-empires",   "1914-cow-empires"),
+        ("A & B",              "a--b"),       # consecutive dashes are preserved
+        ("Hello (World)",      "hello-world"),
+    ])
+    def test_slug(self, name, expected):
+        assert generate_slug(name) == expected
 
 
 # ---------------------------------------------------------------------------
@@ -117,15 +108,10 @@ class TestBuildFrontMatter:
         fm = build_front_matter(m)
         assert fm["lastCommitDateEpochMilli"] == 1700000000000
 
-    def test_no_map_category_field(self):
-        m = make_map()
-        fm = build_front_matter(m)
-        assert "mapCategory" not in fm
-
-    def test_no_version_field(self):
-        m = make_map()
-        fm = build_front_matter(m)
-        assert "version" not in fm
+    @pytest.mark.parametrize("field", ["mapCategory", "version"])
+    def test_unexpected_field_absent(self, field):
+        fm = build_front_matter(make_map())
+        assert field not in fm
 
     def test_null_size_omitted(self):
         m = make_map()
@@ -213,6 +199,17 @@ class TestSyncMaps:
             assert fm["slug"] == "my-map"
             assert "img.example.com" in fm["img"]
             assert fm["title"] == "My Map | TripleA Map"
+
+
+# ---------------------------------------------------------------------------
+# Live integration test
+# ---------------------------------------------------------------------------
+
+class TestFetchMapsLive:
+    def test_returns_non_empty_list(self):
+        maps = fetch_maps(MAPS_LISTING_URL)
+        assert isinstance(maps, list)
+        assert len(maps) > 0
 
 
 def result_count(directory):

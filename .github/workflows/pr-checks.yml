@@ -27,6 +27,17 @@ jobs:
         run: uv tool install pre-commit
 
       - uses: pre-commit/action@v3.0.1
+  test-map-splitter:
+    name: Test map splitter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run map splitter tests
+        run: cd cicd && make test
 
   jekyll-build:
     name: Jekyll Build

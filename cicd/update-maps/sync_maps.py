@@ -105,7 +105,7 @@ def sync_maps(maps: list, target_dir: str) -> dict:
 
 def fetch_maps(url: str) -> list:
     with urllib.request.urlopen(url, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+        return json.loads(response.read().decode("utf-8")).get("maps")
 
 
 def main():

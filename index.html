@@ -30,15 +30,78 @@ description: "Free open-source strategy game inspired by Axis & Allies. Windows,
     margin-bottom: 2em;
     line-height: 1.6;
   }
-  .hero-image {
+  /* --- Map carousel (hero right column) --- */
+  .hero-carousel {
     flex: 1.4;
+    min-width: 0;
+    position: relative;
   }
-  .hero-image img {
-    max-width: 100%;
-    height: auto;
+  .carousel-viewport {
+    overflow: hidden;
     border-radius: 4px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
   }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    will-change: transform;
+  }
+  .carousel-card {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+  .carousel-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px 4px 0 0;
+  }
+  .carousel-card-body {
+    background: #fff;
+    padding: 1em 1.1em 1.1em;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  }
+  .carousel-card-body h3 {
+    font-size: 1.05em;
+    margin: 0 0 0.5em;
+    line-height: 1.3;
+  }
+  .carousel-card-body h3 a {
+    color: #222;
+    text-decoration: none;
+  }
+  .carousel-card-body h3 a:hover { text-decoration: underline; }
+  .carousel-card-body p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 0.7em;
+  }
+  .carousel-play-link {
+    font-size: 0.88em;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .carousel-play-link:hover { text-decoration: underline; }
+  .carousel-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 1.8em;
+    line-height: 1;
+    padding: 0.15em 0.4em;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 10;
+  }
+  .carousel-prev { left: 0.4em; }
+  .carousel-next { right: 0.4em; }
+  .carousel-btn:hover { background: rgba(0,0,0,0.75); }
   .button-download {
     display: inline-flex;
     flex-direction: column;
@@ -90,7 +153,76 @@ description: "Free open-source strategy game inspired by Axis & Allies. Windows,
       Free forever &nbsp;·&nbsp; <a href="{{ '/maps-list/maps/' | prepend: site.baseurl }}">Browse maps</a>
     </p>
   </div>
-  <div class="hero-image">
-    <img src="{{ '/images/triplea_promo.png' | prepend: site.baseurl }}" alt="Screenshot of a TripleA match in progress" width="1059" height="798" loading="eager">
+  <div class="hero-carousel" id="map-carousel">
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="carousel-track">
+        {% for map in site.data.carousel_maps %}
+        <div class="carousel-card">
+          <a href="{{ '/map/' | append: map.slug | append: '/' | prepend: site.baseurl }}" tabindex="-1" aria-hidden="true">
+            <img src="{{ map.img }}" alt="{{ map.name }} map preview" loading="lazy">
+          </a>
+          <div class="carousel-card-body">
+            <h3><a href="{{ '/map/' | append: map.slug | append: '/' | prepend: site.baseurl }}">{{ map.name }}</a></h3>
+            <p>{{ map.teaser }}</p>
+            <a href="{{ '/map/' | append: map.slug | append: '/' | prepend: site.baseurl }}" class="carousel-play-link">Play this map &rarr;</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <button class="carousel-btn carousel-prev" aria-label="Previous map">&#8249;</button>
+    <button class="carousel-btn carousel-next" aria-label="Next map">&#8250;</button>
   </div>
 </div>
+
+<script>
+(function () {
+  var carousel = document.getElementById('map-carousel');
+  if (!carousel) return;
+  var track = document.getElementById('carousel-track');
+  var cards = track.querySelectorAll('.carousel-card');
+  var total = cards.length;
+  var current = 0;
+  var autoTimer;
+  var INTERVAL = 12000;
+
+  function moveTo(index, instant) {
+    current = Math.max(0, Math.min(index, total - 1));
+    if (instant) {
+      track.style.transition = 'none';
+    }
+    track.style.transform = 'translateX(-' + (current * cards[0].offsetWidth) + 'px)';
+    if (instant) {
+      /* restore transition after the instant jump is painted */
+      setTimeout(function () { track.style.transition = ''; }, 50);
+    }
+  }
+
+  function next() {
+    if (current >= total - 1) {
+      moveTo(0, true);
+    } else {
+      moveTo(current + 1);
+    }
+  }
+
+  function prev() {
+    if (current <= 0) {
+      moveTo(total - 1, true);
+    } else {
+      moveTo(current - 1);
+    }
+  }
+
+  function startAuto() { autoTimer = setInterval(next, INTERVAL); }
+  function stopAuto()  { clearInterval(autoTimer); }
+
+  carousel.querySelector('.carousel-next').addEventListener('click', function () { stopAuto(); next(); startAuto(); });
+  carousel.querySelector('.carousel-prev').addEventListener('click', function () { stopAuto(); prev(); startAuto(); });
+  carousel.addEventListener('mouseenter', stopAuto);
+  carousel.addEventListener('mouseleave', startAuto);
+  window.addEventListener('resize', function () { moveTo(current); });
+
+  startAuto();
+}());
+</script>

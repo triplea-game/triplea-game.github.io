@@ -1,0 +1,87 @@
+- slug: 1941-global-command-decision
+  name: "1941 Global Command Decision"
+  teaser: "The full World War II theater - Europe, Africa, and the Pacific - in a
+    single grand strategy game. The Axis coalition faces off against the Allies
+    across every front simultaneously."
+  img: "https://raw.githubusercontent.com/triplea-maps/1941_global_command_decision/master/preview.png"
+
+- slug: d-day-2-poc
+  name: "D-Day - Normandy"
+  teaser: "June 6, 1944. Allied forces land on the beaches of Normandy to drive the
+    Axis out of Western Europe. A tactical map of the most consequential amphibious
+    operation in WW2."
+  img: "https://raw.githubusercontent.com/triplea-maps/D-Day-2-PoC/master/preview.png"
+
+- slug: iwo-jima
+  name: "Iwo Jima - Pacific 1945"
+  teaser: "The US Marine Corps versus the Japanese Imperial Army on a volcanic island
+    in the Pacific. One of the bloodiest battles of World War II, recreated on a
+    detailed tactical map."
+  img: "https://raw.githubusercontent.com/triplea-maps/Iwo_Jima/master/preview.png"
+
+- slug: nazisovietpact
+  name: "Nazi-Soviet Pact"
+  teaser: "A hypothetical Eastern Front scenario: what if the Molotov-Ribbentrop Pact
+    turned into a full military alliance? The Axis and Soviet forces combined against
+    the Western Allies."
+  img: "https://raw.githubusercontent.com/triplea-maps/NaziSovietPact/master/preview.png"
+
+- slug: europe-revised
+  name: "Europe Revised"
+  teaser: "The Axis powers versus the Allied nations across the European theater.
+    A rebalanced map covering Western Europe, North Africa, and the Eastern Front."
+  img: "https://raw.githubusercontent.com/triplea-maps/Europe-Revised/master/preview.png"
+
+- slug: axisgeneral-1939
+  name: "Axis General - 1939"
+  teaser: "World War II from the very beginning. September 1939 - the Axis is on the
+    march. Can the Allies mobilize fast enough to stop them on the Big World map?"
+  img: "https://raw.githubusercontent.com/triplea-maps/Axisgeneral_1939/master/preview.png"
+
+- slug: 1939-pact-of-steel-big-world
+  name: "1939 Pact of Steel"
+  teaser: "Seven powers, one world map, 1939. The Pact of Steel pits Germany and
+    Italy against the Allied nations in the opening months of World War II."
+  img: "https://raw.githubusercontent.com/triplea-maps/1939_Pact_of_Steel_Big_World/master/preview.png"
+
+- slug: feudaljapan2
+  name: "Feudal Japan - Sengoku Era"
+  teaser: "Japan, 16th century - the Age of Warring States. Command one of 18
+    historical clans, from the Oda to the Shimazu, in a brutal contest for
+    control of a fractured Japan. Inspired by the Shogun board game."
+  img: "https://github.com/triplea-maps/FeudalJapan2/blob/master/preview.png?raw=true"
+
+- slug: 1914-cow-empires
+  name: "1914 - The Great War"
+  teaser: "August 1914. The empires of Europe mobilize for a war nobody expected to
+    last four years. Command the Triple Entente or the Central Powers across the
+    full World War I theater, with production and economics from historical records."
+  img: "https://github.com/triplea-maps/1914-cow-empires/blob/master/preview.png?raw=true"
+
+- slug: 270bc
+  name: "270 BC - Ancient Mediterranean"
+  teaser: "The Mediterranean world in the age of Hellenism. Rome, Carthage, the
+    Macedonian kingdoms, and the Seleucid Empire fight for dominance. Lead
+    legions, hoplites, and war elephants across the ancient world."
+  img: "https://github.com/triplea-maps/270bc/blob/master/preview.png?raw=true"
+
+- slug: napoleonic-empires
+  name: "Napoleonic Empires"
+  teaser: "The French Republic casts off its monarchy and plunges Europe into war.
+    Command Napoleon's Grande Armee or lead the coalition powers - Britain, Prussia,
+    Austria, Russia - in a preindustrial conquest of the continent."
+  img: "https://github.com/triplea-maps/napoleonic_empires/blob/master/preview.png?raw=true"
+
+- slug: total-world-war
+  name: "Total World War - December 1941"
+  teaser: "December 1941. The Wehrmacht is stalled outside Moscow. Japan's fleet moves
+    on Pearl Harbor. China fights for survival. Every front ignites at once in this
+    sprawling global WW2 scenario spanning Europe, Africa, and the Pacific."
+  img: "https://github.com/triplea-maps/total_world_war/blob/master/preview.png?raw=true"
+
+- slug: world-at-war
+  name: "World at War"
+  teaser: "A vast WW2 map covering every theater of the war. Larger forces, more
+    territories, and deeper strategy than the standard scenario - for players who
+    want the full scale of the Second World War on one board."
+  img: "https://github.com/triplea-maps/world_at_war/blob/master/preview.png?raw=true"
