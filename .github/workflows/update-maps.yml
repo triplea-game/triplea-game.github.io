@@ -21,7 +21,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
 
       - name: Run tests
-        run: cd cicd && make test
+        run: cd cicd/update-maps && make test
 
       - name: Sync map pages from server listing
         run: uv run cicd/update-maps/sync_maps.py --maps-dir _maps

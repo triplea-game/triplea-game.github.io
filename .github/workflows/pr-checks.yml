@@ -37,7 +37,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
 
       - name: Run map splitter tests
-        run: cd cicd && make test
+        run: cd cicd/update-maps && make test
 
   jekyll-build:
     name: Jekyll Build
