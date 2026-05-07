@@ -1,0 +1,50 @@
+---
+mapName: imperialism_1974_board_game
+slug: imperialism-1974-board-game
+title: 'imperialism_1974_board_game | TripleA Map'
+downloadUrl: 'https://github.com/triplea-maps/imperialism_1974_board_game/archive/refs/heads/master.zip'
+img: 'https://github.com/triplea-maps/imperialism_1974_board_game/blob/master/preview.png?raw=true'
+downloadSizeInBytes: 564464
+lastCommitDateEpochMilli: 1690424152000
+---
+<h1>Imperialism - 1974 Board Game</h1>
+
+<p>This map is an adaptation of the 1974 board game Imperialism to the TripleA engine:<br>
+<a href="https://boardgamegeek.com/boardgame/14544/imperialism">https://boardgamegeek.com/boardgame/14544/imperialism</a>
+</p>
+
+<p>It has a number of unique mechanics that differ from other TripleA maps. At the same time,
+various features of the original game are not currently possible with TripleA; these are documented
+later.</p>
+
+<p>The map is generally playable. AIs do not work properly with TripleA 2.5, but are better on 2.6
+where they're able to play effectively on the main continent, but are not able to explore yet.</p>
+
+<h3>Overview</h3>
+<p>In this game, players start in the "old world" and sail to explore and gain control of
+"new world" territories. When a territory is first captured, it will get a "wealth production"
+rating (max 6 for new world or 4 for old world other than starting territories).</p>
+
+<p>On your turn, you roll a die to determine which territories generate wealth. Each territory
+with wealth production higher or equal to the die roll will spawn one wealth unit (so territory
+wealth of 6 always succeeds and the lower the wealth roll the better). These wealth units must be
+brought to ports so they can be used for purchasing units. A city will increase the wealth
+production of a territory by 1.</p>
+
+<br>
+
+<h3>Additional rules</h3>
+<ul>
+	<li>Players choose their starting territory, which must be on a coast in the old world (top left island).</li>
+	<li>Battles are optional and are limited to one round. When not decisive, armies will remain and territory control does not change.</li>
+	<li>Armies and fleets attack and defend on 2. Forts provide defense support with an extra strength 2 first strike roll per defending army. Note: This is different from the original board game combat rules, which TripleA isn't able to support.</li>
+	<li>Armies, fleet and wealth have a movement of 1. A fleet can transport an army or a wealth.</li>
+	<li>Structures and wealth are capturable.</li>
+	<li>Production and placement are before movement. No separate non-combat move.</li>
+	<li>Newly-built armies cannot participate in attacks.</li>
+	<li>Territories with no armies in them will revert to Neutral control and will not generate wealth.</li>
+	<li>Unit production is done at ports and requires spending wealth units present in the port. To build structures, you will first purchase and place corresponding "build" units in the port territory with the required wealth, following which you'll be given the actual unit to place elsewhere on the map.</li>
+	<li>Ships are built in a similar way as structures, except the player should (honor system) then place them next to the port where they were built.</li>
+	<li>Loading and unloading units requires fleets to be on coasts, represented by separate sea zones.</li>
+	<li>Armies attacking mountain territories attack on a 1 instead of 2.</li>
+</ul>
