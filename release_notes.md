@@ -8,8 +8,7 @@ permalink: /release_notes/
 
 ## Versions
 
-- [2.7 — Unreleased](#v27)
-- [2.6 — Unreleased](#v26)
+- [2026-06.16.15640 — June 13, 2026](#v27)
 - [2.5.22285 — Nov 1, 2020](#v25)
 - [2.4.22192 — Oct 29, 2020](#v24)
 - [2.3.22161 — Oct 27, 2020](#v23)
@@ -24,49 +23,140 @@ permalink: /release_notes/
 ---
 
 <a id="v27"></a>
-## [2.7] — Unreleased
-
-Bot updates:
-- Bot autosave files are now available from "Select Game" button, at the bottom
-  of the game list.
-- Bots no longer overwrite autosaves of other instances
-- Bots will now shut down more cleanly when they fail to connect to lobby
-- Bots will now restart between games
-- Installed Maps are now refreshed daily
-- Bots can now be run with docker
-
-Simplified Map Extraction:
-- When zip files are found in the 'downloadedMaps' folder, their processing is simpler.
-  The target map folder is now first deleted, then the zip file is simply extracted
-  into that folder.
+## [2026-06.16.15640] — June 13, 2026
 
 
-<a id="v26"></a>
-## [2.6] — Unreleased
+### Highlights
 
-2.6 has hundreds of minor improvements, some are:
-- lot faster than 2.5 - improved Computer player speed & AI turn processing
-- Status bar has a Territories units listed
-- Show map Zoom on status bar View> Show Zoom Percentage (appears bottom right)
-- map zoom to 200%
-- Potential enemy scramble warning
-- Improved purchase panel, keeps your old purchases when you over buy.
-- xml has a new function isAI - great for making the AI appear better
-- Battle panel has a no retreat symbol for units that cannot retreat from battle
-- Notes tab - removed from the right hand pane - only use Menu Help> Game Notes
-- Players tab has alliances are in bold
+- New look and feel: switched the UI to FlatLaf (replacing Substance) (#14590)
+- New default dice server (MARTI),
+- Lobby now auto-reconnects after a dropped connection, with a reconnect
+  overlay instead of dropping you from the game (#14290)
+- Much faster than 2.5 — improved computer player speed and AI turn processing
+- Maps are now always fetched from the maps server; the old `triplea_maps.yaml`
+  file is gone, and map admins can tag maps shown in the download screen
+  (#14567, #9491)
+- Bots can be run as an official Docker container (#12756)
+- Migrated the game engine to Java 25
+- Version numbering switched to a `YYYY-MM` scheme (#14583)
 
-Bid system updates
+### Gameplay & Rules
 
-- buy units upto the maxBuiltPerPlayer limit
+- buy units up to the maxBuiltPerPlayer limit
 - place infinite or stacking/placementLimit units per territory or sea zone
 - place land units in any territory you own (no 'factory' required)
 - place ship units in any friendly sea zone with ship(s) of the same owner already in it
 - Construction/immobile units placed obeys upgrade rules and canOnlyBePlacedInTerritoryValuedAtX
 - Units can only be placed if territoryEffect unitsNotAllowed allows them
+- Potential enemy scramble warning before committing a move
+- Politics: declaring war now creates battles as expected (#14392)
+- V2 games now respect movement restrictions when retreating (#14388)
+- A single supporter now correctly contributes only one bonus per target (#14412)
+- Air units are now counted as defenders rather than treated as an abandoned
+  territory (#14409)
+- Submarine battle button renamed from "remain" to "don't submerge" (#14378)
+- Taking over an allied capital now also captures friendly infrastructure in
+  allied territories (#14055)
+- Purchases can no longer exceed available resources (#14043)
+- Triggers that subtract PUs below zero no longer crash; PUs floor at zero (#13965)
+- Submarines can route through territories where an enemy destroyer is present (#13417)
+- Fixed UK Pacific units becoming unusable from an inverted end-turn ownership
+  condition (#13556)
+- Neutral-territory flyover is no longer allowed after a unit has already made
+  multiple moves (#13257)
+
+### AI
+
+- xml has a new function isAI — great for making the AI appear better
+- AI no longer buys redundant factories and now places pooled factories (#14411)
+- Fixed Easy AI Chinese unit placement (Himalayas, and WWII v3) (#14549, #14501)
+- Fixed a Weak AI crash when computing amphibious routes (#13541)
+- Fixed a Pro AI crash when a player has no capital (#12831)
+
+### UI & Usability
+
+- Status bar lists the units in a territory, and can show map zoom percentage
+  (View > Show Zoom Percentage); map zoom now goes to 200%
+- Battle panel shows a no-retreat symbol for units that cannot retreat
+- Players tab shows alliances in bold and has technology tooltips (#12853)
+- Bot game selection dialog converted to a list view (#14589)
+- The map now centers on the player's capital at the start of their turn
+  (#14344, #14462, #13256)
+- No more auto-focus stealing on pop-up windows (#14360)
+- Reconnect window no longer highlights "disconnect" by default (#14343)
+- Battle dialog and unit choosers now size images to actual image/dice sizes,
+  fixing gaps and oversized note images (#14414, #14408, #14422, #14407)
+- Minimap renders directly without downscaling (#14377)
+- Placeholder images are shown when resource images or flags are missing
+  (#14397, #14390)
+- Resource tab shows correct estimated collection in history mode (#14512)
+- Board refreshes after a tech advancement (#14026)
+- Transported units now appear in the unit scroller (they can still disembark) (#14060)
+- Technology panel hotkey moved to Ctrl+Y, freeing Ctrl+E for Edit Mode (#13941)
+- Battle Calculator: selection updates when changing attacker/defender,
+  duplicate unit icons fixed, and it picks the right side on your own territory
+  (#13610, #13298, #13402, #12816)
+- Map download dialog: added a name search field, multi-select, default sort,
+  and search auto-focus (#13491, #13500)
+- Bottom bar shows the territory owner's relationship to the current player (#13370)
+- Clearer errors when loading a corrupted or truncated save game (#13406, #13407)
+- Renamed settings "Reset" to "Reset to Saved", and "Settings" to
+  "Engine Preferences" (#12819, #12999)
+
+### Maps & Map-Making
+
+- Game notes are now read from a file (e.g. `game.notes.html`) instead of XML;
+  the notes "action" tab was removed — use Help > Game Notes
+- Downloaded maps are extracted and stored as flat files; startup extraction is
+  simpler and more robust, deleting then re-extracting the target folder
+  (#12766, #12773, #13002)
+- Map download window shows map counts on its tabs and improved install counts
+  (#14357, #14525, #14448)
+- Lazy tile-image allocation avoids out-of-memory on large maps (#14413)
+- Map list changes: added World War II V6-Balanced and "East and West"; removed
+  WW2v3-1941_v2 (#14498, #14452, #14453)
+- Map Creator: restored the polygon-grabber button, added a Validate Map panel
+  and map validator, fixed the placement picker and center picker (#13905,
+  #13813, #13696, #13754, #13843)
+
+### Lobby & Bots
+
+- Bot autosave files are now available from the "Select Game" button, at the
+  bottom of the game list
+- Bots no longer overwrite the autosaves of other instances
+- Bots shut down more cleanly when they fail to connect to the lobby, and
+  restart between games
+- Installed maps on bots are refreshed daily, and bots now live-load maps
+  instead of caching them at startup (#14427)
+- Automatic bot moderators: the host (or oldest player) in a bot game gains
+  moderator powers to disconnect and ban players (#12758)
+- Better error handling and messaging for incorrect login credentials
+  (#14496, #14504)
+- Increased lobby websocket ping frequency to prevent spurious disconnects (#12806)
+
+### Performance & Stability
+
+- Save games are written to a temp file and renamed, avoiding corruption (#14419)
+- Debug console replaced with a `triplea.log` file; log archives now rotate into
+  the same directory (#14418)
+- Random number generator switched from MersenneTwister to SplitMix64 (#14288)
+- Fixed a number of crashes: edit-mode AA fire and duplicate UUIDs (#14352,
+  #14410), blitzing through a bombed territory (#14365), AI OOL cache collision
+  (#14366), and lobby reconnect listener/latch leaks (#14355, #14354, #14353)
+- Fixed sound and image crashes when asset paths contain spaces or live inside a
+  JAR (#14326, #14315, #14303, #14013)
+- Resolved race conditions in move validation during the battle phase
+  (#14389, #14421)
+
+### Other
+
+- The latest-version check now queries the server; full releases (not just
+  pre-releases) are now published (#14535, #14584, #14586)
+- Games can be launched directly via command-line parameters (e.g. open a save
+  game, new game, or PBEM game) (#12862)
 
 
-A more detailed (partial) change list:
+A more detailed (partial) change list (2.6 era):
 
 |[#9733](https://github.com/triplea-game/triplea/pull/9733)|UPDATE|Simplify the out-of-date game version dialog|
 |[#9532](https://github.com/triplea-game/triplea/pull/9532)|CHANGE|The battle calculator now allows to select any two players to battle against not only enemies|
