@@ -51,9 +51,9 @@ For more detailed information, see:
 git clone https://github.com/triplea-game/triplea-game.github.io.git
 cd triplea-game.github.io/
 
-make install-jekyll   # installs Ruby, Bundler, and all gems pinned in Gemfile.lock (Ubuntu/Debian)
-make setup            # installs pre-commit and registers the git push hook
-make serve            # starts the site at http://localhost:4000
+just install-jekyll   # installs Ruby, Bundler, and all gems pinned in Gemfile.lock (Ubuntu/Debian)
+just setup            # installs pre-commit and registers the git push hook
+just serve            # starts the site at http://localhost:4000
 ```
 
 The server reloads automatically when you save changes. Preview your edits in a browser at `localhost:4000`.
@@ -61,7 +61,7 @@ The server reloads automatically when you save changes. Preview your edits in a 
 Write content in [Markdown](https://daringfireball.net/projects/markdown/) with
 [YAML front matter](http://jekyllrb.com/docs/frontmatter/) like the other pages.
 
-Run `make` with no arguments to see all available commands.
+Run `just` with no arguments to see all available commands.
 
 **Submitting a pull request**
 
