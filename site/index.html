@@ -102,6 +102,9 @@ description: "Free open-source strategy game inspired by Axis & Allies. Windows,
   .carousel-prev { left: 0.4em; }
   .carousel-next { right: 0.4em; }
   .carousel-btn:hover { background: rgba(0,0,0,0.75); }
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-track { transition: none; }
+  }
   .button-download {
     display: inline-flex;
     flex-direction: column;
@@ -183,9 +186,15 @@ description: "Free open-source strategy game inspired by Axis & Allies. Windows,
   var track = document.getElementById('carousel-track');
   var cards = track.querySelectorAll('.carousel-card');
   var total = cards.length;
+  if (!total) return;
   var current = 0;
-  var autoTimer;
+  var autoTimer = null;
   var INTERVAL = 12000;
+  var hovered = false;
+  var focused = false;
+  /* Once the user clicks Prev/Next they are in control; autoplay stays off. */
+  var userTookControl = false;
+  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
 
   function moveTo(index, instant) {
     current = Math.max(0, Math.min(index, total - 1));
@@ -196,6 +205,17 @@ description: "Free open-source strategy game inspired by Axis & Allies. Windows,
     if (instant) {
       /* restore transition after the instant jump is painted */
       setTimeout(function () { track.style.transition = ''; }, 50);
+    }
+    /* Off-screen cards stay in the DOM; keep their links out of the tab order
+       and the accessibility tree. */
+    for (var i = 0; i < total; i++) {
+      var hidden = i !== current;
+      cards[i].inert = hidden;
+      if (hidden) {
+        cards[i].setAttribute('aria-hidden', 'true');
+      } else {
+        cards[i].removeAttribute('aria-hidden');
+      }
     }
   }
 
@@ -215,15 +235,40 @@ description: "Free open-source strategy game inspired by Axis & Allies. Windows,
     }
   }
 
-  function startAuto() { autoTimer = setInterval(next, INTERVAL); }
-  function stopAuto()  { clearInterval(autoTimer); }
+  /* The only place a timer is created: always clear first, so at most one runs. */
+  function syncAuto() {
+    clearInterval(autoTimer);
+    autoTimer = null;
+    var paused = hovered || focused || userTookControl ||
+      (reducedMotion && reducedMotion.matches) || total < 2;
+    if (!paused) {
+      autoTimer = setInterval(next, INTERVAL);
+    }
+  }
 
-  carousel.querySelector('.carousel-next').addEventListener('click', function () { stopAuto(); next(); startAuto(); });
-  carousel.querySelector('.carousel-prev').addEventListener('click', function () { stopAuto(); prev(); startAuto(); });
-  carousel.addEventListener('mouseenter', stopAuto);
-  carousel.addEventListener('mouseleave', startAuto);
+  carousel.querySelector('.carousel-next').addEventListener('click', function () {
+    userTookControl = true; syncAuto(); next();
+  });
+  carousel.querySelector('.carousel-prev').addEventListener('click', function () {
+    userTookControl = true; syncAuto(); prev();
+  });
+  carousel.addEventListener('mouseenter', function () { hovered = true; syncAuto(); });
+  carousel.addEventListener('mouseleave', function () { hovered = false; syncAuto(); });
+  carousel.addEventListener('focusin', function () { focused = true; syncAuto(); });
+  carousel.addEventListener('focusout', function (e) {
+    focused = carousel.contains(e.relatedTarget);
+    syncAuto();
+  });
+  if (reducedMotion) {
+    if (reducedMotion.addEventListener) {
+      reducedMotion.addEventListener('change', syncAuto);
+    } else if (reducedMotion.addListener) {
+      reducedMotion.addListener(syncAuto);
+    }
+  }
   window.addEventListener('resize', function () { moveTo(current); });
 
-  startAuto();
+  moveTo(0);
+  syncAuto();
 }());
 </script>
