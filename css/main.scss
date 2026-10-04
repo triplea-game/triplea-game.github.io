@@ -11,6 +11,8 @@ $background-color: #eee;
 $brand-color: #b8242b;
 $brand-color-dark: darken($brand-color, 10%);
 
+$nav-collapse-width: 960px;
+
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
@@ -37,6 +39,10 @@ table {
 @import "foundation";
 @import "base";
 @import "misc";
+// Below this width the header no longer fits on one line.
+@media only screen and (max-width: $nav-collapse-width) {
+  @import "nav-collapsed";
+}
 @media only screen and (max-width: 600px) {
   @import "mobile";
 }

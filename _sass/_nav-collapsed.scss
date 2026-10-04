@@ -1,0 +1,34 @@
+.site-nav {
+  flex-wrap: wrap;
+
+  .site-nav__toggle {
+    display: flex;
+  }
+
+  .site-nav__menu {
+    display: none;
+    flex: 0 0 100%;
+    flex-direction: column;
+    padding: 0.5em 0;
+
+    &.is-open {
+      display: flex;
+    }
+
+    .menu-items {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .menu-items--icon > a {
+      flex-direction: row;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .menu-items__label {
+      font-size: inherit;
+    }
+  }
+}

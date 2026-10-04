@@ -10,6 +10,7 @@
   font-family: $secondary-font-family;
 
   .site-nav__brand {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     gap: 0.5em;
@@ -49,23 +50,18 @@
 
     .menu-items--icon > a {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 0.5em;
+      gap: 0.4em;
+      padding: 4px;
     }
 
     .menu-items--icon svg {
       fill: currentColor;
     }
 
-    // Hidden visually but read by screen readers; the mobile menu shows it.
     .menu-items__label {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
+      font-size: 0.75em;
     }
 
     .menu-items {
@@ -80,6 +76,7 @@
       > a {
         color: lighten($text-color, 10%);
         font-weight: bold;
+        white-space: nowrap;
         &:hover {
           color: $brand-color;
           text-decoration: none;
