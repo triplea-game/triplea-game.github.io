@@ -15,4 +15,3 @@ Built with **Jekyll** (kramdown, SASS), hosted on **GitHub Pages**.
 - `make serve` — local server at http://localhost:4000
 - `make check` — run all pre-commit hooks + jekyll build
 - `make build` — build only
-

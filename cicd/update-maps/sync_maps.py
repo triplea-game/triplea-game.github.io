@@ -62,6 +62,20 @@ def render_front_matter(fields: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def normalize_body(description: str) -> str:
+    """
+    Cleans an API description into the form the repo's pre-commit hooks
+    enforce: LF line endings, no trailing whitespace, and a single final
+    newline (or nothing at all when the description is empty).
+    """
+    text = description.replace("\r\n", "\n").replace("\r", "\n").strip()
+    # ASCII-only rstrip, like the trailing-whitespace hook; a plain rstrip()
+    # would also eat non-breaking spaces that are part of the content.
+    lines = [line.rstrip(" \t\x0b\x0c") for line in text.split("\n")]
+    body = "\n".join(lines)
+    return body + "\n" if body else ""
+
+
 def write_map_file(target_dir: str, map_data: dict) -> str:
     """
     Writes one Jekyll map page and returns the file path written.
@@ -71,7 +85,7 @@ def write_map_file(target_dir: str, map_data: dict) -> str:
     slug = front_matter["slug"]
     description = map_data.get("description") or ""
 
-    content = render_front_matter(front_matter) + description.strip() + "\n"
+    content = render_front_matter(front_matter) + normalize_body(description)
 
     file_path = os.path.join(target_dir, f"{slug}.html")
     with open(file_path, "w", encoding="utf-8") as f:
@@ -129,4 +143,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

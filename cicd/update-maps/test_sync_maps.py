@@ -143,6 +143,26 @@ class TestSyncMaps:
             _, body = parse_map_file(os.path.join(d, "test-map.html"))
             assert "Some description" in body
 
+    def test_crlf_description_written_with_lf_and_no_trailing_spaces(self):
+        with tempfile.TemporaryDirectory() as d:
+            sync_maps([make_map(description="<br>One  \r\n<br>Two\t\r\n\r\n")], d)
+            with open(os.path.join(d, "test-map.html"), "rb") as f:
+                raw = f.read()
+            assert raw.endswith(b"---\n<br>One\n<br>Two\n")
+
+    def test_non_breaking_space_kept_at_line_end(self):
+        with tempfile.TemporaryDirectory() as d:
+            sync_maps([make_map(description="<br>One \n<br>Two")], d)
+            _, body = parse_map_file(os.path.join(d, "test-map.html"))
+            assert body == "<br>One \n<br>Two\n"
+
+    def test_empty_description_ends_file_after_front_matter(self):
+        with tempfile.TemporaryDirectory() as d:
+            sync_maps([make_map(description="  \r\n")], d)
+            content = read_file(os.path.join(d, "test-map.html"))
+            assert content.endswith("---\n")
+            assert not content.endswith("\n\n")
+
     def test_null_description_does_not_crash(self):
         with tempfile.TemporaryDirectory() as d:
             m = make_map()
@@ -214,4 +234,3 @@ class TestFetchMapsLive:
 
 def result_count(directory):
     return len([f for f in os.listdir(directory) if f.endswith(".html")])
-
