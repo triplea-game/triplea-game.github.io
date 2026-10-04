@@ -42,6 +42,9 @@ description: "Download TripleA for Windows, macOS, or Linux. Free and open-sourc
   .hero-other { margin-top: 1.4rem; font-size: 0.88rem; color: #aaa; }
   .hero-other a { color: #666; text-decoration: none; border-bottom: 1px dotted #bbb; margin: 0 0.4rem; transition: color 0.15s; }
   .hero-other a:hover { color: #c0392b; }
+  .hero-version { margin-top: 0.5rem; font-size: 0.82rem; color: #aaa; }
+  .hero-version a { color: #888; text-decoration: none; border-bottom: 1px dotted #bbb; transition: color 0.15s; }
+  .hero-version a:hover { color: #c0392b; }
   .install-panel {
     display: none; max-width: 560px; margin: 0 auto 2rem;
     background: #fafafa; border-left: 4px solid #c0392b; border-radius: 4px;
@@ -69,6 +72,7 @@ description: "Download TripleA for Windows, macOS, or Linux. Free and open-sourc
     <span class="hero-btn-size" id="primary-size">…</span>
   </a>
   <div class="hero-other" id="other-links"></div>
+  <p class="hero-version" id="version-line" hidden><a id="version-link" href="{{ '/release_notes/' | prepend: site.baseurl }}"></a></p>
 </div>
 <div id="windows-install" class="install-panel">
   <button class="close-x" onclick="closePanel()" aria-label="Close">&#x2715;</button>
@@ -145,6 +149,10 @@ xhr.onreadystatechange = () => {
   }
   const release = JSON.parse(xhr.responseText);
   const version = release.tag_name || '';
+  if (version) {
+    document.getElementById('version-link').textContent = 'v' + version + ' release notes';
+    document.getElementById('version-line').hidden = false;
+  }
   release.assets.forEach(asset => {
     const url = asset.browser_download_url;
     const mb  = Math.round(10 * asset.size / (1024 * 1024)) / 10;
@@ -155,8 +163,7 @@ xhr.onreadystatechange = () => {
     if (el) el.href = url;
     if (key === detected) {
       document.getElementById('primary-btn').href = url;
-      document.getElementById('primary-size').textContent = mb + ' MB'
-        + (version ? ' · v' + version : '');
+      document.getElementById('primary-size').textContent = mb + ' MB';
     }
   });
 };
