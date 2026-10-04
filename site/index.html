@@ -5,6 +5,10 @@ description: "Free open-source strategy game inspired by Axis & Allies. Windows,
 <style>
   /* Break out of the global 10% margin for this page */
   #page-content { margin: 0; padding: 0; line-height: normal; }
+  /* Stretch the hero to fill the window so tall screens don't get a grey band above the footer */
+  #body { display: flex; flex-direction: column; }
+  #page-content { flex: 1; display: flex; flex-direction: column; }
+  .hero { flex: 1; }
 
   .hero {
     display: flex;
