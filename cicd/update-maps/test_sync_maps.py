@@ -10,7 +10,7 @@ file outputs rather than internal state.
 import os
 import tempfile
 import pytest
-from sync_maps import generate_slug, build_front_matter, sync_maps, render_front_matter, fetch_maps, MAPS_LISTING_URL
+from sync_maps import generate_slug, build_front_matter, sync_maps, render_front_matter, fetch_maps, MAPS_LISTING_URL, UnsafeSyncError
 
 
 # ---------------------------------------------------------------------------
@@ -219,6 +219,82 @@ class TestSyncMaps:
             assert fm["slug"] == "my-map"
             assert "img.example.com" in fm["img"]
             assert fm["title"] == "My Map | TripleA Map"
+
+
+# ---------------------------------------------------------------------------
+# Mass-deletion guard
+# ---------------------------------------------------------------------------
+
+class TestSyncGuard:
+    def test_empty_listing_aborts_and_keeps_existing_pages(self):
+        with tempfile.TemporaryDirectory() as d:
+            open(os.path.join(d, "big-world.html"), "w").close()
+
+            with pytest.raises(UnsafeSyncError):
+                sync_maps([], d)
+
+            assert os.listdir(d) == ["big-world.html"]
+
+    def test_mass_removal_aborts_before_writing_or_removing(self):
+        # 310 pages, like the live site; a 300-map drop is over the 31-page limit.
+        with tempfile.TemporaryDirectory() as d:
+            for i in range(310):
+                with open(os.path.join(d, f"map-{i}.html"), "w") as f:
+                    f.write("old")
+
+            with pytest.raises(UnsafeSyncError):
+                sync_maps([make_map(f"map-{i}", description="new") for i in range(10)], d)
+
+            assert result_count(d) == 310
+            assert read_file(os.path.join(d, "map-0.html")) == "old"
+
+    def test_removal_at_ten_percent_of_pages_proceeds(self):
+        with tempfile.TemporaryDirectory() as d:
+            for i in range(310):
+                open(os.path.join(d, f"map-{i}.html"), "w").close()
+
+            result = sync_maps([make_map(f"map-{i}") for i in range(279)], d)
+
+            assert result["removed"] == 31
+
+    def test_removal_of_ten_pages_proceeds_on_a_small_site(self):
+        with tempfile.TemporaryDirectory() as d:
+            for i in range(20):
+                open(os.path.join(d, f"map-{i}.html"), "w").close()
+
+            result = sync_maps([make_map(f"map-{i}") for i in range(10)], d)
+
+            assert result["removed"] == 10
+
+    def test_single_map_removed_upstream_is_deleted(self):
+        with tempfile.TemporaryDirectory() as d:
+            for name in ["big-world.html", "classic.html", "retired-map.html"]:
+                open(os.path.join(d, name), "w").close()
+
+            result = sync_maps([make_map("Big World"), make_map("Classic")], d)
+
+            assert result["removed"] == 1
+            assert sorted(os.listdir(d)) == ["big-world.html", "classic.html"]
+
+
+class TestFetchMapsMalformed:
+    def test_listing_without_maps_key_raises(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "listing.json")
+            with open(path, "w") as f:
+                f.write('{"error": "maintenance"}')
+
+            with pytest.raises(UnsafeSyncError):
+                fetch_maps(f"file://{path}")
+
+    def test_listing_that_is_not_json_raises(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "listing.json")
+            with open(path, "w") as f:
+                f.write("<html>502 Bad Gateway</html>")
+
+            with pytest.raises(ValueError):
+                fetch_maps(f"file://{path}")
 
 
 # ---------------------------------------------------------------------------

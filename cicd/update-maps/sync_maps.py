@@ -16,6 +16,15 @@ import urllib.request
 
 MAPS_LISTING_URL = "https://prod.triplea-game.org/support/maps/listing"
 
+# A bad listing (outage, API change, partial response) must not wipe the site,
+# so a run may delete at most this many pages, or this share of them if larger.
+MAX_REMOVALS = 10
+MAX_REMOVAL_FRACTION = 0.10
+
+
+class UnsafeSyncError(Exception):
+    """Raised instead of applying a sync that looks like a bad listing."""
+
 
 def generate_slug(map_name: str) -> str:
     """Converts a map name to a URL-safe slug used as the filename."""
@@ -97,10 +106,23 @@ def sync_maps(maps: list, target_dir: str) -> dict:
     """
     Clears target_dir and writes one .html file per map entry.
     Returns a summary dict with counts of files written and removed.
+    Raises UnsafeSyncError, before touching any file, when the listing is
+    empty or would remove more pages than the removal limit allows.
     """
+    if not maps:
+        raise UnsafeSyncError("map listing is empty")
+
     existing_files = set(
         f for f in os.listdir(target_dir) if f.endswith(".html")
     )
+    planned_files = {f"{generate_slug(m['mapName'])}.html" for m in maps}
+    planned_removals = existing_files - planned_files
+    removal_limit = max(MAX_REMOVALS, int(len(existing_files) * MAX_REMOVAL_FRACTION))
+    if len(planned_removals) > removal_limit:
+        raise UnsafeSyncError(
+            f"listing would remove {len(planned_removals)} of {len(existing_files)} "
+            f"map pages (limit {removal_limit})"
+        )
 
     written_files = set()
     for map_data in maps:
@@ -118,8 +140,16 @@ def sync_maps(maps: list, target_dir: str) -> dict:
 
 
 def fetch_maps(url: str) -> list:
+    """
+    Returns the listing's list of maps. HTTP errors and invalid JSON raise;
+    a response without a "maps" list raises UnsafeSyncError.
+    """
     with urllib.request.urlopen(url, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8")).get("maps")
+        listing = json.loads(response.read().decode("utf-8"))
+    maps = listing.get("maps") if isinstance(listing, dict) else None
+    if not isinstance(maps, list):
+        raise UnsafeSyncError(f"listing has no 'maps' list: {str(listing)[:200]}")
+    return maps
 
 
 def main():
@@ -134,10 +164,13 @@ def main():
         sys.exit(1)
 
     print(f"Fetching map listing from {args.url} ...")
-    maps = fetch_maps(args.url)
-    print(f"Fetched {len(maps)} maps.")
-
-    result = sync_maps(maps, maps_dir)
+    try:
+        maps = fetch_maps(args.url)
+        print(f"Fetched {len(maps)} maps.")
+        result = sync_maps(maps, maps_dir)
+    except UnsafeSyncError as e:
+        print(f"Error: refusing to sync: {e}", file=sys.stderr)
+        sys.exit(1)
     print(f"Done. Written: {result['written']}, Removed: {result['removed']}")
 
 
