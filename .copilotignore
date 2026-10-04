@@ -9,9 +9,6 @@ vendor/
 .idea/
 .pytest_cache/
 
-# --- Legacy CI (superseded by .github/workflows/) ---
-.travis/
-
 # --- Copilot-only: binary/asset files tracked by git but useless for code context ---
 site/images/
 site/maps/
