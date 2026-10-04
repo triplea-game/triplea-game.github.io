@@ -21,9 +21,17 @@ defaults:
     values:
       layout: map
 
+# GitHub Pages builds with Jekyll 3, where this list replaces the default
+# excludes (Gemfile, vendor/, ...) instead of extending them.
 exclude:
   - README.md
   - CNAME
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - justfile
+  - cicd/
+  - vendor/
 
 
 plugins:
