@@ -1,0 +1,61 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  # Map-sync pushes use GITHUB_TOKEN, which never fires `push` workflows,
+  # so deploy after a successful sync run instead.
+  workflow_run:
+    workflows: ["Update Map Pages"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+# One deploy at a time; let an in-flight deploy finish rather than cut it off.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # On workflow_run, github.sha is the current tip of main; if it still equals
+    # the commit the sync started from, the sync pushed nothing and the site
+    # is already current.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.sha != github.event.workflow_run.head_sha)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - id: pages
+        uses: actions/configure-pages@v6
+
+      - name: Build site
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      - uses: actions/upload-pages-artifact@v5
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
