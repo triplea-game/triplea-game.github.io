@@ -35,11 +35,38 @@
   }
 
   .site-nav__menu {
+    flex: 1;
     display: flex;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    // Push the icon links to the right edge of the header.
+    .menu-items:not(.menu-items--icon) + .menu-items--icon {
+      margin-left: auto;
+    }
+
+    .menu-items--icon > a {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    .menu-items--icon svg {
+      fill: currentColor;
+    }
+
+    // Hidden visually but read by screen readers; the mobile menu shows it.
+    .menu-items__label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
 
     .menu-items {
       padding: 0 10px;

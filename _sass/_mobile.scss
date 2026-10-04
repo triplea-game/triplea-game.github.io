@@ -44,6 +44,19 @@
       text-align: center;
       padding: 10px 0;
     }
+
+    .menu-items--icon > a {
+      justify-content: center;
+    }
+
+    .menu-items__label {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+    }
   }
 }
 
