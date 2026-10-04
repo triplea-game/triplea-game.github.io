@@ -34,6 +34,7 @@ description: "Download TripleA for Windows, macOS, or Linux. Free and open-sourc
   .hero-btn img { width: 72px; filter: brightness(0) invert(1); margin-bottom: 1rem; }
   .hero-btn-label { font-size: 1.3rem; font-weight: 700; line-height: 1.2; }
   .hero-btn-size { font-size: 0.82rem; opacity: 0.75; margin-top: 0.4rem; }
+  .hero-mobile-note { max-width: 420px; margin: 0 auto; font-size: 1.1rem; line-height: 1.5; color: #333; }
   .hero-other { margin-top: 1.4rem; font-size: 0.88rem; color: #aaa; }
   .hero-other a { color: #666; text-decoration: none; border-bottom: 1px dotted #bbb; margin: 0 0.4rem; transition: color 0.15s; }
   .hero-other a:hover { color: #c0392b; }
@@ -57,6 +58,7 @@ description: "Download TripleA for Windows, macOS, or Linux. Free and open-sourc
 <div class="hero-wrap">
   <p class="hero-product-name">TripleA</p>
   <p class="hero-tagline">Free &bull; Open Source &bull; Strategy Game Engine</p>
+  <p id="mobile-note" class="hero-mobile-note" hidden>TripleA runs on Windows, Mac and Linux computers. Open this page on your computer to download.</p>
   <a id="primary-btn" class="hero-btn" href="https://github.com/triplea-game/triplea/releases/latest">
     <img id="primary-icon" src="{{ '/images/operating-systems/linux100.png' | prepend: site.baseurl }}" alt="Platform icon">
     <span class="hero-btn-label" id="primary-label">Download TripleA</span>
@@ -100,16 +102,25 @@ const detect = () => {
   if (/Mac OS X/i.test(ua)) return 'macos';
   return 'linux';
 };
-const detected = detect();
-const cfg = platforms[detected];
-document.getElementById('primary-icon').src = cfg.icon;
-document.getElementById('primary-icon').alt = cfg.name + ' icon';
-document.getElementById('primary-label').textContent = cfg.label;
-document.getElementById('primary-btn').addEventListener('click', () => revealPanel(cfg.installId));
+const isMobile = () =>
+  /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+  // iPadOS reports itself as a Mac; the touch screen gives it away.
+  || (/Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+const detected = isMobile() ? null : detect();
+if (detected) {
+  const cfg = platforms[detected];
+  document.getElementById('primary-icon').src = cfg.icon;
+  document.getElementById('primary-icon').alt = cfg.name + ' icon';
+  document.getElementById('primary-label').textContent = cfg.label;
+  document.getElementById('primary-btn').addEventListener('click', () => revealPanel(cfg.installId));
+} else {
+  document.getElementById('primary-btn').style.display = 'none';
+  document.getElementById('mobile-note').hidden = false;
+}
 const othersDiv = document.getElementById('other-links');
 const otherEntries = Object.entries(platforms).filter(([k]) => k !== detected);
 if (otherEntries.length) {
-  othersDiv.innerHTML = 'Other platforms: ' +
+  othersDiv.innerHTML = (detected ? 'Other platforms: ' : 'Computer installers: ') +
     otherEntries.map(([k, c]) =>
       `<a id="${k}" href="https://github.com/triplea-game/triplea/releases/latest" onclick="revealPanel('${c.installId}')">${c.name}</a>`
     ).join(' &bull; ');
