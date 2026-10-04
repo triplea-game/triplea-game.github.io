@@ -3,46 +3,19 @@
 ---
 @charset "utf-8";
 
-$base-font-family: Helvetica, Arial, sans-serif;
-$secondary-font-family: "Alternate Gothic", Helvetica, Arial, sans-serif;
+@use "sass:meta";
+@use "variables" as *;
+@use "tables";
+@use "fonts";
+@use "foundation";
+@use "base";
+@use "misc";
 
-$text-color: #111;
-$background-color: #eee;
-$brand-color: #b8242b;
-$brand-color-dark: darken($brand-color, 10%);
-
-$nav-collapse-width: 960px;
-
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
-
-table {
-	border-collapse: collapse;
-	width: 100%;
-	text-align: left;
-	border: 1px solid #c6c9cc;
-	border-radius: 5px;
- 	padding: 10px 20px;
-	th {
-    text-align: center;
-  }
-  td {
-		border-color: #c6c9cc;
-		border-style: solid;
-		border-width: 1px 1px 1px 1px;
-  	padding: 5px 10px;
-	}
-}
-
-@import "fonts";
-@import "foundation";
-@import "base";
-@import "misc";
+// @use can't nest inside @media, so these partials load through load-css.
 // Below this width the header no longer fits on one line.
 @media only screen and (max-width: $nav-collapse-width) {
-  @import "nav-collapsed";
+  @include meta.load-css("nav-collapsed");
 }
 @media only screen and (max-width: 600px) {
-  @import "mobile";
+  @include meta.load-css("mobile");
 }

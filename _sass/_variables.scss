@@ -1,0 +1,15 @@
+@use "sass:color";
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$secondary-font-family: "Alternate Gothic", Helvetica, Arial, sans-serif;
+
+$text-color: #111;
+$background-color: #eee;
+$brand-color: #b8242b;
+$brand-color-dark: color.adjust($brand-color, $lightness: -10%);
+
+$nav-collapse-width: 960px;
+
+$grey-color: #828282;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark: color.adjust($grey-color, $lightness: -25%);
