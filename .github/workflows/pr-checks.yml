@@ -55,7 +55,7 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --source site
 
       - name: Check for build output
         run: |

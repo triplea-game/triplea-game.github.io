@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetches the map listing from the TripleA server and regenerates the Jekyll
-map pages in _maps/. Each map in the JSON response becomes one .html file
+map pages in site/_maps/. Each map in the JSON response becomes one .html file
 with YAML front-matter and an HTML description body.
 
 Usage:
@@ -124,7 +124,7 @@ def fetch_maps(url: str) -> list:
 
 def main():
     parser = argparse.ArgumentParser(description="Sync TripleA map pages from server listing.")
-    parser.add_argument("--maps-dir", default="_maps", help="Path to the _maps directory")
+    parser.add_argument("--maps-dir", default="site/_maps", help="Path to the _maps directory")
     parser.add_argument("--url", default=MAPS_LISTING_URL, help="Maps listing JSON URL")
     args = parser.parse_args()
 

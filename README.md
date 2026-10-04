@@ -2,13 +2,14 @@
 
 This repository hosts the markdown source code for the triplea website: <https://triplea-game.github.io>
 
-Updates to this repository (master branch) will update the website in close to real time.
+Updates to this repository (main branch) will update the website in close to real time.
 
 
 The TripleA site runs on [Jekyll](http://jekyllrb.com/)
 and [GitHub Pages](https://pages.github.com/).
 
 Pages are written in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+The site source lives in `site/`; only that directory is published.
 
 
 ## How-To-Contribute

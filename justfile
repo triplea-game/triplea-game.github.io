@@ -14,7 +14,7 @@ setup:
 # Run all validations (pre-commit hooks + jekyll build).
 check:
     pre-commit run --all-files
-    bundle exec jekyll build
+    bundle exec jekyll build --source site
 
 # Install Ruby, Jekyll, and required gems (Ubuntu/Debian). Native gems need make + gcc.
 install-jekyll:
@@ -24,11 +24,11 @@ install-jekyll:
 
 # Start a local Jekyll server at http://localhost:4000 (auto-reloads on changes).
 serve:
-    bundle exec jekyll serve
+    bundle exec jekyll serve --source site
 
 # Build the static site into _site/.
 build:
-    bundle exec jekyll build
+    bundle exec jekyll build --source site
 
 # Remove the generated _site/ directory.
 clean:

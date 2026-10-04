@@ -13,19 +13,19 @@ vendor/
 .travis/
 
 # --- Copilot-only: binary/asset files tracked by git but useless for code context ---
-images/
-maps/
-css/fonts/
+site/images/
+site/maps/
+site/css/fonts/
 
 # Image-heavy subdirs of user-guide (63 PNGs); top-level .md files are kept
-user-guide/rule-book/
-user-guide/tactical-handbook/
+site/user-guide/rule-book/
+site/user-guide/tactical-handbook/
 
 # --- Repetitive data files with no coding utility ---
 # 64 structurally identical Jekyll map stubs (frontmatter + blurb); not template code
-_maps/
+site/_maps/
 # Historical changelog; no coding context value
-release_notes.md
+site/release_notes.md
 # Dependency lock file; not useful for coding assistance
 Gemfile.lock
 .docs/
