@@ -29,6 +29,10 @@ description: "Download TripleA for Windows, macOS, or Linux. Free and open-sourc
     background: #c0392b; color: #fff; border-radius: 10px; padding: 2rem 3.5rem;
     text-decoration: none; transition: background 0.18s, transform 0.15s, box-shadow 0.18s;
     box-shadow: 0 4px 18px rgba(192,57,43,0.35); min-width: 260px;
+    max-width: 100%; box-sizing: border-box;
+  }
+  @media (max-width: 480px) {
+    .hero-btn { min-width: 0; padding: 1.5rem 1.25rem; }
   }
   .hero-btn:hover { background: #a93226; transform: translateY(-3px); box-shadow: 0 8px 28px rgba(192,57,43,0.4); color: #fff; text-decoration: none; }
   .hero-btn img { width: 72px; filter: brightness(0) invert(1); margin-bottom: 1rem; }
