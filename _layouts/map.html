@@ -17,5 +17,8 @@ layout: default
 <img src="{% if page.img %}{{ page.img }}{% else %}{{ '/images/missing_map.png' | prepend: site.baseurl }}{% endif %}" alt="Map Thumbnail">
 {{ content }}
 <br>
-<a href="triplea:{{ page.mapName | escape | uri_scape }}" class="button">Download with TripleA</a>
-<a href="{{ page.downloadUrl }}">Manual Download</a>
+<p>New to TripleA? <a href="{{ '/download/' | prepend: site.baseurl }}">Get TripleA (free)</a> first, then come back and add this map.</p>
+<div class="map-actions">
+  <a href="triplea:{{ page.mapName | escape | uri_scape }}" class="button">Add to TripleA</a>
+  <a href="{{ page.downloadUrl }}">Download map files (.zip)</a>
+</div>

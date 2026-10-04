@@ -172,3 +172,15 @@
 .section-title {
   padding-top: 0.75em;
 }
+
+.map-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em 1.5em;
+  margin-bottom: 1.25rem;
+
+  .button {
+    margin: 0;
+  }
+}
